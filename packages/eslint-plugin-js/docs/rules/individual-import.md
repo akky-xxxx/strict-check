@@ -5,7 +5,7 @@
 
 ```js
 ...
-"@strict/js/individual-import": [<enabled>, {
+"sc-js/individual-import": [<enabled>, {
   "targets": <string>[]
 }]
 ...
@@ -19,7 +19,7 @@
 Example of **invalid** :x: code when option value `["react"]`:
 
 ```tsx
-// "@strict/js/individual-import": ["warn", { "targets": ["react"] }]
+// "sc-js/individual-import": ["warn", { "targets": ["react"] }]
 const [state, setState] = React.useState(1)
 const changeHandler: React.ChangeEventHandler = () => {}
 const Component = () => <React.Fragment>Component</React.Fragment>
@@ -28,7 +28,7 @@ const Component = () => <React.Fragment>Component</React.Fragment>
 Example of **valid** :o: code when option value `["react"]`:
 
 ```tsx
-// "@strict/js/individual-import": ["warn", { "targets": ["react"] }]
+// "sc-js/individual-import": ["warn", { "targets": ["react"] }]
 const [state, setState] = useState(1)
 const changeHandler: ChangeEventHandler = () => {}
 const Component = () => <Fragment>Component</Fragment>

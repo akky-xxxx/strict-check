@@ -1,29 +1,30 @@
-# @strict/eslint-plugin-js
-- Strict rules for eslint.
+# eslint-plugin-sc-js
+- Strict Check rules for eslint.
+- - For Javascript / Typescript.
 
 ## Installation
 
 ```shell
 # by yarn
-$ yarn add -D @strict/eslint-plugin-js
+$ yarn add -D eslint-plugin-sc-js
 
 # by npm
-$ npm i --save-dev @strict/eslint-plugin-js
+$ npm i --save-dev eslint-plugin-sc-js
 ```
 
 ## Usage
 
 ### for `eslint.config.mjs`
 ```js
-import eslintPluginStrictJs from "@strict/eslint-plugin-js"
+import eslintPluginSCJs from "eslint-plugin-sc-js"
 
 export default [
   {
     plugins: {
-      "@strict/js": eslintPluginStrictJs, // It is not necessary when use the recommended config
+      "js": eslintPluginSCJs, // It is not necessary when use the recommended config
     },
   },
-  eslintPluginStrictJs.configs.recommended,
+  eslintPluginSCJs.configs.recommended,
 ]
 ```
 
@@ -31,9 +32,9 @@ export default [
 
 ```js
 module.exports = {
-  plugins: ["@strict/js"], // It is not necessary when use the recommended config
+  plugins: ["sc-js"], // It is not necessary when use the recommended config
   extends: [
-    "plugin:@strict/js/legacy"
+    "plugin:sc-js/legacy"
   ],
   rules: {
     ...

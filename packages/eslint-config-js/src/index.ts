@@ -9,7 +9,7 @@ import type { ESLint } from "eslint"
 
 const plugin = {
   meta: {
-    name: "@strict/eslint-config-js",
+    name: "eslint-config-sc-js",
   },
 
   configs: {

@@ -1598,74 +1598,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strict/eslint-config-js@workspace:packages/eslint-config-js":
-  version: 0.0.0-use.local
-  resolution: "@strict/eslint-config-js@workspace:packages/eslint-config-js"
-  dependencies:
-    "@eslint/eslintrc": "npm:^3.1.0"
-    "@eslint/js": "npm:^9.4.0"
-    "@swc/cli": "npm:^0.3.12"
-    cspell: "npm:^8.8.3"
-    editorconfig-checker: "npm:^5.1.5"
-    eslint: "npm:^8.57.0"
-    eslint-config-airbnb-base: "npm:^15.0.0"
-    eslint-config-prettier: "npm:^9.1.0"
-    eslint-plugin-unicorn: "npm:^53.0.0"
-    fixpack: "npm:^4.0.0"
-    npm-run-all2: "npm:^6.2.0"
-    prettier: "npm:^3.2.5"
-    typescript: "npm:^5.4.5"
-  languageName: unknown
-  linkType: soft
-
-"@strict/eslint-plugin-js@workspace:packages/eslint-plugin-js":
-  version: 0.0.0-use.local
-  resolution: "@strict/eslint-plugin-js@workspace:packages/eslint-plugin-js"
-  dependencies:
-    "@swc/cli": "npm:^0.3.12"
-    cspell: "npm:^8.8.3"
-    editorconfig-checker: "npm:^5.1.5"
-    eslint: "npm:^8.57.0"
-    fixpack: "npm:^4.0.0"
-    jest: "npm:^29.7.0"
-    npm-run-all2: "npm:^6.2.0"
-    prettier: "npm:^3.2.5"
-    typescript: "npm:^5.4.5"
-    zod: "npm:^3.23.8"
-  languageName: unknown
-  linkType: soft
-
-"@strict/monorepo@:*, @strict/monorepo@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@strict/monorepo@workspace:."
-  dependencies:
-    "@commitlint/cli": "npm:^19.3.0"
-    "@commitlint/config-conventional": "npm:^19.2.2"
-    "@eslint/eslintrc": "npm:^3.1.0"
-    "@eslint/js": "npm:^9.3.0"
-    "@stylistic/eslint-plugin": "npm:^2.1.0"
-    "@swc/cli": "npm:^0.3.12"
-    "@swc/core": "npm:^1.5.24"
-    "@swc/jest": "npm:^0.2.36"
-    "@tsconfig/strictest": "npm:^2.0.5"
-    "@types/jest": "npm:^29.5.12"
-    "@typescript-eslint/rule-tester": "npm:^7.11.0"
-    "@typescript-eslint/utils": "npm:^7.11.0"
-    cspell: "npm:^8.8.3"
-    editorconfig-checker: "npm:^5.1.5"
-    eslint: "npm:^8.57.0"
-    eslint-config-airbnb-base: "npm:^15.0.0"
-    eslint-plugin-import: "npm:^2.29.1"
-    fixpack: "npm:^4.0.0"
-    husky: "npm:^9.0.11"
-    jest: "npm:^29.7.0"
-    npm-run-all2: "npm:^6.2.0"
-    prettier: "npm:^3.2.5"
-    typescript: "npm:^5.4.5"
-    typescript-eslint: "npm:^7.11.0"
-  languageName: unknown
-  linkType: soft
-
 "@stylistic/eslint-plugin-js@npm:2.1.0, @stylistic/eslint-plugin-js@npm:^2.1.0":
   version: 2.1.0
   resolution: "@stylistic/eslint-plugin-js@npm:2.1.0"
@@ -3766,6 +3698,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-sc-js@workspace:packages/eslint-config-js":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-sc-js@workspace:packages/eslint-config-js"
+  dependencies:
+    "@eslint/eslintrc": "npm:^3.1.0"
+    "@eslint/js": "npm:^9.4.0"
+    "@swc/cli": "npm:^0.3.12"
+    cspell: "npm:^8.8.3"
+    editorconfig-checker: "npm:^5.1.5"
+    eslint: "npm:^8.57.0"
+    eslint-config-airbnb-base: "npm:^15.0.0"
+    eslint-config-prettier: "npm:^9.1.0"
+    eslint-plugin-unicorn: "npm:^53.0.0"
+    fixpack: "npm:^4.0.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.2.5"
+    typescript: "npm:^5.4.5"
+  languageName: unknown
+  linkType: soft
+
 "eslint-import-resolver-node@npm:^0.3.9":
   version: 0.3.9
   resolution: "eslint-import-resolver-node@npm:0.3.9"
@@ -3815,6 +3767,23 @@ __metadata:
   checksum: 10c0/5f35dfbf4e8e67f741f396987de9504ad125c49f4144508a93282b4ea0127e052bde65ab6def1f31b6ace6d5d430be698333f75bdd7dca3bc14226c92a083196
   languageName: node
   linkType: hard
+
+"eslint-plugin-sc-js@workspace:packages/eslint-plugin-js":
+  version: 0.0.0-use.local
+  resolution: "eslint-plugin-sc-js@workspace:packages/eslint-plugin-js"
+  dependencies:
+    "@swc/cli": "npm:^0.3.12"
+    cspell: "npm:^8.8.3"
+    editorconfig-checker: "npm:^5.1.5"
+    eslint: "npm:^8.57.0"
+    fixpack: "npm:^4.0.0"
+    jest: "npm:^29.7.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.2.5"
+    typescript: "npm:^5.4.5"
+    zod: "npm:^3.23.8"
+  languageName: unknown
+  linkType: soft
 
 "eslint-plugin-unicorn@npm:^53.0.0":
   version: 53.0.0
@@ -7261,13 +7230,13 @@ __metadata:
   resolution: "shared-for-eslint-config@workspace:modules/shared-for-eslint-config"
   dependencies:
     "@eslint/eslintrc": "npm:^3.1.0"
-    "@strict/monorepo": ":*"
     cspell: "npm:^8.8.3"
     editorconfig-checker: "npm:^5.1.5"
     eslint: "npm:^8.57.0"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.2.5"
+    strict-check: ":*"
     typescript: "npm:^5.4.5"
   languageName: unknown
   linkType: soft
@@ -7276,7 +7245,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "shared-for-eslint-plugin@workspace:modules/shared-for-eslint-plugin"
   dependencies:
-    "@strict/monorepo": ":*"
     cspell: "npm:^8.8.3"
     editorconfig-checker: "npm:^5.1.5"
     eslint: "npm:^8.57.0"
@@ -7284,6 +7252,7 @@ __metadata:
     jest: "npm:^29.7.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.2.5"
+    strict-check: ":*"
     typescript: "npm:^5.4.5"
     zod: "npm:^3.23.8"
   languageName: unknown
@@ -7510,6 +7479,37 @@ __metadata:
   checksum: 10c0/651c9f87667e077584bbe848acaecc6049bc71979f1e9a46c7b920cad4431c388df0f51b8ad7cfd6eed3db97a2878d0fc8b3122979439ea8bac29c61c95eec8a
   languageName: node
   linkType: hard
+
+"strict-check@:*, strict-check@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "strict-check@workspace:."
+  dependencies:
+    "@commitlint/cli": "npm:^19.3.0"
+    "@commitlint/config-conventional": "npm:^19.2.2"
+    "@eslint/eslintrc": "npm:^3.1.0"
+    "@eslint/js": "npm:^9.3.0"
+    "@stylistic/eslint-plugin": "npm:^2.1.0"
+    "@swc/cli": "npm:^0.3.12"
+    "@swc/core": "npm:^1.5.24"
+    "@swc/jest": "npm:^0.2.36"
+    "@tsconfig/strictest": "npm:^2.0.5"
+    "@types/jest": "npm:^29.5.12"
+    "@typescript-eslint/rule-tester": "npm:^7.11.0"
+    "@typescript-eslint/utils": "npm:^7.11.0"
+    cspell: "npm:^8.8.3"
+    editorconfig-checker: "npm:^5.1.5"
+    eslint: "npm:^8.57.0"
+    eslint-config-airbnb-base: "npm:^15.0.0"
+    eslint-plugin-import: "npm:^2.29.1"
+    fixpack: "npm:^4.0.0"
+    husky: "npm:^9.0.11"
+    jest: "npm:^29.7.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.2.5"
+    typescript: "npm:^5.4.5"
+    typescript-eslint: "npm:^7.11.0"
+  languageName: unknown
+  linkType: soft
 
 "string-length@npm:^4.0.1":
   version: 4.0.2

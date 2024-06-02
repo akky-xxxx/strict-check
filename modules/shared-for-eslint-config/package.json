@@ -21,13 +21,13 @@
     "@eslint/eslintrc": "^3.1.0"
   },
   "devDependencies": {
-    "@strict/monorepo": ":*",
     "cspell": "^8.8.3",
     "editorconfig-checker": "^5.1.5",
     "eslint": "^8.57.0",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^6.2.0",
     "prettier": "^3.2.5",
+    "strict-check": ":*",
     "typescript": "^5.4.5"
   },
   "packageManager": "yarn@4.2.2"

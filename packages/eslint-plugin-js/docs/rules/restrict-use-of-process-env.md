@@ -5,14 +5,14 @@
 
 ```js
 ...
-"@strict/js/restrict-use-of-process-env": <enabled>
+"sc-js/restrict-use-of-process-env": <enabled>
 ...
 ```
 
 Example of **invalid** :x: code
 
 ```tsx
-// "@strict/js/restrict-use-of-process-env": "error"
+// "sc-js/restrict-use-of-process-env": "error"
 const env = process.env
 const { env: variableName } = process
 ```
@@ -20,10 +20,10 @@ const { env: variableName } = process
 Example of **valid** :o: code
 
 ```tsx
-// "@strict/js/restrict-use-of-process-env": "error"
+// "sc-js/restrict-use-of-process-env": "error"
 
 // const file
-/* eslint-disable @strict/js/restrict-use-of-process-env */
+/* eslint-disable sc-js/restrict-use-of-process-env */
 export const Environment = {
   NODE_ENV: process.env.NODE_ENV || "development",
   PORT: process.env.PORT || 3000,

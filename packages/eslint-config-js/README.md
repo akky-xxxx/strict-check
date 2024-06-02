@@ -1,38 +1,38 @@
-# @strict/eslint-config-js
-- Strict config for eslint.
+# eslint-config-sc-js
+- Strict Check config for eslint.
 - For Javascript.
 
 ## How to use
 ### Installation
 
 ```shell
-$ yarn add -D @strict/eslint-config-js
+$ yarn add -D eslint-config-sc-js
 ```
 
 ### Use for `eslint.config.mjs`
 
 ```javascript
 // eslint.config.mjs
-import eslintConfigStrictJs from "@strict/eslint-config-js"
+import eslintConfigSCJs from "eslint-config-sc-js"
 
 export default [
-  ...eslintConfigStrictJs.configs.recommended,
+  ...eslintConfigSCJs.configs.recommended,
 ]
 
 // Below is equal
 export default [
-  ...eslintConfigStrictJs.configs.baseRecords1,
+  ...eslintConfigSCJs.configs.baseRecords1,
 
   // This use eslint-config-airbnb-base
   // For react project, this replace to eslint-config-airbnb
-  ...eslintConfigStrictJs.configs.baseRecords2,
+  ...eslintConfigSCJs.configs.baseRecords2,
 
   // This use eslint-config-prettier
   // This will delete in the future
-  ...eslintConfigStrictJs.configs.baseRecords3,
+  ...eslintConfigSCJs.configs.baseRecords3,
 
-  // This is the scustom config of @strict/eslint-config-js
-  ...eslintConfigStrictJs.configs.customRecords,
+  // This is the scustom config of eslint-config-sc-js
+  ...eslintConfigSCJs.configs.customRecords,
 ]
 ```
 
@@ -41,11 +41,11 @@ export default [
 ```javascript
 // .eslintrc.js
 module.exports = {
-  extends: ["@strict/js"]
+  extends: ["sc-js"]
 }
 
 // Below is equal
-const eslintConfigJs = require("@strict/eslint-config-js")
+const eslintConfigSCJs = require("eslint-config-sc-js")
 
 module.exports = {
   extends: [
@@ -56,7 +56,7 @@ module.exports = {
   ],
   plugins: ["unicorn"],
   rules: {
-    ...eslintConfigJs.configs.customRecords[0].rules,
+    ...eslintConfigSCJs.configs.customRecords[0].rules,
   },
 }
 ```

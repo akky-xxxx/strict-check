@@ -1,6 +1,4 @@
 const DIRECTORIES = {
-  PROJECT_NAME: "strict",
-
   WS_MODULES: "modules",
   WS_PACKAGES: "packages",
 
