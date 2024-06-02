@@ -6,7 +6,7 @@
 
 ```js
 ...
-"@strict/js/match-names-of-file-and-export": [<enabled>, {
+"sc-js/match-names-of-file-and-export": [<enabled>, {
   "captures": <RegExp>[]
 }]
 ...
@@ -20,7 +20,7 @@
 Example of **invalid** :x: code when option value `[/\/components\/(?:atoms|molecules|organsims|templates)\/([^/]+)\/index.tsx/]`:
 
 ```tsx
-// "@strict/js/match-names-of-file-and-export": ["error", { "captures": [/\/components\/(?:atoms|molecules|organsims|templates)\/([^/]+)\/index.tsx/] }]
+// "sc-js/match-names-of-file-and-export": ["error", { "captures": [/\/components\/(?:atoms|molecules|organsims|templates)\/([^/]+)\/index.tsx/] }]
 // /components/atoms/Button/index.tsx
 export const button = () => {}
 ```
@@ -28,7 +28,7 @@ export const button = () => {}
 Example of **valid** :o: code when option value `[/\/components\/(?:atoms|molecules|organsims|templates)\/([^/]+)\/index.tsx/]`:
 
 ```tsx
-// "@strict/js/match-names-of-file-and-export": ["error", { "captures": [/\/components\/(?:atoms|molecules|organsims|templates)\/([^/]+)\/index.tsx/]] }]
+// "sc-js/match-names-of-file-and-export": ["error", { "captures": [/\/components\/(?:atoms|molecules|organsims|templates)\/([^/]+)\/index.tsx/]] }]
 // /components/atoms/Button/index.tsx
 export const Button = () => {}
 ```

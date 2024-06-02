@@ -5,7 +5,7 @@
 
 ```js
 ...
-"@strict/js/file-path-patterns": [<enabled>, {
+"sc-js/file-path-patterns": [<enabled>, {
   "allowPatterns": <RegExp>[]
 }]
 ...
@@ -20,7 +20,7 @@ Example of **invalid** :x: code when option value `[/index(?:\.(?:stories|test))
 
 
 ```tsx
-// "@strict/js/file-path-patterns": ["error", { "allowPatterns": [/index(?:\.(?:stories|test))?\.tsx?/] }]
+// "sc-js/file-path-patterns": ["error", { "allowPatterns": [/index(?:\.(?:stories|test))?\.tsx?/] }]
 // Button.tsx
 import { useState } from "react"
 ```
@@ -28,19 +28,19 @@ import { useState } from "react"
 Example of **valid** :o: code when option value `[/index(?:\.(?:stories|test))?\.tsx?/]`:
 
 ```tsx
-// "@strict/js/file-path-patterns": ["error", { "allowPatterns": [/index(?:\.(?:stories|test))?\.tsx?/] }]
+// "sc-js/file-path-patterns": ["error", { "allowPatterns": [/index(?:\.(?:stories|test))?\.tsx?/] }]
 // Button/index.tsx
 import { useState } from "react"
 ```
 
 ```tsx
-// "@strict/js/file-path-patterns": ["error", { "allowPatterns": [/index(?:\.(?:stories|test))?\.tsx?/] }]
+// "sc-js/file-path-patterns": ["error", { "allowPatterns": [/index(?:\.(?:stories|test))?\.tsx?/] }]
 // Button/index.stories.tsx
 import { Button } from "./"
 ```
 
 ```tsx
-// "@strict/js/file-path-patterns": ["error", { "allowPatterns": [/index(?:\.(?:stories|test))?\.tsx?/] }]
+// "sc-js/file-path-patterns": ["error", { "allowPatterns": [/index(?:\.(?:stories|test))?\.tsx?/] }]
 // Button/index.test.tsx
 import { Button } from "./"
 ```

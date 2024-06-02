@@ -5,14 +5,14 @@
 
 ```js
 ...
-"@strict/js/forbidden-multiple-named-exports": [<enabled>]
+"sc-js/forbidden-multiple-named-exports": [<enabled>]
 ...
 ```
 
 Example of **invalid** :x: code:
 
 ```tsx
-// "@strict/js/forbidden-multiple-named-exports": ["error"]
+// "sc-js/forbidden-multiple-named-exports": ["error"]
 export const One = 1;
 export const Two = 2;
 ```
@@ -20,7 +20,7 @@ export const Two = 2;
 Example of **valid** :o: code:
 
 ```tsx
-// "@strict/js/forbidden-multiple-named-exports": ["error"]
+// "sc-js/forbidden-multiple-named-exports": ["error"]
 export const One = 1;
 [EOF]
 ```
