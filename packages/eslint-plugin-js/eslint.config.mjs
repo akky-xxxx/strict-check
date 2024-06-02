@@ -9,7 +9,7 @@ import { TYPESCRIPT_RECORDS } from "./.config/eslint/records/TYPESCRIPT_RECORDS/
 const CONFIG = [
   IGNORE_RECORD,
   {
-    ignores: ["src/libs/**"],
+    ignores: [".config/**", "src/libs/**"],
   },
   ...BASE_RECORDS,
   ...TYPESCRIPT_RECORDS,
