@@ -1,10 +1,10 @@
-import { BASE_RECORDS } from "@strict/monorepo/config/eslint/RECORDS/BASE_RECORDS/index.mjs"
-import { CONFIGS_RECORD } from "@strict/monorepo/config/eslint/RECORDS/CONFIGS_RECORD/index.mjs"
-import { ESLINT_CONFIG_RECORD } from "@strict/monorepo/config/eslint/RECORDS/ESLINT_CONFIG_RECORD/index.mjs"
-import { SCRIPTS_RECORD } from "@strict/monorepo/config/eslint/RECORDS/SCRIPTS_RECORD/index.mjs"
-import { IGNORE_RECORD } from "@strict/monorepo/config/eslint/records/IGNORE_RECORD/index.mjs"
-import { TEST_RECORD } from "@strict/monorepo/config/eslint/records/TEST_RECORD/index.mjs"
-import { TYPESCRIPT_RECORDS } from "@strict/monorepo/config/eslint/records/TYPESCRIPT_RECORDS/index.mjs"
+import { BASE_RECORDS } from "./.config/eslint/records/BASE_RECORDS/index.mjs"
+import { CONFIGS_RECORD } from "./.config/eslint/records/CONFIGS_RECORD/index.mjs"
+import { ESLINT_CONFIG_RECORD } from "./.config/eslint/records/ESLINT_CONFIG_RECORD/index.mjs"
+import { IGNORE_RECORD } from "./.config/eslint/records/IGNORE_RECORD/index.mjs"
+import { SCRIPTS_RECORD } from "./.config/eslint/records/SCRIPTS_RECORD/index.mjs"
+import { TEST_RECORD } from "./.config/eslint/records/TEST_RECORD/index.mjs"
+import { TYPESCRIPT_RECORDS } from "./.config/eslint/records/TYPESCRIPT_RECORDS/index.mjs"
 
 const CONFIG = [
   IGNORE_RECORD,
