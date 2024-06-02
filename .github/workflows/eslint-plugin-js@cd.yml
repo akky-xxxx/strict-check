@@ -8,7 +8,7 @@ on:
     branches-ignore:
       - '**'
     tags:
-      - 'eslint-plugin-js/v*'
+      - 'eslint-plugin-sc-js/v*'
 
 jobs:
   check-publish:
