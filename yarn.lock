@@ -1598,7 +1598,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strict/monorepo@workspace:.":
+"@strict/monorepo@:*, @strict/monorepo@workspace:.":
   version: 0.0.0-use.local
   resolution: "@strict/monorepo@workspace:."
   dependencies:
@@ -7031,6 +7031,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"shared-for-eslint-config@workspace:modules/shared-for-eslint-config":
+  version: 0.0.0-use.local
+  resolution: "shared-for-eslint-config@workspace:modules/shared-for-eslint-config"
+  dependencies:
+    "@eslint/eslintrc": "npm:^3.1.0"
+    "@strict/monorepo": ":*"
+    cspell: "npm:^8.8.3"
+    editorconfig-checker: "npm:^5.1.5"
+    eslint: "npm:^8.57.0"
+    fixpack: "npm:^4.0.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.2.5"
+    typescript: "npm:^5.4.5"
+  languageName: unknown
+  linkType: soft
+
+"shared-for-eslint-plugin@workspace:modules/shared-for-eslint-plugin":
+  version: 0.0.0-use.local
+  resolution: "shared-for-eslint-plugin@workspace:modules/shared-for-eslint-plugin"
+  dependencies:
+    "@strict/monorepo": ":*"
+    cspell: "npm:^8.8.3"
+    editorconfig-checker: "npm:^5.1.5"
+    eslint: "npm:^8.57.0"
+    fixpack: "npm:^4.0.0"
+    jest: "npm:^29.7.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.2.5"
+    typescript: "npm:^5.4.5"
+    zod: "npm:^3.23.8"
+  languageName: unknown
+  linkType: soft
+
 "shebang-command@npm:^1.2.0":
   version: 1.2.0
   resolution: "shebang-command@npm:1.2.0"
@@ -7929,5 +7962,12 @@ __metadata:
   version: 1.0.0
   resolution: "yocto-queue@npm:1.0.0"
   checksum: 10c0/856117aa15cf5103d2a2fb173f0ab4acb12b4b4d0ed3ab249fdbbf612e55d1cadfd27a6110940e24746fb0a78cf640b522cc8bca76f30a3b00b66e90cf82abe0
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.23.8":
+  version: 3.23.8
+  resolution: "zod@npm:3.23.8"
+  checksum: 10c0/8f14c87d6b1b53c944c25ce7a28616896319d95bc46a9660fe441adc0ed0a81253b02b5abdaeffedbeb23bdd25a0bf1c29d2c12dd919aef6447652dd295e3e69
   languageName: node
   linkType: hard
