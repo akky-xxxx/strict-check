@@ -1,10 +1,14 @@
 {
-  "name": "shared-for-eslint-plugin",
+  "name": "@strict/eslint-plugin-js",
   "version": "0.0.1",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "run-s \"build:*\"",
+    "build:1": "rm -rf ./dist",
+    "build:2": "swc \"./src\" -d \"./dist\"  --config-file ../../.swcrc",
+    "build:3": "mv ./dist/src/* ./dist",
+    "build:4": "rm -rf ./dist/src",
     "check-code": "run-p lint spell-check type-check test",
-    "exports": "run-p \"exports:*\"",
-    "exports:copy-shared": "node ../../scripts/copy-shared/index.js",
     "fix": "run-p \"fix:*\" -c",
     "fix:eslint": "eslint \"./\" --fix --max-warnings 0",
     "fix:pack": "fixpack",
@@ -14,7 +18,11 @@
     "lint:eslint": "eslint \"./\" --max-warnings 0",
     "lint:pack": "fixpack --dryRun",
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -c -u",
+    "prepare": "run-p \"prepare:*\"",
+    "prepare:copy-config": "node ../../scripts/copy-config/index.js",
+    "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
     "spell-check": "cspell lint --no-progress \"./{spec,src}/**/*.ts\" \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
+    "tagging": "node ../../scripts/tagging/index.mjs",
     "test": "jest --coverage",
     "type-check": "tsc"
   },
@@ -22,7 +30,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@strict/monorepo": ":*",
+    "@swc/cli": "^0.3.12",
     "cspell": "^8.8.3",
     "editorconfig-checker": "^5.1.5",
     "eslint": "^8.57.0",
