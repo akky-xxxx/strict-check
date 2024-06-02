@@ -5,8 +5,8 @@ import type { ConfigBase } from "../../../src/types/ConfigBase"
 describe("getRules", () => {
   it("実際に使う時の書き方", () => {
     const output = {
-      "@strict/test/ruleName1": {},
-      "@strict/test/ruleName2": {},
+      "sc-test/ruleName1": {},
+      "sc-test/ruleName2": {},
     }
     const configBase: ConfigBase[] = [
       [

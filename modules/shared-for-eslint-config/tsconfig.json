@@ -1,5 +1,5 @@
 {
-  "extends": ["@strict/monorepo/config/tsconfig/tsconfig.json"],
+  "extends": ["strict-check/config/tsconfig/tsconfig.json"],
 
   "include": ["./src/**/*.ts", "./spec/**/*.ts"],
   "exclude": ["node_modules"]

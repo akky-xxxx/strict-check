@@ -22,7 +22,6 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@strict/monorepo": ":*",
     "cspell": "^8.8.3",
     "editorconfig-checker": "^5.1.5",
     "eslint": "^8.57.0",
@@ -30,6 +29,7 @@
     "jest": "^29.7.0",
     "npm-run-all2": "^6.2.0",
     "prettier": "^3.2.5",
+    "strict-check": ":*",
     "typescript": "^5.4.5"
   },
   "packageManager": "yarn@4.2.2"

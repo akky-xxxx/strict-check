@@ -1,4 +1,4 @@
-# strict
+# strict-check
 - This is the monorepo that management the package for static analysis.
 
 ## License

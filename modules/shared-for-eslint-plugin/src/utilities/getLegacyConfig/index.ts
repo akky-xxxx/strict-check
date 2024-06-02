@@ -1,4 +1,4 @@
-import { PREFIX } from "../../constants/PREFIX"
+import { SUFFIX } from "../../constants/SUFFIX"
 import { getConfigRules } from "../getConfigRules"
 
 import type { ConfigBase } from "../../types/ConfigBase"
@@ -11,6 +11,6 @@ type GetLegacyConfigs = (pluginName: string) => (configBases: ConfigBase[]) => {
 }
 
 export const getLegacyConfig: GetLegacyConfigs = (pluginName) => (configBases) => ({
-  plugins: [`${PREFIX}${pluginName}`],
+  plugins: [`${SUFFIX}${pluginName}`],
   rules: configBases.reduce(getConfigRules(pluginName), {}),
 })

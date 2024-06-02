@@ -1,4 +1,4 @@
-import { PREFIX } from "../../constants/PREFIX"
+import { SUFFIX } from "../../constants/SUFFIX"
 
 import type { EsLintRuleBase } from "../../types/EsLintRuleBase"
 import type { GetRulesBase } from "../../types/GetRulesBase"
@@ -9,6 +9,6 @@ export const getRules: GetRules = (pluginName) => (current, configBase) => {
   const [ruleName, ruleFunction] = configBase
   return {
     ...current,
-    [`${PREFIX}${pluginName}/${ruleName}`]: ruleFunction,
+    [`${SUFFIX}${pluginName}/${ruleName}`]: ruleFunction,
   }
 }

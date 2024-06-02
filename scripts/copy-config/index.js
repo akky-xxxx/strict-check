@@ -11,13 +11,7 @@ const { getFilePath } = require("../shared/utilities/getFilePath")
 const { getFilePaths } = require("../shared/utilities/getFilePaths")
 const { getFsMethod } = require("../shared/utilities/getFsMethod")
 
-const THIS_DIRECTORY_NAME = __dirname
-
-const FIRST_CHARACTER = 0
-const ROOT = THIS_DIRECTORY_NAME.slice(
-  FIRST_CHARACTER,
-  THIS_DIRECTORY_NAME.lastIndexOf(DIRECTORIES.PROJECT_NAME) + DIRECTORIES.PROJECT_NAME.length,
-)
+const ROOT = path.resolve(__dirname, "../../")
 
 const CONFIG_DIRECTORY = path.join(ROOT, DIRECTORIES.CONFIG)
 
