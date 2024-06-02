@@ -1598,6 +1598,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@strict/eslint-plugin-js@workspace:packages/eslint-plugin-js":
+  version: 0.0.0-use.local
+  resolution: "@strict/eslint-plugin-js@workspace:packages/eslint-plugin-js"
+  dependencies:
+    "@swc/cli": "npm:^0.3.12"
+    cspell: "npm:^8.8.3"
+    editorconfig-checker: "npm:^5.1.5"
+    eslint: "npm:^8.57.0"
+    fixpack: "npm:^4.0.0"
+    jest: "npm:^29.7.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.2.5"
+    typescript: "npm:^5.4.5"
+    zod: "npm:^3.23.8"
+  languageName: unknown
+  linkType: soft
+
 "@strict/monorepo@:*, @strict/monorepo@workspace:.":
   version: 0.0.0-use.local
   resolution: "@strict/monorepo@workspace:."
