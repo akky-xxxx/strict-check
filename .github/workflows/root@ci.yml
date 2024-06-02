@@ -1,0 +1,45 @@
+name: root@CI
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - feature/**
+      - main
+    paths:
+      - '.node-version'
+      - 'config/**'
+      - 'cspell.config.js'
+      - 'eslint.config.mjs'
+      - 'packages/eslint-plugin-js/**'
+      - 'prettier.config.js'
+      - 'scripts/**'
+      - 'yarn.lock'
+
+jobs:
+  check-code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ./.node-version
+
+      - run: corepack enable
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+
+      - name: Run post-install
+        run: yarn postinstall
+
+      - name: Run lint
+        run: yarn lint
+
+      - name: Run spell-check
+        run: yarn spell-check

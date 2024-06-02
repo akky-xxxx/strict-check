@@ -1,0 +1,11 @@
+{
+  "extends": ["@tsconfig/strictest"],
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": true,
+    "target": "es2022"
+  }
+}

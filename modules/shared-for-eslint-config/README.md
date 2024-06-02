@@ -1,0 +1,1 @@
+# shared-for-eslint-config
