@@ -1,4 +1,4 @@
-import { PREFIX } from "../../constants/PREFIX"
+import { SUFFIX } from "../../constants/SUFFIX"
 
 import type { GetRulesBase } from "../../types/GetRulesBase"
 import type { Options } from "../../types/Options"
@@ -9,6 +9,6 @@ export const getConfigRules: GetConfigRules = (pluginName) => (current, configBa
   const [ruleName, , options] = configBase
   return {
     ...current,
-    [`${PREFIX}${pluginName}/${ruleName}`]: options,
+    [`${SUFFIX}${pluginName}/${ruleName}`]: options,
   }
 }
