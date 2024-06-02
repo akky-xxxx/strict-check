@@ -4,7 +4,7 @@
   "scripts": {
     "check-code": "run-p lint spell-check type-check test",
     "exports": "run-p \"exports:*\"",
-    "exports:copy-shared": "node ../../scripts/copy-shared/index.mjs",
+    "exports:copy-shared": "node ../../scripts/copy-shared/index.js",
     "fix": "run-p \"fix:*\" -c",
     "fix:eslint": "eslint \"./\" --fix --max-warnings 0",
     "fix:pack": "fixpack",

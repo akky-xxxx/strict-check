@@ -15,7 +15,7 @@
     "lint:pack": "fixpack --dryRun",
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" !\"./modules/**/*\" !\"./packages/**/*\" -c -u",
     "postinstall": "run-s \"postinstall:*\"",
-    "postinstall:copy-shared": "node ./scripts/copy-shared/index.mjs",
+    "postinstall:copy-shared": "node ./scripts/copy-shared/index.js",
     "spell-check": "cspell lint --no-progress \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
     "ws-check-code": "yarn workspaces foreach -A -vpi run check-code",
     "ws-fix": "yarn workspaces foreach -A -vpi run fix",
