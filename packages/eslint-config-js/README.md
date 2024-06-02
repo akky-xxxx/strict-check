@@ -41,7 +41,7 @@ export default [
 ```javascript
 // .eslintrc.js
 module.exports = {
-  extends: ["sc-js"]
+  extends: ["sc-js/legacy"]
 }
 
 // Below is equal
