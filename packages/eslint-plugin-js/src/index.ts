@@ -3,7 +3,7 @@ import { ruleBase } from "./ruleBase"
 
 const PLUGIN_NAME = "js"
 const configsBase = convertBaseToConfigBase(ruleBase)
-const rules = configsBase.reduce(getRules(PLUGIN_NAME), {})
+const rules = configsBase.reduce(getRules, {})
 
 const plugin = {
   configs: {},
