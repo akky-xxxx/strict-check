@@ -5,8 +5,8 @@ import type { ConfigBase } from "../../../src/types/ConfigBase"
 describe("getRules", () => {
   it("実際に使う時の書き方", () => {
     const output = {
-      "sc-test/ruleName1": {},
-      "sc-test/ruleName2": {},
+      ruleName1: {},
+      ruleName2: {},
     }
     const configBase: ConfigBase[] = [
       [
@@ -23,7 +23,7 @@ describe("getRules", () => {
       ],
     ]
 
-    const result = configBase.reduce(getRules("test"), {})
+    const result = configBase.reduce(getRules, {})
     expect(result).toStrictEqual(output)
   })
 })

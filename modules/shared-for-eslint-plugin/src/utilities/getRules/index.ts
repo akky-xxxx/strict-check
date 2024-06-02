@@ -1,14 +1,10 @@
-import { SUFFIX } from "../../constants/SUFFIX"
+import type { ConfigBase } from "../../types/ConfigBase"
 
-import type { EsLintRuleBase } from "../../types/EsLintRuleBase"
-import type { GetRulesBase } from "../../types/GetRulesBase"
-import type { RuleName } from "../../types/RuleName"
-
-type GetRules = GetRulesBase<Record<RuleName, EsLintRuleBase>>
-export const getRules: GetRules = (pluginName) => (current, configBase) => {
+type GetRules = <T>(current: T, configBase: ConfigBase) => T
+export const getRules: GetRules = (current, configBase) => {
   const [ruleName, ruleFunction] = configBase
   return {
     ...current,
-    [`${SUFFIX}${pluginName}/${ruleName}`]: ruleFunction,
+    [ruleName]: ruleFunction,
   }
 }
