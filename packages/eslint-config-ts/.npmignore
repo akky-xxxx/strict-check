@@ -1,0 +1,9 @@
+.config/**
+dry-run
+node_modules/**
+spec/**
+src/**
+
+cspell.config.js
+eslint.config.mjs
+tsconfig.*
