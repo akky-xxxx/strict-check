@@ -18,6 +18,7 @@
     "postinstall:copy-shared": "node ./scripts/copy-shared/index.js",
     "spell-check": "cspell lint --no-progress \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
     "ws-check-code": "yarn workspaces foreach -A -vpi run check-code",
+    "ws-dev": "yarn workspaces foreach -A -vpi run dev",
     "ws-fix": "yarn workspaces foreach -A -vpi run fix",
     "ws-lint": "yarn workspaces foreach -A -vpi run lint",
     "ws-spell-check": "yarn workspaces foreach -A -vpi run spell-check",

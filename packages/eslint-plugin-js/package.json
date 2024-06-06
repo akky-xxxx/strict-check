@@ -10,6 +10,7 @@
     "build:3": "mv ./dist/src/* ./dist",
     "build:4": "rm -rf ./dist/src",
     "check-code": "run-p lint spell-check type-check test",
+    "dev": "chokidar \"./{src,spec}/**\" -c \"yarn type-check && yarn test\"",
     "fix": "run-p \"fix:*\" -c",
     "fix:eslint": "eslint \"./\" --fix --max-warnings 0",
     "fix:pack": "fixpack",

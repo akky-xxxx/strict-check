@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "check-code": "run-p lint spell-check type-check",
+    "dev": "chokidar \"src/**\" -c \"yarn type-check && yarn exports\"",
     "exports": "run-p \"exports:*\"",
     "exports:copy-shared": "node ../../scripts/copy-shared/index.js",
     "fix": "run-p \"fix:*\" -c",

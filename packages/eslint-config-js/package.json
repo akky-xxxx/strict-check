@@ -14,6 +14,7 @@
     "build:3": "mv ./dist/src/* ./dist",
     "build:4": "rm -rf ./dist/src",
     "check-code": "run-p lint spell-check type-check dry-run",
+    "dev": "chokidar \"./{src,dry-run}/**\" -c \"yarn type-check && yarn dry-run\"",
     "dry-run": "npm-run-all -s build -p \"dry-run:*\" -c",
     "dry-run:flat": "eslint -c dry-run/flat/eslint.config.mjs \"dry-run/flat/*.js\"",
     "dry-run:legacy": "ESLINT_USE_FLAT_CONFIG=false eslint -c dry-run/legacy/.eslintrc.js \"dry-run/legacy/*.js\"",
