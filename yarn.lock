@@ -3714,6 +3714,7 @@ __metadata:
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.2.5"
+    strict-check: "workspace:^"
     typescript: "npm:^5.4.5"
   languageName: unknown
   linkType: soft
@@ -3780,6 +3781,7 @@ __metadata:
     jest: "npm:^29.7.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.2.5"
+    strict-check: "workspace:^"
     typescript: "npm:^5.4.5"
     zod: "npm:^3.23.8"
   languageName: unknown
@@ -7480,7 +7482,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strict-check@:*, strict-check@workspace:.":
+"strict-check@:*, strict-check@workspace:., strict-check@workspace:^":
   version: 0.0.0-use.local
   resolution: "strict-check@workspace:."
   dependencies:
