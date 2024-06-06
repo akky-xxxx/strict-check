@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@swc/cli": "^0.3.12",
+    "chokidar-cli": "^3.0.0",
     "cspell": "^8.8.3",
     "editorconfig-checker": "^5.1.5",
     "eslint": "^8.57.0",
