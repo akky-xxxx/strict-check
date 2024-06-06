@@ -27,7 +27,6 @@
     "lint:pack": "fixpack --dryRun",
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -c -u",
     "prepare": "run-p \"prepare:*\"",
-    "prepare:copy-config": "node ../../scripts/copy-config/index.js",
     "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
     "spell-check": "cspell lint --no-progress \"./{spec,src}/**/*.ts\" \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
     "tagging": "node ../../scripts/tagging/index.mjs",
