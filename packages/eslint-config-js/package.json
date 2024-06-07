@@ -7,6 +7,7 @@
     ".": "./dist/index.js",
     "./legacy": "./dist/legacy/index.js"
   },
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "run-s \"build:*\"",
     "build:1": "rm -rf ./dist",
