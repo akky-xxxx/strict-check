@@ -28,6 +28,7 @@
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -c -u",
     "prepare": "run-p \"prepare:*\"",
     "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
+    "publish:dry-run": "npm pack --dry-run",
     "spell-check": "cspell lint --no-progress \"./{spec,src}/**/*.ts\" \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
     "tagging": "node ../../scripts/tagging/index.mjs",
     "type-check": "tsc"
