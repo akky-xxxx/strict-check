@@ -6,9 +6,7 @@
   "scripts": {
     "build": "run-s \"build:*\"",
     "build:1": "rm -rf ./dist",
-    "build:2": "swc \"./src\" -d \"./dist\"  --config-file ../../.swcrc",
-    "build:3": "mv ./dist/src/* ./dist",
-    "build:4": "rm -rf ./dist/src",
+    "build:2": "tsc -p tsconfig.build.json",
     "check-code": "run-p lint spell-check type-check test",
     "dev": "chokidar \"./{src,spec}/**\" -c \"yarn type-check && yarn test\"",
     "fix": "run-p \"fix:*\" -c",
