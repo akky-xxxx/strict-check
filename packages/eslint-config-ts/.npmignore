@@ -1,4 +1,3 @@
-.config/**
 dry-run
 node_modules/**
 spec/**
