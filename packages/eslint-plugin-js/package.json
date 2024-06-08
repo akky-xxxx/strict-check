@@ -1,6 +1,18 @@
 {
   "name": "eslint-plugin-sc-js",
   "version": "0.0.2",
+  "description": "Strict Check rules for eslint for javascript / typescript",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin",
+    "javascript",
+    "strict-check",
+    "typescript"
+  ],
+  "author": "akky-xxxx",
+  "repository": "https://github.com/akky-xxxx/strict-check",
+  "bugs": "https://github.com/akky-xxxx/strict-check/issues",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

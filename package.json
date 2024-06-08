@@ -1,7 +1,18 @@
 {
   "name": "strict-check",
   "version": "0.0.0",
+  "description": "This is the monorepo that management the package for static analysis.",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslint-plugin",
+    "eslintconfig",
+    "eslintplugin",
+    "strict-check"
+  ],
   "author": "akky-xxxx",
+  "repository": "https://github.com/akky-xxxx/strict-check",
+  "bugs": "https://github.com/akky-xxxx/strict-check/issues",
   "license": "MIT",
   "scripts": {
     "check-code": "run-p lint spell-check",
