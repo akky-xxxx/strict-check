@@ -3,13 +3,16 @@
     "name",
     "version",
     "description",
+    "keywords",
     "author",
     "repository",
+    "bugs",
     "homepage",
     "license",
     "engines",
     "main",
     "exports",
+    "types",
     "scripts",
     "dependencies",
     "devDependencies",
@@ -17,5 +20,16 @@
     "peerDependenciesMeta",
     "private",
     "workspaces"
+  ],
+  "required": [
+    "name",
+    "version"
+  ],
+  "warn": [
+    "author",
+    "description",
+    "keywords",
+    "repository",
+    "bugs"
   ]
 }
