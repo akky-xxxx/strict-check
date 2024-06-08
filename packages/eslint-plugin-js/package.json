@@ -27,7 +27,7 @@
     "fix:pack": "fixpack",
     "fix:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -w -u",
     "lint": "run-p \"lint:*\" -c",
-    "lint:editorconfig-checker": "ec -dry-run",
+    "lint:editorconfig-checker": "ec",
     "lint:eslint": "eslint \"./\" --max-warnings 0",
     "lint:pack": "fixpack --dryRun",
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -c -u",
