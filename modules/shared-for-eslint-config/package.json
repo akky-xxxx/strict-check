@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "check-code": "run-p lint spell-check type-check",
+    "dev": "chokidar \"src/**\" -c \"yarn type-check && yarn exports\"",
     "exports": "run-p \"exports:*\"",
     "exports:copy-shared": "node ../../scripts/copy-shared/index.js",
     "fix": "run-p \"fix:*\" -c",
@@ -10,7 +11,7 @@
     "fix:pack": "fixpack",
     "fix:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -w -u",
     "lint": "run-p \"lint:*\" -c",
-    "lint:editorconfig-checker": "ec -dry-run",
+    "lint:editorconfig-checker": "ec",
     "lint:eslint": "eslint \"./\" --max-warnings 0",
     "lint:pack": "fixpack --dryRun",
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -c -u",
@@ -21,14 +22,21 @@
     "@eslint/eslintrc": "^3.1.0"
   },
   "devDependencies": {
-    "cspell": "^8.8.3",
-    "editorconfig-checker": "^5.1.5",
+    "@eslint/js": "^9.4.0",
+    "@stylistic/eslint-plugin": "^2.1.0",
+    "@tsconfig/strictest": "^2.0.5",
+    "chokidar-cli": "^3.0.0",
+    "cspell": "^8.8.4",
+    "editorconfig-checker": "^5.1.8",
     "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^6.2.0",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.1",
     "strict-check": ":*",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.12.0"
   },
   "packageManager": "yarn@4.2.2"
 }

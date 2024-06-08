@@ -25,11 +25,5 @@
     "name",
     "version"
   ],
-  "warn": [
-    "author",
-    "description",
-    "keywords",
-    "repository",
-    "bugs"
-  ]
+  "warn": []
 }

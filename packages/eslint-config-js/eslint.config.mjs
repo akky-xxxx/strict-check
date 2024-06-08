@@ -1,15 +1,15 @@
-import { BASE_RECORDS } from "./.config/eslint/records/BASE_RECORDS/index.mjs"
-import { CONFIGS_RECORD } from "./.config/eslint/records/CONFIGS_RECORD/index.mjs"
-import { ESLINT_CONFIG_RECORD } from "./.config/eslint/records/ESLINT_CONFIG_RECORD/index.mjs"
-import { IGNORE_RECORD } from "./.config/eslint/records/IGNORE_RECORD/index.mjs"
-import { SCRIPTS_RECORD } from "./.config/eslint/records/SCRIPTS_RECORD/index.mjs"
-import { TEST_RECORD } from "./.config/eslint/records/TEST_RECORD/index.mjs"
-import { TYPESCRIPT_RECORDS } from "./.config/eslint/records/TYPESCRIPT_RECORDS/index.mjs"
+import { BASE_RECORDS } from "strict-check/config/eslint/records/BASE_RECORDS/index.mjs"
+import { CONFIGS_RECORD } from "strict-check/config/eslint/records/CONFIGS_RECORD/index.mjs"
+import { ESLINT_CONFIG_RECORD } from "strict-check/config/eslint/records/ESLINT_CONFIG_RECORD/index.mjs"
+import { IGNORE_RECORD } from "strict-check/config/eslint/records/IGNORE_RECORD/index.mjs"
+import { SCRIPTS_RECORD } from "strict-check/config/eslint/records/SCRIPTS_RECORD/index.mjs"
+import { TEST_RECORD } from "strict-check/config/eslint/records/TEST_RECORD/index.mjs"
+import { TYPESCRIPT_RECORDS } from "strict-check/config/eslint/records/TYPESCRIPT_RECORDS/index.mjs"
 
 const CONFIG = [
   IGNORE_RECORD,
   {
-    ignores: [".config/**", "dry-run/*", "src/libs/**"],
+    ignores: ["dry-run/*", "src/libs/**"],
   },
   ...BASE_RECORDS,
   ...TYPESCRIPT_RECORDS,

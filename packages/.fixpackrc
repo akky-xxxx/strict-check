@@ -23,7 +23,9 @@
   ],
   "required": [
     "name",
-    "version"
+    "version",
+    "license",
+    "main"
   ],
   "warn": [
     "author",
