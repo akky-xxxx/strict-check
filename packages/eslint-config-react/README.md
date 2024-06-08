@@ -25,7 +25,7 @@ import eslintConfigSCReact from "eslint-config-sc-react"
 export default [
   ...eslintConfigSCTs.configs.baseRecords1, // extends for javascript
   ...eslintConfigSCTs.configs.baseRecords2, // extends for typescript
-  ...eslintConfigSCReact.configs.baseRecords1, // exntends for react
+  ...eslintConfigSCReact.configs.baseRecords1, // extends for react
   ...eslintConfigSCReact.configs.baseRecords2, // extends for prettier
   ...eslintConfigSCReact.configs.customRecords, // custom config for react x javascript
   ...eslintConfigSCReact.configs.customRecordsWithTypescript, // custom config for react x typescript
