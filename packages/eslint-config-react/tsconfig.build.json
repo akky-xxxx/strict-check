@@ -1,0 +1,9 @@
+{
+  "extends": ["strict-check/config/tsconfig/tsconfig.build.json"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
