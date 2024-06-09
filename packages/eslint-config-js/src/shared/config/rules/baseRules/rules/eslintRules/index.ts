@@ -13,7 +13,6 @@ export const eslintRules = {
   "multiline-comment-style": SEVERITY.OFF,
   "no-magic-numbers": SEVERITY.WARN,
   "no-multi-spaces": SEVERITY.OFF, // check by stylistic
-  "no-undefined": SEVERITY.WARN, // TODO: off にする
   "no-unused-vars": SEVERITY.OFF, // check by tsc
   "no-use-before-define": SEVERITY.OFF, // check by typescript-eslint
   "object-curly-newline": SEVERITY.OFF, // check by stylistic
