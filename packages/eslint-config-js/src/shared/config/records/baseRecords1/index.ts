@@ -1,6 +1,7 @@
 import eslint from "@eslint/js"
 import stylistic from "@stylistic/eslint-plugin"
 
+import { ALL_EXTENSION_GLOB } from "../../../../libs/shared-for-config/constants/ALL_EXTENSION_GLOB"
 import { SEVERITY } from "../../../../libs/shared-for-config/constants/SEVERITY"
 import { getCompatExtends } from "../../../../libs/shared-for-config/utilities/getCompatExtends"
 
@@ -8,10 +9,7 @@ import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/
 
 export const baseRecords1 = [
   {
-    files: [
-      "**/*.{js,jsx,mjs,cjs}",
-      "**/*.{ts,tsx,mts,cts}",
-    ],
+    files: [`**/*.${ALL_EXTENSION_GLOB}`],
     linterOptions: {
       reportUnusedDisableDirectives: SEVERITY.ERROR,
     },
