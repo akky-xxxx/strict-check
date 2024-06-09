@@ -1,0 +1,7 @@
+{
+  "include": ["**/*.js", "**/*.ts"],
+  "compilerOptions": {
+    "rootDir": ".",
+    "strictNullChecks": true
+  }
+}
