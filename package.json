@@ -27,6 +27,7 @@
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" !\"./modules/**/*\" !\"./packages/**/*\" -c -u",
     "postinstall": "run-s \"postinstall:*\"",
     "postinstall:copy-shared": "node ./scripts/copy-shared/index.js",
+    "postinstall:dependence-build": "yarn workspaces foreach -A -ipt run build",
     "spell-check": "cspell lint --no-progress \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
     "ws-check-code": "yarn workspaces foreach -A -vpi run check-code",
     "ws-dev": "yarn workspaces foreach -A -vpi run dev",
