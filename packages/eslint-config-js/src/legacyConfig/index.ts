@@ -7,7 +7,6 @@ export const legacyConfig = {
     "eslint:recommended",
     "plugin:unicorn/recommended",
     "airbnb-base",
-    "prettier", // TODO: stylistic に委譲
   ],
   plugins: ["unicorn"],
   rules: {
