@@ -1,4 +1,5 @@
 /* eslint-disable no-console, react/prop-types */
+/* eslint-disable quotes, semi, object-curly-newline */
 // eslint-disable-next-line import/no-extraneous-dependencies
 import React, { Fragment } from "react"
 
