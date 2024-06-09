@@ -28,10 +28,6 @@ export default [
   // For react project, this replace to eslint-config-airbnb
   ...eslintConfigSCTs.configs.baseRecords3,
 
-  // This use eslint-config-prettier
-  // This will delete in the future
-  ...eslintConfigSCTs.configs.baseRecords4,
-
   // This is the scustom config of eslint-config-sc-ts
   ...eslintConfigSCTs.configs.customRecords1,
   ...eslintConfigSCTs.configs.customRecords2,
@@ -51,11 +47,11 @@ const eslintConfigSCTs = require("eslint-config-sc-ts")
 
 module.exports = {
   extends: [
+    "plugin:@stylistic/recommended-extends",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:unicorn/recommended",
     "airbnb-base",
-    "prettier"
   ],
   plugins: ["unicorn"],
   rules: {
