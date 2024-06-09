@@ -45,6 +45,7 @@ const eslintConfigSCJs = require("eslint-config-sc-js")
 
 module.exports = {
   extends: [
+    "plugin:@stylistic/recommended-extends",
     "eslint:recommended",
     "plugin:unicorn/recommended",
     "airbnb-base",
