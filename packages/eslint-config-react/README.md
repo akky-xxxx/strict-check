@@ -25,8 +25,7 @@ import eslintConfigSCReact from "eslint-config-sc-react"
 export default [
   ...eslintConfigSCTs.configs.baseRecords1, // extends for javascript
   ...eslintConfigSCTs.configs.baseRecords2, // extends for typescript
-  ...eslintConfigSCReact.configs.baseRecords1, // extends for react
-  ...eslintConfigSCReact.configs.baseRecords2, // extends for prettier
+  ...eslintConfigSCReact.configs.baseRecords, // extends for react
   ...eslintConfigSCReact.configs.customRecords, // custom config for react x javascript
   ...eslintConfigSCReact.configs.customRecordsWithTypescript, // custom config for react x typescript
 ]
@@ -37,8 +36,7 @@ import eslintConfigSCReact from "eslint-config-sc-react"
 
 export default [
   ...eslintConfigSCJs.configs.baseRecords1, // extends for javascript
-  ...eslintConfigSCReact.configs.baseRecords1, // exntends for react
-  ...eslintConfigSCReact.configs.baseRecords2, // extends for prettier
+  ...eslintConfigSCReact.configs.baseRecords, // exntends for react
   ...eslintConfigSCReact.configs.customRecords, // custom config for react
 ]
 ```
@@ -54,11 +52,7 @@ export default [
 
 // Below is equal
 export default [
-  ...eslintConfigSCReact.configs.baseRecords1,
-
-  // This use eslint-config-prettier
-  // This will delete in the future
-  ...eslintConfigSCReact.configs.baseRecords2,
+  ...eslintConfigSCReact.configs.baseRecords,
 
   // This is the custom config of eslint-config-sc-react
   ...eslintConfigSCReact.configs.customRecords,
