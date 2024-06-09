@@ -1,0 +1,94 @@
+name: eslint-config-storybook@CD
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches-ignore:
+      - '**'
+    tags:
+      - 'eslint-config-sc-storybook/v*'
+
+jobs:
+  check-publish:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-storybook
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ./.node-version
+
+      - name: Can publish
+        run: npx can-npm-publish --verbose
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+  pre-check:
+    needs: [check-publish]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-storybook
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ./.node-version
+
+      - run: corepack enable
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+
+      - name: Run prepare
+        run: yarn prepare
+
+      - name: Run lint
+        run: yarn lint
+
+      - name: Run spell-check
+        run: yarn spell-check
+
+      - name: Run type-check
+        run: yarn type-check
+
+      - name: Run dry run
+        run: yarn dry-run
+
+  publish:
+    needs: [check-publish, pre-check]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-storybook
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+
+      - run: corepack enable
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+
+      - name: Run prepare
+        run: yarn prepare
+
+      - name: Build
+        run: yarn build
+
+      - name: Publish
+        run: yarn npm publish
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
