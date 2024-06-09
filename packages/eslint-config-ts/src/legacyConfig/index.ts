@@ -9,7 +9,6 @@ export const legacyConfig = {
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:unicorn/recommended",
     "airbnb-base",
-    "prettier", // TODO: stylistic に委譲
   ],
   plugins: ["@typescript-eslint", "unicorn"],
   rules: {
