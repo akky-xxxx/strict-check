@@ -3892,7 +3892,6 @@ __metadata:
     editorconfig-checker: "npm:^5.1.8"
     eslint: "npm:^8.57.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
-    eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-import: "npm:^2.29.1"
     eslint-plugin-unicorn: "npm:^53.0.0"
     fixpack: "npm:^4.0.0"

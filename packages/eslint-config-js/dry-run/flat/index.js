@@ -1,4 +1,4 @@
-/* eslint-disable no-console, max-lines, no-magic-numbers, no-console */
+/* eslint-disable no-console, max-lines, no-magic-numbers */
 
 /**
  * @remarks
@@ -139,6 +139,7 @@ export const javascriptObjectTest = {
   one: "one",
 
   five: "five",
+  // eslint-disable-next-line @stylistic/quotes
   four: 'four',
   // eslint-disable-next-line no-undefined
   six: undefined,
