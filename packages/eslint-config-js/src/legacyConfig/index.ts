@@ -13,4 +13,6 @@ export const legacyConfig = {
   rules: {
     ...baseRules,
   },
+
+  reportUnusedDisableDirectives: true,
 } satisfies EslintLegacyConfig
