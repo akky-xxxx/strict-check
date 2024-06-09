@@ -1,6 +1,6 @@
 import { flatConfig } from "./flatConfig"
 import { legacyConfig } from "./legacyConfig"
-import { baseRecords1 } from "./shared/config/records/baseRecords1"
+import { baseRecords } from "./shared/config/records/baseRecords"
 import { customRecords } from "./shared/config/records/customRecords"
 import { customRecordsWithTypescript } from "./shared/config/records/customRecordsWithTypescript"
 
@@ -15,7 +15,7 @@ const plugin = {
     legacy: legacyConfig,
     recommended: flatConfig,
 
-    baseRecords1,
+    baseRecords,
 
     customRecords,
     customRecordsWithTypescript,
