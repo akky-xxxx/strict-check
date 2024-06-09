@@ -1,11 +1,10 @@
-import { operatorLinebreak } from "./options/operatorLinebreak"
+import { maxLength } from "./options/maxLength"
 import { SEVERITY } from "../../../../../../libs/shared-for-config/constants/SEVERITY"
 
 import type { EslintRules } from "../../../../../../libs/shared-for-config/types/EslintRules"
 
 export const stylisticRules = {
-  "@stylistic/implicit-arrow-linebreak": [SEVERITY.OFF],
-  "@stylistic/operator-linebreak": operatorLinebreak,
+  "@stylistic/brace-style": [SEVERITY.ERROR, "1tbs"],
+  "@stylistic/max-len": maxLength,
   "@stylistic/quotes": [SEVERITY.ERROR, "double", { avoidEscape: true }],
-  "@stylistic/semi": [SEVERITY.ERROR, "never"],
 } as const satisfies EslintRules
