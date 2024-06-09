@@ -48,9 +48,10 @@ module.exports = {
   extends: [
     "...", // other extends for product code
   ],
+  plugins: ["jest"],
   overrides: [
     ...[/* other overrides */],
-    ...eslintConfigSCJest.configs.legacyConfig.overrides,
+    ...eslintConfigSCJest.configs.legacy.overrides,
   ],
 }
 ```

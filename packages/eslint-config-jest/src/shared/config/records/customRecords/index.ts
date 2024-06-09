@@ -5,7 +5,7 @@ import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/
 
 export const customRecords = [
   {
-    files: FILES.JS,
+    files: FILES.BASE,
     rules: {
       ...baseRules,
     },

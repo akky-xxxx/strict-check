@@ -4,13 +4,15 @@ import type { EslintLegacyConfig } from "../libs/shared-for-config/types/EslintL
 
 export const legacyConfig = {
   extends: [
+    "plugin:@stylistic/recommended-extends",
     "eslint:recommended",
     "plugin:unicorn/recommended",
     "airbnb-base",
-    "prettier", // TODO: stylistic に委譲
   ],
   plugins: ["unicorn"],
   rules: {
     ...baseRules,
   },
+
+  reportUnusedDisableDirectives: true,
 } satisfies EslintLegacyConfig

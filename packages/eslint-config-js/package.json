@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sc-js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Strict Check config for eslint for javascript",
   "keywords": [
     "eslint",
@@ -26,8 +26,8 @@
     "check-code": "run-p lint spell-check type-check dry-run",
     "dev": "chokidar \"./{src,dry-run}/**\" -c \"yarn type-check && yarn dry-run\"",
     "dry-run": "npm-run-all -s build -p \"dry-run:*\" -c",
-    "dry-run:flat": "eslint -c dry-run/flat/eslint.config.mjs \"dry-run/flat/*.js\"",
-    "dry-run:legacy": "ESLINT_USE_FLAT_CONFIG=false eslint -c dry-run/legacy/.eslintrc.js \"dry-run/legacy/*.js\"",
+    "dry-run:flat": "eslint -c dry-run/flat/eslint.config.mjs \"dry-run/flat\" --max-warnings 0",
+    "dry-run:legacy": "ESLINT_USE_FLAT_CONFIG=false eslint -c dry-run/legacy/.eslintrc.js \"dry-run/legacy/**\" --max-warnings 0",
     "fix": "run-p \"fix:*\" -c",
     "fix:eslint": "eslint \"./\" --fix --max-warnings 0",
     "fix:pack": "fixpack",
@@ -47,13 +47,12 @@
   "dependencies": {
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.4.0",
+    "@stylistic/eslint-plugin": "^2.1.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-unicorn": "^53.0.0"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^2.1.0",
     "@tsconfig/strictest": "^2.0.5",
     "chokidar-cli": "^3.0.0",
     "cspell": "^8.8.4",

@@ -1,10 +1,4 @@
-/* eslint-disable no-console, max-lines, no-magic-numbers, no-console */
-
-/**
- * @remarks
- * for checking apply if eslint-plugin-react
- */
-
+/* eslint-disable no-console, max-lines, no-magic-numbers */
 // eslint-disable-next-line max-statements
 export const javascriptTest1 = () => {
   const state0 = Math.random()
@@ -128,6 +122,7 @@ export const javascriptTest2 = () => {
   if (Math.random() === Zero) return Zero
   if (Math.random() === Zero) return Zero
   if (Math.random() === Zero) return Zero
+
   return 1
 }
 
@@ -138,10 +133,11 @@ export const javascriptObjectTest = {
   one: "one",
 
   five: "five",
+  // eslint-disable-next-line @stylistic/quotes
   four: 'four',
-  // eslint-disable-next-line no-undefined
   six: undefined,
 }
+
 try {
   const random = Math.random()
   // eslint-disable-next-line unicorn/prevent-abbreviations, unicorn/catch-error-name
