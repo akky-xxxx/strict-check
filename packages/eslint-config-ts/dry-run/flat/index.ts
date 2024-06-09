@@ -143,7 +143,7 @@ export const javascriptObjectTest = {
   one: "one",
 
   five: "five",
-  four: 'four',
+  four: "four",
   // eslint-disable-next-line no-undefined
   six: undefined,
 }
