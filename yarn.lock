@@ -3879,7 +3879,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-sc-js@workspace:packages/eslint-config-js":
+"eslint-config-sc-js@npm:^0.0.4, eslint-config-sc-js@workspace:packages/eslint-config-js":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-js@workspace:packages/eslint-config-js"
   dependencies:
@@ -3972,7 +3972,7 @@ __metadata:
     eslint: "npm:^8.57.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
     eslint-config-prettier: "npm:^9.1.0"
-    eslint-config-sc-js: "npm:^0.0.2"
+    eslint-config-sc-js: "npm:^0.0.4"
     eslint-plugin-import: "npm:^2.29.1"
     eslint-plugin-unicorn: "npm:^53.0.0"
     fixpack: "npm:^4.0.0"
