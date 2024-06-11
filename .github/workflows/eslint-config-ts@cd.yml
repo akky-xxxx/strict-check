@@ -19,34 +19,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: ./.node-version
+      - name: check publish
+        uses: ./.github/actions/check-publish
 
-      - name: Can publish
-        run: npx can-npm-publish --verbose
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-
-  pre-check:
+  pre-check-lint:
     needs: [check-publish]
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/eslint-config-ts
+        working-directory: ./packages/eslint-config-jest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: ./.node-version
-
-      - run: corepack enable
-
-      - name: Install dependencies
-        run: yarn --frozen-lockfile
+      - name: setup
+        uses: ./.github/actions/common-setup
 
       - name: Run prepare
         run: yarn prepare
@@ -54,41 +40,71 @@ jobs:
       - name: Run lint
         run: yarn lint
 
+  pre-check-spell-check:
+    needs: [check-publish]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-jest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/actions/common-setup
+
+      - name: Run prepare
+        run: yarn prepare
+
       - name: Run spell-check
         run: yarn spell-check
 
+  pre-check-type-check:
+    needs: [check-publish]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-jest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/actions/common-setup
+
+      - name: Run prepare
+        run: yarn prepare
+
       - name: Run type-check
         run: yarn type-check
+
+  pre-check-dry-run:
+    needs: [check-publish]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-jest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/actions/common-setup
+
+      - name: Run prepare
+        run: yarn prepare
 
       - name: Run dry run
         run: yarn dry-run
 
   publish:
-    needs: [check-publish, pre-check]
+    needs: [check-publish, pre-check-lint, pre-check-spell-check, pre-check-type-check, pre-check-dry-run]
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/eslint-config-ts
+        working-directory: ./packages/eslint-config-jest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: .node-version
+      - name: setup
+        uses: ./.github/actions/common-setup
 
-      - run: corepack enable
-
-      - name: Install dependencies
-        run: yarn --frozen-lockfile
-
-      - name: Run prepare
-        run: yarn prepare
-
-      - name: Build
-        run: yarn build
-
-      - name: Publish
-        run: yarn npm publish
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      - name: publish
+        uses: ./.github/actions/publish
