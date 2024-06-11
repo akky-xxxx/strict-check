@@ -20,7 +20,7 @@ on:
       - 'yarn.lock'
 
 jobs:
-  check-code:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -33,6 +33,17 @@ jobs:
 
       - name: Run lint
         run: yarn lint
+
+  spell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/actions/common-setup
+
+      - name: Run post-install
+        run: yarn postinstall
 
       - name: Run spell-check
         run: yarn spell-check

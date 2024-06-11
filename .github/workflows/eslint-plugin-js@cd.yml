@@ -22,12 +22,12 @@ jobs:
       - name: check publish
         uses: ./.github/actions/check-publish
 
-  pre-check:
+  pre-check-lint:
     needs: [check-publish]
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/eslint-plugin-js
+        working-directory: ./packages/eslint-config-jest
     steps:
       - uses: actions/checkout@v4
 
@@ -40,21 +40,66 @@ jobs:
       - name: Run lint
         run: yarn lint
 
+  pre-check-spell-check:
+    needs: [check-publish]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-jest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/actions/common-setup
+
+      - name: Run prepare
+        run: yarn prepare
+
       - name: Run spell-check
         run: yarn spell-check
+
+  pre-check-type-check:
+    needs: [check-publish]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-jest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/actions/common-setup
+
+      - name: Run prepare
+        run: yarn prepare
 
       - name: Run type-check
         run: yarn type-check
 
-      - name: Run test
-        run: yarn test
-
-  publish:
-    needs: [check-publish, pre-check]
+  pre-check-dry-run:
+    needs: [check-publish]
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/eslint-plugin-js
+        working-directory: ./packages/eslint-config-jest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/actions/common-setup
+
+      - name: Run prepare
+        run: yarn prepare
+
+      - name: Run dry run
+        run: yarn dry-run
+
+  publish:
+    needs: [check-publish, pre-check-lint, pre-check-spell-check, pre-check-type-check, pre-check-dry-run]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-jest
     steps:
       - uses: actions/checkout@v4
 
