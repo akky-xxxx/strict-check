@@ -19,15 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: ./.node-version
-
-      - name: Can publish
-        run: npx can-npm-publish --verbose
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      - name: check publish
+        uses: ./.github/actions/check-publish
 
   pre-check:
     needs: [check-publish]
@@ -38,15 +31,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: ./.node-version
-
-      - run: corepack enable
-
-      - name: Install dependencies
-        run: yarn --frozen-lockfile
+      - name: setup
+        uses: ./.github/actions/common-setup
 
       - name: Run prepare
         run: yarn prepare
@@ -72,23 +58,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: .node-version
+      - name: setup
+        uses: ./.github/actions/common-setup
 
-      - run: corepack enable
-
-      - name: Install dependencies
-        run: yarn --frozen-lockfile
-
-      - name: Run prepare
-        run: yarn prepare
-
-      - name: Build
-        run: yarn build
-
-      - name: Publish
-        run: yarn npm publish
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      - name: publish
+        uses: ./.github/actions/publish

@@ -1,0 +1,12 @@
+runs:
+  using: composite
+  steps:
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: ./.node-version
+
+    - name: Can publish
+      run: npx can-npm-publish --verbose
+      env:
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
