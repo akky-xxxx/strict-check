@@ -54,6 +54,7 @@
     "prettier": "^3.3.1"
   },
   "workspaces": [
+    "dry-run/*",
     "modules/*",
     "packages/*"
   ],
