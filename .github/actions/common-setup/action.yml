@@ -5,7 +5,6 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version-file: ./.node-version
-      shell: bash
 
     - run: corepack enable
       shell: bash
