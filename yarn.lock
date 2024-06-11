@@ -3866,7 +3866,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-js@npm:^0.0.4, eslint-config-sc-js@workspace:packages/eslint-config-js":
+"eslint-config-sc-js@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "eslint-config-sc-js@npm:0.0.4"
+  dependencies:
+    "@eslint/eslintrc": "npm:^3.1.0"
+    "@eslint/js": "npm:^9.4.0"
+    "@stylistic/eslint-plugin": "npm:^2.1.0"
+    eslint-config-airbnb-base: "npm:^15.0.0"
+    eslint-plugin-import: "npm:^2.29.1"
+    eslint-plugin-unicorn: "npm:^53.0.0"
+  checksum: 10c0/ae2ffcb11b03a32ec75ac476eeef2441a0de1d903a9db6d34b412b96315ff74cee38c9955e0b04ae7ec9501738e67e4805e36c63dc3955bc31864709472489d4
+  languageName: node
+  linkType: hard
+
+"eslint-config-sc-js@workspace:packages/eslint-config-js":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-js@workspace:packages/eslint-config-js"
   dependencies:
