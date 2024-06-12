@@ -1,5 +1,20 @@
 {
   "name": "dr-eslint-config-sc-ts",
+  "scripts": {
+    "check-code": "run-p lint dry-run",
+    "dry-run": "run-p \"dry-run:*\" -c",
+    "dry-run:flat": "eslint -c tests/eslint.config.mjs tests/flat --max-warnings 0",
+    "dry-run:legacy": "ESLINT_USE_FLAT_CONFIG=false eslint -c tests/.eslintrc.js tests/legacy --max-warnings 0",
+    "fix": "run-p \"fix:*\" -c",
+    "fix:pack": "fixpack",
+    "fix:prettier": "prettier tests !\"./modules/{flat,legacy}/*\" -w -u",
+    "lint": "run-p \"lint:*\" -c",
+    "lint:pack": "fixpack --dryRun",
+    "lint:prettier": "prettier tests !\"./modules/{flat,legacy}/*\" -c -u",
+    "prepare": "run-p \"prepare:*\"",
+    "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
+    "prepare:dependence-build": "yarn workspaces foreach -R -ipt run build"
+  },
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-sc-ts": "workspace:^",
