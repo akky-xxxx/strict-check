@@ -3561,6 +3561,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"dr-eslint-config-sc-ts@workspace:dry-run/dr-eslint-config-sc-ts":
+  version: 0.0.0-use.local
+  resolution: "dr-eslint-config-sc-ts@workspace:dry-run/dr-eslint-config-sc-ts"
+  dependencies:
+    eslint: "npm:^8.57.0"
+    eslint-config-sc-ts: "workspace:^"
+    fixpack: "npm:^4.0.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.3.2"
+  languageName: unknown
+  linkType: soft
+
 "eastasianwidth@npm:^0.2.0":
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
@@ -3965,7 +3977,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-ts@workspace:packages/eslint-config-ts":
+"eslint-config-sc-ts@workspace:^, eslint-config-sc-ts@workspace:packages/eslint-config-ts":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-ts@workspace:packages/eslint-config-ts"
   dependencies:
