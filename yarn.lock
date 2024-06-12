@@ -3549,6 +3549,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dr-eslint-config-sc-jest@workspace:dry-run/dr-eslint-config-sc-jest":
+  version: 0.0.0-use.local
+  resolution: "dr-eslint-config-sc-jest@workspace:dry-run/dr-eslint-config-sc-jest"
+  dependencies:
+    eslint: "npm:^8.57.0"
+    eslint-config-sc-jest: "workspace:^"
+    eslint-config-sc-js: "workspace:^"
+    eslint-config-sc-ts: "workspace:^"
+    fixpack: "npm:^4.0.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.3.2"
+  languageName: unknown
+  linkType: soft
+
 "dr-eslint-config-sc-js@workspace:dry-run/dr-eslint-config-sc-js":
   version: 0.0.0-use.local
   resolution: "dr-eslint-config-sc-js@workspace:dry-run/dr-eslint-config-sc-js"
@@ -3867,7 +3881,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-sc-jest@workspace:packages/eslint-config-jest":
+"eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-jest@workspace:packages/eslint-config-jest"
   dependencies:
