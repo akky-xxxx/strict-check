@@ -3652,6 +3652,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"dr-eslint-config-sc-storybook@workspace:dry-run/dr-eslint-config-sc-storybook":
+  version: 0.0.0-use.local
+  resolution: "dr-eslint-config-sc-storybook@workspace:dry-run/dr-eslint-config-sc-storybook"
+  dependencies:
+    "@typescript-eslint/parser": "npm:^7.13.0"
+    eslint: "npm:^8.57.0"
+    eslint-config-sc-js: "workspace:^"
+    eslint-config-sc-react: "workspace:^"
+    eslint-config-sc-storybook: "workspace:^"
+    eslint-config-sc-ts: "workspace:^"
+    fixpack: "npm:^4.0.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.3.2"
+  languageName: unknown
+  linkType: soft
+
 "dr-eslint-config-sc-ts@workspace:dry-run/dr-eslint-config-sc-ts":
   version: 0.0.0-use.local
   resolution: "dr-eslint-config-sc-ts@workspace:dry-run/dr-eslint-config-sc-ts"
@@ -4045,7 +4061,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-storybook@workspace:packages/eslint-config-storybook":
+"eslint-config-sc-storybook@workspace:^, eslint-config-sc-storybook@workspace:packages/eslint-config-storybook":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-storybook@workspace:packages/eslint-config-storybook"
   dependencies:
