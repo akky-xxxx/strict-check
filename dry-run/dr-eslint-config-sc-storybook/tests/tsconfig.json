@@ -1,0 +1,7 @@
+{
+  "include": ["**/*.tsx"],
+  "compilerOptions": {
+    "rootDir": "./",
+    "strictNullChecks": true
+  }
+}
