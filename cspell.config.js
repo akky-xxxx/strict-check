@@ -1,6 +1,6 @@
 module.exports = {
   version: "0.2",
 
-  ignorePaths: ["node_modules/**", "packages/**"],
+  ignorePaths: ["dry-run/**", "modules/**", "node_modules/**", "packages/**"],
   language: "en",
 }
