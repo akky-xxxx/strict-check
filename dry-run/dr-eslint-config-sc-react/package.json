@@ -1,4 +1,12 @@
 {
   "name": "dr-eslint-config-sc-react",
+  "devDependencies": {
+    "@typescript-eslint/parser": "^7.13.0",
+    "eslint": "^8.57.0",
+    "eslint-config-sc-react": "workspace:^",
+    "fixpack": "^4.0.0",
+    "npm-run-all2": "^6.2.0",
+    "prettier": "^3.3.2"
+  },
   "packageManager": "yarn@4.2.2"
 }
