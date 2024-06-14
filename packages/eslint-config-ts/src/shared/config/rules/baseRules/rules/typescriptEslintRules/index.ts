@@ -26,7 +26,6 @@ export const typescriptEslintRules = {
   noConfusingVoidExpression,
   "@typescript-eslint/no-empty-function": SEVERITY.ERROR,
   "@typescript-eslint/no-empty-interface": SEVERITY.WARN,
-  "@typescript-eslint/no-floating-promises": SEVERITY.WARN, // TODO: off にする
   "@typescript-eslint/no-inferrable-types": SEVERITY.WARN,
   "@typescript-eslint/no-magic-numbers": SEVERITY.WARN,
   "@typescript-eslint/no-misused-promises": SEVERITY.WARN,
@@ -36,6 +35,7 @@ export const typescriptEslintRules = {
   noUnnecessaryBooleanLiteralCompare,
   "@typescript-eslint/no-unnecessary-condition": noUnnecessaryCondition,
   "@typescript-eslint/no-unnecessary-type-arguments": SEVERITY.WARN,
+  "@typescript-eslint/no-unused-vars": SEVERITY.ERROR,
   "@typescript-eslint/no-use-before-define": SEVERITY.ERROR,
   "@typescript-eslint/prefer-namespace-keyword": SEVERITY.ERROR,
   "@typescript-eslint/prefer-string-starts-ends-with": SEVERITY.WARN,
