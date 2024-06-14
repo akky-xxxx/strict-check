@@ -1,5 +1,4 @@
-/* eslint-disable no-magic-numbers, no-console, max-lines */
-// TODO: no-unused-vars を効かせる
+/* eslint-disable no-magic-numbers, no-console, max-lines, no-unused-vars */
 // eslint-disable-next-line complexity
 const function1 = () => {
   const random = Math.ceil(Math.random() * 10)
@@ -112,3 +111,17 @@ try {
 
 // eslint-disable-next-line unicorn/prefer-string-starts-ends-with
 const result = /^bar/.test("test")
+
+const function5 = () => {
+  // allow list of unicorn/prevent-abbreviations
+  const props = 1
+  const Props = 1
+  const req = 1
+  const Req = 1
+  const res = 1
+  const Res = 1
+  const ref = 1
+  const Ref = 1
+  const env = 1
+  const Env = 1
+}
