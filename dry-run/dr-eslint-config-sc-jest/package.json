@@ -3,7 +3,10 @@
   "scripts": {
     "check-code": "run-p lint dry-run",
     "dry-run": "run-p \"dry-run:*\" -c",
-    "dry-run:flat": "eslint -c tests/eslint.config.mjs tests/flat --max-warnings 0",
+    "dry-run:flat-js": "eslint -c tests/eslint.config.js.mjs \"tests/flat/*.js\" --max-warnings 0",
+    "dry-run:flat-ts": "eslint -c tests/eslint.config.ts.mjs \"tests/flat/*.ts\" --max-warnings 0",
+    "dry-run:legacy-js": "ESLINT_USE_FLAT_CONFIG=false eslint -c tests/.eslintrc.js.js \"tests/legacy/*.js\" --max-warnings 0",
+    "dry-run:legacy-ts": "ESLINT_USE_FLAT_CONFIG=false eslint -c tests/.eslintrc.ts.js \"tests/legacy/*.ts\" --max-warnings 0",
     "fix": "run-p \"fix:*\" -c",
     "fix:pack": "fixpack",
     "fix:prettier": "prettier tests !\"./modules/{flat,legacy}/*\" -w -u",
