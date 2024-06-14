@@ -1,7 +1,3 @@
-// TODO: legacy がそもそも使えない
-// TODO: @typescript-eslint/no-magic-numbers が off になってない
-/* eslint-disable @typescript-eslint/no-magic-numbers */
-
 // eslint-disable-next-line jest/consistent-test-it
 test("test1", () => {
   expect(1).toBe(1)

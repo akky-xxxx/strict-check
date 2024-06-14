@@ -1,5 +1,4 @@
 import eslintConfigSCJest from "eslint-config-sc-jest"
-import eslintConfigSCJs from "eslint-config-sc-js"
 import eslintConfigSCTs from "eslint-config-sc-ts"
 
 export default [
@@ -16,13 +15,5 @@ export default [
   },
   {
     files: ["**/*.ts"],
-  },
-
-  ...eslintConfigSCJest.configs.baseRecords,
-  ...eslintConfigSCJest.configs.customRecords,
-  ...eslintConfigSCJs.configs.recommended,
-  ...eslintConfigSCJest.configs.eslintOverrideRecords,
-  {
-    files: ["**/*.js"],
   },
 ]
