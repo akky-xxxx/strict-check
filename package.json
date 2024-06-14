@@ -19,23 +19,23 @@
     "fix": "run-p \"fix:*\" -c",
     "fix:eslint": "eslint \"./\" --fix --max-warnings 0",
     "fix:pack": "fixpack",
-    "fix:prettier": "prettier \"./*.json\" \"./**/*.json\" !\"./modules/**/*\" !\"./packages/**/*\" -w -u",
+    "fix:prettier": "prettier \"./*.json\" \"./**/*.json\" !\"./dry-run/**/*\" !\"./modules/**/*\" !\"./packages/**/*\" -w -u",
     "lint": "run-p \"lint:*\" -c",
     "lint:editorconfig-checker": "ec",
     "lint:eslint": "eslint \"./\" --max-warnings 0",
     "lint:pack": "fixpack --dryRun",
-    "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" !\"./modules/**/*\" !\"./packages/**/*\" -c -u",
+    "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" !\"./dry-run/**/*\" !\"./modules/**/*\" !\"./packages/**/*\" -c -u",
     "postinstall": "run-s \"postinstall:*\"",
     "postinstall:copy-shared": "node ./scripts/copy-shared/index.js",
     "postinstall:dependence-build": "yarn workspaces foreach -A -ipt run build",
     "spell-check": "cspell lint --no-progress \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
-    "ws-check-code": "yarn workspaces foreach -A -vpi run check-code",
-    "ws-dev": "yarn workspaces foreach -A -vpi run dev",
-    "ws-fix": "yarn workspaces foreach -A -vpi run fix",
-    "ws-lint": "yarn workspaces foreach -A -vpi run lint",
-    "ws-spell-check": "yarn workspaces foreach -A -vpi run spell-check",
-    "ws-test": "yarn workspaces foreach -A -vpi run test",
-    "ws-type-check": "yarn workspaces foreach -A -vpi run type-check"
+    "ws-check-code": "yarn workspaces foreach -A -vi run check-code",
+    "ws-dev": "yarn workspaces foreach -A -vi run dev",
+    "ws-fix": "yarn workspaces foreach -A -vi run fix",
+    "ws-lint": "yarn workspaces foreach -A -vi run lint",
+    "ws-spell-check": "yarn workspaces foreach -A -vi run spell-check",
+    "ws-test": "yarn workspaces foreach -A -vi run test",
+    "ws-type-check": "yarn workspaces foreach -A -vi run type-check"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
@@ -54,6 +54,7 @@
     "prettier": "^3.3.1"
   },
   "workspaces": [
+    "dry-run/*",
     "modules/*",
     "packages/*"
   ],

@@ -4,6 +4,9 @@ import { ESLINT_CONFIG_RECORD } from "./config/eslint/records/ESLINT_CONFIG_RECO
 import { SCRIPTS_RECORD } from "./config/eslint/records/SCRIPTS_RECORD/index.mjs"
 
 const CONFIG = [
+  {
+    ignores: ["**/{dry-run,modules,packages}/**"],
+  },
   ...BASE_RECORDS,
   SCRIPTS_RECORD,
   CONFIGS_RECORD,
