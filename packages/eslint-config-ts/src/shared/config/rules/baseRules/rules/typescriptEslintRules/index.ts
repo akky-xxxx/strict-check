@@ -26,7 +26,6 @@ export const typescriptEslintRules = {
   noConfusingVoidExpression,
   "@typescript-eslint/no-empty-function": SEVERITY.ERROR,
   "@typescript-eslint/no-empty-interface": SEVERITY.WARN,
-  "@typescript-eslint/no-floating-promises": SEVERITY.WARN, // TODO: off にする
   "@typescript-eslint/no-inferrable-types": SEVERITY.WARN,
   "@typescript-eslint/no-magic-numbers": SEVERITY.WARN,
   "@typescript-eslint/no-misused-promises": SEVERITY.WARN,
