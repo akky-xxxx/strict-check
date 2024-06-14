@@ -12,6 +12,7 @@ on:
     paths:
       - '.node-version'
       - 'config/**'
+      - 'dry-run/dr-eslint-plugin-sc-js/**'
       - 'modules/shared-for-eslint-plugin/**'
       - 'packages/eslint-plugin-js/**'
       - 'prettier.config.js'
