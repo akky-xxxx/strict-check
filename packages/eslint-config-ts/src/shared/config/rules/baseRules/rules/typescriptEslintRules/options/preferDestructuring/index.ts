@@ -2,7 +2,17 @@ import { SEVERITY } from "../../../../../../../../libs/shared-for-config/constan
 
 import type { EslintRuleLevelAndOptions } from "../../../../../../../../libs/shared-for-config/types/EslintRuleLevelAndOptions"
 
-export const arrayType = [
+export const preferDestructuring = [
   SEVERITY.ERROR,
-  { default: "array-simple" },
+  {
+    AssignmentExpression: {
+      array: true,
+      object: false,
+    },
+    VariableDeclarator: {
+      array: false,
+      object: true,
+    },
+  },
+  { enforceForRenamedProperties: false },
 ] as const satisfies EslintRuleLevelAndOptions

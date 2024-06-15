@@ -2,7 +2,7 @@ import { SEVERITY } from "../../../../../../../../libs/shared-for-config/constan
 
 import type { EslintRuleLevelAndOptions } from "../../../../../../../../libs/shared-for-config/types/EslintRuleLevelAndOptions"
 
-export const arrayType = [
+export const requireArraySortCompare = [
   SEVERITY.ERROR,
-  { default: "array-simple" },
+  { ignoreStringArrays: true },
 ] as const satisfies EslintRuleLevelAndOptions
