@@ -42,8 +42,11 @@ export default [
   ...eslintConfigSCTs.configs.baseRecords1,
   ...eslintConfigSCReact.configs.baseRecords1,
   ...eslintConfigSCReact.configs.baseRecords2,
+
+  ...eslintConfigSCTs.configs.customRecords,
   ...eslintConfigSCReact.configs.customRecords,
   ...eslintConfigSCReact.configs.customRecordsWithTypescript, // This is the custom config for typescript of eslint-config-sc-react
+
   ...eslintConfigSCReact.configs.resetRecordsForStylistic,
 ]
 ```
@@ -88,7 +91,8 @@ module.exports = {
   extends: [
     "plugin:@stylistic/recommended-extends",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:unicorn/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react/recommended",
@@ -96,10 +100,10 @@ module.exports = {
     "airbnb/hooks",
   ],
   rules: {
+    ...eslintConfigSCTs.configs.customRecords[1].rules,
     ...eslintConfigSCReact.configs.customRecords[0].rules,
     ...eslintConfigSCReact.configs.customRecords[1].rules,
     ...eslintConfigSCReact.configs.customRecordsWithTypescript[0].rules,  // This is the custom config for typescript of eslint-config-sc-react
-    ...eslintConfigSCTs.configs.customRecords[0].rules,
     ...eslintConfigSCReact.configs.resetRecordsForStylistic[0].rules,
   },
 }
