@@ -7,5 +7,7 @@ import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/
 export const baseRecords1 = [
   ...eslintConfigSCJs.configs.baseRecords1,
   // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
-  ...(typescriptEslint.configs.recommendedTypeChecked as EslintFlatConfig[]),
+  ...(typescriptEslint.configs.strictTypeChecked as EslintFlatConfig[]),
+  // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
+  ...(typescriptEslint.configs.stylisticTypeChecked as EslintFlatConfig[]),
 ] as const satisfies EslintFlatConfig[]
