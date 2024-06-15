@@ -10,8 +10,12 @@
     "typescript"
   ],
   "author": "akky-xxxx",
-  "repository": "https://github.com/akky-xxxx/strict-check",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akky-xxxx/strict-check"
+  },
   "bugs": "https://github.com/akky-xxxx/strict-check/issues",
+  "homepage": "https://github.com/akky-xxxx/strict-check",
   "license": "MIT",
   "main": "dist/index.js",
   "exports": {
