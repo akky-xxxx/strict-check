@@ -22,11 +22,10 @@ export default [
 // Below is equal
 export default [
   ...eslintConfigSCTs.configs.baseRecords1,
-  ...eslintConfigSCTs.configs.baseRecords2,
 
   // This use eslint-config-airbnb-base
   // For react project, this replace to eslint-config-airbnb
-  ...eslintConfigSCTs.configs.baseRecords3,
+  ...eslintConfigSCTs.configs.baseRecords2,
 
   // This is the custom config of eslint-config-sc-ts
   ...eslintConfigSCTs.configs.customRecords,
