@@ -107,7 +107,6 @@ module.exports = {
 ## Used config, plugin ( alphabetical )
 ### config
 - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
-- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
 
 ### plugin
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
