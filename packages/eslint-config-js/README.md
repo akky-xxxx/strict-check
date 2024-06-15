@@ -27,10 +27,10 @@ export default [
   // For react project, this replace to eslint-config-airbnb
   ...eslintConfigSCJs.configs.baseRecords2,
 
-  // This is the scustom config of eslint-config-sc-js
+  // This is the custom config of eslint-config-sc-js
   ...eslintConfigSCJs.configs.customRecords,
 
-  // This is the scustom config of eslint-config-sc-js
+  // This is the custom config of eslint-config-sc-js
   ...eslintConfigSCJs.configs.resetRecordsForStylistic,
 ]
 ```
