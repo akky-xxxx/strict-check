@@ -30,7 +30,7 @@ export default [
 
   // This is the scustom config of eslint-config-sc-ts
   ...eslintConfigSCTs.configs.customRecords,
-  ...eslintConfigSCTs.configs.customRecords2,
+  ...eslintConfigSCTs.configs.resetRecordsForStylistic,
 ]
 ```
 
@@ -56,6 +56,7 @@ module.exports = {
   plugins: ["unicorn"],
   rules: {
     ...eslintConfigSCTs.configs.customRecords[0].rules,
+    ...eslintConfigSCTs.configs.resetRecordsForStylistic[0].rules,
   },
 }
 ```
