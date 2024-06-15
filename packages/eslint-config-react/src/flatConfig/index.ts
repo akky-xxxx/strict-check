@@ -1,4 +1,4 @@
-import { baseRecords } from "../shared/config/records/baseRecords"
+import { baseRecords2 } from "../shared/config/records/baseRecords2"
 import { customRecords } from "../shared/config/records/customRecords"
 import { customRecordsWithTypescript } from "../shared/config/records/customRecordsWithTypescript"
 import { resetRecordsForStylistic } from "../shared/config/records/resetRecordsForStylistic"
@@ -6,7 +6,7 @@ import { resetRecordsForStylistic } from "../shared/config/records/resetRecordsF
 import type { EslintFlatConfig } from "../libs/shared-for-config/types/EslintFlatConfig"
 
 export const flatConfig = [
-  ...baseRecords,
+  ...baseRecords2,
   ...customRecords,
   ...customRecordsWithTypescript,
   ...resetRecordsForStylistic,
