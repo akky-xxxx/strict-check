@@ -40,6 +40,7 @@ import eslintConfigSCReact from "eslint-config-sc-react"
 
 export default [
   ...eslintConfigSCTs.configs.baseRecords1,
+  ...eslintConfigSCReact.configs.baseRecords1,
   ...eslintConfigSCReact.configs.baseRecords2,
   ...eslintConfigSCReact.configs.customRecords,
   ...eslintConfigSCReact.configs.customRecordsWithTypescript, // This is the custom config for typescript of eslint-config-sc-react
