@@ -2,7 +2,6 @@ import { flatConfig } from "./flatConfig"
 import { legacyConfig } from "./legacyConfig"
 import { baseRecords1 } from "./shared/config/records/baseRecords1"
 import { baseRecords2 } from "./shared/config/records/baseRecords2"
-import { baseRecords3 } from "./shared/config/records/baseRecords3"
 import { customRecords } from "./shared/config/records/customRecords"
 import { resetRecordsForStylistic } from "./shared/config/records/resetRecordsForStylistic"
 
@@ -19,7 +18,6 @@ const plugin = {
 
     baseRecords1,
     baseRecords2,
-    baseRecords3,
 
     customRecords,
     resetRecordsForStylistic,
