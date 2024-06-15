@@ -153,3 +153,10 @@ export type TestArray = Array<string>
 export type TestObject = {
   [K: string]: string
 }
+
+const function7 = (props: unknown) => {
+  // eslint-disable-next-line camelcase, @typescript-eslint/no-shadow, unicorn/consistent-function-scoping
+  const function7_2 = (props: unknown) => {
+    console.log(props)
+  }
+}
