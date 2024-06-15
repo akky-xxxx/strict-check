@@ -1,0 +1,36 @@
+name: local-root@CI
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+    branches:
+      - local/**
+    paths:
+      - '.node-version'
+      - 'config/**'
+      - 'cspell.config.js'
+      - 'eslint.config.mjs'
+      - 'packages/eslint-plugin-js/**'
+      - 'prettier.config.js'
+      - 'scripts/**'
+      - 'yarn.lock'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/actions/common-setup
+
+      - name: Run post-install
+        run: yarn postinstall
+
+      - name: Run lint
+        run: yarn lint
+
+      - name: Run spell-check
+        run: yarn spell-check

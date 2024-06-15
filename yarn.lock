@@ -3519,6 +3519,9 @@ __metadata:
     "@typescript-eslint/parser": "npm:^7.13.0"
     eslint: "npm:^8.57.0"
     eslint-config-sc-react: "workspace:^"
+    eslint-plugin-jsx-a11y: "npm:^6.8.0"
+    eslint-plugin-react: "npm:^7.34.2"
+    eslint-plugin-react-hooks: "npm:^4.6.2"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.3.2"
@@ -3848,17 +3851,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^9.1.0":
-  version: 9.1.0
-  resolution: "eslint-config-prettier@npm:9.1.0"
-  peerDependencies:
-    eslint: ">=7.0.0"
-  bin:
-    eslint-config-prettier: bin/cli.js
-  checksum: 10c0/6d332694b36bc9ac6fdb18d3ca2f6ac42afa2ad61f0493e89226950a7091e38981b66bac2b47ba39d15b73fff2cd32c78b850a9cf9eed9ca9a96bfb2f3a2f10d
-  languageName: node
-  linkType: hard
-
 "eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-jest@workspace:packages/eslint-config-jest"
@@ -3895,7 +3887,6 @@ __metadata:
     editorconfig-checker: "npm:^5.1.8"
     eslint: "npm:^8.57.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
-    eslint-plugin-import: "npm:^2.29.1"
     eslint-plugin-unicorn: "npm:^53.0.0"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.0"
@@ -3920,10 +3911,6 @@ __metadata:
     eslint: "npm:^8.57.0"
     eslint-config-airbnb: "npm:^19.0.4"
     eslint-config-sc-js: "npm:^0.0.4"
-    eslint-plugin-import: "npm:^2.29.1"
-    eslint-plugin-jsx-a11y: "npm:^6.8.0"
-    eslint-plugin-react: "npm:^7.34.2"
-    eslint-plugin-react-hooks: "npm:^4.6.2"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.2.5"
@@ -3968,11 +3955,7 @@ __metadata:
     cspell: "npm:^8.8.3"
     editorconfig-checker: "npm:^5.1.5"
     eslint: "npm:^8.57.0"
-    eslint-config-airbnb-base: "npm:^15.0.0"
-    eslint-config-prettier: "npm:^9.1.0"
     eslint-config-sc-js: "npm:^0.0.4"
-    eslint-plugin-import: "npm:^2.29.1"
-    eslint-plugin-unicorn: "npm:^53.0.0"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.2.5"

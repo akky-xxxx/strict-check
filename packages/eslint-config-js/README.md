@@ -27,10 +27,10 @@ export default [
   // For react project, this replace to eslint-config-airbnb
   ...eslintConfigSCJs.configs.baseRecords2,
 
-  // This is the scustom config of eslint-config-sc-js
+  // This is the custom config of eslint-config-sc-js
   ...eslintConfigSCJs.configs.customRecords,
 
-  // This is the scustom config of eslint-config-sc-js
+  // This is the custom config of eslint-config-sc-js
   ...eslintConfigSCJs.configs.resetRecordsForStylistic,
 ]
 ```
@@ -64,9 +64,9 @@ module.exports = {
 ## Used config, plugin ( alphabetical )
 ### config
 - [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)
-- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
 
 ### plugin
+- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin)
 - [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn)
 
 ## Recommended, but not includes

@@ -64,12 +64,10 @@ module.exports = {
 
 ## Used config, plugin ( alphabetical )
 ### config
-- [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)
-- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
 - [eslint-config-sc-js](https://www.npmjs.com/package/eslint-config-sc-js)
 
 ### plugin
-- [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn)
+- [typescript-eslint](https://www.npmjs.com/package/typescript-eslint)
 
 ## Recommended, but not includes
 ### plugin

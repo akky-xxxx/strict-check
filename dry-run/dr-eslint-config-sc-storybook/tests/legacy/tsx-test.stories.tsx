@@ -1,4 +1,3 @@
-/* eslint-disable semi */
 const Component = () => 1
 
 const meta = {

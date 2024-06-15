@@ -40,6 +40,7 @@ import eslintConfigSCReact from "eslint-config-sc-react"
 
 export default [
   ...eslintConfigSCTs.configs.baseRecords1,
+  ...eslintConfigSCReact.configs.baseRecords1,
   ...eslintConfigSCReact.configs.baseRecords2,
   ...eslintConfigSCReact.configs.customRecords,
   ...eslintConfigSCReact.configs.customRecordsWithTypescript, // This is the custom config for typescript of eslint-config-sc-react
@@ -107,11 +108,8 @@ module.exports = {
 ## Used config, plugin ( alphabetical )
 ### config
 - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
-- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
+- [eslint-config-sc-js](https://www.npmjs.com/package/eslint-config-sc-js)
 
-### plugin
-- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
-- [eslint-plugin-react-hook](https://www.npmjs.com/package/eslint-plugin-react-hooks)
 
 ## Recommended, but not includes
 ### plugin
