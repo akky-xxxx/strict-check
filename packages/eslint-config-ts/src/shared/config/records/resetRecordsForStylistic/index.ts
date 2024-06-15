@@ -1,11 +1,7 @@
-import { baseRules } from "../../rules/baseRules"
+import eslintConfigSCJs from "eslint-config-sc-js"
 
 import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/EslintFlatConfig"
 
 export const resetRecordsForStylistic = [
-  {
-    rules: {
-      ...baseRules,
-    },
-  },
+  ...eslintConfigSCJs.configs.resetRecordsForStylistic,
 ] as const satisfies EslintFlatConfig[]

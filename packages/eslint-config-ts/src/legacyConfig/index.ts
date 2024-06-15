@@ -19,6 +19,7 @@ export const legacyConfig = {
   rules: {
     ...eslintConfigSCJs.configs.customRecords[ZERO].rules,
     ...baseRules,
+    ...eslintConfigSCJs.configs.resetRecordsForStylistic[ZERO].rules,
   },
   settings: {
     ...settings,
