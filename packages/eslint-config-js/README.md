@@ -29,6 +29,9 @@ export default [
 
   // This is the scustom config of eslint-config-sc-js
   ...eslintConfigSCJs.configs.customRecords,
+
+  // This is the scustom config of eslint-config-sc-js
+  ...eslintConfigSCJs.configs.resetRecordsForStylistic,
 ]
 ```
 
@@ -53,6 +56,7 @@ module.exports = {
   plugins: ["unicorn"],
   rules: {
     ...eslintConfigSCJs.configs.customRecords[0].rules,
+    ...eslintConfigSCJs.configs.resetRulesForStylistic[0].rules,
   },
 }
 ```
