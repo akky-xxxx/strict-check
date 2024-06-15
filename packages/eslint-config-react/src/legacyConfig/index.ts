@@ -9,7 +9,6 @@ export const legacyConfig = {
     "plugin:react/recommended",
     "airbnb",
     "airbnb/hooks",
-    "prettier", // TODO: stylistic に委譲
   ],
   plugins: ["react", "react-hooks"],
   rules: {
