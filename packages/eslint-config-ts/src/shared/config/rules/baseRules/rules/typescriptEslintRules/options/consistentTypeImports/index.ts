@@ -4,5 +4,8 @@ import type { EslintRuleLevelAndOptions } from "../../../../../../../../libs/sha
 
 export const consistentTypeImports = [
   SEVERITY.ERROR,
-  { prefer: "type-imports" },
+  {
+    fixStyle: "separate-type-imports",
+    prefer: "type-imports",
+  },
 ] as const satisfies EslintRuleLevelAndOptions
