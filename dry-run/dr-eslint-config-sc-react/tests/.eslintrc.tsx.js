@@ -5,7 +5,8 @@ module.exports = {
   extends: [
     "plugin:@stylistic/recommended-extends",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:unicorn/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react/recommended",
@@ -18,7 +19,8 @@ module.exports = {
   },
   parser: "@typescript-eslint/parser",
   rules: {
-    ...eslintConfigSCTs.configs.customRecords[0].rules,
+    ...eslintConfigSCTs.configs.customRecords[1].rules,
+    ...eslintConfigSCReact.configs.customRecords[0].rules,
     ...eslintConfigSCReact.configs.customRecords[1].rules,
     ...eslintConfigSCReact.configs.customRecordsWithTypescript[0].rules,
     ...eslintConfigSCReact.configs.resetRecordsForStylistic[0].rules,
