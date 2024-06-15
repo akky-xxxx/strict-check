@@ -67,7 +67,6 @@ module.exports = {
 
 ### plugin
 - [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin)
-- [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
 - [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn)
 
 ## Recommended, but not includes
