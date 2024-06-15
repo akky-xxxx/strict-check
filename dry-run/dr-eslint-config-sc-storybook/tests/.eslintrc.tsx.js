@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["sc-jest/legacy"],
+  extends: ["sc-storybook/legacy"],
   parserOptions: {
     project: ["./tsconfig.json"],
     tsconfigRootDir: __dirname,
