@@ -12,7 +12,7 @@ export const eslintRules = {
   "max-lines": [SEVERITY.ERROR, { max: 100 }],
   "max-lines-per-function": maxLinesPerFunction,
   "max-nested-callbacks": [SEVERITY.ERROR, 3],
-  "max-params": [SEVERITY.ERROR, 2],
+  "max-params": [SEVERITY.WARN, 2],
   "max-statements": [SEVERITY.ERROR, 10],
   "multiline-comment-style": SEVERITY.OFF,
   "no-implicit-coercion": noImplicitCoercion,
