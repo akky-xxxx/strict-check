@@ -29,7 +29,7 @@ export default [
   ...eslintConfigSCTs.configs.baseRecords3,
 
   // This is the scustom config of eslint-config-sc-ts
-  ...eslintConfigSCTs.configs.customRecords1,
+  ...eslintConfigSCTs.configs.customRecords,
   ...eslintConfigSCTs.configs.customRecords2,
 ]
 ```
@@ -55,7 +55,7 @@ module.exports = {
   ],
   plugins: ["unicorn"],
   rules: {
-    ...eslintConfigSCTs.configs.customRecords2[0].rules,
+    ...eslintConfigSCTs.configs.customRecords[0].rules,
   },
 }
 ```
