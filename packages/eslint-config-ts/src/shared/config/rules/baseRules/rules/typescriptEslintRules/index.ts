@@ -9,21 +9,14 @@ import { SEVERITY } from "../../../../../../libs/shared-for-config/constants/SEV
 import type { EslintRules } from "../../../../../../libs/shared-for-config/types/EslintRules"
 
 export const typescriptEslintRules = {
-  "no-magic-numbers": SEVERITY.OFF,
-  "no-shadow": SEVERITY.OFF,
-
   "@typescript-eslint/adjacent-overload-signatures": SEVERITY.ERROR,
   "@typescript-eslint/array-type": arrayType,
-  "@typescript-eslint/consistent-indexed-object-style": [
-    SEVERITY.ERROR,
-    "record",
-  ],
+  "@typescript-eslint/consistent-indexed-object-style": [SEVERITY.ERROR, "record"],
   "@typescript-eslint/consistent-type-assertions": consistentTypeAssertions,
   "@typescript-eslint/consistent-type-definitions": [SEVERITY.ERROR, "type"],
   "@typescript-eslint/consistent-type-imports": consistentTypeImports,
   "@typescript-eslint/explicit-module-boundary-types": SEVERITY.OFF,
-  "@typescript-eslint/no-confusing-void-expression":
-  noConfusingVoidExpression,
+  "@typescript-eslint/no-confusing-void-expression": noConfusingVoidExpression,
   "@typescript-eslint/no-empty-function": SEVERITY.ERROR,
   "@typescript-eslint/no-empty-interface": SEVERITY.WARN,
   "@typescript-eslint/no-inferrable-types": SEVERITY.WARN,
@@ -31,8 +24,7 @@ export const typescriptEslintRules = {
   "@typescript-eslint/no-misused-promises": SEVERITY.WARN,
   "@typescript-eslint/no-non-null-assertion": SEVERITY.ERROR,
   "@typescript-eslint/no-shadow": SEVERITY.WARN,
-  "@typescript-eslint/no-unnecessary-boolean-literal-compare":
-  noUnnecessaryBooleanLiteralCompare,
+  "@typescript-eslint/no-unnecessary-boolean-literal-compare": noUnnecessaryBooleanLiteralCompare,
   "@typescript-eslint/no-unnecessary-condition": noUnnecessaryCondition,
   "@typescript-eslint/no-unnecessary-type-arguments": SEVERITY.WARN,
   "@typescript-eslint/no-unused-vars": SEVERITY.ERROR,
