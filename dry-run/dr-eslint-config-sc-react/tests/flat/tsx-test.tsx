@@ -1,5 +1,5 @@
 /* eslint-disable no-console, import/no-extraneous-dependencies */
-/* eslint-disable quotes, semi, object-curly-newline */
+/* eslint-disable max-lines, @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unsafe-assignment */
 // @ts-ignore
 import React, { Fragment } from "react"
 
@@ -13,18 +13,16 @@ type ReactTest1Props = {
   title: string
 }
 
-/**
- * @remarks
- * for checking apply if eslint-plugin-react
- */
-
+// eslint-disable-next-line complexity
 export const ReactTest1: FC<ReactTest1Props> = (props) => {
   const { bool, count, empty, title } = props
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
   const state = React.useState("")
 
   console.log(state)
 
   const onClick: React.EventHandler<unknown> = () => {
+    // eslint-disable-next-line unicorn/consistent-function-scoping
     const handleClick = () => {
       //
     }
@@ -97,11 +95,13 @@ export const ReactTest3 = (props: ReactTest3Props) => {
   return null
 }
 
+/* eslint-disable sort-keys */
 const reactTest3Props = {
   isStart: true,
   hasData: true,
   existData: true,
   enableSubmit: true,
 } as const
+/* eslint-enable sort-keys */
 
 export const ReactTest4 = () => <ReactTest3 {...reactTest3Props} />

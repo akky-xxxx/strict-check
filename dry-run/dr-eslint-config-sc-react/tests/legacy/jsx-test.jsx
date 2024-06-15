@@ -2,11 +2,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import React, { Fragment } from "react"
 
-/**
- * @remarks
- * for checking apply if eslint-plugin-react
- */
-
+// eslint-disable-next-line complexity
 export const ReactTest1 = (props) => {
   const { bool, count, empty, title } = props
   const state = React.useState("")
@@ -14,6 +10,7 @@ export const ReactTest1 = (props) => {
   console.log(state)
 
   const onClick = () => {
+    // eslint-disable-next-line unicorn/consistent-function-scoping
     const handleClick = () => {
       //
     }
@@ -72,12 +69,14 @@ export const ReactTest3 = (props) => {
   return null
 }
 
+/* eslint-disable sort-keys */
 const reactTest3Props = {
   isStart: true,
   hasData: true,
   existData: true,
   enableSubmit: true,
 }
+/* eslint-enable sort-keys */
 
 export const ReactTest4 = () => (
   // eslint-disable-next-line react/jsx-props-no-spreading
