@@ -1,5 +1,5 @@
 /* eslint-disable no-console, import/no-extraneous-dependencies */
-/* eslint-disable max-lines */
+/* eslint-disable max-lines, @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unsafe-assignment */
 // @ts-ignore
 import React, { Fragment } from "react"
 
@@ -16,6 +16,7 @@ type ReactTest1Props = {
 // eslint-disable-next-line complexity
 export const ReactTest1: FC<ReactTest1Props> = (props) => {
   const { bool, count, empty, title } = props
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
   const state = React.useState("")
 
   console.log(state)
