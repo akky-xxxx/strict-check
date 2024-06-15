@@ -21,9 +21,6 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 18.x, 20.x ]
     defaults:
       run:
         working-directory: ./packages/eslint-config-storybook
@@ -31,7 +28,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/ci-setup
+        uses: ./.github/actions/common-setup
 
       - name: Run prepare
         run: yarn prepare
@@ -44,14 +41,11 @@ jobs:
     strategy:
       matrix:
         node-version: [ 18.x, 20.x ]
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-storybook
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/ci-setup
+        uses: ./.github/actions/common-setup
 
       - name: Run prepare
         run: yarn prepare
@@ -64,14 +58,11 @@ jobs:
     strategy:
       matrix:
         node-version: [ 18.x, 20.x ]
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-storybook
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/ci-setup
+        uses: ./.github/actions/common-setup
 
       - name: Run prepare
         run: yarn prepare
