@@ -107,10 +107,15 @@ module.exports = {
 ## Used config, plugin ( alphabetical )
 ### config
 - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+- [eslint-config-sc-js](https://www.npmjs.com/package/eslint-config-sc-js)
 
 ### plugin
+- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin)
+- [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
+- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
 - [eslint-plugin-react-hook](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+- [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn)
 
 ## Recommended, but not includes
 ### plugin
