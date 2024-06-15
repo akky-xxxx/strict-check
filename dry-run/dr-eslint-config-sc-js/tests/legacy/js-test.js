@@ -203,12 +203,12 @@ const function6 = () => {
 }
 
 // eslint-disable-next-line max-params
-const function7 = (input1, input2, input3) => {
-  console.log(input1, input2, input3)
+const function7 = (input1, input2, input3, input4) => {
+  console.log(input1, input2, input3, input4)
 }
 
-const function7_2 = (input1, input2) => {
-  console.log(input1, input2)
+const function7_2 = (input1, input2, input3) => {
+  console.log(input1, input2, input3)
 }
 
 // eslint-disable-next-line no-implicit-coercion
