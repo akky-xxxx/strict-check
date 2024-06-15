@@ -1,4 +1,4 @@
-/* eslint-disable no-magic-numbers, no-console, max-lines, no-unused-vars */
+/* eslint-disable no-magic-numbers, no-console, max-lines, no-unused-vars, camelcase */
 // eslint-disable-next-line complexity
 const function1 = () => {
   const random = Math.ceil(Math.random() * 10)
@@ -125,3 +125,96 @@ const function5 = () => {
   const env = 1
   const Env = 1
 }
+
+const array1 = []
+
+array1.forEach((value) => {
+  console.log(value)
+})
+
+// eslint-disable-next-line array-callback-return
+array1.map((value) => {
+  console.log(value)
+})
+
+// eslint-disable-next-line curly
+if (Math.random() < 0.5) {
+  console.log("a")
+}
+
+if (Math.random() < 0.5) {
+  console.log("a")
+  console.log("a")
+}
+
+// eslint-disable-next-line max-statements, max-lines-per-function
+const function6 = () => {
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+  console.log("a")
+}
+
+// eslint-disable-next-line max-params
+const function7 = (input1, input2, input3) => {
+  console.log(input1, input2, input3)
+}
+
+const function7_2 = (input1, input2) => {
+  console.log(input1, input2)
+}
+
+// eslint-disable-next-line no-implicit-coercion
+const variable4 = !!"a"
+const variable4_2 = Boolean("a")
+
+// eslint-disable-next-line prefer-named-capture-group
+const variable5 = /(aaa)/
+const variable5_2 = /(?<id>aaa)/
