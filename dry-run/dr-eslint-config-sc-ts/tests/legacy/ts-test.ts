@@ -1,4 +1,4 @@
-/* eslint-disable no-console, max-lines */
+/* eslint-disable no-console, max-lines, camelcase */
 /* eslint-disable @typescript-eslint/no-magic-numbers, @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unused-vars, @typescript-eslint/no-use-before-define */
 // eslint-disable-next-line complexity
@@ -121,7 +121,7 @@ try {
 // eslint-disable-next-line @typescript-eslint/prefer-string-starts-ends-with, unicorn/prefer-string-starts-ends-with
 const result = /^bar/.test("test")
 
-// eslint-disable-next-line @typescript-eslint/sort-type-constituents
+// eslint-disable-next-line @typescript-eslint/sort-type-constituents, @typescript-eslint/naming-convention
 export type testType = "B" | "A"
 
 function function5<T = number>(argument: T) {
@@ -141,7 +141,7 @@ export const function6 = () => {
 // eslint-disable-next-line @typescript-eslint/no-confusing-void-expression
 export const log = console.log("")
 
-// eslint-disable-next-line @typescript-eslint/consistent-type-definitions
+// eslint-disable-next-line @typescript-eslint/consistent-type-definitions, @typescript-eslint/naming-convention
 export interface testInterface {
   text: string
 }
@@ -155,8 +155,73 @@ export type TestObject = {
 }
 
 const function7 = (props: unknown) => {
-  // eslint-disable-next-line camelcase, @typescript-eslint/no-shadow, unicorn/consistent-function-scoping
+  // eslint-disable-next-line @typescript-eslint/no-shadow, unicorn/consistent-function-scoping, @typescript-eslint/naming-convention
   const function7_2 = (props: unknown) => {
     console.log(props)
   }
 }
+
+// eslint-disable-next-line @typescript-eslint/max-params
+const function8 = (input1: unknown, input2: unknown, input3: unknown, input4: unknown) => {
+  console.log(input1, input2, input3, input4)
+}
+
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const function8_2 = (input1: unknown, input2: unknown, input3: unknown) => {
+  console.log(input1, input2, input3)
+}
+
+type Type1 = string
+
+// eslint-disable-next-line @typescript-eslint/consistent-type-exports
+export { Type1 }
+
+const array1 = [1, 2, 3]
+const array2 = ["1", "2", "3"]
+
+// eslint-disable-next-line @typescript-eslint/require-array-sort-compare
+array1.sort()
+array2.sort()
+
+// eslint-disable-next-line @typescript-eslint/prefer-find
+const variable4 = array1.filter(Boolean)[0]
+
+const number1 = Math.random()
+
+// eslint-disable-next-line @typescript-eslint/switch-exhaustiveness-check
+switch (number1) {
+  case 1: {
+    console.log("1")
+    break
+  }
+  case 2: {
+    console.log("2")
+    break
+  }
+}
+
+const number2 = Math.random() ? 1 : 2
+
+switch (number2) {
+  case 1: {
+    console.log("1")
+    break
+  }
+  case 2: {
+    console.log("2")
+    break
+  }
+}
+
+// eslint-disable-next-line @typescript-eslint/array-type
+type Array1 = Array<string>
+type Array2 = string[]
+// eslint-disable-next-line @typescript-eslint/array-type
+type Array3 = Array<Array<string>>
+// eslint-disable-next-line @typescript-eslint/array-type
+type Array4 = {
+  a: string
+}[]
+type Array5 = Array<{
+  a: string
+}>
