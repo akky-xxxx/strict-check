@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["sc-jest/legacy"],
+  extends: ["sc-jest/legacy", "plugin:unicorn/recommended"],
   parserOptions: {
     ecmaVersion: "latest",
   },
