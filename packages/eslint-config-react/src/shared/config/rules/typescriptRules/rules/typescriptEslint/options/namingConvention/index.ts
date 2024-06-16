@@ -31,6 +31,14 @@ export const namingConvention = [
   },
 
   {
+    selector: "objectLiteralProperty",
+
+    format: ["camelCase", "UPPER_CASE"],
+    leadingUnderscore: "allow",
+    trailingUnderscore: "forbid",
+  },
+
+  {
     selector: "function",
 
     format: ["camelCase", "PascalCase"],
