@@ -38,9 +38,9 @@ jobs:
 
   spell-check:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 18.x, 20.x ]
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-storybook
     steps:
       - uses: actions/checkout@v4
 
@@ -55,9 +55,9 @@ jobs:
 
   type-check:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 18.x, 20.x ]
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-storybook
     steps:
       - uses: actions/checkout@v4
 
