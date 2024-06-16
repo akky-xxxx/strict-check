@@ -13,7 +13,7 @@ export const namingConvention = [
 
     format: ["camelCase"],
     leadingUnderscore: "allow",
-    trailingUnderscore: "allow",
+    trailingUnderscore: "forbid",
   },
 
   {
@@ -23,15 +23,7 @@ export const namingConvention = [
   },
 
   {
-    selector: "variable",
-
-    format: ["camelCase", "UPPER_CASE", "PascalCase"],
-    leadingUnderscore: "allow",
-    trailingUnderscore: "allow",
-  },
-
-  {
-    selector: "objectLiteralProperty",
+    selector: ["variable", "objectLiteralProperty"],
 
     format: ["camelCase", "UPPER_CASE"],
     leadingUnderscore: "allow",
@@ -41,9 +33,9 @@ export const namingConvention = [
   {
     selector: "function",
 
-    format: ["camelCase", "PascalCase"],
+    format: ["camelCase"],
     leadingUnderscore: "allow",
-    trailingUnderscore: "allow",
+    trailingUnderscore: "forbid",
   },
 
   {
