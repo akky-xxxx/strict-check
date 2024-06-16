@@ -7,6 +7,6 @@ export default [
   ...eslintConfigSCJs.configs.recommended,
   ...eslintConfigSCJest.configs.eslintOverrideRecords,
   {
-    files: ["**/*.js"],
+    files: ["**/*.js{,x}"],
   },
 ]
