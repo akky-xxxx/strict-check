@@ -24,7 +24,7 @@
     "build": "run-s \"build:*\"",
     "build:1": "rm -rf ./dist",
     "build:2": "tsc -p tsconfig.build.json",
-    "check-code": "run-p lint spell-check type-check test",
+    "check-code": "npm-run-all -c -s prepare -p lint spell-check type-check -s test dry-run",
     "dev": "chokidar \"./{src,spec}/**\" -c \"yarn type-check && yarn test\"",
     "dry-run": "run-s dry-run:prepare dry-run:exec",
     "dry-run:exec": "yarn workspace dr-eslint-plugin-sc-js dry-run",
