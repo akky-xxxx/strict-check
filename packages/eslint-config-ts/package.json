@@ -27,7 +27,7 @@
     "build": "run-s \"build:*\"",
     "build:1": "rm -rf ./dist",
     "build:2": "tsc -p tsconfig.build.json",
-    "check-code": "run-p lint spell-check type-check dry-run",
+    "check-code": "npm-run-all -c -s prepare -p lint spell-check type-check -s dry-run",
     "dev": "chokidar \"./{src,dry-run}/**\" -c \"yarn type-check && yarn dry-run\"",
     "dry-run": "run-s dry-run:prepare dry-run:exec",
     "dry-run:exec": "yarn workspace dr-eslint-config-sc-ts dry-run",
@@ -52,7 +52,7 @@
   "dependencies": {
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.4.0",
-    "eslint-config-sc-js": "^0.0.4",
+    "eslint-config-sc-js": "^0.0.5",
     "typescript-eslint": "^7.11.0"
   },
   "devDependencies": {
