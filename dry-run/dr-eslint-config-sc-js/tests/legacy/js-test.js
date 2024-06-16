@@ -220,6 +220,17 @@ const variable5 = /(aaa)/
 const variable5_2 = /(?<id>aaa)/
 
 const object2 = {
+  // eslint-disable-next-line @stylistic/key-spacing
+  b : 1,
+
   // eslint-disable-next-line @stylistic/comma-dangle
   a: 1
 }
+
+// eslint-disable-next-line @stylistic/keyword-spacing, @stylistic/space-before-blocks
+if(Math.random()){
+  console.log("")
+  console.log("")
+// eslint-disable-next-line @stylistic/brace-style
+}
+else console.log("")
