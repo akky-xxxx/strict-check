@@ -1,6 +1,7 @@
 import { arrayType } from "./options/arrayType"
 import { consistentTypeAssertions } from "./options/consistentTypeAssertions"
 import { consistentTypeImports } from "./options/consistentTypeImports"
+import { namingConvention } from "./options/namingConvention"
 import { noConfusingVoidExpression } from "./options/noConfusingVoidExpression"
 import { noUnnecessaryBooleanLiteralCompare } from "./options/noUnnecessaryBooleanLiteralCompare"
 import { noUnnecessaryCondition } from "./options/noUnnecessaryCondition"
@@ -21,7 +22,7 @@ export const typescriptEslintRules = {
   "@typescript-eslint/consistent-type-imports": consistentTypeImports,
   "@typescript-eslint/explicit-module-boundary-types": SEVERITY.OFF,
   "@typescript-eslint/max-params": SEVERITY.WARN,
-  "@typescript-eslint/naming-convention": SEVERITY.ERROR,
+  "@typescript-eslint/naming-convention": namingConvention,
   "@typescript-eslint/no-confusing-void-expression": noConfusingVoidExpression,
   "@typescript-eslint/no-empty-function": SEVERITY.ERROR,
   "@typescript-eslint/no-empty-interface": SEVERITY.WARN,
