@@ -3874,7 +3874,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-js@npm:^0.0.4, eslint-config-sc-js@workspace:^, eslint-config-sc-js@workspace:packages/eslint-config-js":
+"eslint-config-sc-js@npm:^0.0.5, eslint-config-sc-js@workspace:^, eslint-config-sc-js@workspace:packages/eslint-config-js":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-js@workspace:packages/eslint-config-js"
   dependencies:
@@ -3910,7 +3910,7 @@ __metadata:
     editorconfig-checker: "npm:^5.1.5"
     eslint: "npm:^8.57.0"
     eslint-config-airbnb: "npm:^19.0.4"
-    eslint-config-sc-js: "npm:^0.0.4"
+    eslint-config-sc-js: "npm:^0.0.5"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.2.5"
@@ -3955,7 +3955,7 @@ __metadata:
     cspell: "npm:^8.8.3"
     editorconfig-checker: "npm:^5.1.5"
     eslint: "npm:^8.57.0"
-    eslint-config-sc-js: "npm:^0.0.4"
+    eslint-config-sc-js: "npm:^0.0.5"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.2.5"
