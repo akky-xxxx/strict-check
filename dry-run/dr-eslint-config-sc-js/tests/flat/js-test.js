@@ -218,3 +218,8 @@ const variable4_2 = Boolean("a")
 // eslint-disable-next-line prefer-named-capture-group
 const variable5 = /(aaa)/
 const variable5_2 = /(?<id>aaa)/
+
+const object2 = {
+  // eslint-disable-next-line @stylistic/comma-dangle
+  a: 1
+}
