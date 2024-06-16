@@ -38,6 +38,9 @@ jobs:
 
   spell-check:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-storybook
     steps:
       - uses: actions/checkout@v4
 
@@ -52,6 +55,9 @@ jobs:
 
   type-check:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-config-storybook
     steps:
       - uses: actions/checkout@v4
 
