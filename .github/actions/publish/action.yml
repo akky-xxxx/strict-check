@@ -1,16 +1,26 @@
+inputs:
+  npm-token:
+    required: true
+
 runs:
   using: composite
   steps:
     - name: Run prepare
       run: yarn prepare
+      working-directory: ./packages/eslint-config-js
+      shell: bash
+
+    - run: corepack enable
       shell: bash
 
     - name: Build
       run: yarn build
+      working-directory: ./packages/eslint-config-js
       shell: bash
 
     - name: Publish
       run: yarn npm publish
+      working-directory: ./packages/eslint-config-js
       env:
-        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
       shell: bash

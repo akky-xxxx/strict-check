@@ -21,6 +21,8 @@ jobs:
 
       - name: check publish
         uses: ./.github/actions/check-publish
+        with:
+          npm-token: ${{ secrets.NPM_AUTH_TOKEN }}
 
   pre-check-lint:
     needs: [check-publish]
@@ -132,3 +134,5 @@ jobs:
 
       - name: publish
         uses: ./.github/actions/publish
+        with:
+          npm-token: ${{ secrets.NPM_AUTH_TOKEN }}
