@@ -10,12 +10,13 @@ on:
     tags:
       - 'eslint-config-sc-ts/v*'
 
+defaults:
+  run:
+    working-directory: ./packages/eslint-config-ts
+
 jobs:
   check-publish:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-ts
     steps:
       - uses: actions/checkout@v4
 
@@ -27,9 +28,6 @@ jobs:
   pre-check-lint:
     needs: [check-publish]
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-ts
     steps:
       - uses: actions/checkout@v4
 
@@ -45,9 +43,6 @@ jobs:
   pre-check-spell-check:
     needs: [check-publish]
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-ts
     steps:
       - uses: actions/checkout@v4
 
@@ -63,9 +58,6 @@ jobs:
   pre-check-type-check:
     needs: [check-publish]
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-ts
     steps:
       - uses: actions/checkout@v4
 
@@ -84,9 +76,6 @@ jobs:
     strategy:
       matrix:
         node-version: [ 18.x, 20.x ]
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-ts
     steps:
       - uses: actions/checkout@v4
 
@@ -102,9 +91,6 @@ jobs:
   publish:
     needs: [check-publish, pre-check-lint, pre-check-spell-check, pre-check-type-check, pre-check-dry-run]
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-ts
     steps:
       - uses: actions/checkout@v4
 
@@ -115,3 +101,4 @@ jobs:
         uses: ./.github/actions/publish
         with:
           npm-token: ${{ secrets.NPM_AUTH_TOKEN }}
+          working-directory: ./packages/eslint-config-ts

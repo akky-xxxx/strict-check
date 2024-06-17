@@ -1,13 +1,15 @@
 inputs:
   npm-token:
     required: true
+  working-directory:
+    required: true
 
 runs:
   using: composite
   steps:
     - name: Run prepare
       run: yarn prepare
-      working-directory: ./packages/eslint-config-js
+      working-directory: ${{ inputs.working-directory }}
       shell: bash
 
     - run: corepack enable
@@ -15,12 +17,12 @@ runs:
 
     - name: Build
       run: yarn build
-      working-directory: ./packages/eslint-config-js
+      working-directory: ${{ inputs.working-directory }}
       shell: bash
 
     - name: Publish
       run: yarn npm publish
-      working-directory: ./packages/eslint-config-js
+      working-directory: ${{ inputs.working-directory }}
       env:
         NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
       shell: bash

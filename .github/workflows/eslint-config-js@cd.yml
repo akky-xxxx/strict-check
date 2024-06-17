@@ -101,3 +101,4 @@ jobs:
         uses: ./.github/actions/publish
         with:
           npm-token: ${{ secrets.NPM_AUTH_TOKEN }}
+          working-directory: ./packages/eslint-config-js
