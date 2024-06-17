@@ -94,6 +94,24 @@ jobs:
       - name: Run dry run
         run: yarn dry-run
 
+  pre-check-test:
+    needs: [check-publish]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-plugin-js
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/actions/common-setup
+
+      - name: Run prepare
+        run: yarn prepare
+
+      - name: Run test
+        run: yarn test
+
   publish:
     needs: [check-publish, pre-check-lint, pre-check-spell-check, pre-check-type-check, pre-check-dry-run]
     runs-on: ubuntu-latest
