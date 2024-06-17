@@ -1,3 +1,5 @@
+import { maxLinesPerFunction } from "./options/maxLinesPerFunction"
+import { noImplicitCoercion } from "./options/noImplicitCoercion"
 import { SEVERITY } from "../../../../../../libs/shared-for-config/constants/SEVERITY"
 
 import type { EslintRules } from "../../../../../../libs/shared-for-config/types/EslintRules"
@@ -5,19 +7,18 @@ import type { EslintRules } from "../../../../../../libs/shared-for-config/types
 export const eslintRules = {
   /* eslint-disable @typescript-eslint/no-magic-numbers */
   "complexity": [SEVERITY.ERROR, 5],
+  "curly": [SEVERITY.WARN, "multi-or-nest"],
   "max-depth": [SEVERITY.ERROR, 3],
-  "max-len": SEVERITY.OFF, // check by stylistic
   "max-lines": [SEVERITY.ERROR, { max: 100 }],
+  "max-lines-per-function": maxLinesPerFunction,
   "max-nested-callbacks": [SEVERITY.ERROR, 3],
+  "max-params": [SEVERITY.WARN, 3],
   "max-statements": [SEVERITY.ERROR, 10],
   "multiline-comment-style": SEVERITY.OFF,
+  "no-implicit-coercion": noImplicitCoercion,
   "no-magic-numbers": SEVERITY.WARN,
-  "no-multi-spaces": SEVERITY.OFF, // check by stylistic
-  "no-unused-vars": SEVERITY.OFF, // check by tsc
   "no-use-before-define": SEVERITY.ERROR,
-  "object-curly-newline": SEVERITY.OFF, // check by stylistic
-  "quotes": SEVERITY.OFF, // check by stylistic
-  "semi": SEVERITY.OFF, // check by stylistic
+  "prefer-named-capture-group": SEVERITY.WARN,
   "sort-keys": [SEVERITY.WARN, "asc", { allowLineSeparatedGroups: true }],
   /* eslint-enable @typescript-eslint/no-magic-numbers */
 } as const satisfies EslintRules

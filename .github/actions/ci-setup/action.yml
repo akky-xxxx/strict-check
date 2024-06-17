@@ -1,0 +1,14 @@
+runs:
+  using: composite
+  steps:
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - run: corepack enable
+      shell: bash
+
+    - name: Install dependencies
+      run: yarn --frozen-lockfile
+      shell: bash

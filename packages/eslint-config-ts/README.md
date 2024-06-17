@@ -22,19 +22,16 @@ export default [
 // Below is equal
 export default [
   ...eslintConfigSCTs.configs.baseRecords1,
-  ...eslintConfigSCTs.configs.baseRecords2,
 
   // This use eslint-config-airbnb-base
   // For react project, this replace to eslint-config-airbnb
-  ...eslintConfigSCTs.configs.baseRecords3,
+  ...eslintConfigSCTs.configs.baseRecords2,
 
-  // This use eslint-config-prettier
-  // This will delete in the future
-  ...eslintConfigSCTs.configs.baseRecords4,
+  // This is the custom config of eslint-config-sc-ts
+  ...eslintConfigSCTs.configs.customRecords,
 
-  // This is the scustom config of eslint-config-sc-ts
-  ...eslintConfigSCTs.configs.customRecords1,
-  ...eslintConfigSCTs.configs.customRecords2,
+  // This is the reset config for stylistic
+  ...eslintConfigSCTs.configs.resetRecordsForStylistic,
 ]
 ```
 
@@ -51,27 +48,27 @@ const eslintConfigSCTs = require("eslint-config-sc-ts")
 
 module.exports = {
   extends: [
+    "plugin:@stylistic/recommended-extends",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:unicorn/recommended",
     "airbnb-base",
-    "prettier"
   ],
   plugins: ["unicorn"],
   rules: {
-    ...eslintConfigSCTs.configs.customRecords2[0].rules,
+    ...eslintConfigSCTs.configs.customRecords[0].rules,
+    ...eslintConfigSCTs.configs.resetRecordsForStylistic[0].rules,
   },
 }
 ```
 
 ## Used config, plugin ( alphabetical )
 ### config
-- [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)
-- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
 - [eslint-config-sc-js](https://www.npmjs.com/package/eslint-config-sc-js)
 
 ### plugin
-- [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn)
+- [typescript-eslint](https://www.npmjs.com/package/typescript-eslint)
 
 ## Recommended, but not includes
 ### plugin

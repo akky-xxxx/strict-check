@@ -10,40 +10,8 @@ $ yarn add -D eslint-config-sc-react
 ```
 
 ### Use for `eslint.config.mjs`
+#### For Javascript
 
-#### Recommended
-Recommended use with `eslint-config-sc-ts` or `eslint-config-sc-js`<br>
-Because, this package is only for react
-
-```javascript
-// eslint.config.mjs
-
-// for typescript
-import eslintConfigSCTs from "eslint-config-sc-ts"
-import eslintConfigSCReact from "eslint-config-sc-react"
-
-export default [
-  ...eslintConfigSCTs.configs.baseRecords1, // extends for javascript
-  ...eslintConfigSCTs.configs.baseRecords2, // extends for typescript
-  ...eslintConfigSCReact.configs.baseRecords1, // extends for react
-  ...eslintConfigSCReact.configs.baseRecords2, // extends for prettier
-  ...eslintConfigSCReact.configs.customRecords, // custom config for react x javascript
-  ...eslintConfigSCReact.configs.customRecordsWithTypescript, // custom config for react x typescript
-]
-
-// for javascript
-import eslintConfigSCJs from "eslint-config-sc-js"
-import eslintConfigSCReact from "eslint-config-sc-react"
-
-export default [
-  ...eslintConfigSCJs.configs.baseRecords1, // extends for javascript
-  ...eslintConfigSCReact.configs.baseRecords1, // exntends for react
-  ...eslintConfigSCReact.configs.baseRecords2, // extends for prettier
-  ...eslintConfigSCReact.configs.customRecords, // custom config for react
-]
-```
-
-#### Only react rule
 ```javascript
 // eslint.config.mjs
 import eslintConfigSCReact from "eslint-config-sc-react"
@@ -55,64 +23,41 @@ export default [
 // Below is equal
 export default [
   ...eslintConfigSCReact.configs.baseRecords1,
-
-  // This use eslint-config-prettier
-  // This will delete in the future
   ...eslintConfigSCReact.configs.baseRecords2,
 
   // This is the custom config of eslint-config-sc-react
   ...eslintConfigSCReact.configs.customRecords,
 
-  // This is the custom config of eslint-config-sc-react for typescript
-  ...eslintConfigSCReact.configs.customRecordsWithTypescript,
+  // This is the reset config for stylistic
+  ...eslintConfigSCReact.configs.resetRecordsForStylistic,
 ]
 ```
 
-### Use for `.eslintrc.js`
-
-#### Recommended
-Recommended use with `eslint-config-sc-ts` or `eslint-config-sc-js`<br>
-Because, this package is only for react
-
+#### For Typescript
 ```javascript
-// .eslintrc.js
+import eslintConfigSCTs from "eslint-config-sc-ts"
+import eslintConfigSCReact from "eslint-config-sc-react"
 
-// for typescript
-const eslintConfigSCReact = require("eslint-config-sc-react")
-const eslintConfigSCTs = require("eslint-config-sc-ts")
+export default [
+  ...eslintConfigSCTs.configs.baseRecords1,
+  ...eslintConfigSCReact.configs.baseRecords1,
+  ...eslintConfigSCReact.configs.baseRecords2,
 
-module.exports = {
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended-type-checked",
-    "plugin:unicorn/recommended",
-    "plugin:react/jsx-runtime",
-    "plugin:react/recommended",
-    "airbnb",
-    "airbnb/hooks",
-    "prettier",
-  ],
-  plugins: ["react", "react-hooks", "unicorn"],
-  rules: {
-    ...eslintConfigSCTs.configs.customRecords1[0].rules,
-    ...eslintConfigSCTs.configs.customRecords2[0].rules,
-    ...eslintConfigSCReact.configs.customRecords[0].rules,
-  },
-  overrides: [
-    {
-      files: ["**/*.ts", "**/*.tsx"],
-      rules: {
-        ...eslintConfigSCReact.configs.customRecordsWithTypescript[0].rules,
-      },
-    },
-  ],
-}
+  ...eslintConfigSCTs.configs.customRecords,
+  ...eslintConfigSCReact.configs.customRecords,
+  ...eslintConfigSCReact.configs.customRecordsWithTypescript, // This is the custom config for typescript of eslint-config-sc-react
+
+  ...eslintConfigSCReact.configs.resetRecordsForStylistic,
+]
 ```
 
-#### Only react rule
+
+### Use for `.eslintrc.js`
+#### For Javascript
 
 ```javascript
 // .eslintrc.js
+
 module.exports = {
   extends: ["sc-react/legacy"]
 }
@@ -122,35 +67,53 @@ const eslintConfigSCReact = require("eslint-config-sc-react")
 
 module.exports = {
   extends: [
+    "plugin:@stylistic/recommended-extends",
+    "eslint:recommended",
+    "plugin:unicorn/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react/recommended",
     "airbnb",
     "airbnb/hooks",
-    "prettier",
   ],
-  plugins: ["react", "react-hooks"],
   rules: {
     ...eslintConfigSCReact.configs.customRecords[0].rules,
+    ...eslintConfigSCReact.configs.resetRecordsForStylistic[0].rules,
   },
-  overrides: [
-    {
-      files: ["**/*.ts", "**/*.tsx"],
-      rules: {
-        ...eslintConfigSCReact.configs.customRecordsWithTypescript[0].rules,
-      },
-    },
+}
+```
+
+#### For Typescript
+```javascript
+const eslintConfigSCReact = require("eslint-config-sc-react")
+const eslintConfigSCTs = require("eslint-config-sc-ts")
+
+module.exports = {
+  extends: [
+    "plugin:@stylistic/recommended-extends",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "plugin:unicorn/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb/hooks",
   ],
+  rules: {
+    ...eslintConfigSCTs.configs.customRecords[1].rules,
+    ...eslintConfigSCReact.configs.customRecords[0].rules,
+    ...eslintConfigSCReact.configs.customRecords[1].rules,
+    ...eslintConfigSCReact.configs.customRecordsWithTypescript[0].rules,  // This is the custom config for typescript of eslint-config-sc-react
+    ...eslintConfigSCReact.configs.resetRecordsForStylistic[0].rules,
+  },
 }
 ```
 
 ## Used config, plugin ( alphabetical )
 ### config
 - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
-- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
+- [eslint-config-sc-js](https://www.npmjs.com/package/eslint-config-sc-js)
 
-### plugin
-- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
-- [eslint-plugin-react-hook](https://www.npmjs.com/package/eslint-plugin-react-hooks)
 
 ## Recommended, but not includes
 ### plugin

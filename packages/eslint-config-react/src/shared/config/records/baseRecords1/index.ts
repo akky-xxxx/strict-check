@@ -1,8 +1,7 @@
-import { getCompatExtends } from "../../../../libs/shared-for-config/utilities/getCompatExtends"
+import eslintConfigSCJs from "eslint-config-sc-js"
 
 import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/EslintFlatConfig"
 
 export const baseRecords1 = [
-  ...getCompatExtends("plugin:react/jsx-runtime", "plugin:react/recommended"),
-  ...getCompatExtends("eslint-config-airbnb", "eslint-config-airbnb/hooks"),
+  ...eslintConfigSCJs.configs.baseRecords1,
 ] as const satisfies EslintFlatConfig[]

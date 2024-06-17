@@ -1,0 +1,16 @@
+runs:
+  using: composite
+  steps:
+    - name: Run prepare
+      run: yarn prepare
+      shell: bash
+
+    - name: Build
+      run: yarn build
+      shell: bash
+
+    - name: Publish
+      run: yarn npm publish
+      env:
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      shell: bash

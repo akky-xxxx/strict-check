@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sc-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Strict Check config for eslint for react",
   "keywords": [
     "eslint",
@@ -10,8 +10,12 @@
     "strict-check"
   ],
   "author": "akky-xxxx",
-  "repository": "https://github.com/akky-xxxx/strict-check",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akky-xxxx/strict-check"
+  },
   "bugs": "https://github.com/akky-xxxx/strict-check/issues",
+  "homepage": "https://github.com/akky-xxxx/strict-check",
   "license": "MIT",
   "main": "dist/index.js",
   "exports": {
@@ -23,11 +27,10 @@
     "build": "run-s \"build:*\"",
     "build:1": "rm -rf ./dist",
     "build:2": "tsc -p tsconfig.build.json",
-    "check-code": "run-p lint spell-check type-check dry-run",
-    "dev": "chokidar \"./{src,dry-run}/**\" -c \"yarn type-check && yarn dry-run\"",
-    "dry-run": "npm-run-all -s build -p \"dry-run:*\" -c",
-    "dry-run:flat": "eslint -c dry-run/flat/eslint.config.mjs \"dry-run/flat/*.{jsx,tsx}\"",
-    "dry-run:legacy": "ESLINT_USE_FLAT_CONFIG=false eslint -c dry-run/legacy/.eslintrc.js \"dry-run/legacy/*.{jsx,tsx}\"",
+    "check-code": "npm-run-all -c -s prepare -p lint spell-check type-check -s dry-run",
+    "dry-run": "run-s dry-run:prepare dry-run:exec",
+    "dry-run:exec": "yarn workspace dr-eslint-config-sc-react dry-run",
+    "dry-run:prepare": "yarn workspace dr-eslint-config-sc-react prepare",
     "fix": "run-p \"fix:*\" -c",
     "fix:eslint": "eslint \"./\" --fix --max-warnings 0",
     "fix:pack": "fixpack",
@@ -39,40 +42,31 @@
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -c -u",
     "prepare": "run-p \"prepare:*\"",
     "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
+    "prepare:dependence-build": "yarn workspaces foreach -R -ipt run build",
     "publish:dry-run": "npm pack --dry-run",
     "spell-check": "cspell lint --no-progress \"./{spec,src}/**/*.ts\" \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
     "tagging": "node ../../scripts/tagging/index.mjs",
     "type-check": "tsc"
   },
   "dependencies": {
-    "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.4.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-config-sc-js": "^0.0.2",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-react": "^7.34.2",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-unicorn": "^53.0.0",
-    "typescript-eslint": "^7.11.0"
+    "eslint-config-sc-js": "^0.0.5"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^2.1.0",
+    "@stylistic/eslint-plugin": "^2.2.0",
     "@tsconfig/strictest": "^2.0.5",
     "@types/react": "^18.3.3",
-    "@typescript-eslint/parser": "^7.12.0",
+    "@typescript-eslint/parser": "^7.13.0",
     "chokidar-cli": "^3.0.0",
-    "cspell": "^8.8.3",
-    "editorconfig-checker": "^5.1.5",
+    "cspell": "^8.8.4",
+    "editorconfig-checker": "^5.1.8",
     "eslint": "^8.57.0",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^6.2.0",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.2",
     "react": "^18.3.1",
     "strict-check": "workspace:^",
-    "typescript": "^5.4.5",
-    "typescript-eslint": "^7.12.0"
+    "typescript": "^5.4.5"
   },
   "packageManager": "yarn@4.2.2"
 }

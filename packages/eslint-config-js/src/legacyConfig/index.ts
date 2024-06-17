@@ -1,4 +1,5 @@
 import { baseRules } from "../shared/config/rules/baseRules"
+import { resetRulesForStylistic } from "../shared/config/rules/resetRulesForStylistic"
 
 import type { EslintLegacyConfig } from "../libs/shared-for-config/types/EslintLegacyConfig"
 
@@ -12,6 +13,7 @@ export const legacyConfig = {
   plugins: ["unicorn"],
   rules: {
     ...baseRules,
+    ...resetRulesForStylistic,
   },
 
   reportUnusedDisableDirectives: true,

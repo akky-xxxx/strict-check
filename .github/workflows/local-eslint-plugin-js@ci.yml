@@ -1,0 +1,44 @@
+name: local-eslint-plugin-js@CI
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+    branches:
+      - local/**
+    paths:
+      - '.node-version'
+      - 'config/**'
+      - 'dry-run/dr-eslint-plugin-sc-js/**'
+      - 'modules/shared-for-eslint-plugin/**'
+      - 'packages/eslint-plugin-js/**'
+      - 'prettier.config.js'
+      - 'yarn.lock'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/eslint-plugin-js
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/actions/common-setup
+
+      - name: Run prepare
+        run: yarn prepare
+
+      - name: Run lint
+        run: yarn lint
+
+      - name: Run spell-check
+        run: yarn spell-check
+
+      - name: Run type-check
+        run: yarn type-check
+
+      - name: Run test
+        run: yarn test

@@ -1,0 +1,30 @@
+{
+  "name": "dr-eslint-config-sc-jest",
+  "scripts": {
+    "check-code": "run-p lint dry-run",
+    "dry-run": "run-p \"dry-run:*\" -c",
+    "dry-run:flat-js": "eslint -c tests/eslint.config.js.mjs \"tests/flat/*.js{,x}\" --max-warnings 0",
+    "dry-run:flat-ts": "eslint -c tests/eslint.config.ts.mjs \"tests/flat/*.ts{,x}\" --max-warnings 0",
+    "dry-run:legacy-js": "ESLINT_USE_FLAT_CONFIG=false eslint -c tests/.eslintrc.js.js \"tests/legacy/*.js{,x}\" --max-warnings 0",
+    "dry-run:legacy-ts": "ESLINT_USE_FLAT_CONFIG=false eslint -c tests/.eslintrc.ts.js \"tests/legacy/*.ts{,x}\" --max-warnings 0",
+    "fix": "run-p \"fix:*\" -c",
+    "fix:pack": "fixpack",
+    "fix:prettier": "prettier tests !\"./modules/{flat,legacy}/*\" -w -u",
+    "lint": "run-p \"lint:*\" -c",
+    "lint:pack": "fixpack --dryRun",
+    "lint:prettier": "prettier tests !\"./modules/{flat,legacy}/*\" -c -u",
+    "prepare": "run-p \"prepare:*\"",
+    "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
+    "prepare:dependence-build": "yarn workspaces foreach -R -ipt run build"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-sc-jest": "workspace:^",
+    "eslint-config-sc-js": "workspace:^",
+    "eslint-config-sc-ts": "workspace:^",
+    "fixpack": "^4.0.0",
+    "npm-run-all2": "^6.2.0",
+    "prettier": "^3.3.2"
+  },
+  "packageManager": "yarn@4.2.2"
+}

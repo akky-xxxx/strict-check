@@ -2,5 +2,7 @@ import { SEVERITY } from "../../../../../../../../libs/shared-for-config/constan
 
 import type { EslintRuleLevelAndOptions } from "../../../../../../../../libs/shared-for-config/types/EslintRuleLevelAndOptions"
 
-export const arrayType =
-  [SEVERITY.ERROR, { default: "array" }] as const satisfies EslintRuleLevelAndOptions
+export const arrayType = [
+  SEVERITY.ERROR,
+  { default: "array-simple" },
+] as const satisfies EslintRuleLevelAndOptions
