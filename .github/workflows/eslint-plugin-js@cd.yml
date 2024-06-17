@@ -119,7 +119,7 @@ jobs:
         run: yarn test
 
   publish:
-    needs: [check-publish, pre-check-lint, pre-check-spell-check, pre-check-type-check, pre-check-dry-run]
+    needs: [check-publish, pre-check-lint, pre-check-spell-check, pre-check-type-check, pre-check-dry-run, pre-check-test]
     runs-on: ubuntu-latest
     defaults:
       run:
