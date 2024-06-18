@@ -1,0 +1,4 @@
+{
+  "name": "eslint-config-next",
+  "packageManager": "yarn@4.2.2"
+}
