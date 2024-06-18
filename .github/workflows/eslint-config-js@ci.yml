@@ -24,13 +24,12 @@ on:
 env:
   WORKING_DIRECTORY: ./packages/eslint-config-js
 
-defaults:
-  run:
-    working-directory: ${{ env.WORKING_DIRECTORY }}
-
 jobs:
   lint:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -45,6 +44,9 @@ jobs:
 
   spell-check:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -59,6 +61,9 @@ jobs:
 
   type-check:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -73,6 +78,9 @@ jobs:
 
   dry-run:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     strategy:
       matrix:
         node-version: [ 18.x, 20.x ]

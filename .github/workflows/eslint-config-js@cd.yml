@@ -13,13 +13,12 @@ on:
 env:
   WORKING_DIRECTORY: ./packages/eslint-config-js
 
-defaults:
-  run:
-    working-directory: ${{ env.WORKING_DIRECTORY }}
-
 jobs:
   check-publish:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -31,6 +30,9 @@ jobs:
   pre-check-lint:
     needs: [check-publish]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -46,6 +48,9 @@ jobs:
   pre-check-spell-check:
     needs: [check-publish]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -61,6 +66,9 @@ jobs:
   pre-check-type-check:
     needs: [check-publish]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -76,6 +84,9 @@ jobs:
   pre-check-dry-run:
     needs: [check-publish]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     strategy:
       matrix:
         node-version: [ 18.x, 20.x ]
@@ -94,6 +105,9 @@ jobs:
   publish:
     needs: [check-publish, pre-check-lint, pre-check-spell-check, pre-check-type-check, pre-check-dry-run]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
