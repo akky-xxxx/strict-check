@@ -3512,6 +3512,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"dr-eslint-config-sc-next@workspace:dry-run/dr-eslint-config-sc-next":
+  version: 0.0.0-use.local
+  resolution: "dr-eslint-config-sc-next@workspace:dry-run/dr-eslint-config-sc-next"
+  languageName: unknown
+  linkType: soft
+
 "dr-eslint-config-sc-react@workspace:dry-run/dr-eslint-config-sc-react":
   version: 0.0.0-use.local
   resolution: "dr-eslint-config-sc-react@workspace:dry-run/dr-eslint-config-sc-react"
@@ -3851,6 +3857,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-next@workspace:packages/eslint-config-next":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-next@workspace:packages/eslint-config-next"
+  dependencies:
+    "@stylistic/eslint-plugin": "npm:^2.2.0"
+    "@tsconfig/strictest": "npm:^2.0.5"
+    "@types/react": "npm:^18.3.3"
+    "@typescript-eslint/parser": "npm:^7.13.0"
+    chokidar-cli: "npm:^3.0.0"
+    cspell: "npm:^8.8.4"
+    editorconfig-checker: "npm:^5.1.8"
+    eslint: "npm:^8.57.0"
+    eslint-config-sc-js: "npm:^0.0.6"
+    eslint-config-sc-react: "npm:^0.0.3"
+    eslint-plugin-next: "npm:^0.0.0"
+    fixpack: "npm:^4.0.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.3.2"
+    react: "npm:^18.3.1"
+    strict-check: "workspace:^"
+    typescript: "npm:^5.4.5"
+  languageName: unknown
+  linkType: soft
+
 "eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-jest@workspace:packages/eslint-config-jest"
@@ -3897,7 +3927,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-react@workspace:^, eslint-config-sc-react@workspace:packages/eslint-config-react":
+"eslint-config-sc-react@npm:^0.0.3, eslint-config-sc-react@workspace:^, eslint-config-sc-react@workspace:packages/eslint-config-react":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-react@workspace:packages/eslint-config-react"
   dependencies:
@@ -4056,6 +4086,13 @@ __metadata:
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
   checksum: 10c0/199b883e526e6f9d7c54cb3f094abc54f11a1ec816db5fb6cae3b938eb0e503acc10ccba91ca7451633a9d0b9abc0ea03601844a8aba5fe88c5e8897c9ac8f49
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-next@npm:^0.0.0":
+  version: 0.0.0
+  resolution: "eslint-plugin-next@npm:0.0.0"
+  checksum: 10c0/2b2b1ca99e3144e0ec801b6d8818d41363497eb5ef50cc402e66effb9030e6c038f6dcbdf5d2804d16c826c75d022bcde2dcd84b490eb2b42a87e25eb82631e9
   languageName: node
   linkType: hard
 
