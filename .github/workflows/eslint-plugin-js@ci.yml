@@ -10,6 +10,8 @@ on:
       - feature/**
       - main
     paths:
+      - '.github/actions/**'
+      - '.github/workflows/eslint-plugin-js@ci.yml'
       - '.node-version'
       - 'config/**'
       - 'dry-run/dr-eslint-plugin-sc-js/**'

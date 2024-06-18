@@ -10,6 +10,8 @@ on:
       - feature/**
       - main
     paths:
+      - '.github/actions/**'
+      - '.github/workflows/eslint-config-storybook@ci.yml'
       - '.node-version'
       - 'config/**'
       - 'dry-run/dr-eslint-config-sc-storybook/**'
