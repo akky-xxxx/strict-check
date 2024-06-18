@@ -10,25 +10,32 @@ on:
       - feature/**
       - main
     paths:
+      - '.github/actions/**'
+      - '.github/workflows/eslint-config-jest@ci.yml'
       - '.node-version'
-      - 'config/**'
+      - 'config/eslint/**'
+      - 'config/tsconfig/**'
       - 'dry-run/dr-eslint-config-sc-jest/**'
       - 'modules/shared-for-eslint-config/**'
       - 'packages/eslint-config-jest/**'
       - 'prettier.config.js'
       - 'yarn.lock'
 
+env:
+  WORKING_DIRECTORY: ./packages/eslint-config-jest
+
+defaults:
+  run:
+    working-directory: ${{ env.WORKING_DIRECTORY }}
+
 jobs:
   lint:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-jest
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/common-setup
+        uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
         run: yarn prepare
@@ -38,14 +45,11 @@ jobs:
 
   spell-check:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-jest
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/common-setup
+        uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
         run: yarn prepare
@@ -55,14 +59,11 @@ jobs:
 
   type-check:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-jest
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/common-setup
+        uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
         run: yarn prepare
@@ -75,14 +76,11 @@ jobs:
     strategy:
       matrix:
         node-version: [ 18.x, 20.x ]
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-jest
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/ci-setup
+        uses: ./.github/actions/setup-matrix-node-versions
 
       - name: Run prepare
         run: yarn prepare

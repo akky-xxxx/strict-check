@@ -16,17 +16,21 @@ on:
       - 'prettier.config.js'
       - 'yarn.lock'
 
+env:
+  WORKING_DIRECTORY: ./packages/eslint-config-jest
+
+defaults:
+  run:
+    working-directory: ${{ env.WORKING_DIRECTORY }}
+
 jobs:
   local-dry-run:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-jest
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/common-setup
+        uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
         run: yarn prepare
