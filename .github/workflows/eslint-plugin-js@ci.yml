@@ -18,12 +18,16 @@ on:
       - 'prettier.config.js'
       - 'yarn.lock'
 
+env:
+  WORKING_DIRECTORY: ./packages/eslint-plugin-js
+
+defaults:
+  run:
+    working-directory: ${{ env.WORKING_DIRECTORY }}
+
 jobs:
   lint:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-plugin-js
     steps:
       - uses: actions/checkout@v4
 
@@ -38,9 +42,6 @@ jobs:
 
   spell-check:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-plugin-js
     steps:
       - uses: actions/checkout@v4
 
@@ -55,9 +56,6 @@ jobs:
 
   type-check:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-plugin-js
     steps:
       - uses: actions/checkout@v4
 
@@ -75,9 +73,6 @@ jobs:
     strategy:
       matrix:
         node-version: [ 18.x, 20.x ]
-    defaults:
-      run:
-        working-directory: ./packages/eslint-plugin-js
     steps:
       - uses: actions/checkout@v4
 
@@ -95,9 +90,6 @@ jobs:
     strategy:
       matrix:
         node-version: [ 18.x, 20.x ]
-    defaults:
-      run:
-        working-directory: ./packages/eslint-plugin-js
     steps:
       - uses: actions/checkout@v4
 

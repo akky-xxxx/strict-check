@@ -16,12 +16,16 @@ on:
       - 'prettier.config.js'
       - 'yarn.lock'
 
+env:
+  WORKING_DIRECTORY: ./packages/eslint-config-storybook
+
+defaults:
+  run:
+    working-directory: ${{ env.WORKING_DIRECTORY }}
+
 jobs:
   local-dry-run:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-storybook
     steps:
       - uses: actions/checkout@v4
 

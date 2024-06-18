@@ -10,9 +10,12 @@ on:
     tags:
       - 'eslint-plugin-sc-js/v*'
 
+env:
+  WORKING_DIRECTORY: ./packages/eslint-plugin-js
+
 defaults:
   run:
-    working-directory: ./packages/eslint-plugin-js
+    working-directory: ${{ env.WORKING_DIRECTORY }}
 
 jobs:
   check-publish:
@@ -119,4 +122,4 @@ jobs:
         uses: ./.github/actions/publish
         with:
           npm-token: ${{ secrets.NPM_AUTH_TOKEN }}
-          working-directory: ./packages/eslint-plugin-js
+          working-directory: ${{ env.WORKING_DIRECTORY }}

@@ -10,9 +10,12 @@ on:
     tags:
       - 'eslint-config-sc-storybook/v*'
 
+env:
+  WORKING_DIRECTORY: ./packages/eslint-config-storybook
+
 defaults:
   run:
-    working-directory: ./packages/eslint-config-storybook
+    working-directory: ${{ env.WORKING_DIRECTORY }}
 
 jobs:
   check-publish:
@@ -101,4 +104,4 @@ jobs:
         uses: ./.github/actions/publish
         with:
           npm-token: ${{ secrets.NPM_AUTH_TOKEN }}
-          working-directory: ./packages/eslint-config-storybook
+          working-directory: ${{ env.WORKING_DIRECTORY }}
