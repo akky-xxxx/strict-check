@@ -1,5 +1,29 @@
 {
   "name": "eslint-config-next",
+  "version": "0.0.1",
+  "description": "Strict Check config for eslint for next",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslintconfig",
+    "nextjs",
+    "reactjs",
+    "strict-check"
+  ],
+  "author": "akky-xxxx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akky-xxxx/strict-check"
+  },
+  "bugs": "https://github.com/akky-xxxx/strict-check/issues",
+  "homepage": "https://github.com/akky-xxxx/strict-check",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./legacy": "./dist/legacy/index.js"
+  },
+  "types": "dist/index.d.ts",
   "dependencies": {
     "eslint-config-sc-js": "^0.0.6",
     "eslint-config-sc-react": "^0.0.3",
