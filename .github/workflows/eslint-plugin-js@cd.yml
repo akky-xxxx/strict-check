@@ -83,7 +83,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/ci-setup
+        uses: ./.github/actions/setup-matrix-node-versions
 
       - name: Run prepare
         run: yarn prepare
@@ -101,7 +101,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/ci-setup
+        uses: ./.github/actions/setup-matrix-node-versions
 
       - name: Run prepare
         run: yarn prepare
