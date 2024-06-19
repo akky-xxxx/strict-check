@@ -5,7 +5,7 @@ import { baseRecords2 } from "./shared/config/records/baseRecords2"
 import { customRecords } from "./shared/config/records/customRecords"
 import { resetRecordsForStylistic } from "./shared/config/records/resetRecordsForStylistic"
 
-import type { ESLint } from "eslint"
+import type { Plugin } from "./libs/shared-for-config/types/EslintPlugin"
 
 const plugin = {
   meta: {
@@ -22,6 +22,6 @@ const plugin = {
     customRecords,
     resetRecordsForStylistic,
   },
-} as const satisfies ESLint.Plugin
+} as const satisfies Plugin
 
 export = plugin
