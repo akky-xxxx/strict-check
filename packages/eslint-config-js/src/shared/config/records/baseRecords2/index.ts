@@ -1,7 +1,7 @@
-import { getCompatExtends } from "../../../../libs/shared-for-config/utilities/getCompatExtends"
+import { airbnbBaseRecords } from "../airbnbBaseRecords"
 
 import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/EslintFlatConfig"
 
 export const baseRecords2 = [
-  ...getCompatExtends("eslint-config-airbnb-base"),
+  ...airbnbBaseRecords,
 ] as const satisfies EslintFlatConfig[]
