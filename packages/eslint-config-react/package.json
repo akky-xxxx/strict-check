@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sc-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Strict Check config for eslint for react",
   "keywords": [
     "eslint",
