@@ -23,10 +23,10 @@ export default [
 // Below is equal
 export default [
   ...[/* other rules for product code */],
-  ...eslintConfigSCJest.configs.baseRecords,
-  ...eslintConfigSCJest.configs.customRecords,
-  ...eslintConfigSCJest.configs.eslintOverrideRecords, // for javascript project
-  ...eslintConfigSCJest.configs.typescriptEslintOverrideRecords, // for typecript project
+  ...eslintConfigSCJest.configs.jestPluginRecords,
+  eslintConfigSCJest.configs.customRecord,
+  eslintConfigSCJest.configs.eslintOverrideRecord, // for javascript project
+  eslintConfigSCJest.configs.typescriptEslintOverrideRecord, // for typecript project
 ]
 ```
 
