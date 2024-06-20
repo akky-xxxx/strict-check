@@ -21,17 +21,20 @@ export default [
 
 // Below is equal
 export default [
-  ...eslintConfigSCJs.configs.baseRecords1,
+  eslintConfigSCJs.configs.initialRecord,
+  eslintConfigSCJs.configs.stylisticRecord,
+  eslintConfigSCJs.configs.eslintRecommendedRecord,
+  ...eslintConfigSCJs.configs.unicornRecommendedRecords,
 
   // This use eslint-config-airbnb-base
   // For react project, this replace to eslint-config-airbnb
-  ...eslintConfigSCJs.configs.baseRecords2,
+  ...eslintConfigSCJs.configs.airbnbBaseRecords,
 
   // This is the custom config of eslint-config-sc-js
-  ...eslintConfigSCJs.configs.customRecords,
+  eslintConfigSCJs.configs.customRecord,
 
-  // This is the custom config of eslint-config-sc-js
-  ...eslintConfigSCJs.configs.resetRecordsForStylistic,
+  // This is the reset config for @stylistic
+  eslintConfigSCJs.configs.resetRecordForStylistic,
 ]
 ```
 
@@ -55,8 +58,8 @@ module.exports = {
   ],
   plugins: ["unicorn"],
   rules: {
-    ...eslintConfigSCJs.configs.customRecords[0].rules,
-    ...eslintConfigSCJs.configs.resetRulesForStylistic[0].rules,
+    ...eslintConfigSCJs.configs.customRecord.rules,
+    ...eslintConfigSCJs.configs.resetRecordForStylistic.rules,
   },
 }
 ```
