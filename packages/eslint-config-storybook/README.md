@@ -23,9 +23,9 @@ export default [
 // Below is equal
 export default [
   ...[/* other rules for product code */],
-  ...eslintConfigSCStorybook.configs.baseRecords,
-  ...eslintConfigSCStorybook.configs.eslintOverrideRecords, // for javascript project
-  ...eslintConfigSCStorybook.configs.typescriptEslintOverrideRecords, // for typecript project
+  ...eslintConfigSCStorybook.configs.storybookConfigRecords,
+  eslintConfigSCStorybook.configs.eslintOverrideRecord, // for javascript project
+  eslintConfigSCStorybook.configs.typescriptEslintOverrideRecord, // for typecript project
 ]
 ```
 
