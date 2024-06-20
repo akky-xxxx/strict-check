@@ -2,7 +2,6 @@ import { getCompatExtends } from "../../../../libs/shared-for-config/utilities/g
 
 import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/EslintFlatConfig"
 
-// TODO: 0.0.4 以降で削除
-export const baseRecords = [
+export const jestPluginRecords = [
   ...getCompatExtends("plugin:jest/recommended", "plugin:jest/style"),
 ] as const satisfies EslintFlatConfig[]
