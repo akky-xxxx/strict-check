@@ -4,6 +4,7 @@ import typescriptEslint from "typescript-eslint"
 
 import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/EslintFlatConfig"
 
+// TODO: 0.0.4 以降で削除
 export const baseRecords1 = [
   ...eslintConfigSCJs.configs.baseRecords1,
   // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
