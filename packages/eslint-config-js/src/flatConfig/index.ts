@@ -1,13 +1,19 @@
-import { baseRecords1 } from "../shared/config/records/baseRecords1"
-import { baseRecords2 } from "../shared/config/records/baseRecords2"
-import { customRecords } from "../shared/config/records/customRecords"
-import { resetRecordsForStylistic } from "../shared/config/records/resetRecordsForStylistic"
+import { airbnbBaseRecords } from "../shared/config/records/airbnbBaseRecords"
+import { customRecord } from "../shared/config/records/customRecord"
+import { eslintRecommendedRecord } from "../shared/config/records/eslintRecommendedRecord"
+import { initialRecord } from "../shared/config/records/initialRecord"
+import { resetRecordForStylistic } from "../shared/config/records/resetRecordForStylistic"
+import { stylisticRecord } from "../shared/config/records/stylisticRecord"
+import { unicornRecommendedRecords } from "../shared/config/records/unicornRecommendedRecords"
 
 import type { EslintFlatConfig } from "../libs/shared-for-config/types/EslintFlatConfig"
 
 export const flatConfig = [
-  ...baseRecords1,
-  ...baseRecords2,
-  ...customRecords,
-  ...resetRecordsForStylistic,
+  initialRecord,
+  stylisticRecord,
+  eslintRecommendedRecord,
+  ...unicornRecommendedRecords,
+  ...airbnbBaseRecords,
+  customRecord,
+  resetRecordForStylistic,
 ] as const satisfies EslintFlatConfig[]
