@@ -3524,6 +3524,14 @@ __metadata:
 "dr-eslint-config-sc-next@workspace:dry-run/dr-eslint-config-sc-next":
   version: 0.0.0-use.local
   resolution: "dr-eslint-config-sc-next@workspace:dry-run/dr-eslint-config-sc-next"
+  dependencies:
+    "@typescript-eslint/parser": "npm:^7.13.0"
+    eslint: "npm:^8.57.0"
+    eslint-config-sc-next: "workspace:^"
+    eslint-config-sc-ts: "workspace:^"
+    fixpack: "npm:^4.0.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.3.2"
   languageName: unknown
   linkType: soft
 
@@ -3912,7 +3920,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-next@workspace:packages/eslint-config-next":
+"eslint-config-sc-next@workspace:^, eslint-config-sc-next@workspace:packages/eslint-config-next":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-next@workspace:packages/eslint-config-next"
   dependencies:
