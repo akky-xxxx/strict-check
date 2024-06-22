@@ -1,5 +1,28 @@
 {
   "name": "eslint-config-sc-all",
+  "version": "0.0.1",
+  "description": "Strict Check config for eslint",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "javascript",
+    "jest",
+    "next",
+    "react",
+    "storybook",
+    "strict-check",
+    "typescript"
+  ],
+  "author": "akky-xxxx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akky-xxxx/strict-check"
+  },
+  "bugs": "https://github.com/akky-xxxx/strict-check/issues",
+  "homepage": "https://github.com/akky-xxxx/strict-check",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "run-s \"build:*\"",
     "build:1": "rm -rf ./dist",
