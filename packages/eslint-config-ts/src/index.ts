@@ -18,12 +18,13 @@ import {
   typescriptEslintStylisticTypeCheckedRecords,
 } from "./shared/config/records/typescriptEslintStylisticTypeCheckedRecords"
 import { unicornRecommendedRecords } from "./shared/config/records/unicornRecommendedRecords"
+import { PACKAGE_NAME } from "./shared/constants/PACKAGE_NAME"
 
 import type { Plugin } from "./libs/shared-for-config/types/EslintPlugin"
 
 const plugin = {
   meta: {
-    name: "@strict/eslint-config-ts",
+    name: PACKAGE_NAME,
   },
 
   configs: {
