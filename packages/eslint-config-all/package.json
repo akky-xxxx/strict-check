@@ -1,4 +1,23 @@
 {
   "name": "eslint-config-sc-all",
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.5",
+    "chokidar-cli": "^3.0.0",
+    "cspell": "^8.8.4",
+    "editorconfig-checker": "^5.1.8",
+    "eslint": "^8.57.0",
+    "eslint-config-sc-jest": "^0.0.3",
+    "eslint-config-sc-js": "^0.0.6",
+    "eslint-config-sc-next": "^0.0.1",
+    "eslint-config-sc-react": "^0.0.3",
+    "eslint-config-sc-storybook": "^0.0.3",
+    "eslint-config-sc-ts": "^0.0.3",
+    "fixpack": "^4.0.0",
+    "npm-run-all2": "^6.2.0",
+    "prettier": "^3.3.2",
+    "strict-check": "workspace:^",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.13.0"
+  },
   "packageManager": "yarn@4.2.2"
 }

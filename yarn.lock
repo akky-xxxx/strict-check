@@ -3877,10 +3877,28 @@ __metadata:
 "eslint-config-sc-all@workspace:packages/eslint-config-all":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-all@workspace:packages/eslint-config-all"
+  dependencies:
+    "@tsconfig/strictest": "npm:^2.0.5"
+    chokidar-cli: "npm:^3.0.0"
+    cspell: "npm:^8.8.4"
+    editorconfig-checker: "npm:^5.1.8"
+    eslint: "npm:^8.57.0"
+    eslint-config-sc-jest: "npm:^0.0.3"
+    eslint-config-sc-js: "npm:^0.0.6"
+    eslint-config-sc-next: "npm:^0.0.1"
+    eslint-config-sc-react: "npm:^0.0.3"
+    eslint-config-sc-storybook: "npm:^0.0.3"
+    eslint-config-sc-ts: "npm:^0.0.3"
+    fixpack: "npm:^4.0.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.3.2"
+    strict-check: "workspace:^"
+    typescript: "npm:^5.4.5"
+    typescript-eslint: "npm:^7.13.0"
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
+"eslint-config-sc-jest@npm:^0.0.3, eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-jest@workspace:packages/eslint-config-jest"
   dependencies:
@@ -3926,7 +3944,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-next@workspace:^, eslint-config-sc-next@workspace:packages/eslint-config-next":
+"eslint-config-sc-next@npm:^0.0.1, eslint-config-sc-next@workspace:^, eslint-config-sc-next@workspace:packages/eslint-config-next":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-next@workspace:packages/eslint-config-next"
   dependencies:
@@ -3971,7 +3989,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-storybook@workspace:^, eslint-config-sc-storybook@workspace:packages/eslint-config-storybook":
+"eslint-config-sc-storybook@npm:^0.0.3, eslint-config-sc-storybook@workspace:^, eslint-config-sc-storybook@workspace:packages/eslint-config-storybook":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-storybook@workspace:packages/eslint-config-storybook"
   dependencies:
@@ -3994,7 +4012,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-ts@workspace:^, eslint-config-sc-ts@workspace:packages/eslint-config-ts":
+"eslint-config-sc-ts@npm:^0.0.3, eslint-config-sc-ts@workspace:^, eslint-config-sc-ts@workspace:packages/eslint-config-ts":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-ts@workspace:packages/eslint-config-ts"
   dependencies:
