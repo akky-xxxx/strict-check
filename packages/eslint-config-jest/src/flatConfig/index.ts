@@ -6,8 +6,8 @@ import { typescriptEslintOverrideRecord } from "../shared/config/records/typescr
 import type { EslintFlatConfig } from "../libs/shared-for-config/types/EslintFlatConfig"
 
 export const flatConfig = [
-  ...jestPluginRecords,
+  jestPluginRecords,
   customRecord,
   eslintOverrideRecord,
   typescriptEslintOverrideRecord,
-] as const satisfies EslintFlatConfig[]
+].flat() satisfies EslintFlatConfig[]

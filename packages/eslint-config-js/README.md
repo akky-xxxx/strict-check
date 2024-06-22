@@ -16,26 +16,26 @@ $ yarn add -D eslint-config-sc-js
 import eslintConfigSCJs from "eslint-config-sc-js"
 
 export default [
-  ...eslintConfigSCJs.configs.recommended,
-]
+  eslintConfigSCJs.configs.recommended,
+].flat()
 
 // Below is equal
 export default [
   eslintConfigSCJs.configs.initialRecord,
   eslintConfigSCJs.configs.stylisticRecord,
   eslintConfigSCJs.configs.eslintRecommendedRecord,
-  ...eslintConfigSCJs.configs.unicornRecommendedRecords,
+  eslintConfigSCJs.configs.unicornRecommendedRecords,
 
   // This use eslint-config-airbnb-base
   // For react project, this replace to eslint-config-airbnb
-  ...eslintConfigSCJs.configs.airbnbBaseRecords,
+  eslintConfigSCJs.configs.airbnbBaseRecords,
 
   // This is the custom config of eslint-config-sc-js
   eslintConfigSCJs.configs.customRecord,
 
   // This is the reset config for @stylistic
   eslintConfigSCJs.configs.resetRecordForStylistic,
-]
+].flat()
 ```
 
 ### Use for `.eslintrc.js`

@@ -12,8 +12,8 @@ export const flatConfig = [
   initialRecord,
   stylisticRecord,
   eslintRecommendedRecord,
-  ...unicornRecommendedRecords,
-  ...airbnbBaseRecords,
+  unicornRecommendedRecords,
+  airbnbBaseRecords,
   customRecord,
   resetRecordForStylistic,
-] as const satisfies EslintFlatConfig[]
+].flat() satisfies EslintFlatConfig[]

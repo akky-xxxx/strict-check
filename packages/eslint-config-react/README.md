@@ -25,9 +25,9 @@ export default [
   eslintConfigSCReact.configs.initialRecord,
   eslintConfigSCReact.configs.stylisticRecord,
   eslintConfigSCReact.configs.eslintRecommendedRecord,
-  ...eslintConfigSCReact.configs.unicornRecommendedRecords,
-  ...eslintConfigSCReact.configs.reactRecords,
-  ...eslintConfigSCReact.configs.airbnbRecords,
+  eslintConfigSCReact.configs.unicornRecommendedRecords,
+  eslintConfigSCReact.configs.reactRecords,
+  eslintConfigSCReact.configs.airbnbRecords,
 
   // This is the custom config of eslint-config-sc-js / eslint-config-sc-react
   eslintConfigSCReact.configs.scJsCustomRecord,
@@ -35,7 +35,7 @@ export default [
 
   // This is the reset config for stylistic
   eslintConfigSCReact.configs.resetRecordForStylistic,
-]
+].flat()
 ```
 
 #### For Typescript
@@ -47,11 +47,11 @@ export default [
   eslintConfigSCReact.configs.initialRecord,
   eslintConfigSCReact.configs.stylisticRecord,
   eslintConfigSCReact.configs.eslintRecommendedRecord,
-  ...eslintConfigSCReact.configs.unicornRecommendedRecords,
-  ...eslintConfigSCTs.configs.typescriptEslintStrictTypeCheckedRecords,
-  ...eslintConfigSCTs.configs.typescriptEslintStylisticTypeCheckedRecords,
-  ...eslintConfigSCReact.configs.reactRecords,
-  ...eslintConfigSCReact.configs.airbnbRecords,
+  eslintConfigSCReact.configs.unicornRecommendedRecords,
+  eslintConfigSCTs.configs.typescriptEslintStrictTypeCheckedRecords,
+  eslintConfigSCTs.configs.typescriptEslintStylisticTypeCheckedRecords,
+  eslintConfigSCReact.configs.reactRecords,
+  eslintConfigSCReact.configs.airbnbRecords,
 
   // This is the custom config of eslint-config-sc-js / eslint-config-sc-react
   eslintConfigSCReact.configs.scJsCustomRecord,
@@ -60,7 +60,7 @@ export default [
 
   // This is the reset config for stylistic
   eslintConfigSCReact.configs.resetRecordForStylistic,
-]
+].flat()
 ```
 
 

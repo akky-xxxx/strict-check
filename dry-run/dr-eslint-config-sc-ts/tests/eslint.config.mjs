@@ -1,7 +1,7 @@
 import eslintConfigSCTs from "eslint-config-sc-ts"
 
 export default [
-  ...eslintConfigSCTs.configs.recommended,
+  eslintConfigSCTs.configs.recommended,
   {
     languageOptions: {
       parserOptions: {
@@ -10,4 +10,4 @@ export default [
     },
     files: ["**/*.ts"],
   },
-]
+].flat()
