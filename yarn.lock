@@ -3999,33 +3999,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-sc-all@workspace:packages/eslint-config-all":
-  version: 0.0.0-use.local
-  resolution: "eslint-config-sc-all@workspace:packages/eslint-config-all"
-  dependencies:
-    "@swc/core": "npm:^1.6.5"
-    "@tsconfig/strictest": "npm:^2.0.5"
-    "@types/jest": "npm:^29.5.12"
-    chokidar-cli: "npm:^3.0.0"
-    cspell: "npm:^8.8.4"
-    editorconfig-checker: "npm:^5.1.8"
-    eslint: "npm:^8.57.0"
-    eslint-config-sc-jest: "npm:^0.0.3"
-    eslint-config-sc-js: "npm:^0.0.6"
-    eslint-config-sc-next: "npm:^0.0.1"
-    eslint-config-sc-react: "npm:^0.0.3"
-    eslint-config-sc-storybook: "npm:^0.0.3"
-    eslint-config-sc-ts: "npm:^0.0.3"
-    fixpack: "npm:^4.0.0"
-    jest: "npm:^29.7.0"
-    npm-run-all2: "npm:^6.2.0"
-    prettier: "npm:^3.3.2"
-    strict-check: "workspace:^"
-    typescript: "npm:^5.4.5"
-    typescript-eslint: "npm:^7.13.0"
-  languageName: unknown
-  linkType: soft
-
 "eslint-config-sc-jest@npm:^0.0.3, eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-jest@workspace:packages/eslint-config-jest"
@@ -4154,6 +4127,33 @@ __metadata:
     eslint: "npm:^8.57.0"
     eslint-config-sc-js: "npm:^0.0.6"
     fixpack: "npm:^4.0.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.3.2"
+    strict-check: "workspace:^"
+    typescript: "npm:^5.4.5"
+    typescript-eslint: "npm:^7.13.0"
+  languageName: unknown
+  linkType: soft
+
+"eslint-config-sc@workspace:packages/eslint-config-all":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-sc@workspace:packages/eslint-config-all"
+  dependencies:
+    "@swc/core": "npm:^1.6.5"
+    "@tsconfig/strictest": "npm:^2.0.5"
+    "@types/jest": "npm:^29.5.12"
+    chokidar-cli: "npm:^3.0.0"
+    cspell: "npm:^8.8.4"
+    editorconfig-checker: "npm:^5.1.8"
+    eslint: "npm:^8.57.0"
+    eslint-config-sc-jest: "npm:^0.0.3"
+    eslint-config-sc-js: "npm:^0.0.6"
+    eslint-config-sc-next: "npm:^0.0.1"
+    eslint-config-sc-react: "npm:^0.0.3"
+    eslint-config-sc-storybook: "npm:^0.0.3"
+    eslint-config-sc-ts: "npm:^0.0.3"
+    fixpack: "npm:^4.0.0"
+    jest: "npm:^29.7.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.3.2"
     strict-check: "workspace:^"
