@@ -11,12 +11,13 @@ import { resetRecordForStylistic } from "./shared/config/records/resetRecordForS
 import { resetRecordsForStylistic } from "./shared/config/records/resetRecordsForStylistic"
 import { stylisticRecord } from "./shared/config/records/stylisticRecord"
 import { unicornRecommendedRecords } from "./shared/config/records/unicornRecommendedRecords"
+import { PACKAGE_NAME } from "./shared/constants/PACKAGE_NAME"
 
 import type { Plugin } from "./libs/shared-for-config/types/EslintPlugin"
 
 const plugin = {
   meta: {
-    name: "eslint-config-sc-js",
+    name: PACKAGE_NAME,
   },
 
   configs: {

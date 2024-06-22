@@ -11,12 +11,13 @@ import { scRectCustomRecord } from "./shared/config/records/scRectCustomRecord"
 import { scRectCustomRecordWithTypescript } from "./shared/config/records/scRectCustomRecordWithTypescript"
 import { stylisticRecord } from "./shared/config/records/stylisticRecord"
 import { unicornRecommendedRecords } from "./shared/config/records/unicornRecommendedRecords"
+import { PACKAGE_NAME } from "./shared/constants/PACKAGE_NAME"
 
 import type { Plugin } from "./libs/shared-for-config/types/EslintPlugin"
 
 const plugin = {
   meta: {
-    name: "@strict/eslint-config-sc-next",
+    name: PACKAGE_NAME,
   },
 
   configs: {

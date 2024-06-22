@@ -8,12 +8,13 @@ import { eslintOverrideRecords } from "./shared/config/records/eslintOverrideRec
 import { jestPluginRecords } from "./shared/config/records/jestPluginRecords"
 import { typescriptEslintOverrideRecord } from "./shared/config/records/typescriptEslintOverrideRecord"
 import { typescriptEslintOverrideRecords } from "./shared/config/records/typescriptEslintOverrideRecords"
+import { PACKAGE_NAME } from "./shared/const/PACKAGE_NAME"
 
 import type { Plugin } from "./libs/shared-for-config/types/EslintPlugin"
 
 const plugin = {
   meta: {
-    name: "eslint-config-sc-jest",
+    name: PACKAGE_NAME,
   },
 
   configs: {

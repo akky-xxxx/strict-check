@@ -6,12 +6,13 @@ import { eslintOverrideRecords } from "./shared/config/records/eslintOverrideRec
 import { storybookConfigRecords } from "./shared/config/records/storybookConfigRecords"
 import { typescriptEslintOverrideRecord } from "./shared/config/records/typescriptEslintOverrideRecord"
 import { typescriptEslintOverrideRecords } from "./shared/config/records/typescriptEslintOverrideRecords"
+import { PACKAGE_NAME } from "./shared/const/PACKAGE_NAME"
 
 import type { Plugin } from "./libs/shared-for-config/types/EslintPlugin"
 
 const plugin = {
   meta: {
-    name: "eslint-config-sc-storybook",
+    name: PACKAGE_NAME,
   },
 
   configs: {
