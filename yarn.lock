@@ -3874,6 +3874,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-sc-all@workspace:packages/eslint-config-all":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-sc-all@workspace:packages/eslint-config-all"
+  languageName: unknown
+  linkType: soft
+
 "eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-jest@workspace:packages/eslint-config-jest"
