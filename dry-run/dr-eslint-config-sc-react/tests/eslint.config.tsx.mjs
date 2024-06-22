@@ -3,15 +3,15 @@ import eslintConfigSCTs from "eslint-config-sc-ts"
 import typescriptEslintParser from "@typescript-eslint/parser"
 
 export default [
-  ...eslintConfigSCTs.configs.baseRecords1,
-  ...eslintConfigSCReact.configs.baseRecords1,
-  ...eslintConfigSCReact.configs.baseRecords2,
+  eslintConfigSCTs.configs.baseRecords1,
+  eslintConfigSCReact.configs.baseRecords1,
+  eslintConfigSCReact.configs.baseRecords2,
 
-  ...eslintConfigSCTs.configs.customRecords,
-  ...eslintConfigSCReact.configs.customRecords,
-  ...eslintConfigSCReact.configs.customRecordsWithTypescript,
+  eslintConfigSCTs.configs.customRecords,
+  eslintConfigSCReact.configs.customRecords,
+  eslintConfigSCReact.configs.customRecordsWithTypescript,
 
-  ...eslintConfigSCReact.configs.resetRecordsForStylistic,
+  eslintConfigSCReact.configs.resetRecordsForStylistic,
   {
     languageOptions: {
       parserOptions: {
@@ -21,4 +21,4 @@ export default [
     },
     files: ["**/*.tsx"],
   },
-]
+].flat()
