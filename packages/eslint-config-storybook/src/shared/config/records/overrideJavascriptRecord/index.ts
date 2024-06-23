@@ -1,16 +1,16 @@
 import { FILES } from "../../../const/FILES"
+import { PACKAGE_NAME } from "../../../const/PACKAGE_NAME"
 import { overrideEslintRules } from "../../rules/overrideEslintRules"
 import { overrideImportRules } from "../../rules/overrideImportRules"
 
 import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/EslintFlatConfig"
 
-// TODO: 0.0.4 以降で削除
-export const eslintOverrideRecords = [
-  {
-    files: FILES.JS,
-    rules: {
-      ...overrideEslintRules,
-      ...overrideImportRules,
-    },
+export const overrideJavascriptRecord = {
+  name: `${PACKAGE_NAME}/overrideJavascriptRecord`,
+
+  files: FILES.JS,
+  rules: {
+    ...overrideEslintRules,
+    ...overrideImportRules,
   },
-] as const satisfies EslintFlatConfig[]
+} as const satisfies EslintFlatConfig

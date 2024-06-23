@@ -1,8 +1,8 @@
-import { SEVERITY } from "../../../../../../libs/shared-for-config/constants/SEVERITY"
+import { SEVERITY } from "../../../../libs/shared-for-config/constants/SEVERITY"
 
-import type { EslintRules } from "../../../../../../libs/shared-for-config/types/EslintRules"
+import type { EslintRules } from "../../../../libs/shared-for-config/types/EslintRules"
 
-export const eslintRules = {
+export const overrideEslintRules = {
   /* eslint-disable @typescript-eslint/no-magic-numbers */
   "complexity": SEVERITY.OFF,
   "max-lines": [SEVERITY.WARN, 200],
