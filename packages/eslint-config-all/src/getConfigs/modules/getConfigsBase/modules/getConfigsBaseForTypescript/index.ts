@@ -48,7 +48,7 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
     const storybookConfig = require("eslint-config-sc-storybook")
     configBase.push(
       storybookConfig.configs.storybookConfigRecords,
-      storybookConfig.configs.typescriptEslintOverrideRecord,
+      storybookConfig.configs.overrideTypescriptRecord,
     )
   }
 
@@ -57,7 +57,7 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
     configBase.push(
       jestConfig.configs.jestPluginRecords,
       jestConfig.configs.customRecord,
-      jestConfig.configs.typescriptEslintOverrideRecord,
+      jestConfig.configs.overrideTypescriptRecord,
     )
   }
 
