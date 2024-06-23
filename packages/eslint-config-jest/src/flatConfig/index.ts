@@ -1,13 +1,13 @@
 import { customRecord } from "../shared/config/records/customRecord"
-import { eslintOverrideRecord } from "../shared/config/records/eslintOverrideRecord"
 import { jestPluginRecords } from "../shared/config/records/jestPluginRecords"
-import { typescriptEslintOverrideRecord } from "../shared/config/records/typescriptEslintOverrideRecord"
+import { overrideJavascriptRecord } from "../shared/config/records/overrideJavascriptRecord"
+import { overrideTypescriptRecord } from "../shared/config/records/overrideTypescriptRecord"
 
 import type { EslintFlatConfig } from "../libs/shared-for-config/types/EslintFlatConfig"
 
 export const flatConfig = [
   jestPluginRecords,
   customRecord,
-  eslintOverrideRecord,
-  typescriptEslintOverrideRecord,
+  overrideJavascriptRecord,
+  overrideTypescriptRecord,
 ].flat() satisfies EslintFlatConfig[]

@@ -3,10 +3,10 @@ import { legacyConfig } from "./legacyConfig"
 import { baseRecords } from "./shared/config/records/baseRecords"
 import { customRecord } from "./shared/config/records/customRecord"
 import { customRecords } from "./shared/config/records/customRecords"
-import { eslintOverrideRecord } from "./shared/config/records/eslintOverrideRecord"
 import { eslintOverrideRecords } from "./shared/config/records/eslintOverrideRecords"
 import { jestPluginRecords } from "./shared/config/records/jestPluginRecords"
-import { typescriptEslintOverrideRecord } from "./shared/config/records/typescriptEslintOverrideRecord"
+import { overrideJavascriptRecord } from "./shared/config/records/overrideJavascriptRecord"
+import { overrideTypescriptRecord } from "./shared/config/records/overrideTypescriptRecord"
 import { typescriptEslintOverrideRecords } from "./shared/config/records/typescriptEslintOverrideRecords"
 import { PACKAGE_NAME } from "./shared/const/PACKAGE_NAME"
 
@@ -31,8 +31,8 @@ const plugin = {
     jestPluginRecords,
 
     customRecord,
-    eslintOverrideRecord,
-    typescriptEslintOverrideRecord,
+    overrideJavascriptRecord,
+    overrideTypescriptRecord,
   },
 } as const satisfies Plugin
 
