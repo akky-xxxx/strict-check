@@ -35,7 +35,7 @@ describe("getConfigsBase", () => {
       [7, "eslint-config-sc-storybook/eslintOverrideRecord"],
       [8, "eslint-config-sc-jest/jestPluginRecords"],
       [9, "eslint-config-sc-jest/customRecord"],
-      [10, "eslint-config-sc-jest/eslintOverrideRecord"],
+      [10, "eslint-config-sc-jest/overrideJavascriptRecord"],
       [11, "eslint-config-sc-js/resetRecordForStylistic"],
     ] as const)("%i番目の config の name は「%s」", (index, name) => {
       expect(getConfigName(result[index])).toBe(name)
@@ -80,7 +80,7 @@ describe("getConfigsBase", () => {
       [10, "eslint-config-sc-storybook/typescriptEslintOverrideRecord"],
       [11, "eslint-config-sc-jest/jestPluginRecords"],
       [12, "eslint-config-sc-jest/customRecord"],
-      [13, "eslint-config-sc-jest/typescriptEslintOverrideRecord"],
+      [13, "eslint-config-sc-jest/overrideTypescriptRecord"],
       [14, "eslint-config-sc-ts/resetRecordForStylistic"],
     ] as const)("%i番目の config の name は「%s」", (index, name) => {
       expect(getConfigName(result[index])).toBe(name)
