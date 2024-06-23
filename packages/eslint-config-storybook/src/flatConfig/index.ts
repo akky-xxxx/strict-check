@@ -1,11 +1,11 @@
 import { eslintOverrideRecord } from "../shared/config/records/eslintOverrideRecord"
 import { storybookConfigRecords } from "../shared/config/records/storybookConfigRecords"
-import { typescriptEslintOverrideRecord } from "../shared/config/records/typescriptEslintOverrideRecord"
+import { overrideTypescriptRecord } from "../shared/config/records/overrideTypescriptRecord"
 
 import type { EslintFlatConfig } from "../libs/shared-for-config/types/EslintFlatConfig"
 
 export const flatConfig = [
   storybookConfigRecords,
   eslintOverrideRecord,
-  typescriptEslintOverrideRecord,
+  overrideTypescriptRecord,
 ].flat() satisfies EslintFlatConfig[]

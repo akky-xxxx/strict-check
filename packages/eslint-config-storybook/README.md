@@ -25,7 +25,7 @@ export default [
   [/* other rules for product code */],
   eslintConfigSCStorybook.configs.storybookConfigRecords,
   eslintConfigSCStorybook.configs.eslintOverrideRecord, // for javascript project
-  eslintConfigSCStorybook.configs.typescriptEslintOverrideRecord, // for typecript project
+  eslintConfigSCStorybook.configs.overrideTypescriptRecord, // for typecript project
 ].flat()
 ```
 
