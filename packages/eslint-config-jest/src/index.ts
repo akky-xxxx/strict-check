@@ -6,7 +6,7 @@ import { customRecords } from "./shared/config/records/customRecords"
 import { eslintOverrideRecord } from "./shared/config/records/eslintOverrideRecord"
 import { eslintOverrideRecords } from "./shared/config/records/eslintOverrideRecords"
 import { jestPluginRecords } from "./shared/config/records/jestPluginRecords"
-import { typescriptEslintOverrideRecord } from "./shared/config/records/typescriptEslintOverrideRecord"
+import { overrideTypescriptRecord } from "./shared/config/records/overrideTypescriptRecord"
 import { typescriptEslintOverrideRecords } from "./shared/config/records/typescriptEslintOverrideRecords"
 import { PACKAGE_NAME } from "./shared/const/PACKAGE_NAME"
 
@@ -32,7 +32,7 @@ const plugin = {
 
     customRecord,
     eslintOverrideRecord,
-    typescriptEslintOverrideRecord,
+    overrideTypescriptRecord,
   },
 } as const satisfies Plugin
 
