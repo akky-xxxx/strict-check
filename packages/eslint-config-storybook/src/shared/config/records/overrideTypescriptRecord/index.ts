@@ -1,6 +1,6 @@
 import { FILES } from "../../../const/FILES"
 import { PACKAGE_NAME } from "../../../const/PACKAGE_NAME"
-import { eslintOverrideRules } from "../../rules/eslintOverrideRules"
+import { overrideEslintRules } from "../../rules/overrideEslintRules"
 import { importOverrideRules } from "../../rules/importOverrideRules"
 import { typescriptEslintOverrideRules } from "../../rules/typescriptEslintOverrideRules"
 
@@ -11,7 +11,7 @@ export const overrideTypescriptRecord = {
 
   files: FILES.TS,
   rules: {
-    ...eslintOverrideRules,
+    ...overrideEslintRules,
     ...importOverrideRules,
     ...typescriptEslintOverrideRules,
   },
