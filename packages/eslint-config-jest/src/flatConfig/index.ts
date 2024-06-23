@@ -1,6 +1,6 @@
 import { customRecord } from "../shared/config/records/customRecord"
-import { overrideJavascriptRecord } from "../shared/config/records/overrideJavascriptRecord"
 import { jestPluginRecords } from "../shared/config/records/jestPluginRecords"
+import { overrideJavascriptRecord } from "../shared/config/records/overrideJavascriptRecord"
 import { overrideTypescriptRecord } from "../shared/config/records/overrideTypescriptRecord"
 
 import type { EslintFlatConfig } from "../libs/shared-for-config/types/EslintFlatConfig"
