@@ -41,7 +41,7 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
     const storybookConfig = require("eslint-config-sc-storybook")
     configBase.push(
       storybookConfig.configs.storybookConfigRecords,
-      storybookConfig.configs.eslintOverrideRecord,
+      storybookConfig.configs.overrideJavascriptRecord,
     )
   }
 
