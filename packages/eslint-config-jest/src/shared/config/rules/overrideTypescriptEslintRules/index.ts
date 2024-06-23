@@ -3,7 +3,7 @@ import { eslintRules } from "../eslintOverrideRules/rules/eslintRules"
 
 import type { EslintRules } from "../../../../libs/shared-for-config/types/EslintRules"
 
-export const typescriptEslintOverrideRules = {
+export const overrideTypescriptEslintRules = {
   ...eslintRules,
   ...typescriptEslintRules,
 } as const satisfies EslintRules
