@@ -3,6 +3,7 @@
 
 # Managed packages
 ## eslint-config
+- [eslint-config-sc-all](https://www.npmjs.com/package/eslint-config-sc-all)
 - [eslint-config-sc-js](https://www.npmjs.com/package/eslint-config-sc-js)
 - [eslint-config-sc-ts](https://www.npmjs.com/package/eslint-config-sc-ts)
 - [eslint-config-sc-react](https://www.npmjs.com/package/eslint-config-sc-react)
