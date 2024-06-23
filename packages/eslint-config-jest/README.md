@@ -25,7 +25,7 @@ export default [
   [/* other rules for product code */],
   eslintConfigSCJest.configs.jestPluginRecords,
   eslintConfigSCJest.configs.customRecord,
-  eslintConfigSCJest.configs.eslintOverrideRecord, // for javascript project
+  eslintConfigSCJest.configs.overrideJavascriptRecord, // for javascript project
   eslintConfigSCJest.configs.overrideTypescriptRecord, // for typecript project
 ].flat()
 ```
