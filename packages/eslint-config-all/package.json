@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-sc",
+  "name": "eslint-config-sc-all",
   "version": "0.0.1",
   "description": "Strict Check config for eslint",
   "keywords": [
@@ -30,8 +30,8 @@
     "check-code": "npm-run-all -c -s prepare -p lint spell-check type-check -s dry-run test",
     "dev": "chokidar \"./{src,dry-run}/**\" -c \"yarn type-check && yarn dry-run\"",
     "dry-run": "run-s dry-run:prepare dry-run:exec",
-    "dry-run:exec": "yarn workspace dr-eslint-config-sc dry-run",
-    "dry-run:prepare": "yarn workspace dr-eslint-config-sc prepare",
+    "dry-run:exec": "yarn workspace dr-eslint-config-sc-all dry-run",
+    "dry-run:prepare": "yarn workspace dr-eslint-config-sc-all prepare",
     "fix": "run-p \"fix:*\" -c",
     "fix:eslint": "eslint \"./\" --fix --max-warnings 0",
     "fix:pack": "fixpack",

@@ -1,4 +1,4 @@
-import eslintConfigSC from "eslint-config-sc"
+import eslintConfigSC from "eslint-config-sc-all"
 
 export default [
   eslintConfigSC.getConfigs("javascript", ["jest"]),
