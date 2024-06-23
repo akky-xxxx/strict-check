@@ -1,10 +1,10 @@
 import { flatConfig } from "./flatConfig"
 import { legacyConfig } from "./legacyConfig"
 import { baseRecords } from "./shared/config/records/baseRecords"
-import { overrideJavascriptRecord } from "./shared/config/records/overrideJavascriptRecord"
 import { eslintOverrideRecords } from "./shared/config/records/eslintOverrideRecords"
-import { storybookConfigRecords } from "./shared/config/records/storybookConfigRecords"
+import { overrideJavascriptRecord } from "./shared/config/records/overrideJavascriptRecord"
 import { overrideTypescriptRecord } from "./shared/config/records/overrideTypescriptRecord"
+import { storybookConfigRecords } from "./shared/config/records/storybookConfigRecords"
 import { typescriptEslintOverrideRecords } from "./shared/config/records/typescriptEslintOverrideRecords"
 import { PACKAGE_NAME } from "./shared/const/PACKAGE_NAME"
 

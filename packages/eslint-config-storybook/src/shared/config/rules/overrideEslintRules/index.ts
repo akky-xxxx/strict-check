@@ -1,5 +1,6 @@
+import { SEVERITY } from "../../../../libs/shared-for-config/constants/SEVERITY"
+
 import type { EslintRules } from "../../../../libs/shared-for-config/types/EslintRules"
-import {SEVERITY} from "../../../../libs/shared-for-config/constants/SEVERITY"
 
 export const overrideEslintRules = {
   /* eslint-disable @typescript-eslint/no-magic-numbers */
