@@ -1,5 +1,5 @@
 import { typescriptEslintRules } from "./rules/typescriptEslintRules"
-import { eslintRules } from "../eslintOverrideRules/rules/eslintRules"
+import { eslintRules } from "../overrideEslintRules/rules/eslintRules"
 
 import type { EslintRules } from "../../../../libs/shared-for-config/types/EslintRules"
 
