@@ -57,7 +57,7 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
     configBase.push(
       jestConfig.configs.jestPluginRecords,
       jestConfig.configs.customRecord,
-      jestConfig.configs.typescriptEslintOverrideRecord,
+      jestConfig.configs.overrideTypescriptRecord,
     )
   }
 

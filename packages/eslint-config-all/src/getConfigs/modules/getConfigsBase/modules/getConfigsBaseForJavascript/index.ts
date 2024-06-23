@@ -50,7 +50,7 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
     configBase.push(
       jestConfig.configs.jestPluginRecords,
       jestConfig.configs.customRecord,
-      jestConfig.configs.eslintOverrideRecord,
+      jestConfig.configs.overrideJavascriptRecord,
     )
   }
 
