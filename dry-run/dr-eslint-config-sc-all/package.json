@@ -1,5 +1,5 @@
 {
-  "name": "dr-eslint-config-sc",
+  "name": "dr-eslint-config-sc-all",
   "scripts": {
     "check-code": "run-p lint dry-run",
     "dry-run": "run-p \"dry-run:*\" -c",
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "eslint": "^8.57.0",
-    "eslint-config-sc": "workspace:^",
+    "eslint-config-sc-all": "workspace:^",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^6.2.0",
     "prettier": "^3.3.2"

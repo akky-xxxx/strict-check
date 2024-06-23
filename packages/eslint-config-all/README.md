@@ -12,7 +12,7 @@
 ### Installation
 
 ```shell
-$ yarn add -D eslint-config-sc
+$ yarn add -D eslint-config-sc-all
 ```
 
 ```javascript
