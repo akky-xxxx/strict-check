@@ -1,0 +1,6 @@
+{
+  "extends": ["strict-check/config/tsconfig/tsconfig.json"],
+
+  "include": ["./src/**/*.ts", "./spec/**/*.ts"],
+  "exclude": ["node_modules"]
+}

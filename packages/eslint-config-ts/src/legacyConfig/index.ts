@@ -5,8 +5,6 @@ import { settings } from "../shared/config/settings"
 
 import type { EslintLegacyConfig } from "../libs/shared-for-config/types/EslintLegacyConfig"
 
-const ZERO = 0
-
 export const legacyConfig = {
   extends: [
     "plugin:@stylistic/recommended-extends",
@@ -18,9 +16,9 @@ export const legacyConfig = {
   ],
   plugins: ["@typescript-eslint", "unicorn"],
   rules: {
-    ...eslintConfigSCJs.configs.customRecords[ZERO].rules,
+    ...eslintConfigSCJs.configs.customRecord.rules,
     ...baseRules,
-    ...eslintConfigSCJs.configs.resetRecordsForStylistic[ZERO].rules,
+    ...eslintConfigSCJs.configs.resetRecordForStylistic.rules,
   },
   settings: {
     ...settings,

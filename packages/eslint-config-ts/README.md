@@ -16,23 +16,29 @@ $ yarn add -D eslint-config-sc-ts
 import eslintConfigSCTs from "eslint-config-sc-ts"
 
 export default [
-  ...eslintConfigSCTs.configs.recommended,
-]
+  eslintConfigSCTs.configs.recommended,
+].flat()
 
 // Below is equal
 export default [
-  ...eslintConfigSCTs.configs.baseRecords1,
+  eslintConfigSCTs.configs.initialRecord,
+  eslintConfigSCTs.configs.stylisticRecord,
+  eslintConfigSCTs.configs.eslintRecommendedRecord,
+  eslintConfigSCTs.configs.unicornRecommendedRecords,
+  eslintConfigSCTs.configs.typescriptEslintStrictTypeCheckedRecords,
+  eslintConfigSCTs.configs.typescriptEslintStylisticTypeCheckedRecords,
 
   // This use eslint-config-airbnb-base
   // For react project, this replace to eslint-config-airbnb
-  ...eslintConfigSCTs.configs.baseRecords2,
+  eslintConfigSCTs.configs.airbnbBaseRecords,
 
-  // This is the custom config of eslint-config-sc-ts
-  ...eslintConfigSCTs.configs.customRecords,
+  // This is the custom config of eslint-config-sc-js / eslint-config-sc-ts
+  eslintConfigSCTs.configs.scJsCustomRecord,
+  eslintConfigSCTs.configs.customRecord,
 
   // This is the reset config for stylistic
-  ...eslintConfigSCTs.configs.resetRecordsForStylistic,
-]
+  eslintConfigSCTs.configs.resetRecordForStylistic,
+].flat()
 ```
 
 ### Use for `.eslintrc.js`
@@ -54,11 +60,11 @@ module.exports = {
     "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:unicorn/recommended",
     "airbnb-base",
+    "sc-js/legacy"
   ],
   plugins: ["unicorn"],
   rules: {
-    ...eslintConfigSCTs.configs.customRecords[0].rules,
-    ...eslintConfigSCTs.configs.resetRecordsForStylistic[0].rules,
+    ...eslintConfigSCTs.configs.customRecord.rules,
   },
 }
 ```

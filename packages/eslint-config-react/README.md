@@ -22,15 +22,20 @@ export default [
 
 // Below is equal
 export default [
-  ...eslintConfigSCReact.configs.baseRecords1,
-  ...eslintConfigSCReact.configs.baseRecords2,
+  eslintConfigSCReact.configs.initialRecord,
+  eslintConfigSCReact.configs.stylisticRecord,
+  eslintConfigSCReact.configs.eslintRecommendedRecord,
+  eslintConfigSCReact.configs.unicornRecommendedRecords,
+  eslintConfigSCReact.configs.reactRecords,
+  eslintConfigSCReact.configs.airbnbRecords,
 
-  // This is the custom config of eslint-config-sc-react
-  ...eslintConfigSCReact.configs.customRecords,
+  // This is the custom config of eslint-config-sc-js / eslint-config-sc-react
+  eslintConfigSCReact.configs.scJsCustomRecord,
+  eslintConfigSCReact.configs.customRecord,
 
   // This is the reset config for stylistic
-  ...eslintConfigSCReact.configs.resetRecordsForStylistic,
-]
+  eslintConfigSCReact.configs.resetRecordForStylistic,
+].flat()
 ```
 
 #### For Typescript
@@ -39,16 +44,23 @@ import eslintConfigSCTs from "eslint-config-sc-ts"
 import eslintConfigSCReact from "eslint-config-sc-react"
 
 export default [
-  ...eslintConfigSCTs.configs.baseRecords1,
-  ...eslintConfigSCReact.configs.baseRecords1,
-  ...eslintConfigSCReact.configs.baseRecords2,
+  eslintConfigSCReact.configs.initialRecord,
+  eslintConfigSCReact.configs.stylisticRecord,
+  eslintConfigSCReact.configs.eslintRecommendedRecord,
+  eslintConfigSCReact.configs.unicornRecommendedRecords,
+  eslintConfigSCTs.configs.typescriptEslintStrictTypeCheckedRecords,
+  eslintConfigSCTs.configs.typescriptEslintStylisticTypeCheckedRecords,
+  eslintConfigSCReact.configs.reactRecords,
+  eslintConfigSCReact.configs.airbnbRecords,
 
-  ...eslintConfigSCTs.configs.customRecords,
-  ...eslintConfigSCReact.configs.customRecords,
-  ...eslintConfigSCReact.configs.customRecordsWithTypescript, // This is the custom config for typescript of eslint-config-sc-react
+  // This is the custom config of eslint-config-sc-js / eslint-config-sc-react
+  eslintConfigSCReact.configs.scJsCustomRecord,
+  eslintConfigSCReact.configs.customRecord,
+  eslintConfigSCReact.configs.customRecordWithTypescript,
 
-  ...eslintConfigSCReact.configs.resetRecordsForStylistic,
-]
+  // This is the reset config for stylistic
+  eslintConfigSCReact.configs.resetRecordForStylistic,
+].flat()
 ```
 
 
@@ -67,17 +79,14 @@ const eslintConfigSCReact = require("eslint-config-sc-react")
 
 module.exports = {
   extends: [
-    "plugin:@stylistic/recommended-extends",
-    "eslint:recommended",
-    "plugin:unicorn/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react/recommended",
     "airbnb",
     "airbnb/hooks",
+    "sc-js/legacy"
   ],
   rules: {
-    ...eslintConfigSCReact.configs.customRecords[0].rules,
-    ...eslintConfigSCReact.configs.resetRecordsForStylistic[0].rules,
+    ...eslintConfigSCReact.configs.customRecord.rules,
   },
 }
 ```
@@ -89,22 +98,18 @@ const eslintConfigSCTs = require("eslint-config-sc-ts")
 
 module.exports = {
   extends: [
-    "plugin:@stylistic/recommended-extends",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/strict-type-checked",
-    "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:unicorn/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react/recommended",
     "airbnb",
     "airbnb/hooks",
+    "sc-ts/legacy"
   ],
   rules: {
-    ...eslintConfigSCTs.configs.customRecords[1].rules,
-    ...eslintConfigSCReact.configs.customRecords[0].rules,
-    ...eslintConfigSCReact.configs.customRecords[1].rules,
-    ...eslintConfigSCReact.configs.customRecordsWithTypescript[0].rules,  // This is the custom config for typescript of eslint-config-sc-react
-    ...eslintConfigSCReact.configs.resetRecordsForStylistic[0].rules,
+    ...eslintConfigSCTs.configs.customRecord.rules,
+    ...eslintConfigSCReact.configs.customRecord.rules,
+    ...eslintConfigSCReact.configs.customRecordWithTypescript.rules,  // This is the custom config for typescript of eslint-config-sc-react
+    ...eslintConfigSCReact.configs.resetRecordForStylistic.rules,
   },
 }
 ```

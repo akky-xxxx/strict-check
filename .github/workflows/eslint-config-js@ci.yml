@@ -10,25 +10,31 @@ on:
       - feature/**
       - main
     paths:
+      - '.github/actions/**'
+      - '.github/workflows/eslint-config-js@ci.yml'
       - '.node-version'
-      - 'config/**'
+      - 'config/eslint/**'
+      - 'config/tsconfig/**'
       - 'dry-run/dr-eslint-config-sc-js/**'
       - 'modules/shared-for-eslint-config/**'
       - 'packages/eslint-config-js/**'
       - 'prettier.config.js'
       - 'yarn.lock'
 
+env:
+  WORKING_DIRECTORY: ./packages/eslint-config-js
+
 jobs:
   lint:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/eslint-config-js
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/common-setup
+        uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
         run: yarn prepare
@@ -40,12 +46,12 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/eslint-config-js
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/common-setup
+        uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
         run: yarn prepare
@@ -57,12 +63,12 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/eslint-config-js
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/common-setup
+        uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
         run: yarn prepare
@@ -72,17 +78,17 @@ jobs:
 
   dry-run:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     strategy:
       matrix:
         node-version: [ 18.x, 20.x ]
-    defaults:
-      run:
-        working-directory: ./packages/eslint-config-js
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/ci-setup
+        uses: ./.github/actions/setup-matrix-node-versions
 
       - name: Run prepare
         run: yarn prepare

@@ -1,0 +1,50 @@
+name: local-eslint-config-next@CI
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+    branches:
+      - local/**
+    paths:
+      - '.node-version'
+      - 'config/**'
+      - 'dry-run/dr-eslint-config-sc-next/**'
+      - 'modules/shared-for-eslint-config/**'
+      - 'packages/eslint-config-next/**'
+      - 'prettier.config.js'
+      - 'yarn.lock'
+
+env:
+  WORKING_DIRECTORY: ./packages/eslint-config-next
+
+
+jobs:
+  local-dry-run:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/actions/setup-single-node-version
+
+      - name: Run prepare
+        run: yarn prepare
+
+      - name: Run lint
+        run: yarn lint
+
+
+      - name: Run spell-check
+        run: yarn spell-check
+
+      - name: Run type-check
+        run: yarn type-check
+
+
+      - name: Run dry run
+        run: yarn dry-run

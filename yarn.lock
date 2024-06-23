@@ -1507,6 +1507,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/eslint-plugin-next@npm:^14.2.4":
+  version: 14.2.4
+  resolution: "@next/eslint-plugin-next@npm:14.2.4"
+  dependencies:
+    glob: "npm:10.3.10"
+  checksum: 10c0/077584c9ee12a82940c64a5cc48295e919c74fc352a9bedf41a6b44f2f4e71aea2aa95826957de042a8649e058888d3b27ea7f9ca72e67798e89d14b62f733c1
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1672,9 +1681,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-darwin-arm64@npm:1.6.5":
+  version: 1.6.5
+  resolution: "@swc/core-darwin-arm64@npm:1.6.5"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@swc/core-darwin-x64@npm:1.6.1":
   version: 1.6.1
   resolution: "@swc/core-darwin-x64@npm:1.6.1"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core-darwin-x64@npm:1.6.5":
+  version: 1.6.5
+  resolution: "@swc/core-darwin-x64@npm:1.6.5"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -1686,9 +1709,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-linux-arm-gnueabihf@npm:1.6.5":
+  version: 1.6.5
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.6.5"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
 "@swc/core-linux-arm64-gnu@npm:1.6.1":
   version: 1.6.1
   resolution: "@swc/core-linux-arm64-gnu@npm:1.6.1"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-gnu@npm:1.6.5":
+  version: 1.6.5
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.6.5"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
@@ -1700,9 +1737,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-linux-arm64-musl@npm:1.6.5":
+  version: 1.6.5
+  resolution: "@swc/core-linux-arm64-musl@npm:1.6.5"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
 "@swc/core-linux-x64-gnu@npm:1.6.1":
   version: 1.6.1
   resolution: "@swc/core-linux-x64-gnu@npm:1.6.1"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-gnu@npm:1.6.5":
+  version: 1.6.5
+  resolution: "@swc/core-linux-x64-gnu@npm:1.6.5"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
@@ -1714,9 +1765,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-linux-x64-musl@npm:1.6.5":
+  version: 1.6.5
+  resolution: "@swc/core-linux-x64-musl@npm:1.6.5"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
 "@swc/core-win32-arm64-msvc@npm:1.6.1":
   version: 1.6.1
   resolution: "@swc/core-win32-arm64-msvc@npm:1.6.1"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-arm64-msvc@npm:1.6.5":
+  version: 1.6.5
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.6.5"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
@@ -1728,9 +1793,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-win32-ia32-msvc@npm:1.6.5":
+  version: 1.6.5
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.6.5"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
 "@swc/core-win32-x64-msvc@npm:1.6.1":
   version: 1.6.1
   resolution: "@swc/core-win32-x64-msvc@npm:1.6.1"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-x64-msvc@npm:1.6.5":
+  version: 1.6.5
+  resolution: "@swc/core-win32-x64-msvc@npm:1.6.5"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -1781,6 +1860,52 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core@npm:^1.6.5":
+  version: 1.6.5
+  resolution: "@swc/core@npm:1.6.5"
+  dependencies:
+    "@swc/core-darwin-arm64": "npm:1.6.5"
+    "@swc/core-darwin-x64": "npm:1.6.5"
+    "@swc/core-linux-arm-gnueabihf": "npm:1.6.5"
+    "@swc/core-linux-arm64-gnu": "npm:1.6.5"
+    "@swc/core-linux-arm64-musl": "npm:1.6.5"
+    "@swc/core-linux-x64-gnu": "npm:1.6.5"
+    "@swc/core-linux-x64-musl": "npm:1.6.5"
+    "@swc/core-win32-arm64-msvc": "npm:1.6.5"
+    "@swc/core-win32-ia32-msvc": "npm:1.6.5"
+    "@swc/core-win32-x64-msvc": "npm:1.6.5"
+    "@swc/counter": "npm:^0.1.3"
+    "@swc/types": "npm:^0.1.9"
+  peerDependencies:
+    "@swc/helpers": "*"
+  dependenciesMeta:
+    "@swc/core-darwin-arm64":
+      optional: true
+    "@swc/core-darwin-x64":
+      optional: true
+    "@swc/core-linux-arm-gnueabihf":
+      optional: true
+    "@swc/core-linux-arm64-gnu":
+      optional: true
+    "@swc/core-linux-arm64-musl":
+      optional: true
+    "@swc/core-linux-x64-gnu":
+      optional: true
+    "@swc/core-linux-x64-musl":
+      optional: true
+    "@swc/core-win32-arm64-msvc":
+      optional: true
+    "@swc/core-win32-ia32-msvc":
+      optional: true
+    "@swc/core-win32-x64-msvc":
+      optional: true
+  peerDependenciesMeta:
+    "@swc/helpers":
+      optional: true
+  checksum: 10c0/4fba746667d71641ea8db256561cb47e996f03c091ad62aff6856487f14dffa333eee086d514564ee7c79f657ffc6360a37b06ea136dad08a2aaa8d538681197
+  languageName: node
+  linkType: hard
+
 "@swc/counter@npm:^0.1.3":
   version: 0.1.3
   resolution: "@swc/counter@npm:0.1.3"
@@ -1807,6 +1932,15 @@ __metadata:
   dependencies:
     "@swc/counter": "npm:^0.1.3"
   checksum: 10c0/a3bb7145d8f01d58f93683645ef530c479243f04c2a79a15020e2a1ac69003643bc1cad1075225f3992b2a5e55be43f264eaea88620263d90ada98a4107fb872
+  languageName: node
+  linkType: hard
+
+"@swc/types@npm:^0.1.9":
+  version: 0.1.9
+  resolution: "@swc/types@npm:0.1.9"
+  dependencies:
+    "@swc/counter": "npm:^0.1.3"
+  checksum: 10c0/e47db2a06189f100696837ac3d56feaf67e8e68541b236c2de497e066689230f5cbb538fc0ca77c04739ae7653c20a2d79c7ab57ecf7506e2d008cb5e523f724
   languageName: node
   linkType: hard
 
@@ -3486,6 +3620,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dr-eslint-config-sc-all@workspace:dry-run/dr-eslint-config-sc-all":
+  version: 0.0.0-use.local
+  resolution: "dr-eslint-config-sc-all@workspace:dry-run/dr-eslint-config-sc-all"
+  dependencies:
+    eslint: "npm:^8.57.0"
+    eslint-config-sc-all: "workspace:^"
+    fixpack: "npm:^4.0.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.3.2"
+  languageName: unknown
+  linkType: soft
+
 "dr-eslint-config-sc-jest@workspace:dry-run/dr-eslint-config-sc-jest":
   version: 0.0.0-use.local
   resolution: "dr-eslint-config-sc-jest@workspace:dry-run/dr-eslint-config-sc-jest"
@@ -3506,6 +3652,20 @@ __metadata:
   dependencies:
     eslint: "npm:^8.57.0"
     eslint-config-sc-js: "workspace:^"
+    fixpack: "npm:^4.0.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.3.2"
+  languageName: unknown
+  linkType: soft
+
+"dr-eslint-config-sc-next@workspace:dry-run/dr-eslint-config-sc-next":
+  version: 0.0.0-use.local
+  resolution: "dr-eslint-config-sc-next@workspace:dry-run/dr-eslint-config-sc-next"
+  dependencies:
+    "@typescript-eslint/parser": "npm:^7.13.0"
+    eslint: "npm:^8.57.0"
+    eslint-config-sc-next: "workspace:^"
+    eslint-config-sc-ts: "workspace:^"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.3.2"
@@ -3851,7 +4011,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
+"eslint-config-sc-all@workspace:^, eslint-config-sc-all@workspace:packages/eslint-config-all":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-sc-all@workspace:packages/eslint-config-all"
+  dependencies:
+    "@swc/core": "npm:^1.6.5"
+    "@tsconfig/strictest": "npm:^2.0.5"
+    "@types/jest": "npm:^29.5.12"
+    chokidar-cli: "npm:^3.0.0"
+    cspell: "npm:^8.8.4"
+    editorconfig-checker: "npm:^5.1.8"
+    eslint: "npm:^8.57.0"
+    eslint-config-sc-jest: "npm:^0.0.3"
+    eslint-config-sc-js: "npm:^0.0.6"
+    eslint-config-sc-next: "npm:^0.0.1"
+    eslint-config-sc-react: "npm:^0.0.3"
+    eslint-config-sc-storybook: "npm:^0.0.3"
+    eslint-config-sc-ts: "npm:^0.0.3"
+    fixpack: "npm:^4.0.0"
+    jest: "npm:^29.7.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.3.2"
+    strict-check: "workspace:^"
+    typescript: "npm:^5.4.5"
+    typescript-eslint: "npm:^7.13.0"
+  languageName: unknown
+  linkType: soft
+
+"eslint-config-sc-jest@npm:^0.0.3, eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-jest@workspace:packages/eslint-config-jest"
   dependencies:
@@ -3874,7 +4061,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-js@npm:^0.0.5, eslint-config-sc-js@workspace:^, eslint-config-sc-js@workspace:packages/eslint-config-js":
+"eslint-config-sc-js@npm:^0.0.6, eslint-config-sc-js@workspace:^, eslint-config-sc-js@workspace:packages/eslint-config-js":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-js@workspace:packages/eslint-config-js"
   dependencies:
@@ -3897,7 +4084,29 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-react@workspace:^, eslint-config-sc-react@workspace:packages/eslint-config-react":
+"eslint-config-sc-next@npm:^0.0.1, eslint-config-sc-next@workspace:^, eslint-config-sc-next@workspace:packages/eslint-config-next":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-sc-next@workspace:packages/eslint-config-next"
+  dependencies:
+    "@next/eslint-plugin-next": "npm:^14.2.4"
+    "@tsconfig/strictest": "npm:^2.0.5"
+    "@types/react": "npm:^18.3.3"
+    "@typescript-eslint/parser": "npm:^7.13.0"
+    chokidar-cli: "npm:^3.0.0"
+    cspell: "npm:^8.8.4"
+    editorconfig-checker: "npm:^5.1.8"
+    eslint: "npm:^8.57.0"
+    eslint-config-sc-react: "npm:^0.0.3"
+    fixpack: "npm:^4.0.0"
+    npm-run-all2: "npm:^6.2.0"
+    prettier: "npm:^3.3.2"
+    react: "npm:^18.3.1"
+    strict-check: "workspace:^"
+    typescript: "npm:^5.4.5"
+  languageName: unknown
+  linkType: soft
+
+"eslint-config-sc-react@npm:^0.0.3, eslint-config-sc-react@workspace:^, eslint-config-sc-react@workspace:packages/eslint-config-react":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-react@workspace:packages/eslint-config-react"
   dependencies:
@@ -3910,7 +4119,7 @@ __metadata:
     editorconfig-checker: "npm:^5.1.8"
     eslint: "npm:^8.57.0"
     eslint-config-airbnb: "npm:^19.0.4"
-    eslint-config-sc-js: "npm:^0.0.5"
+    eslint-config-sc-js: "npm:^0.0.6"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.3.2"
@@ -3920,7 +4129,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-storybook@workspace:^, eslint-config-sc-storybook@workspace:packages/eslint-config-storybook":
+"eslint-config-sc-storybook@npm:^0.0.3, eslint-config-sc-storybook@workspace:^, eslint-config-sc-storybook@workspace:packages/eslint-config-storybook":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-storybook@workspace:packages/eslint-config-storybook"
   dependencies:
@@ -3943,7 +4152,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-ts@workspace:^, eslint-config-sc-ts@workspace:packages/eslint-config-ts":
+"eslint-config-sc-ts@npm:^0.0.3, eslint-config-sc-ts@workspace:^, eslint-config-sc-ts@workspace:packages/eslint-config-ts":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-ts@workspace:packages/eslint-config-ts"
   dependencies:
@@ -3955,7 +4164,7 @@ __metadata:
     cspell: "npm:^8.8.4"
     editorconfig-checker: "npm:^5.1.8"
     eslint: "npm:^8.57.0"
-    eslint-config-sc-js: "npm:^0.0.5"
+    eslint-config-sc-js: "npm:^0.0.6"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.3.2"
@@ -4773,6 +4982,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glob@npm:10.3.10":
+  version: 10.3.10
+  resolution: "glob@npm:10.3.10"
+  dependencies:
+    foreground-child: "npm:^3.1.0"
+    jackspeak: "npm:^2.3.5"
+    minimatch: "npm:^9.0.1"
+    minipass: "npm:^5.0.0 || ^6.0.2 || ^7.0.0"
+    path-scurry: "npm:^1.10.1"
+  bin:
+    glob: dist/esm/bin.mjs
+  checksum: 10c0/13d8a1feb7eac7945f8c8480e11cd4a44b24d26503d99a8d8ac8d5aefbf3e9802a2b6087318a829fad04cb4e829f25c5f4f1110c68966c498720dd261c7e344d
+  languageName: node
+  linkType: hard
+
 "glob@npm:^10.2.2, glob@npm:^10.3.10":
   version: 10.4.1
   resolution: "glob@npm:10.4.1"
@@ -5526,6 +5750,19 @@ __metadata:
     reflect.getprototypeof: "npm:^1.0.4"
     set-function-name: "npm:^2.0.1"
   checksum: 10c0/a32151326095e916f306990d909f6bbf23e3221999a18ba686419535dcd1749b10ded505e89334b77dc4c7a58a8508978f0eb16c2c8573e6d412eb7eb894ea79
+  languageName: node
+  linkType: hard
+
+"jackspeak@npm:^2.3.5":
+  version: 2.3.6
+  resolution: "jackspeak@npm:2.3.6"
+  dependencies:
+    "@isaacs/cliui": "npm:^8.0.2"
+    "@pkgjs/parseargs": "npm:^0.11.0"
+  dependenciesMeta:
+    "@pkgjs/parseargs":
+      optional: true
+  checksum: 10c0/f01d8f972d894cd7638bc338e9ef5ddb86f7b208ce177a36d718eac96ec86638a6efa17d0221b10073e64b45edc2ce15340db9380b1f5d5c5d000cbc517dc111
   languageName: node
   linkType: hard
 
@@ -6452,7 +6689,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^9.0.0, minimatch@npm:^9.0.4":
+"minimatch@npm:^9.0.0, minimatch@npm:^9.0.1, minimatch@npm:^9.0.4":
   version: 9.0.4
   resolution: "minimatch@npm:9.0.4"
   dependencies:
@@ -6986,7 +7223,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-scurry@npm:^1.11.1":
+"path-scurry@npm:^1.10.1, path-scurry@npm:^1.11.1":
   version: 1.11.1
   resolution: "path-scurry@npm:1.11.1"
   dependencies:

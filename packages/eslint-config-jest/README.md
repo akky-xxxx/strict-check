@@ -16,18 +16,18 @@ $ yarn add -D eslint-config-sc-jest
 import eslintConfigSCJest from "eslint-config-sc-jest"
 
 export default [
-  ...[/* other rules for product code */],
-  ...eslintConfigSCJest.configs.recommended,
-]
+  [/* other rules for product code */],
+  eslintConfigSCJest.configs.recommended,
+].flat()
 
 // Below is equal
 export default [
-  ...[/* other rules for product code */],
-  ...eslintConfigSCJest.configs.baseRecords,
-  ...eslintConfigSCJest.configs.customRecords,
-  ...eslintConfigSCJest.configs.eslintOverrideRecords, // for javascript project
-  ...eslintConfigSCJest.configs.typescriptEslintOverrideRecords, // for typecript project
-]
+  [/* other rules for product code */],
+  eslintConfigSCJest.configs.jestPluginRecords,
+  eslintConfigSCJest.configs.customRecord,
+  eslintConfigSCJest.configs.overrideJavascriptRecord, // for javascript project
+  eslintConfigSCJest.configs.overrideTypescriptRecord, // for typecript project
+].flat()
 ```
 
 ### Use for `.eslintrc.js`

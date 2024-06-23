@@ -16,17 +16,17 @@ $ yarn add -D eslint-config-sc-storybook
 import eslintConfigSCStorybook from "eslint-config-sc-storybook"
 
 export default [
-  ...[/* other rules for product code */],
-  ...eslintConfigSCStorybook.configs.recommended,
-]
+  [/* other rules for product code */],
+  eslintConfigSCStorybook.configs.recommended,
+].flat()
 
 // Below is equal
 export default [
-  ...[/* other rules for product code */],
-  ...eslintConfigSCStorybook.configs.baseRecords,
-  ...eslintConfigSCStorybook.configs.eslintOverrideRecords, // for javascript project
-  ...eslintConfigSCStorybook.configs.typescriptEslintOverrideRecords, // for typecript project
-]
+  [/* other rules for product code */],
+  eslintConfigSCStorybook.configs.storybookConfigRecords,
+  eslintConfigSCStorybook.configs.overrideJavascriptRecord, // for javascript project
+  eslintConfigSCStorybook.configs.overrideTypescriptRecord, // for typecript project
+].flat()
 ```
 
 ### Use for `.eslintrc.js`

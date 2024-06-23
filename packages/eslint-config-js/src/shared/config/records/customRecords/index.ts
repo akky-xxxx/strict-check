@@ -1,11 +1,8 @@
-import { baseRules } from "../../rules/baseRules"
+import { customRecord } from "../customRecord"
 
 import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/EslintFlatConfig"
 
+// TODO: 0.0.7 以降で削除
 export const customRecords = [
-  {
-    rules: {
-      ...baseRules,
-    },
-  },
+  customRecord,
 ] as const satisfies EslintFlatConfig[]

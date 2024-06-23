@@ -2,7 +2,7 @@ import eslintConfigSCStorybook from "eslint-config-sc-storybook"
 import typescriptEslintParser from "@typescript-eslint/parser"
 
 export default [
-  ...eslintConfigSCStorybook.configs.recommended,
+  eslintConfigSCStorybook.configs.recommended,
   {
     languageOptions: {
       parserOptions: {
@@ -12,4 +12,4 @@ export default [
     },
     files: ["**/*.tsx"],
   },
-]
+].flat()

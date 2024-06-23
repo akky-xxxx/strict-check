@@ -10,13 +10,15 @@ on:
     tags:
       - 'eslint-config-sc-react/v*'
 
-defaults:
-  run:
-    working-directory: ./packages/eslint-config-react
+env:
+  WORKING_DIRECTORY: ./packages/eslint-config-react
 
 jobs:
   check-publish:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -28,11 +30,14 @@ jobs:
   pre-check-lint:
     needs: [check-publish]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/common-setup
+        uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
         run: yarn prepare
@@ -43,11 +48,14 @@ jobs:
   pre-check-spell-check:
     needs: [check-publish]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/common-setup
+        uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
         run: yarn prepare
@@ -58,11 +66,14 @@ jobs:
   pre-check-type-check:
     needs: [check-publish]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/common-setup
+        uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
         run: yarn prepare
@@ -73,6 +84,9 @@ jobs:
   pre-check-dry-run:
     needs: [check-publish]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     strategy:
       matrix:
         node-version: [ 18.x, 20.x ]
@@ -80,7 +94,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/ci-setup
+        uses: ./.github/actions/setup-matrix-node-versions
 
       - name: Run prepare
         run: yarn prepare
@@ -91,14 +105,17 @@ jobs:
   publish:
     needs: [check-publish, pre-check-lint, pre-check-spell-check, pre-check-type-check, pre-check-dry-run]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
     steps:
       - uses: actions/checkout@v4
 
       - name: setup
-        uses: ./.github/actions/common-setup
+        uses: ./.github/actions/setup-single-node-version
 
       - name: publish
         uses: ./.github/actions/publish
         with:
           npm-token: ${{ secrets.NPM_AUTH_TOKEN }}
-          working-directory: ./packages/eslint-config-react
+          working-directory: ${{ env.WORKING_DIRECTORY }}
