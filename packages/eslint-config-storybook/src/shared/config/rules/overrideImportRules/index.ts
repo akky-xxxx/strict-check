@@ -1,7 +1,6 @@
-import { importRules } from "./rules/importRules"
-
 import type { EslintRules } from "../../../../libs/shared-for-config/types/EslintRules"
+import {SEVERITY} from "../../../../libs/shared-for-config/constants/SEVERITY"
 
 export const overrideImportRules = {
-  ...importRules,
+  "import/no-default-export": SEVERITY.OFF,
 } as const satisfies EslintRules
