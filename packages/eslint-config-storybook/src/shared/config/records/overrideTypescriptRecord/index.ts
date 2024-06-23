@@ -2,7 +2,7 @@ import { FILES } from "../../../const/FILES"
 import { PACKAGE_NAME } from "../../../const/PACKAGE_NAME"
 import { overrideEslintRules } from "../../rules/overrideEslintRules"
 import { overrideImportRules } from "../../rules/overrideImportRules"
-import { typescriptEslintOverrideRules } from "../../rules/typescriptEslintOverrideRules"
+import { overrideTypescriptEslintRules } from "../../rules/overrideTypescriptEslintRules"
 
 import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/EslintFlatConfig"
 
@@ -13,6 +13,6 @@ export const overrideTypescriptRecord = {
   rules: {
     ...overrideEslintRules,
     ...overrideImportRules,
-    ...typescriptEslintOverrideRules,
+    ...overrideTypescriptEslintRules,
   },
 } as const satisfies EslintFlatConfig

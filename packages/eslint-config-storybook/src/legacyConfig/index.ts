@@ -1,6 +1,6 @@
 import { overrideEslintRules } from "../shared/config/rules/overrideEslintRules"
 import { eslintRules } from "../shared/config/rules/overrideEslintRules/rules/eslintRules"
-import { typescriptEslintRules } from "../shared/config/rules/typescriptEslintOverrideRules/rules/typescriptEslintRules"
+import { typescriptEslintRules } from "../shared/config/rules/overrideTypescriptEslintRules/rules/typescriptEslintRules"
 import { FILES } from "../shared/const/FILES"
 
 import type { EslintLegacyConfig } from "../libs/shared-for-config/types/EslintLegacyConfig"
