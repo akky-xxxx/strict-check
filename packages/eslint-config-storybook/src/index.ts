@@ -19,10 +19,12 @@ const plugin = {
     legacy: legacyConfig,
     recommended: flatConfig,
 
+    // TODO: 0.0.4 以降で削除 ここから
     baseRecords,
 
     eslintOverrideRecords,
     typescriptEslintOverrideRecords,
+    // TODO: 0.0.4 以降で削除 ここまで
 
     storybookConfigRecords,
 
