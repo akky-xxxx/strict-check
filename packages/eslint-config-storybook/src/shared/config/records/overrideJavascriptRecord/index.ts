@@ -5,8 +5,8 @@ import { importOverrideRules } from "../../rules/importOverrideRules"
 
 import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/EslintFlatConfig"
 
-export const eslintOverrideRecord = {
-  name: `${PACKAGE_NAME}/eslintOverrideRecord`,
+export const overrideJavascriptRecord = {
+  name: `${PACKAGE_NAME}/overrideJavascriptRecord`,
 
   files: FILES.JS,
   rules: {

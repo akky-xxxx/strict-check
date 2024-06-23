@@ -1,7 +1,7 @@
 import { flatConfig } from "./flatConfig"
 import { legacyConfig } from "./legacyConfig"
 import { baseRecords } from "./shared/config/records/baseRecords"
-import { eslintOverrideRecord } from "./shared/config/records/eslintOverrideRecord"
+import { overrideJavascriptRecord } from "./shared/config/records/overrideJavascriptRecord"
 import { eslintOverrideRecords } from "./shared/config/records/eslintOverrideRecords"
 import { storybookConfigRecords } from "./shared/config/records/storybookConfigRecords"
 import { overrideTypescriptRecord } from "./shared/config/records/overrideTypescriptRecord"
@@ -28,7 +28,7 @@ const plugin = {
 
     storybookConfigRecords,
 
-    eslintOverrideRecord,
+    overrideJavascriptRecord,
     overrideTypescriptRecord,
   },
 } as const satisfies Plugin
