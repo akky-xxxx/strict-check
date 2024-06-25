@@ -17,6 +17,13 @@ import eslintConfigSCTs from "eslint-config-sc-ts"
 
 export default [
   eslintConfigSCTs.configs.recommended,
+  {
+    languageOptions: {
+      parserOptions: {
+        project: "/path/to/tsconfig.json", // default, refer <root>/tsoncifg.json
+      },
+    },
+  },
 ].flat()
 
 // Below is equal
@@ -38,6 +45,13 @@ export default [
 
   // This is the reset config for stylistic
   eslintConfigSCTs.configs.resetRecordForStylistic,
+  {
+    languageOptions: {
+      parserOptions: {
+        project: "/path/to/tsconfig.json", // default, refer <root>/tsoncifg.json
+      },
+    },
+  },
 ].flat()
 ```
 
