@@ -59,7 +59,7 @@
     "editorconfig-checker": "^5.1.8",
     "eslint": "^8.57.0",
     "eslint-config-sc-jest": "^0.0.4",
-    "eslint-config-sc-js": "^0.0.6",
+    "eslint-config-sc-js": "^0.0.7",
     "eslint-config-sc-next": "^0.0.1",
     "eslint-config-sc-react": "^0.0.3",
     "eslint-config-sc-storybook": "^0.0.3",
