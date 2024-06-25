@@ -17,6 +17,7 @@ exports.dirs = [
   "root",
   ...getDirs("./packages"),
   ...getDirs("./modules"),
+  ...getDirs("./dry-run"),
   "*",
   "packages",
 ]

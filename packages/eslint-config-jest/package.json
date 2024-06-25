@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sc-jest",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Strict Check config for eslint for jest",
   "keywords": [
     "eslint",
@@ -56,10 +56,10 @@
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.5.0",
     "@tsconfig/strictest": "^2.0.5",
-    "@typescript-eslint/eslint-plugin": "^7.13.0",
-    "@typescript-eslint/parser": "^7.13.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
     "chokidar-cli": "^3.0.0",
-    "cspell": "^8.8.4",
+    "cspell": "^8.9.1",
     "editorconfig-checker": "^5.1.8",
     "eslint": "^8.57.0",
     "fixpack": "^4.0.0",
@@ -67,7 +67,7 @@
     "prettier": "^3.3.2",
     "strict-check": "workspace:^",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.13.0"
+    "typescript-eslint": "^7.14.1"
   },
   "packageManager": "yarn@4.2.2"
 }
