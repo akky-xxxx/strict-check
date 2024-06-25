@@ -1,11 +1,7 @@
 const eslintConfigSCNext = require("eslint-config-sc-next")
 
 module.exports = {
-  extends: [
-    "plugin:@next/next/core-web-vitals",
-    "sc-ts/legacy",
-    "sc-react/legacy"
-  ],
+  extends: ["plugin:@next/next/core-web-vitals", "sc-ts/legacy", "sc-react/legacy"],
   parserOptions: {
     project: ["./tsconfig.json"],
     tsconfigRootDir: __dirname,
