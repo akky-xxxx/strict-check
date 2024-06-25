@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sc-jest",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Strict Check config for eslint for jest",
   "keywords": [
     "eslint",

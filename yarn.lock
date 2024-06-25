@@ -3993,7 +3993,7 @@ __metadata:
     cspell: "npm:^8.9.1"
     editorconfig-checker: "npm:^5.1.8"
     eslint: "npm:^8.57.0"
-    eslint-config-sc-jest: "npm:^0.0.3"
+    eslint-config-sc-jest: "npm:^0.0.4"
     eslint-config-sc-js: "npm:^0.0.6"
     eslint-config-sc-next: "npm:^0.0.1"
     eslint-config-sc-react: "npm:^0.0.3"
@@ -4009,7 +4009,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-jest@npm:^0.0.3, eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
+"eslint-config-sc-jest@npm:^0.0.4, eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-jest@workspace:packages/eslint-config-jest"
   dependencies:
