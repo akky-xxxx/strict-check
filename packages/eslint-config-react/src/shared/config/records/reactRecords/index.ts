@@ -7,5 +7,5 @@ export const reactRecords = [
   {
     name: `${PACKAGE_NAME}/reactRecords`,
   },
-  ...getCompatExtends("plugin:react/jsx-runtime", "plugin:react/recommended"),
+  ...getCompatExtends("plugin:react/recommended", "plugin:react/jsx-runtime"),
 ] as const satisfies EslintFlatConfig[]
