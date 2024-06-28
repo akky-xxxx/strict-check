@@ -1,6 +1,7 @@
 import eslintConfigSCJs from "eslint-config-sc-js"
 
 import { baseRules } from "../shared/config/rules/baseRules"
+import { resetRulesForStylistic } from "../shared/config/rules/resetRulesForStylistic"
 import { typescriptRules } from "../shared/config/rules/typescriptRules"
 
 import type { EslintLegacyConfig } from "../libs/shared-for-config/types/EslintLegacyConfig"
@@ -21,6 +22,7 @@ export const legacyConfig = {
   rules: {
     ...eslintConfigSCJs.configs.customRecords[ZERO].rules,
     ...baseRules,
+    ...resetRulesForStylistic,
     ...eslintConfigSCJs.configs.resetRecordsForStylistic[ZERO].rules,
   },
 
