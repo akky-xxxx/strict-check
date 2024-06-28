@@ -10,6 +10,7 @@ export const eslintRules = {
   "max-len": SEVERITY.OFF,
   "no-multi-spaces": SEVERITY.OFF,
   "object-curly-newline": SEVERITY.OFF,
+  "quote-props": SEVERITY.OFF,
   "quotes": SEVERITY.OFF,
   "semi": SEVERITY.OFF,
   "space-before-blocks": SEVERITY.OFF,
