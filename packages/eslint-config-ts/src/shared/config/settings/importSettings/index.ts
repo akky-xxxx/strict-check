@@ -3,5 +3,6 @@ export const importSettings = {
     node: {
       extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
     },
+    typescript: {},
   },
 } as const
