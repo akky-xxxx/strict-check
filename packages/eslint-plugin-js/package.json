@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-sc-js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Strict Check rules for eslint for javascript / typescript",
   "keywords": [
     "eslint",
@@ -52,15 +52,15 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.5.0",
-    "@stylistic/eslint-plugin": "^2.2.0",
-    "@swc/core": "^1.6.1",
+    "@stylistic/eslint-plugin": "^2.2.2",
+    "@swc/core": "^1.6.5",
     "@swc/jest": "^0.2.36",
     "@tsconfig/strictest": "^2.0.5",
     "@types/jest": "^29.5.12",
-    "@typescript-eslint/rule-tester": "^7.13.0",
-    "@typescript-eslint/utils": "^7.13.0",
+    "@typescript-eslint/rule-tester": "^7.14.1",
+    "@typescript-eslint/utils": "^7.14.1",
     "chokidar-cli": "^3.0.0",
-    "cspell": "^8.8.4",
+    "cspell": "^8.9.1",
     "editorconfig-checker": "^5.1.8",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -71,7 +71,7 @@
     "prettier": "^3.3.2",
     "strict-check": "workspace:^",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.13.0"
+    "typescript-eslint": "^7.14.1"
   },
   "packageManager": "yarn@4.2.2"
 }

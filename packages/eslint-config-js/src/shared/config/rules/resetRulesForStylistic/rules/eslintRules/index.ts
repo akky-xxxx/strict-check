@@ -3,6 +3,7 @@ import { SEVERITY } from "../../../../../../libs/shared-for-config/constants/SEV
 import type { EslintRules } from "../../../../../../libs/shared-for-config/types/EslintRules"
 
 export const eslintRules = {
+  "arrow-parens": SEVERITY.OFF,
   "brace-style": SEVERITY.OFF,
   "comma-dangle": SEVERITY.OFF,
   "key-spacing": SEVERITY.OFF,
@@ -10,6 +11,7 @@ export const eslintRules = {
   "max-len": SEVERITY.OFF,
   "no-multi-spaces": SEVERITY.OFF,
   "object-curly-newline": SEVERITY.OFF,
+  "quote-props": SEVERITY.OFF,
   "quotes": SEVERITY.OFF,
   "semi": SEVERITY.OFF,
   "space-before-blocks": SEVERITY.OFF,

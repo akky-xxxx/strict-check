@@ -8,6 +8,12 @@ import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/
 export const typescriptEslintStrictTypeCheckedRecords = [
   {
     name: `${PACKAGE_NAME}/typescriptEslintStrictTypeCheckedRecords`,
+
+    languageOptions: {
+      parserOptions: {
+        project: "tsconfig.json",
+      },
+    },
   },
   // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
   ...(typescriptEslint.configs.stylisticTypeChecked as EslintFlatConfig[]),
