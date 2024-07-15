@@ -6,6 +6,12 @@ import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/
 export const initialRecord = {
   name: `${PACKAGE_NAME}/initialRecord`,
 
+  languageOptions: {
+    parserOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+    },
+  },
   linterOptions: {
     reportUnusedDisableDirectives: SEVERITY.ERROR,
   },
