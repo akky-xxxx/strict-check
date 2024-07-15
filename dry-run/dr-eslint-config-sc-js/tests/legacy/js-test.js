@@ -239,3 +239,6 @@ const object3 = {
   "a": 1,
   "a-a": 1,
 }
+
+// eslint-disable-next-line @stylistic/arrow-parens
+const arrowFunction1 = a => a
