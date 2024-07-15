@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sc-ts",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Strict Check config for eslint for typescript",
   "keywords": [
     "eslint",
