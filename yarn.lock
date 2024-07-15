@@ -4102,6 +4102,7 @@ __metadata:
     eslint-config-airbnb: "npm:^19.0.4"
     eslint-config-sc-js: "npm:^0.0.7"
     fixpack: "npm:^4.0.0"
+    globals: "npm:^15.6.0"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.3.2"
     react: "npm:^18.3.1"
@@ -5064,6 +5065,13 @@ __metadata:
   version: 14.0.0
   resolution: "globals@npm:14.0.0"
   checksum: 10c0/b96ff42620c9231ad468d4c58ff42afee7777ee1c963013ff8aabe095a451d0ceeb8dcd8ef4cbd64d2538cef45f787a78ba3a9574f4a634438963e334471302d
+  languageName: node
+  linkType: hard
+
+"globals@npm:^15.6.0":
+  version: 15.6.0
+  resolution: "globals@npm:15.6.0"
+  checksum: 10c0/ba488ec5bd770336a3e1ffec3f718077768aec99e16f30c33c0eeaed09e0b93fa06a24fc0d3844d1d81a678c86d22f04547703e87e2e4353601eddcb800479ec
   languageName: node
   linkType: hard
 
