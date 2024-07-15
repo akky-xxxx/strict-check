@@ -234,3 +234,8 @@ if(Math.random()){
 // eslint-disable-next-line @stylistic/brace-style
 }
 else console.log("")
+
+const object3 = {
+  "a": 1,
+  "a-a": 1,
+}
