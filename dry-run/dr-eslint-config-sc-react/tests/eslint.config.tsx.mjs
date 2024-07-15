@@ -8,10 +8,10 @@ export default [
   eslintConfigSCReact.configs.baseRecords2,
 
   eslintConfigSCTs.configs.customRecords,
-  eslintConfigSCReact.configs.customRecords,
-  eslintConfigSCReact.configs.customRecordsWithTypescript,
+  eslintConfigSCReact.configs.customRecord,
+  eslintConfigSCReact.configs.customRecordWithTypescript,
 
-  eslintConfigSCReact.configs.resetRecordsForStylistic,
+  eslintConfigSCReact.configs.resetRecordForStylistic,
   {
     languageOptions: {
       parserOptions: {

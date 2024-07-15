@@ -7,6 +7,7 @@ export const overrideEslintRules = {
   "complexity": SEVERITY.OFF,
   "max-lines": [SEVERITY.WARN, 200],
   "max-nested-callbacks": [SEVERITY.ERROR, 5],
+  "max-statements": [SEVERITY.ERROR, 30],
   "no-console": SEVERITY.OFF,
   "no-magic-numbers": SEVERITY.OFF,
   "no-undefined": SEVERITY.OFF,
