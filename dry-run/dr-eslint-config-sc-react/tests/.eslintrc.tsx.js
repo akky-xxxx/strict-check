@@ -23,6 +23,6 @@ module.exports = {
     ...eslintConfigSCReact.configs.customRecords[0].rules,
     ...eslintConfigSCReact.configs.customRecords[1].rules,
     ...eslintConfigSCReact.configs.customRecordsWithTypescript[0].rules,
-    ...eslintConfigSCReact.configs.resetRecordsForStylistic[0].rules,
+    ...eslintConfigSCReact.configs.resetRecordForStylistic.rules,
   },
 }
