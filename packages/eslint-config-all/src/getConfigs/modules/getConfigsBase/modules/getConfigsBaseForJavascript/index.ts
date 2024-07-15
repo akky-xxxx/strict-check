@@ -24,7 +24,6 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
 
     const reactConfig = require("eslint-config-sc-react")
     configBase.push(
-      reactConfig.configs.initialRecord,
       reactConfig.configs.airbnbRecords,
       reactConfig.configs.reactRecords,
       reactConfig.configs.scJsCustomRecord,
