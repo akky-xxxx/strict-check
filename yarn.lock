@@ -4134,7 +4134,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-ts@npm:^0.0.5, eslint-config-sc-ts@workspace:^, eslint-config-sc-ts@workspace:packages/eslint-config-ts":
+"eslint-config-sc-ts@npm:^0.0.5":
+  version: 0.0.5
+  resolution: "eslint-config-sc-ts@npm:0.0.5"
+  dependencies:
+    "@eslint/eslintrc": "npm:^3.1.0"
+    "@eslint/js": "npm:^9.5.0"
+    eslint-config-sc-js: "npm:^0.0.7"
+    typescript-eslint: "npm:^7.14.1"
+  checksum: 10c0/0cf5f33d8fe6e7a7e3c641c6eccae16f0bfa46122898c58f9c689f0abe32b385ca1f16510e6a8907bb1d615b6bf764a38a7c2509452c055c29fc242151c8aced
+  languageName: node
+  linkType: hard
+
+"eslint-config-sc-ts@workspace:^, eslint-config-sc-ts@workspace:packages/eslint-config-ts":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-ts@workspace:packages/eslint-config-ts"
   dependencies:
