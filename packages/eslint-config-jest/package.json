@@ -15,7 +15,7 @@
     "url": "https://github.com/akky-xxxx/strict-check"
   },
   "bugs": "https://github.com/akky-xxxx/strict-check/issues",
-  "homepage": "https://github.com/akky-xxxx/strict-check",
+  "homepage": "https://strict-check-series.pages.dev/packages/eslint-config-sc-jest",
   "license": "MIT",
   "main": "dist/index.js",
   "exports": {
