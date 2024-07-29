@@ -1,4 +1,4 @@
-# eslint-config-sc-jest
+# [eslint-config-sc-jest](https://strict-check-series.pages.dev/packages/eslint-config-sc-jest)
 - Strict Check config for eslint.
 - For Jest.
 

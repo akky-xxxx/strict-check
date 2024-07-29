@@ -1,4 +1,4 @@
-# eslint-config-sc-next
+# [eslint-config-sc-next](https://strict-check-series.pages.dev/packages/eslint-config-sc-next)
 - Strict Check config for eslint.
 - For NextJS.
 

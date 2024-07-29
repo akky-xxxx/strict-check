@@ -1,4 +1,4 @@
-# eslint-config-sc-js
+# [eslint-config-sc-js](https://strict-check-series.pages.dev/packages/eslint-config-sc-js)
 - Strict Check config for eslint.
 - For Javascript.
 

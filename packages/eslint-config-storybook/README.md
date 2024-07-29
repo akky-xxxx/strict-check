@@ -1,4 +1,4 @@
-# eslint-config-sc-storybook
+# [eslint-config-sc-storybook](https://strict-check-series.pages.dev/packages/eslint-config-sc-storybook)
 - Strict Check config for eslint.
 - For Storybook.
 

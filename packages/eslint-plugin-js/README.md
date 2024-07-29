@@ -1,4 +1,4 @@
-# eslint-plugin-sc-js
+# [eslint-plugin-sc-js](https://strict-check-series.pages.dev/packages/eslint-plugin-sc-js)
 - Strict Check rules for eslint.
 - - For Javascript / Typescript.
 
