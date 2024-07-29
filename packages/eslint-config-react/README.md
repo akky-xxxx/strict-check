@@ -1,4 +1,4 @@
-# eslint-config-sc-react
+# [eslint-config-sc-react](https://strict-check-series.pages.dev/packages/eslint-config-sc-react)
 - Strict Check config for eslint.
 - For ReactJS.
 

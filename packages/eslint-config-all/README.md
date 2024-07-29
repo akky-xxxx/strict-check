@@ -1,4 +1,4 @@
-# eslint-config-sc-all
+# [eslint-config-sc-all](https://strict-check-series.pages.dev/packages/eslint-config-sc-all)
 - Strict Check config for eslint.
 - Use different config of sc series.
   - [eslint-config-sc-js](https://www.npmjs.com/package/eslint-config-sc-js)
