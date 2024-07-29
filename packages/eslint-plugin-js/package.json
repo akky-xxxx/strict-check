@@ -16,7 +16,7 @@
     "url": "https://github.com/akky-xxxx/strict-check"
   },
   "bugs": "https://github.com/akky-xxxx/strict-check/issues",
-  "homepage": "https://github.com/akky-xxxx/strict-check",
+  "homepage": "https://strict-check-series.pages.dev/packages/eslint-plugin-sc-js",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -51,27 +51,27 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@eslint/js": "^9.5.0",
+    "@eslint/js": "^9.7.0",
     "@stylistic/eslint-plugin": "^2.2.2",
-    "@swc/core": "^1.6.5",
+    "@swc/core": "^1.7.1",
     "@swc/jest": "^0.2.36",
     "@tsconfig/strictest": "^2.0.5",
     "@types/jest": "^29.5.12",
-    "@typescript-eslint/rule-tester": "^7.14.1",
-    "@typescript-eslint/utils": "^7.14.1",
+    "@typescript-eslint/rule-tester": "^7.17.0",
+    "@typescript-eslint/utils": "^7.17.0",
     "chokidar-cli": "^3.0.0",
-    "cspell": "^8.9.1",
+    "cspell": "^8.12.1",
     "editorconfig-checker": "^5.1.8",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1",
     "fixpack": "^4.0.0",
     "jest": "^29.7.0",
-    "npm-run-all2": "^6.2.0",
-    "prettier": "^3.3.2",
+    "npm-run-all2": "^6.2.2",
+    "prettier": "^3.3.3",
     "strict-check": "workspace:^",
-    "typescript": "^5.4.5",
-    "typescript-eslint": "^7.14.1"
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.17.0"
   },
   "packageManager": "yarn@4.2.2"
 }

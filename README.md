@@ -1,4 +1,4 @@
-# strict-check
+# [strict-check](https://strict-check-series.pages.dev/)
 - This is the monorepo that management the package for static analysis.
 
 # Managed packages

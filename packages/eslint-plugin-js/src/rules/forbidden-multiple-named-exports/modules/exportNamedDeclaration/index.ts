@@ -18,6 +18,7 @@ export const exportNamedDeclaration: ExportNamedDeclaration = (context) => {
   }
 
   return (node) => {
+    if (typeof counts[filename] !== "number") return
     counts[filename] += 1
     const count = counts[filename]
 
