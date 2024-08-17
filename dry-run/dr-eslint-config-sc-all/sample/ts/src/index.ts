@@ -72,7 +72,7 @@ const object1 = {
   c: "c",
 }
 
-// TODO: import/no-default-export が聞いてない
+// eslint-disable-next-line import/no-default-export
 export default 1
 
 const { b } = object1
