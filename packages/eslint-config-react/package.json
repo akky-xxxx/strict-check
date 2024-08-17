@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sc-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Strict Check config for eslint for react",
   "keywords": [
     "eslint",
@@ -50,16 +50,16 @@
   },
   "dependencies": {
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-sc-js": "^0.0.7",
-    "globals": "^15.8.0"
+    "eslint-config-sc-js": "^0.0.9",
+    "globals": "^15.9.0"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^2.2.2",
     "@tsconfig/strictest": "^2.0.5",
     "@types/react": "^18.3.3",
-    "@typescript-eslint/parser": "^7.17.0",
+    "@typescript-eslint/parser": "^8.1.0",
     "chokidar-cli": "^3.0.0",
-    "cspell": "^8.12.1",
+    "cspell": "^8.14.1",
     "editorconfig-checker": "^5.1.8",
     "eslint": "^8.57.0",
     "fixpack": "^4.0.0",

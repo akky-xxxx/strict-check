@@ -1,4 +1,4 @@
-/* eslint-disable global-require, import/no-extraneous-dependencies, @typescript-eslint/no-var-requires */
+/* eslint-disable global-require, import/no-extraneous-dependencies, @typescript-eslint/no-require-imports */
 import type { EslintFlatConfig } from "../../../../../libs/shared-for-config/types/EslintFlatConfig"
 import type { Library } from "../../../../../shared/types/Library"
 

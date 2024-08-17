@@ -2,10 +2,15 @@
 import { RuleTester } from "@typescript-eslint/rule-tester"
 
 export const tester = new RuleTester({
-  parser: require.resolve("@typescript-eslint/parser"),
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
+  defaultFilenames: {
+    ts: "sample/useButton/index.ts",
+    tsx: "sample/Button/index.tsx",
+  },
+  languageOptions: {
+    parserOptions: {
+      ecmaFeatures: {
+        jsx: true,
+      },
     },
   },
 })
