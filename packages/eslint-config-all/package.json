@@ -51,15 +51,15 @@
     "type-check": "tsc"
   },
   "devDependencies": {
-    "@swc/core": "^1.7.1",
+    "@swc/core": "^1.7.11",
     "@tsconfig/strictest": "^2.0.5",
     "@types/jest": "^29.5.12",
     "chokidar-cli": "^3.0.0",
-    "cspell": "^8.12.1",
+    "cspell": "^8.14.1",
     "editorconfig-checker": "^5.1.8",
     "eslint": "^8.57.0",
     "eslint-config-sc-jest": "^0.0.4",
-    "eslint-config-sc-js": "^0.0.7",
+    "eslint-config-sc-js": "^0.0.8",
     "eslint-config-sc-next": "^0.0.2",
     "eslint-config-sc-react": "^0.0.4",
     "eslint-config-sc-storybook": "^0.0.4",
@@ -70,7 +70,7 @@
     "prettier": "^3.3.3",
     "strict-check": "workspace:^",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^7.17.0"
+    "typescript-eslint": "^8.1.0"
   },
   "packageManager": "yarn@4.2.2"
 }
