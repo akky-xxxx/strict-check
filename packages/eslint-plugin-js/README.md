@@ -2,6 +2,8 @@
 - Strict Check rules for eslint.
 - - For Javascript / Typescript.
 
+**Supports eslint v9.**
+
 ## Installation
 
 ```shell
