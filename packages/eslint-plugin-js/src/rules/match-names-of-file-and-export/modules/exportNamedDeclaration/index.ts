@@ -23,7 +23,7 @@ export const exportNamedDeclaration: ExportNamedDeclaration = (context) => {
     throw new Error("")
   }
 
-  const matchedCapture = captures.find((capture) => capture.test(filename))
+  const matchedCapture = captures.find((capture) => new RegExp(capture).test(filename))
 
   return (node) => {
     if (!matchedCapture) return
