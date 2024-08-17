@@ -58,7 +58,7 @@
     "cspell": "^8.14.1",
     "editorconfig-checker": "^5.1.8",
     "eslint": "^8.57.0",
-    "eslint-config-sc-jest": "^0.0.4",
+    "eslint-config-sc-jest": "^0.0.5",
     "eslint-config-sc-js": "^0.0.9",
     "eslint-config-sc-next": "^0.0.2",
     "eslint-config-sc-react": "^0.0.4",
