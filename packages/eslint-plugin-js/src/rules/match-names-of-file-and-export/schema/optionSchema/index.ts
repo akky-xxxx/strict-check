@@ -5,7 +5,8 @@ import { ARRAY_LENGTHS } from "../../../../libs/shared-for-plugin"
 export const optionsSchema = z
   .array(
     z.object({
-      captures: z.array(z.instanceof(RegExp)),
+      // TODO: 正規表現を削除するタイミングで z.string にする
+      captures: z.array(z.any()),
     }),
   )
   .length(ARRAY_LENGTHS.ONE)

@@ -21,7 +21,7 @@ export const program: Program = (context) => {
   }
 
   const isPartialMatched = allowPatterns.some((pattern) =>
-    pattern.test(filename))
+    new RegExp(pattern).test(filename))
 
   return (node) => {
     if (isPartialMatched) return
