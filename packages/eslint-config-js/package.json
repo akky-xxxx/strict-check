@@ -59,7 +59,7 @@
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.5",
     "chokidar-cli": "^3.0.0",
-    "cspell": "^8.14.1",
+    "cspell": "^8.14.2",
     "editorconfig-checker": "^5.1.8",
     "eslint": "^8.57.0",
     "fixpack": "^4.0.0",
