@@ -18,7 +18,7 @@
     "prepare:dependence-build": "yarn workspaces foreach -R -ipt run build"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.1.0",
+    "@typescript-eslint/parser": "^8.4.0",
     "eslint": "^8.57.0",
     "eslint-config-sc-js": "workspace:^",
     "eslint-config-sc-react": "workspace:^",
