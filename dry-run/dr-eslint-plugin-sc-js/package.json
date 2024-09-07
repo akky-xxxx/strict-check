@@ -17,7 +17,7 @@
     "prepare:dependence-build": "yarn workspaces foreach -R -ipt run build"
   },
   "devDependencies": {
-    "eslint": "^9.9.0",
+    "eslint": "^9.10.0",
     "eslint-plugin-sc-js": "workspace:^",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^6.2.2",
