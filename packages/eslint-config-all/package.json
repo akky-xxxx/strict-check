@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sc-all",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Strict Check config for eslint",
   "keywords": [
     "eslint",
