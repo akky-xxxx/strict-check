@@ -6,6 +6,7 @@ import React, { Fragment } from "react"
 import type { FC, ReactNode } from "react"
 
 type ReactTest1Props = {
+  // eslint-disable-next-line react/boolean-prop-naming
   bool: boolean
   count: number
   empty: ReactNode
