@@ -19,10 +19,6 @@
   "homepage": "https://strict-check-series.pages.dev/packages/eslint-config-sc-next",
   "license": "MIT",
   "main": "dist/index.js",
-  "exports": {
-    ".": "./dist/index.js",
-    "./legacy": "./dist/legacy/index.js"
-  },
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "run-s \"build:*\"",

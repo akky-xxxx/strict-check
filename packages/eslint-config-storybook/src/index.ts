@@ -1,5 +1,4 @@
 import { flatConfig } from "./flatConfig"
-import { legacyConfig } from "./legacyConfig"
 import { baseRecords } from "./shared/config/records/baseRecords"
 import { eslintOverrideRecords } from "./shared/config/records/eslintOverrideRecords"
 import { overrideJavascriptRecord } from "./shared/config/records/overrideJavascriptRecord"
@@ -16,7 +15,6 @@ const plugin = {
   },
 
   configs: {
-    legacy: legacyConfig,
     recommended: flatConfig,
 
     // TODO: 0.0.4 以降で削除 ここから

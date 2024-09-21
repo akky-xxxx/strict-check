@@ -29,32 +29,6 @@ export default [
 ].flat()
 ```
 
-### Use for `.eslintrc.js`
-
-```javascript
-// .eslintrc.js
-module.exports = {
-  extends: [
-    "...", // other extends for product code
-    "sc-storybook/legacy",
-  ]
-}
-
-// Below is equal
-const eslintConfigSCStorybook = require("eslint-config-sc-storybook")
-
-module.exports = {
-  extends: [
-    "...", // other extends for product code
-  ],
-  plguins: ["storybook"],
-  overrides: [
-    ...[/* other overrides */],
-    ...eslintConfigSCStorybook.configs.legacy.overrides,
-  ],
-}
-```
-
 ## Used config, plugin ( alphabetical )
 ### plugin
 - [eslint-plugin-storybook](https://www.npmjs.com/package/eslint-plugin-storybook)
