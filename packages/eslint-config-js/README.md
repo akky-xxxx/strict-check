@@ -38,32 +38,6 @@ export default [
 ].flat()
 ```
 
-### Use for `.eslintrc.js`
-
-```javascript
-// .eslintrc.js
-module.exports = {
-  extends: ["sc-js/legacy"]
-}
-
-// Below is equal
-const eslintConfigSCJs = require("eslint-config-sc-js")
-
-module.exports = {
-  extends: [
-    "plugin:@stylistic/recommended-extends",
-    "eslint:recommended",
-    "plugin:unicorn/recommended",
-    "airbnb-base",
-  ],
-  plugins: ["unicorn"],
-  rules: {
-    ...eslintConfigSCJs.configs.customRecord.rules,
-    ...eslintConfigSCJs.configs.resetRecordForStylistic.rules,
-  },
-}
-```
-
 ## Used config, plugin ( alphabetical )
 ### config
 - [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)

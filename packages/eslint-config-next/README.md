@@ -66,55 +66,6 @@ export default [
 ].flat()
 ```
 
-
-### Use for `.eslintrc.js`
-#### For Javascript
-
-```javascript
-// .eslintrc.js
-
-module.exports = {
-  extends: ["sc-next/legacy"]
-}
-
-// Below is equal
-const eslintConfigSCNext = require("eslint-config-sc-next")
-const eslintConfigSCReact = require("eslint-config-sc-react")
-
-module.exports = {
-  extends: [
-    "plugin:@next/next/core-web-vitals",
-    "sc-react/legacy"
-  ],
-  plugins: ["@next/next"],
-  rules: {
-    ...eslintConfigSCReact.configs.customRecord.rules,
-    ...eslintConfigSCNext.configs.nextRecord.rules,
-    ...eslintConfigSCNext.configs.resetRecordForStylistic.rules,
-  },
-}
-```
-
-#### For Typescript
-```javascript
-const eslintConfigSCNext = require("eslint-config-sc-next")
-const eslintConfigSCTs = require("eslint-config-sc-ts")
-
-module.exports = {
-  extends: [
-    "plugin:@next/next/core-web-vitals",
-    "sc-ts/legacy",
-    "sc-react/legacy"
-  ],
-  plugins: ["@next/next"],
-  rules: {
-    ...eslintConfigSCNext.configs.nextRecord.rules,
-    ...eslintConfigSCNext.configs.scRectCustomRecordWithTypescript.rules,
-    ...eslintConfigSCNext.configs.resetRecordForStylistic.rules,
-  },
-}
-```
-
 ## Used config, plugin ( alphabetical )
 ### config
 - [eslint-config-sc-react](https://www.npmjs.com/package/eslint-config-sc-react)

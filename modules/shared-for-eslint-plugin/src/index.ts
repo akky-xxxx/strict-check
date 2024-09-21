@@ -7,7 +7,6 @@ export type { OptionBase, RuleBase } from "./types"
 export {
   convertBaseToConfigBase,
   getFlatConfig,
-  getLegacyConfig,
   getRules,
   parseOptions,
 } from "./utilities"

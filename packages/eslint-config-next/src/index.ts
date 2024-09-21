@@ -1,5 +1,4 @@
 import { flatConfig } from "./flatConfig"
-import { legacyConfig } from "./legacyConfig"
 import { airbnbRecords } from "./shared/config/records/airbnbRecords"
 import { eslintRecommendedRecord } from "./shared/config/records/eslintRecommendedRecord"
 import { initialRecord } from "./shared/config/records/initialRecord"
@@ -21,7 +20,6 @@ const plugin = {
   },
 
   configs: {
-    legacy: legacyConfig,
     recommended: flatConfig,
 
     initialRecord,

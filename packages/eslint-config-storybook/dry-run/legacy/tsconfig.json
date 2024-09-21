@@ -1,7 +1,0 @@
-{
-  "include": ["**/*.jsx", "**/*.tsx"],
-  "compilerOptions": {
-    "rootDir": ".",
-    "strictNullChecks": true
-  }
-}
