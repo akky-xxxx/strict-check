@@ -4092,7 +4092,7 @@ __metadata:
     eslint-config-sc-next: "npm:^0.0.3"
     eslint-config-sc-react: "npm:^0.0.5"
     eslint-config-sc-storybook: "npm:^0.0.5"
-    eslint-config-sc-ts: "npm:^0.0.7"
+    eslint-config-sc-ts: "npm:^0.1.0"
     fixpack: "npm:^4.0.0"
     jest: "npm:^29.7.0"
     npm-run-all2: "npm:^6.2.3"
@@ -4218,7 +4218,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-ts@npm:^0.0.7, eslint-config-sc-ts@workspace:^, eslint-config-sc-ts@workspace:packages/eslint-config-ts":
+"eslint-config-sc-ts@npm:^0.1.0, eslint-config-sc-ts@workspace:^, eslint-config-sc-ts@workspace:packages/eslint-config-ts":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-ts@workspace:packages/eslint-config-ts"
   dependencies:
