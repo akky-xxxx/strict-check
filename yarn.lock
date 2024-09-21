@@ -4088,7 +4088,7 @@ __metadata:
     editorconfig-checker: "npm:^5.1.8"
     eslint: "npm:^8.57.1"
     eslint-config-sc-jest: "npm:^0.0.5"
-    eslint-config-sc-js: "npm:^0.0.9"
+    eslint-config-sc-js: "npm:^0.1.0"
     eslint-config-sc-next: "npm:^0.0.3"
     eslint-config-sc-react: "npm:^0.0.5"
     eslint-config-sc-storybook: "npm:^0.0.5"
@@ -4126,7 +4126,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-js@npm:^0.0.9, eslint-config-sc-js@workspace:^, eslint-config-sc-js@workspace:packages/eslint-config-js":
+"eslint-config-sc-js@npm:^0.1.0, eslint-config-sc-js@workspace:^, eslint-config-sc-js@workspace:packages/eslint-config-js":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-js@workspace:packages/eslint-config-js"
   dependencies:
@@ -4184,7 +4184,7 @@ __metadata:
     editorconfig-checker: "npm:^5.1.8"
     eslint: "npm:^8.57.1"
     eslint-config-airbnb: "npm:^19.0.4"
-    eslint-config-sc-js: "npm:^0.0.9"
+    eslint-config-sc-js: "npm:^0.1.0"
     fixpack: "npm:^4.0.0"
     globals: "npm:^15.9.0"
     npm-run-all2: "npm:^6.2.3"
@@ -4230,7 +4230,7 @@ __metadata:
     cspell: "npm:^8.14.4"
     editorconfig-checker: "npm:^5.1.8"
     eslint: "npm:^8.57.1"
-    eslint-config-sc-js: "npm:^0.0.9"
+    eslint-config-sc-js: "npm:^0.1.0"
     eslint-import-resolver-typescript: "npm:^3.6.3"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.3"
