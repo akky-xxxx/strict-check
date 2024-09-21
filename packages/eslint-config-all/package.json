@@ -62,7 +62,7 @@
     "eslint-config-sc-js": "^0.1.0",
     "eslint-config-sc-next": "^0.1.0",
     "eslint-config-sc-react": "^0.1.0",
-    "eslint-config-sc-storybook": "^0.0.5",
+    "eslint-config-sc-storybook": "^0.1.0",
     "eslint-config-sc-ts": "^0.1.0",
     "fixpack": "^4.0.0",
     "jest": "^29.7.0",
