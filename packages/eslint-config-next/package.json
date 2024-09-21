@@ -50,13 +50,13 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^14.2.8",
+    "@next/eslint-plugin-next": "^14.2.13",
     "eslint-config-sc-react": "^0.0.5"
   },
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.5",
     "@types/react": "^18.3.5",
-    "@typescript-eslint/parser": "^8.4.0",
+    "@typescript-eslint/parser": "^8.6.0",
     "chokidar-cli": "^3.0.0",
     "cspell": "^8.14.2",
     "editorconfig-checker": "^5.1.8",
