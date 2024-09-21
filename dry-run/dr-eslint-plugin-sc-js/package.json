@@ -19,7 +19,7 @@
     "eslint": "^9.11.0",
     "eslint-plugin-sc-js": "workspace:^",
     "fixpack": "^4.0.0",
-    "npm-run-all2": "^6.2.2",
+    "npm-run-all2": "^6.2.3",
     "prettier": "^3.3.3"
   },
   "packageManager": "yarn@4.2.2"
