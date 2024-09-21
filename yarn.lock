@@ -4090,7 +4090,7 @@ __metadata:
     eslint-config-sc-jest: "npm:^0.0.5"
     eslint-config-sc-js: "npm:^0.1.0"
     eslint-config-sc-next: "npm:^0.0.3"
-    eslint-config-sc-react: "npm:^0.0.5"
+    eslint-config-sc-react: "npm:^0.1.0"
     eslint-config-sc-storybook: "npm:^0.0.5"
     eslint-config-sc-ts: "npm:^0.1.0"
     fixpack: "npm:^4.0.0"
@@ -4161,7 +4161,7 @@ __metadata:
     cspell: "npm:^8.14.4"
     editorconfig-checker: "npm:^5.1.8"
     eslint: "npm:^8.57.1"
-    eslint-config-sc-react: "npm:^0.0.5"
+    eslint-config-sc-react: "npm:^0.1.0"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^6.2.3"
     prettier: "npm:^3.3.3"
@@ -4171,7 +4171,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-react@npm:^0.0.5, eslint-config-sc-react@workspace:^, eslint-config-sc-react@workspace:packages/eslint-config-react":
+"eslint-config-sc-react@npm:^0.1.0, eslint-config-sc-react@workspace:^, eslint-config-sc-react@workspace:packages/eslint-config-react":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-react@workspace:packages/eslint-config-react"
   dependencies:
