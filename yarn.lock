@@ -4317,7 +4317,7 @@ __metadata:
     typescript-eslint: "npm:^8.11.0"
     zod: "npm:^3.23.8"
   peerDependencies:
-    eslint: ^8.57.0 || ^9.9.0
+    eslint: ^9.0.0
   languageName: unknown
   linkType: soft
 
