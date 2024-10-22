@@ -17,10 +17,10 @@ $ yarn add -D eslint-config-sc-all
 
 ```javascript
 // eslint.config.mjs
-import eslintConfigSC from "eslint-config-sc"
+import eslintConfigSCAll from "eslint-config-sc-all"
 
 export default [
-  eslintConfigSC.getConfigs("typescript", ["react", "next", "jest", "storybook"]),
+  eslintConfigSCAll.getConfigs("typescript", ["react", "next", "jest", "storybook"]),
 ].flat()
 
 ```

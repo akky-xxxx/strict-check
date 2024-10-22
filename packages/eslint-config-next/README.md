@@ -33,7 +33,6 @@ export default [
   // This is the custom config of eslint-config-sc-js / eslint-config-sc-next
   eslintConfigSCNext.configs.scJsCustomRecord,
   eslintConfigSCNext.configs.scRectCustomRecord,
-  eslintConfigSCNext.configs.customRecordWithTypescript,
 
   // This is the reset config for stylistic
   eslintConfigSCNext.configs.resetRecordForStylistic,
