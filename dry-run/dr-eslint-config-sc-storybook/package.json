@@ -16,14 +16,14 @@
     "prepare:dependence-build": "yarn workspaces foreach -R -ipt run build"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.6.0",
-    "eslint": "^8.57.1",
+    "@typescript-eslint/parser": "^8.11.0",
+    "eslint": "^9.13.0",
     "eslint-config-sc-js": "workspace:^",
     "eslint-config-sc-react": "workspace:^",
     "eslint-config-sc-storybook": "workspace:^",
     "eslint-config-sc-ts": "workspace:^",
     "fixpack": "^4.0.0",
-    "npm-run-all2": "^6.2.3",
+    "npm-run-all2": "^7.0.0",
     "prettier": "^3.3.3"
   },
   "packageManager": "yarn@4.2.2"
