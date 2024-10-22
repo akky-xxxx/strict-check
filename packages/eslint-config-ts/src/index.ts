@@ -1,5 +1,4 @@
 import { flatConfig } from "./flatConfig"
-import { legacyConfig } from "./legacyConfig"
 import { airbnbBaseRecords } from "./shared/config/records/airbnbBaseRecords"
 import { baseRecords1 } from "./shared/config/records/baseRecords1"
 import { baseRecords2 } from "./shared/config/records/baseRecords2"
@@ -28,7 +27,6 @@ const plugin = {
   },
 
   configs: {
-    legacy: legacyConfig,
     recommended: flatConfig,
 
     // TODO: 0.0.4 以降で削除 ここから

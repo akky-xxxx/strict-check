@@ -6,7 +6,6 @@ import { reactRecords } from "../shared/config/records/reactRecords"
 import { resetRecordForStylistic } from "../shared/config/records/resetRecordForStylistic"
 import { scJsCustomRecord } from "../shared/config/records/scJsCustomRecord"
 import { scRectCustomRecord } from "../shared/config/records/scRectCustomRecord"
-import { scRectCustomRecordWithTypescript } from "../shared/config/records/scRectCustomRecordWithTypescript"
 import { stylisticRecord } from "../shared/config/records/stylisticRecord"
 import { unicornRecommendedRecords } from "../shared/config/records/unicornRecommendedRecords"
 
@@ -22,6 +21,5 @@ export const flatConfig = [
   airbnbRecords,
   scJsCustomRecord,
   scRectCustomRecord,
-  scRectCustomRecordWithTypescript,
   resetRecordForStylistic,
 ].flat() satisfies EslintFlatConfig[]

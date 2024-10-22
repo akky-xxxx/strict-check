@@ -63,57 +63,6 @@ export default [
 ].flat()
 ```
 
-
-### Use for `.eslintrc.js`
-#### For Javascript
-
-```javascript
-// .eslintrc.js
-
-module.exports = {
-  extends: ["sc-react/legacy"]
-}
-
-// Below is equal
-const eslintConfigSCReact = require("eslint-config-sc-react")
-
-module.exports = {
-  extends: [
-    "plugin:react/jsx-runtime",
-    "plugin:react/recommended",
-    "airbnb",
-    "airbnb/hooks",
-    "sc-js/legacy"
-  ],
-  rules: {
-    ...eslintConfigSCReact.configs.customRecord.rules,
-  },
-}
-```
-
-#### For Typescript
-```javascript
-const eslintConfigSCReact = require("eslint-config-sc-react")
-const eslintConfigSCTs = require("eslint-config-sc-ts")
-
-module.exports = {
-  extends: [
-    "plugin:unicorn/recommended",
-    "plugin:react/jsx-runtime",
-    "plugin:react/recommended",
-    "airbnb",
-    "airbnb/hooks",
-    "sc-ts/legacy"
-  ],
-  rules: {
-    ...eslintConfigSCTs.configs.customRecord.rules,
-    ...eslintConfigSCReact.configs.customRecord.rules,
-    ...eslintConfigSCReact.configs.customRecordWithTypescript.rules,  // This is the custom config for typescript of eslint-config-sc-react
-    ...eslintConfigSCReact.configs.resetRecordForStylistic.rules,
-  },
-}
-```
-
 ## Used config, plugin ( alphabetical )
 ### config
 - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)

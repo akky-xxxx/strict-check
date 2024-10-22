@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sc-next",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Strict Check config for eslint for next",
   "keywords": [
     "eslint",
@@ -19,10 +19,6 @@
   "homepage": "https://strict-check-series.pages.dev/packages/eslint-config-sc-next",
   "license": "MIT",
   "main": "dist/index.js",
-  "exports": {
-    ".": "./dist/index.js",
-    "./legacy": "./dist/legacy/index.js"
-  },
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "run-s \"build:*\"",
@@ -50,23 +46,23 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^14.2.5",
-    "eslint-config-sc-react": "^0.0.5"
+    "@next/eslint-plugin-next": "^15.0.0",
+    "eslint-config-sc-react": "^0.1.0"
   },
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.5",
-    "@types/react": "^18.3.3",
-    "@typescript-eslint/parser": "^8.1.0",
+    "@types/react": "^18.3.11",
+    "@typescript-eslint/parser": "^8.11.0",
     "chokidar-cli": "^3.0.0",
-    "cspell": "^8.14.1",
-    "editorconfig-checker": "^5.1.8",
-    "eslint": "^8.57.0",
+    "cspell": "^8.15.4",
+    "editorconfig-checker": "^6.0.0",
+    "eslint": "^9.13.0",
     "fixpack": "^4.0.0",
-    "npm-run-all2": "^6.2.2",
+    "npm-run-all2": "^7.0.0",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
     "strict-check": "workspace:^",
-    "typescript": "^5.5.4"
+    "typescript": "^5.6.3"
   },
   "packageManager": "yarn@4.2.2"
 }
