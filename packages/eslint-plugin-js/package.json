@@ -62,7 +62,7 @@
     "chokidar-cli": "^3.0.0",
     "cspell": "^8.15.4",
     "editorconfig-checker": "^6.0.0",
-    "eslint": "^9.13.0",
+    "eslint": "9.4.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.31.0",
     "fixpack": "^4.0.0",
