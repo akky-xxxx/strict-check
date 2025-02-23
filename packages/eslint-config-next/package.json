@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "@next/eslint-plugin-next": "^15.1.7",
-    "eslint-config-sc-react": "^0.1.0"
+    "eslint-config-sc-react": "^0.1.1"
   },
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.5",
