@@ -8,6 +8,7 @@ export const eslintRules = {
   /* eslint-disable @typescript-eslint/no-magic-numbers */
   "complexity": [SEVERITY.ERROR, 5],
   "curly": [SEVERITY.WARN, "multi-or-nest"],
+  "indent": SEVERITY.OFF,
   "max-depth": [SEVERITY.ERROR, 3],
   "max-lines": [SEVERITY.ERROR, { max: 100 }],
   "max-lines-per-function": maxLinesPerFunction,
