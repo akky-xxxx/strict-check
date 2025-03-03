@@ -242,3 +242,8 @@ const object3 = {
 
 // eslint-disable-next-line @stylistic/arrow-parens
 const arrowFunction1 = a => a
+
+const object4 = {
+  // eslint-disable-next-line @stylistic/indent
+    a: 1,
+}
