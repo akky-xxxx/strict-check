@@ -4407,7 +4407,7 @@ __metadata:
     cspell: "npm:^8.18.1"
     editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.24.0"
-    eslint-config-sc-jest: "npm:^0.1.1"
+    eslint-config-sc-jest: "npm:^0.1.2"
     eslint-config-sc-js: "npm:^0.1.3"
     eslint-config-sc-next: "npm:^0.1.1"
     eslint-config-sc-react: "npm:^0.1.2"
@@ -4423,7 +4423,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-sc-jest@npm:^0.1.1, eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
+"eslint-config-sc-jest@npm:^0.1.2, eslint-config-sc-jest@workspace:^, eslint-config-sc-jest@workspace:packages/eslint-config-jest":
   version: 0.0.0-use.local
   resolution: "eslint-config-sc-jest@workspace:packages/eslint-config-jest"
   dependencies:
