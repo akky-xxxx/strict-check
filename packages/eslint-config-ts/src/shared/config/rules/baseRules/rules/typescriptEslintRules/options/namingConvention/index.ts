@@ -25,7 +25,7 @@ export const namingConvention = [
   {
     selector: ["variable", "objectLiteralProperty"],
 
-    format: ["camelCase", "UPPER_CASE"],
+    format: ["camelCase", "UPPER_CASE", "PascalCase"],
     leadingUnderscore: "allow",
     trailingUnderscore: "forbid",
   },
@@ -40,6 +40,11 @@ export const namingConvention = [
 
   {
     selector: "typeLike",
+
+    format: ["PascalCase"],
+  },
+  {
+    selector: "class",
 
     format: ["PascalCase"],
   },
