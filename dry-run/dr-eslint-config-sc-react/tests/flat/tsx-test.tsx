@@ -1,5 +1,5 @@
 /* eslint-disable no-console, import/no-extraneous-dependencies */
-/* eslint-disable max-lines, @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable max-lines, @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-return */
 // @ts-ignore
 import React, { Fragment } from "react"
 
