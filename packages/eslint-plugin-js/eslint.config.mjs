@@ -31,7 +31,7 @@ const CONFIG = [
   //   },
   // },
   {
-    files: ["cspell.config.js", "jest.config.js"],
+    files: ["cspell.config.js"],
     rules: {
       "no-undef": 0,
     },
