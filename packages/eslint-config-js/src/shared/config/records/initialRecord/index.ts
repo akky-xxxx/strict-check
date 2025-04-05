@@ -14,5 +14,6 @@ export const initialRecord = {
   },
   linterOptions: {
     reportUnusedDisableDirectives: SEVERITY.ERROR,
+    reportUnusedInlineConfigs: SEVERITY.ERROR,
   },
 } as const satisfies EslintFlatConfig
