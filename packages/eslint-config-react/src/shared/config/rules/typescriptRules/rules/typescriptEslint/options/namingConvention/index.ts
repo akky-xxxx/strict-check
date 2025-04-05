@@ -51,4 +51,9 @@ export const namingConvention = [
 
     format: ["PascalCase"],
   },
+  {
+    selector: "class",
+
+    format: ["PascalCase"],
+  },
 ] as const satisfies EslintRuleLevelAndOptions
