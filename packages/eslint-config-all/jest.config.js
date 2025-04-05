@@ -2,9 +2,21 @@ module.exports = {
   roots: ["<rootDir>/spec"],
   testMatch: ["**/tests/**/?(*.)test.ts"],
   transform: {
-    "^.+\\.(t|j)sx?$": ["@swc/jest"],
+    "^.+\\.ts$": [
+      "@swc/jest",
+      {
+        sourceMaps: true, // エラーを見やすくする( 有効じゃないと内容がズレて表示されます )
+
+        module: {
+          type: "commonjs", // 出力するファイルをcommonjsとする
+        },
+
+        jsc: {
+          parser: {
+            syntax: "typescript", // ソースコードをtypescriptとしてパースする
+          },
+        },
+      },
+    ],
   },
-  transformIgnorePatterns: [
-    "/node_modules/(?!(@stylistic/eslint-plugin)/)",
-  ],
 }
