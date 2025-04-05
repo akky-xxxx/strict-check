@@ -47,7 +47,7 @@
     "publish:dry-run": "npm pack --dry-run",
     "spell-check": "cspell lint --no-progress \"./{spec,src}/**/*.ts\" \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
     "tagging": "node ../../scripts/tagging/index.mjs",
-    "test": "jest --coverage",
+    "test": "vitest run --coverage",
     "type-check": "tsc"
   },
   "devDependencies": {

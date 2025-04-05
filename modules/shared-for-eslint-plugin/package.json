@@ -17,7 +17,7 @@
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -c -u",
     "pre-check-code": "yarn workspaces foreach -R -ipt run build",
     "spell-check": "cspell lint --no-progress \"./{spec,src}/**/*.ts\" \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
-    "test": "jest --coverage",
+    "test": "vitest run --coverage",
     "type-check": "tsc"
   },
   "dependencies": {
