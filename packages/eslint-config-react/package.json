@@ -50,7 +50,7 @@
     "globals": "^16.0.0"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^2.12.1",
+    "@stylistic/eslint-plugin": "^4.2.0",
     "@tsconfig/strictest": "^2.0.5",
     "@types/react": "^19.1.0",
     "@typescript-eslint/parser": "^8.29.0",
