@@ -55,7 +55,7 @@ const function4 = () => {
 
   // eslint-disable-next-line @typescript-eslint/no-redundant-type-constituents
   const a: number | unknown = 1
-  // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
+  // eslint-disable-next-line @typescript-eslint/consistent-type-assertions, @typescript-eslint/no-unsafe-type-assertion
   return a as number
 }
 
@@ -225,3 +225,8 @@ type Array4 = {
 type Array5 = Array<{
   a: string
 }>
+
+// eslint-disable-next-line no-confusing-arrow
+const function9 = (input: string) => input.length < 3 ? 42 : "oops"
+// eslint-disable-next-line @typescript-eslint/consistent-type-assertions, @typescript-eslint/no-unsafe-type-assertion
+const returnOfFunction9 = function9("") as number

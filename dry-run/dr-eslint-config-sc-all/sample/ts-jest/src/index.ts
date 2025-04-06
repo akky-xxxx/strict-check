@@ -55,7 +55,7 @@ const function4 = () => {
 
   // eslint-disable-next-line @typescript-eslint/no-redundant-type-constituents
   const a: number | unknown = 1
-  // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
+  // eslint-disable-next-line @typescript-eslint/consistent-type-assertions, @typescript-eslint/no-unsafe-type-assertion
   return a as number
 }
 

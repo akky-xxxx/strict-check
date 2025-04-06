@@ -1,3 +1,4 @@
+
 # [eslint-config-sc-ts](https://strict-check-series.pages.dev/packages/eslint-config-sc-ts)
 - Strict Check config for eslint.
 - For Typescript.

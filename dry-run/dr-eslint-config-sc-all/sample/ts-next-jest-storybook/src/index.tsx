@@ -1,5 +1,5 @@
 /* eslint-disable no-console, import/no-extraneous-dependencies */
-/* eslint-disable max-lines, @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable max-lines, @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-return */
 // @ts-ignore
 import React, { Fragment } from "react"
 
@@ -105,3 +105,15 @@ const reactTest3Props = {
 /* eslint-enable sort-keys */
 
 export const ReactTest4 = () => <ReactTest3 {...reactTest3Props} />
+
+export const ReactTest5 = () => (
+  <div>
+    {/* eslint-disable-next-line @typescript-eslint/no-magic-numbers */}
+    {(Math.random() * 10) % 2
+      ? (
+          // eslint-disable-next-line react/jsx-indent
+          <div>1</div>
+      )
+      : null}
+  </div>
+)

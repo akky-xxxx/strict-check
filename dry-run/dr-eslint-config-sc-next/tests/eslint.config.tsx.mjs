@@ -3,19 +3,9 @@ import eslintConfigSCTs from "eslint-config-sc-ts"
 import typescriptEslintParser from "@typescript-eslint/parser"
 
 export default [
-  eslintConfigSCNext.configs.initialRecord,
-  eslintConfigSCNext.configs.stylisticRecord,
-  eslintConfigSCNext.configs.eslintRecommendedRecord,
-  eslintConfigSCTs.configs.typescriptEslintStrictTypeCheckedRecords,
-  eslintConfigSCTs.configs.typescriptEslintStylisticTypeCheckedRecords,
-  eslintConfigSCNext.configs.unicornRecommendedRecords,
-  eslintConfigSCNext.configs.reactRecords,
-  eslintConfigSCNext.configs.nextRecord,
-  eslintConfigSCNext.configs.airbnbRecords,
-  eslintConfigSCNext.configs.scRectCustomRecord,
-  eslintConfigSCTs.configs.customRecords,
+  eslintConfigSCNext.configs.recommended,
+  eslintConfigSCTs.configs.recommended,
   eslintConfigSCNext.configs.scRectCustomRecordWithTypescript,
-  eslintConfigSCNext.configs.resetRecordForStylistic,
   {
     languageOptions: {
       parserOptions: {

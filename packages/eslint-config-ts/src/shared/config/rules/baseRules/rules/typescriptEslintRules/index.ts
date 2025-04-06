@@ -35,6 +35,7 @@ export const typescriptEslintRules = {
   "@typescript-eslint/no-unnecessary-boolean-literal-compare": noUnnecessaryBooleanLiteralCompare,
   "@typescript-eslint/no-unnecessary-condition": noUnnecessaryCondition,
   "@typescript-eslint/no-unnecessary-type-arguments": SEVERITY.WARN,
+  "@typescript-eslint/no-unsafe-type-assertion": SEVERITY.ERROR,
   "@typescript-eslint/no-unused-vars": SEVERITY.ERROR,
   "@typescript-eslint/no-use-before-define": SEVERITY.ERROR,
   "@typescript-eslint/prefer-destructuring": preferDestructuring,
