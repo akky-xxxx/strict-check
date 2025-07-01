@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-sc-js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Strict Check rules for eslint for javascript / typescript",
   "keywords": [
     "eslint",
