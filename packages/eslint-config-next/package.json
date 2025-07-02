@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sc-next",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Strict Check config for eslint for next",
   "keywords": [
     "eslint",
@@ -46,20 +46,20 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^15.2.4",
+    "@next/eslint-plugin-next": "^15.3.4",
     "eslint-config-sc-react": "^0.1.2"
   },
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.5",
-    "@types/react": "^19.1.0",
-    "@typescript-eslint/parser": "^8.29.0",
+    "@types/react": "^19.1.8",
+    "@typescript-eslint/parser": "^8.35.1",
     "chokidar-cli": "^3.0.0",
-    "cspell": "^8.18.1",
+    "cspell": "^9.1.2",
     "editorconfig-checker": "^6.0.1",
-    "eslint": "^9.24.0",
+    "eslint": "^9.30.0",
     "fixpack": "^4.0.0",
-    "npm-run-all2": "^7.0.2",
-    "prettier": "^3.5.3",
+    "npm-run-all2": "^8.0.4",
+    "prettier": "^3.6.2",
     "react": "^19.1.0",
     "strict-check": "workspace:^",
     "typescript": "^5.8.3"
