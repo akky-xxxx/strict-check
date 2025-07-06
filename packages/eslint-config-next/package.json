@@ -45,10 +45,6 @@
     "tagging": "node ../../scripts/tagging/index.mjs",
     "type-check": "tsc"
   },
-  "dependencies": {
-    "@next/eslint-plugin-next": "^15.3.4",
-    "eslint-config-sc-react": "^0.1.2"
-  },
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.5",
     "@types/react": "^19.1.8",
@@ -63,6 +59,10 @@
     "react": "^19.1.0",
     "strict-check": "workspace:^",
     "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "@next/eslint-plugin-next": ">=15.3.4",
+    "eslint-config-sc-react": ">=0.1.2"
   },
   "packageManager": "yarn@4.2.2"
 }
