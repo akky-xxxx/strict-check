@@ -2414,7 +2414,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:^9.6.1":
+"@types/eslint-plugin-jsx-a11y@npm:^6":
+  version: 6.10.0
+  resolution: "@types/eslint-plugin-jsx-a11y@npm:6.10.0"
+  dependencies:
+    "@types/eslint": "npm:*"
+  checksum: 10c0/ec494e0ea56a0a10140316a74463eb8a6ac5ed02d7408ef91444f7c0c9bc875866a9d0be7a761f1631ea543c2413b1db947bf7cb1df9d936171e5d82f71c6772
+  languageName: node
+  linkType: hard
+
+"@types/eslint@npm:*, @types/eslint@npm:^9.6.1":
   version: 9.6.1
   resolution: "@types/eslint@npm:9.6.1"
   dependencies:
@@ -5103,13 +5112,18 @@ __metadata:
   dependencies:
     "@next/eslint-plugin-next": "npm:^15.3.5"
     "@tsconfig/strictest": "npm:^2.0.5"
+    "@types/eslint-plugin-jsx-a11y": "npm:^6"
     "@vitest/coverage-v8": "npm:3.2.4"
     chokidar-cli: "npm:^3.0.0"
     cspell: "npm:^9.1.2"
     editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
     eslint-config-airbnb: "npm:^19.0.4"
+    eslint-plugin-import: "npm:^2.32.0"
     eslint-plugin-jest: "npm:^29.0.1"
+    eslint-plugin-jsx-a11y: "npm:^6.10.2"
+    eslint-plugin-react: "npm:^7.37.5"
+    eslint-plugin-react-hooks: "npm:^5.2.0"
     eslint-plugin-storybook: "npm:0.12.0"
     eslint-plugin-unicorn: "npm:^59.0.1"
     fixpack: "npm:^4.0.0"
