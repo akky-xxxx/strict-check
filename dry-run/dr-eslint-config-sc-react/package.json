@@ -16,15 +16,24 @@
     "prepare:dependence-build": "yarn workspaces foreach -R -ipt run build"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.30.1",
+    "@stylistic/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^8.35.1",
     "eslint": "^9.30.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-sc-js": "workspace:^",
     "eslint-config-sc-react": "workspace:^",
+    "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-unicorn": "^59.0.1",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^8.0.4",
-    "prettier": "^3.6.2"
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3"
   },
   "packageManager": "yarn@4.2.2"
 }
