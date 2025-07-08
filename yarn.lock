@@ -2398,6 +2398,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/confusing-browser-globals@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@types/confusing-browser-globals@npm:1.0.3"
+  checksum: 10c0/65aa3a176b695d5a724aba800d5f7027e9f825a39ab9742ac51addb926f0f2ddfdc719e962bdd82c18cc858bc6daa5b283362c8773303ee9fc06a8360fe93049
+  languageName: node
+  linkType: hard
+
 "@types/conventional-commits-parser@npm:^5.0.0":
   version: 5.0.0
   resolution: "@types/conventional-commits-parser@npm:5.0.0"
@@ -3928,7 +3935,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"confusing-browser-globals@npm:^1.0.10":
+"confusing-browser-globals@npm:^1.0.10, confusing-browser-globals@npm:^1.0.11":
   version: 1.0.11
   resolution: "confusing-browser-globals@npm:1.0.11"
   checksum: 10c0/475d0a284fa964a5182b519af5738b5b64bf7e413cfd703c1b3496bf6f4df9f827893a9b221c0ea5873c1476835beb1e0df569ba643eff0734010c1eb780589e
@@ -5158,11 +5165,15 @@ __metadata:
   resolution: "eslint-config-sc-js@workspace:packages/eslint-config-js"
   dependencies:
     "@tsconfig/strictest": "npm:^2.0.5"
+    "@types/confusing-browser-globals": "npm:^1.0.3"
     chokidar-cli: "npm:^3.0.0"
+    confusing-browser-globals: "npm:^1.0.11"
     cspell: "npm:^9.1.2"
     editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
+    eslint-plugin-import: "npm:^2.32.0"
     fixpack: "npm:^4.0.0"
+    globals: "npm:^16.3.0"
     npm-run-all2: "npm:^8.0.4"
     prettier: "npm:^3.6.2"
     strict-check: "workspace:^"
