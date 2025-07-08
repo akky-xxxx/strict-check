@@ -5183,7 +5183,6 @@ __metadata:
     "@eslint/eslintrc": ">=3.3.1"
     "@eslint/js": ">=9.30.0"
     "@stylistic/eslint-plugin": ">=5.1.0"
-    eslint-config-airbnb-base: ">=15.0.0"
     eslint-plugin-unicorn: ">=59.0.1"
   languageName: unknown
   linkType: soft
