@@ -5162,6 +5162,7 @@ __metadata:
     cspell: "npm:^9.1.2"
     editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
+    eslint-plugin-import: "npm:^2.32.0"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^8.0.4"
     prettier: "npm:^3.6.2"
@@ -5173,6 +5174,7 @@ __metadata:
     "@eslint/js": ">=9.30.0"
     "@stylistic/eslint-plugin": ">=5.1.0"
     eslint-config-airbnb-base: ">=15.0.0"
+    eslint-plugin-import: ">=2.32.0"
     eslint-plugin-unicorn: ">=59.0.1"
   languageName: unknown
   linkType: soft
