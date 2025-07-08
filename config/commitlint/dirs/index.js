@@ -1,3 +1,5 @@
+// 後から適用したルールのため
+/* eslint-disable unicorn/prevent-abbreviations */
 const fs = require("fs")
 
 const getDirs = (packagesDir) => {

@@ -1,3 +1,5 @@
+// 後から適用したルールのため
+/* eslint-disable unicorn/no-process-exit */
 import childProcess from "child_process"
 import fs from "fs"
 

@@ -1,3 +1,5 @@
+// 後から適用したルールのため
+/* eslint-disable curly */
 const fs = require("fs")
 const path = require("path")
 
