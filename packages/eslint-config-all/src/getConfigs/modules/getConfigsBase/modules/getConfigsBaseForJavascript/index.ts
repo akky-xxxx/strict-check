@@ -12,6 +12,7 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
   const jsConfig = require("eslint-config-sc-js")
   configBase.push(
     jsConfig.configs.initialRecord,
+    jsConfig.configs.importRecommendedRecord,
     jsConfig.configs.stylisticRecord,
     jsConfig.configs.eslintRecommendedRecord,
     jsConfig.configs.unicornRecommendedRecords,

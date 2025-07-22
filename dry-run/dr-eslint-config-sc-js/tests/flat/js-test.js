@@ -247,3 +247,9 @@ const object4 = {
   // eslint-disable-next-line @stylistic/indent
     a: 1,
 }
+
+// eslint-disable-next-line import/no-empty-named-blocks, import/no-useless-path-segments, import/first
+import {} from "../flat/js-test-sub1"
+
+// eslint-disable-next-line import/no-mutable-exports, prefer-const
+export let variable6 = "a"

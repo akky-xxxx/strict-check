@@ -2,6 +2,7 @@ import { flatConfig } from "./flatConfig"
 import { airbnbBaseRecords } from "./shared/config/records/airbnbBaseRecords"
 import { customRecord } from "./shared/config/records/customRecord"
 import { eslintRecommendedRecord } from "./shared/config/records/eslintRecommendedRecord"
+import { importRecommendedRecord } from "./shared/config/records/importRecommendedRecord"
 import { initialRecord } from "./shared/config/records/initialRecord"
 import { resetRecordForStylistic } from "./shared/config/records/resetRecordForStylistic"
 import { scJsCustomRecord } from "./shared/config/records/scJsCustomRecord"
@@ -27,6 +28,7 @@ const plugin = {
 
     airbnbBaseRecords,
     eslintRecommendedRecord,
+    importRecommendedRecord,
     initialRecord,
     resetRecordForStylistic,
     scJsCustomRecord,
