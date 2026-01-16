@@ -6,7 +6,7 @@
 ### Installation
 
 ```shell
-$ yarn add -D eslint-config-sc-next
+$ pnpm add -D eslint-config-sc-next
 ```
 
 ### Use for `eslint.config.mjs`

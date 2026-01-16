@@ -13,7 +13,7 @@
     "lint:prettier": "prettier \"tests/*\" !\"./modules/flat/*\" -c -u",
     "prepare": "run-p \"prepare:*\"",
     "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
-    "prepare:dependence-build": "yarn workspaces foreach -R -ipt run build"
+    "prepare:dependence-build": "pnpm -r --if-present run build"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.35.1",
@@ -26,5 +26,5 @@
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2"
   },
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "pnpm@9.12.2"
 }
