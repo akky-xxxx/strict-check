@@ -4543,16 +4543,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"editorconfig-checker@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "editorconfig-checker@npm:6.0.1"
-  bin:
-    ec: dist/index.js
-    editorconfig-checker: dist/index.js
-  checksum: 10c0/c0d1036e81c689b774e3938927563734476d461a5bfe9696cb917bf6b0fd1c896c2ca14229a43756e01f06e7d1757cf5ecd57efec52747c1dedc6d7b0086177c
-  languageName: node
-  linkType: hard
-
 "electron-to-chromium@npm:^1.5.173":
   version: 1.5.179
   resolution: "electron-to-chromium@npm:1.5.179"
@@ -5106,7 +5096,6 @@ __metadata:
     "@vitest/coverage-v8": "npm:3.2.4"
     chokidar-cli: "npm:^3.0.0"
     cspell: "npm:^9.1.2"
-    editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
     eslint-config-airbnb: "npm:^19.0.4"
     eslint-plugin-jest: "npm:^29.0.1"
@@ -5140,7 +5129,6 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.35.1"
     chokidar-cli: "npm:^3.0.0"
     cspell: "npm:^9.1.2"
-    editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^8.0.4"
@@ -5160,7 +5148,6 @@ __metadata:
     "@tsconfig/strictest": "npm:^2.0.5"
     chokidar-cli: "npm:^3.0.0"
     cspell: "npm:^9.1.2"
-    editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
     eslint-plugin-import: "npm:^2.32.0"
     fixpack: "npm:^4.0.0"
@@ -5188,7 +5175,6 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.35.1"
     chokidar-cli: "npm:^3.0.0"
     cspell: "npm:^9.1.2"
-    editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^8.0.4"
@@ -5212,7 +5198,6 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.35.1"
     chokidar-cli: "npm:^3.0.0"
     cspell: "npm:^9.1.2"
-    editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
     fixpack: "npm:^4.0.0"
     globals: "npm:^16.3.0"
@@ -5238,7 +5223,6 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.35.1"
     chokidar-cli: "npm:^3.0.0"
     cspell: "npm:^9.1.2"
-    editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^8.0.4"
@@ -5259,7 +5243,6 @@ __metadata:
     "@tsconfig/strictest": "npm:^2.0.5"
     chokidar-cli: "npm:^3.0.0"
     cspell: "npm:^9.1.2"
-    editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
     fixpack: "npm:^4.0.0"
     npm-run-all2: "npm:^8.0.4"
@@ -5420,7 +5403,6 @@ __metadata:
     "@vitest/coverage-v8": "npm:^3.2.4"
     chokidar-cli: "npm:^3.0.0"
     cspell: "npm:^9.1.2"
-    editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
     eslint-plugin-import: "npm:^2.32.0"
@@ -9264,7 +9246,6 @@ __metadata:
     "@types/eslint": "npm:^9.6.1"
     chokidar-cli: "npm:^3.0.0"
     cspell: "npm:^9.1.2"
-    editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
     eslint-plugin-import: "npm:^2.32.0"
@@ -9288,7 +9269,6 @@ __metadata:
     "@vitest/coverage-v8": "npm:^3.2.4"
     chokidar-cli: "npm:^3.0.0"
     cspell: "npm:^9.1.2"
-    editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
     eslint-plugin-import: "npm:^2.32.0"
@@ -9540,7 +9520,6 @@ __metadata:
     "@stylistic/eslint-plugin": "npm:^5.1.0"
     "@types/react": "npm:19.1.8"
     cspell: "npm:^9.1.2"
-    editorconfig-checker: "npm:^6.0.1"
     eslint: "npm:^9.30.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
     eslint-plugin-import: "npm:^2.32.0"
