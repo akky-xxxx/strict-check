@@ -11,7 +11,7 @@ import { PACKAGE_NAME } from "./shared/constants/PACKAGE_NAME"
 
 import type { Plugin } from "./libs/shared-for-config/types/EslintPlugin"
 
-const plugin = {
+const plugin: Plugin = {
   meta: {
     name: PACKAGE_NAME,
   },
@@ -29,6 +29,6 @@ const plugin = {
     customRecord,
     resetRecordForStylistic,
   },
-} as const satisfies Plugin
+}
 
 export = plugin

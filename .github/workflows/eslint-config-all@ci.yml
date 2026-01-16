@@ -36,11 +36,8 @@ jobs:
       - name: setup
         uses: ./.github/actions/setup-single-node-version
 
-      - name: Run prepare
-        run: yarn prepare
-
       - name: Run lint
-        run: yarn lint
+        run: pnpm lint
 
   spell-check:
     runs-on: ubuntu-latest
@@ -53,11 +50,8 @@ jobs:
       - name: setup
         uses: ./.github/actions/setup-single-node-version
 
-      - name: Run prepare
-        run: yarn prepare
-
       - name: Run spell-check
-        run: yarn spell-check
+        run: pnpm spell-check
 
   type-check:
     runs-on: ubuntu-latest
@@ -70,11 +64,8 @@ jobs:
       - name: setup
         uses: ./.github/actions/setup-single-node-version
 
-      - name: Run prepare
-        run: yarn prepare
-
       - name: Run type-check
-        run: yarn type-check
+        run: pnpm type-check
 
   test:
     runs-on: ubuntu-latest
@@ -87,11 +78,8 @@ jobs:
       - name: setup
         uses: ./.github/actions/setup-single-node-version
 
-      - name: Run prepare
-        run: yarn prepare
-
       - name: Run test
-        run: yarn test
+        run: pnpm test
 
   dry-run:
     runs-on: ubuntu-latest
@@ -107,8 +95,5 @@ jobs:
       - name: setup
         uses: ./.github/actions/setup-matrix-node-versions
 
-      - name: Run prepare
-        run: yarn prepare
-
       - name: Run dry run
-        run: yarn dry-run
+        run: pnpm dry-run

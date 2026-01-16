@@ -10,10 +10,7 @@
     "fix:prettier": "prettier \"tests/*\" !\"./modules/flat/*\" -w -u",
     "lint": "run-p \"lint:*\" -c",
     "lint:pack": "fixpack --dryRun",
-    "lint:prettier": "prettier \"tests/*\" !\"./modules/flat/*\" -c -u",
-    "prepare": "run-p \"prepare:*\"",
-    "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
-    "prepare:dependence-build": "yarn workspaces foreach -R -ipt run build"
+    "lint:prettier": "prettier \"tests/*\" !\"./modules/flat/*\" -c -u"
   },
   "devDependencies": {
     "eslint": "^9.30.0",
@@ -24,6 +21,5 @@
     "jest": "^30.0.3",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2"
-  },
-  "packageManager": "yarn@4.2.2"
+  }
 }

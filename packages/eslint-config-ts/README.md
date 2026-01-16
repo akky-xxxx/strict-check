@@ -7,7 +7,7 @@
 ### Installation
 
 ```shell
-$ yarn add -D eslint-config-sc-ts
+$ pnpm add -D eslint-config-sc-ts
 ```
 
 ### Use for `eslint.config.mjs`

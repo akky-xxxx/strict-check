@@ -8,7 +8,7 @@
 
 ```shell
 # by yarn
-$ yarn add -D eslint-plugin-sc-js
+$ pnpm add -D eslint-plugin-sc-js
 
 # by npm
 $ npm i --save-dev eslint-plugin-sc-js

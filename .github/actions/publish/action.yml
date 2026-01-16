@@ -7,21 +7,16 @@ inputs:
 runs:
   using: composite
   steps:
-    - name: Run prepare
-      run: yarn prepare
-      working-directory: ${{ inputs.working-directory }}
-      shell: bash
-
     - run: corepack enable
       shell: bash
 
     - name: Build
-      run: yarn build
+      run: pnpm build
       working-directory: ${{ inputs.working-directory }}
       shell: bash
 
     - name: Publish
-      run: yarn npm publish
+      run: pnpm npm publish
       working-directory: ${{ inputs.working-directory }}
       env:
         NPM_AUTH_TOKEN: ${{ inputs.npm-token }}

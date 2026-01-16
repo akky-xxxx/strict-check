@@ -23,11 +23,10 @@
     "build": "run-s \"build:*\"",
     "build:1": "rm -rf ./dist",
     "build:2": "tsc -p tsconfig.build.json",
-    "check-code": "npm-run-all -c -s prepare -p lint spell-check type-check -s dry-run",
-    "dev": "chokidar \"./{src,dry-run}/**\" -c \"yarn type-check && yarn dry-run\"",
-    "dry-run": "run-s dry-run:prepare dry-run:exec",
-    "dry-run:exec": "yarn workspace dr-eslint-config-sc-js dry-run",
-    "dry-run:prepare": "yarn workspace dr-eslint-config-sc-js prepare",
+    "check-code": "npm-run-all -c -p lint spell-check type-check -s dry-run",
+    "dev": "chokidar \"./{src,dry-run}/**\" -c \"pnpm type-check && pnpm dry-run\"",
+    "dry-run": "run-s dry-run:exec",
+    "dry-run:exec": "pnpm -F dr-eslint-config-sc-js run dry-run",
     "fix": "run-p \"fix:*\" -c",
     "fix:eslint": "eslint \"./\" --fix --max-warnings 0",
     "fix:pack": "fixpack",
@@ -36,9 +35,6 @@
     "lint:eslint": "eslint \"./\" --max-warnings 0",
     "lint:pack": "fixpack --dryRun",
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -c -u",
-    "prepare": "run-p \"prepare:*\"",
-    "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
-    "prepare:dependence-build": "yarn workspaces foreach -R -ipt run build",
     "publish:dry-run": "npm pack --dry-run",
     "spell-check": "cspell lint --no-progress \"./{spec,src}/**/*.ts\" \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
     "tagging": "node ../../scripts/tagging/index.mjs",
@@ -64,6 +60,5 @@
     "eslint-config-airbnb-base": ">=15.0.0",
     "eslint-plugin-import": ">=2.32.0",
     "eslint-plugin-unicorn": ">=59.0.1"
-  },
-  "packageManager": "yarn@4.2.2"
+  }
 }

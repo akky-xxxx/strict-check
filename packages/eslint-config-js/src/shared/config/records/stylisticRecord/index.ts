@@ -4,7 +4,7 @@ import { PACKAGE_NAME } from "../../../constants/PACKAGE_NAME"
 
 import type { EslintFlatConfig } from "../../../../libs/shared-for-config/types/EslintFlatConfig"
 
-export const stylisticRecord = {
+export const stylisticRecord: EslintFlatConfig = {
   ...stylistic.configs["recommended-flat"],
   name: `${PACKAGE_NAME}/stylisticRecord`,
-} as const satisfies EslintFlatConfig
+}
