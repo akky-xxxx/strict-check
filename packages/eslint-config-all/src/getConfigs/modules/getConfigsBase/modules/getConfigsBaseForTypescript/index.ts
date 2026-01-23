@@ -10,18 +10,21 @@ type GetConfigsBaseForTypescript = (libraries?: Libraries) =>
 export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (libraries) => {
   const configBase: EslintFlatConfig[] = []
   const tsConfig = require("eslint-config-sc-ts")
+  const { configs } = tsConfig
+  configBase.push(configs.initialRecord)
+  if (configs.importRecommendedRecord) {
+    configBase.push(configs.importRecommendedRecord)
+  }
   configBase.push(
-    tsConfig.configs.initialRecord,
-    tsConfig.configs.importRecommendedRecord,
-    tsConfig.configs.stylisticRecord,
-    tsConfig.configs.eslintRecommendedRecord,
-    tsConfig.configs.unicornRecommendedRecords,
-    tsConfig.configs.typescriptEslintStrictTypeCheckedRecords,
-    tsConfig.configs.typescriptEslintStylisticTypeCheckedRecords,
+    configs.stylisticRecord,
+    configs.eslintRecommendedRecord,
+    configs.unicornRecommendedRecords,
+    configs.typescriptEslintStrictTypeCheckedRecords,
+    configs.typescriptEslintStylisticTypeCheckedRecords,
   )
   const tsCommonRecords = [
-    tsConfig.configs.scJsCustomRecord,
-    tsConfig.configs.customRecord,
+    configs.scJsCustomRecord,
+    configs.customRecord,
   ]
   if (libraries?.includes("next") || libraries?.includes("react")) {
     if (libraries?.includes("next")) {
@@ -41,7 +44,7 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
     )
   } else {
     configBase.push(
-      tsConfig.configs.airbnbBaseRecords,
+      configs.airbnbBaseRecords,
       ...tsCommonRecords,
     )
   }
@@ -63,6 +66,6 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
     )
   }
 
-  configBase.push(tsConfig.configs.resetRecordForStylistic)
+  configBase.push(configs.resetRecordForStylistic)
   return configBase
 }

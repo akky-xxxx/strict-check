@@ -1,4 +1,4 @@
-/* eslint-disable no-console, import/no-extraneous-dependencies */
+/* eslint-disable no-console */
 /* eslint-disable max-lines, @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-return */
 // @ts-ignore
 import React, { Fragment } from "react"
@@ -13,9 +13,10 @@ type ReactTest1Props = {
   title: string
 }
 
-// eslint-disable-next-line complexity
 export const ReactTest1: FC<ReactTest1Props> = (props) => {
   const { bool, count, empty, title } = props
+  // eslint-disable-next-line @typescript-eslint/no-magic-numbers
+  const hasCount = count > 0
   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
   const state = React.useState("")
 
@@ -42,12 +43,10 @@ export const ReactTest1: FC<ReactTest1Props> = (props) => {
         src="https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/iframe-missing-sandbox.md"
         title="title"
       />
+      <div>{hasCount ? title : null}</div>
+      <div>{hasCount ? title : empty}</div>
       {/* eslint-disable-next-line react/jsx-no-leaked-render */}
-      <div>{count && title}</div>
-      <div>{Boolean(count) && title}</div>
-      <div>{count ? title : null}</div>
-      <div>{count ? title : empty}</div>
-      {Boolean(bool) && "1"}
+      {bool && "1"}
     </>
   )
 }

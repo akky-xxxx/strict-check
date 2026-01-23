@@ -19,6 +19,7 @@
     "eslint-config-sc-react": "workspace:^",
     "eslint-config-sc-storybook": "workspace:^",
     "eslint-config-sc-ts": "workspace:^",
+    "eslint-plugin-storybook": "^0.12.0",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2"

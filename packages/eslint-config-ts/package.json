@@ -46,6 +46,7 @@
     "chokidar-cli": "^3.0.0",
     "cspell": "^9.1.2",
     "eslint": "^9.30.0",
+    "eslint-import-resolver-typescript": "^4.4.4",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2",

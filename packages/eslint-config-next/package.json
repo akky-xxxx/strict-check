@@ -41,6 +41,7 @@
     "type-check": "tsc"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^15.3.5",
     "@tsconfig/strictest": "^2.0.5",
     "@types/react": "^19.1.8",
     "@typescript-eslint/parser": "^8.35.1",

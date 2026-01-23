@@ -10,12 +10,15 @@ type GetConfigsBaseForJavascript = (libraries?: Libraries) =>
 export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (libraries) => {
   const configBase: EslintFlatConfig[] = []
   const jsConfig = require("eslint-config-sc-js")
+  const { configs } = jsConfig
+  configBase.push(configs.initialRecord)
+  if (configs.importRecommendedRecord) {
+    configBase.push(configs.importRecommendedRecord)
+  }
   configBase.push(
-    jsConfig.configs.initialRecord,
-    jsConfig.configs.importRecommendedRecord,
-    jsConfig.configs.stylisticRecord,
-    jsConfig.configs.eslintRecommendedRecord,
-    jsConfig.configs.unicornRecommendedRecords,
+    configs.stylisticRecord,
+    configs.eslintRecommendedRecord,
+    configs.unicornRecommendedRecords,
   )
   if (libraries?.includes("next") || libraries?.includes("react")) {
     if (libraries?.includes("next")) {
@@ -29,13 +32,13 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
       reactConfig.configs.airbnbRecords,
       reactConfig.configs.reactRecords,
       reactConfig.configs.scJsCustomRecord,
-      jsConfig.configs.customRecord,
+      configs.customRecord,
       reactConfig.configs.customRecord,
     )
   } else {
     configBase.push(
-      jsConfig.configs.airbnbBaseRecords,
-      jsConfig.configs.customRecord,
+      configs.airbnbBaseRecords,
+      configs.customRecord,
     )
   }
 
@@ -56,6 +59,6 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
     )
   }
 
-  configBase.push(jsConfig.configs.resetRecordForStylistic)
+  configBase.push(configs.resetRecordForStylistic)
   return configBase
 }

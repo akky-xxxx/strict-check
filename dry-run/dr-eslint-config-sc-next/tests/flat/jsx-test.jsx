@@ -1,5 +1,4 @@
 /* eslint-disable no-console, react/prop-types */
-// eslint-disable-next-line import/no-extraneous-dependencies
 import React, { Fragment } from "react"
 
 // eslint-disable-next-line complexity
