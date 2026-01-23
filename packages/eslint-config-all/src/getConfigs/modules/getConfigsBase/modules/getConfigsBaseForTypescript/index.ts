@@ -12,9 +12,7 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
   const tsConfig = require("eslint-config-sc-ts")
   const { configs } = tsConfig
   configBase.push(configs.initialRecord)
-  if (configs.importRecommendedRecord) {
-    configBase.push(configs.importRecommendedRecord)
-  }
+  configBase.push(configs.importRecommendedRecord)
   configBase.push(
     configs.stylisticRecord,
     configs.eslintRecommendedRecord,
