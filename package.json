@@ -33,13 +33,13 @@
     "postinstall:dependence-build": "pnpm -r --sort --parallel build",
     "postinstall:husky": "pnpm husky",
     "spell-check": "cspell lint --no-progress \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
-    "ws-check-code": "pnpm -r --workspace-root --stream check-code",
-    "ws-dev": "pnpm -r --workspace-root --stream dev",
-    "ws-fix": "pnpm -r --workspace-root --stream fix",
-    "ws-lint": "pnpm -r --workspace-root --stream lint",
-    "ws-spell-check": "pnpm -r --workspace-root --stream spell-check",
-    "ws-test": "pnpm -r --workspace-root --stream test",
-    "ws-type-check": "pnpm -r --workspace-root --stream type-check"
+    "ws-check-code": "pnpm -r --stream check-code",
+    "ws-dev": "pnpm -r --stream dev",
+    "ws-fix": "pnpm -r --stream fix",
+    "ws-lint": "pnpm -r --stream lint",
+    "ws-spell-check": "pnpm -r --stream spell-check",
+    "ws-test": "pnpm -r --stream test",
+    "ws-type-check": "pnpm -r --stream type-check"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
