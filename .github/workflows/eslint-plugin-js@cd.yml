@@ -40,7 +40,7 @@ jobs:
         uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
-        run: pnpm prepare:copy-shared
+        run: pnpm prepare
 
       - name: Run lint
         run: pnpm lint
@@ -58,7 +58,7 @@ jobs:
         uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
-        run: pnpm prepare:copy-shared
+        run: pnpm prepare
 
       - name: Run spell-check
         run: pnpm spell-check
@@ -76,7 +76,7 @@ jobs:
         uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
-        run: pnpm prepare:copy-shared
+        run: pnpm prepare
 
       - name: Run type-check
         run: pnpm type-check
@@ -97,7 +97,7 @@ jobs:
         uses: ./.github/actions/setup-matrix-node-versions
 
       - name: Run prepare
-        run: pnpm prepare:copy-shared
+        run: pnpm prepare
 
       - name: Run dry run
         run: pnpm dry-run
@@ -118,7 +118,7 @@ jobs:
         uses: ./.github/actions/setup-matrix-node-versions
 
       - name: Run prepare
-        run: pnpm prepare:copy-shared
+        run: pnpm prepare
 
       - name: Run test
         run: pnpm test

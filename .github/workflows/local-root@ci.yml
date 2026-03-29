@@ -27,7 +27,7 @@ jobs:
         uses: ./.github/actions/setup-single-node-version
 
       - name: Run post-install
-        run: pnpm postinstall:copy-shared
+        run: pnpm postinstall
 
       - name: Run lint
         run: pnpm lint

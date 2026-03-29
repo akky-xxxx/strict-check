@@ -47,6 +47,8 @@
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.30.0",
     "@stylistic/eslint-plugin": "^5.1.0",
+    "@tsconfig/strictest": "^2.0.5",
+    "@types/node": "^22.15.30",
     "@types/react": "19.1.8",
     "cspell": "^9.1.2",
     "eslint": "^9.30.0",
@@ -55,7 +57,8 @@
     "fixpack": "^4.0.0",
     "husky": "^9.1.7",
     "npm-run-all2": "^8.0.4",
-    "prettier": "^3.6.2"
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.35.1"
   },
   "workspaces": [
     "dry-run/*",
