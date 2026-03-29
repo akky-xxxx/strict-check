@@ -21,7 +21,7 @@ runs:
       shell: bash
 
     - name: Publish
-      run: pnpm publish
+      run: pnpm publish --no-git-checks
       working-directory: ${{ inputs.working-directory }}
       env:
         NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
