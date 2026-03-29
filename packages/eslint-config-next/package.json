@@ -60,7 +60,7 @@
   },
   "peerDependencies": {
     "@next/eslint-plugin-next": ">=15.3.4",
-    "eslint-config-sc-react": ">=0.1.2"
+    "eslint-config-sc-react": ">=0.1.2 <1"
   },
   "packageManager": "pnpm@10.11.0"
 }
