@@ -17,5 +17,4 @@ runs:
       run: npx can-npm-publish --verbose
       env:
         NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
-        NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
       shell: bash
