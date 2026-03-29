@@ -5,10 +5,15 @@ export default [
   {
     languageOptions: {
       parserOptions: {
-        project: "sample/js-next-jest-storybook/tsconfig.json",
+        project: "./tsconfig.json",
       },
     },
     files: ["**/*.js{,x}"],
+    settings: {
+      react: {
+        version: "19.1",
+      },
+    },
     rules: {
       "@next/next/no-html-link-for-pages": 0,
     },

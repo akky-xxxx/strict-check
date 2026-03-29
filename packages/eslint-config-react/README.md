@@ -6,7 +6,7 @@
 ### Installation
 
 ```shell
-$ yarn add -D eslint-config-sc-react
+$ pnpm add -D eslint-config-sc-react
 ```
 
 ### Use for `eslint.config.mjs`

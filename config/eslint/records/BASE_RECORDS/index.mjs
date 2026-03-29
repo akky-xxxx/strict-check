@@ -17,7 +17,7 @@ export const BASE_RECORDS = [
   {
     ignores: [
       "{modules,packages}/*",
-      ".yarn",
+      ".pnpm-store",
       "node_modules/**",
     ],
   },

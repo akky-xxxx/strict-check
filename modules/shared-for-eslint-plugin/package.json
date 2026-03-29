@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "check-code": "run-p lint spell-check type-check test",
-    "dev": "chokidar \"src/**\" -c \"yarn type-check && yarn exports\"",
+    "dev": "chokidar \"src/**\" -c \"pnpm type-check && pnpm exports\"",
     "exports": "run-p \"exports:*\"",
     "exports:copy-shared": "node ../../scripts/copy-shared/index.js",
     "fix": "run-p \"fix:*\" -c",
@@ -14,7 +14,7 @@
     "lint:eslint": "eslint \"./\" --max-warnings 0",
     "lint:pack": "fixpack --dryRun",
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -c -u",
-    "pre-check-code": "yarn workspaces foreach -R -ipt run build",
+    "pre-check-code": "pnpm -r run build",
     "spell-check": "cspell lint --no-progress \"./{spec,src}/**/*.ts\" \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
     "test": "vitest run --coverage",
     "type-check": "tsc"
@@ -36,10 +36,10 @@
     "fixpack": "^4.0.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2",
-    "strict-check": ":*",
+    "strict-check": "workspace:^",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.35.1",
     "vitest": "^3.2.4"
   },
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "pnpm@10.11.0"
 }

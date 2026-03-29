@@ -17,12 +17,14 @@ export const checkObjectPatten: CheckObjectPatten = (context) => (node) => {
     return
   }
 
-  const hasEnv = node.properties.some((property) => {
+  const hasEnv = node.properties.some(
+    (property: TSESTree.ObjectPattern["properties"][number]) => {
     if (property.type !== "Property" || property.key.type !== "Identifier") {
       return false
     }
     return property.key.name === "env"
-  })
+    },
+  )
 
   if (!hasEnv) return
 
