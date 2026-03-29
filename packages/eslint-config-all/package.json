@@ -81,5 +81,19 @@
     "eslint-config-sc-storybook": ">=0.1.2",
     "eslint-config-sc-ts": ">=0.1.2"
   },
+  "peerDependenciesMeta": {
+    "eslint-config-sc-jest": {
+      "optional": true
+    },
+    "eslint-config-sc-next": {
+      "optional": true
+    },
+    "eslint-config-sc-react": {
+      "optional": true
+    },
+    "eslint-config-sc-storybook": {
+      "optional": true
+    }
+  },
   "packageManager": "pnpm@10.11.0"
 }
