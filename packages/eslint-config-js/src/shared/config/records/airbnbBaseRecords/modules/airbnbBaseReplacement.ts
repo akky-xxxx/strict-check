@@ -18,6 +18,7 @@ const eslintRulesFromAirbnbBase = {
   "max-nested-callbacks": SEVERITY.OFF,
   "max-params": [SEVERITY.OFF, 3],
   "max-statements": [SEVERITY.OFF, 10],
+  "no-confusing-arrow": [SEVERITY.ERROR, { allowParens: true }],
   "no-console": SEVERITY.WARN,
   "no-implicit-coercion": [
     SEVERITY.OFF,
