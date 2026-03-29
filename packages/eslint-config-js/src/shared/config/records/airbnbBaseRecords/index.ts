@@ -8,6 +8,9 @@ export const airbnbBaseRecords = [
     name: `${PACKAGE_NAME}/airbnbBaseRecords`,
   },
   {
+    languageOptions: {
+      ...airbnbBaseReplacement.languageOptions,
+    },
     name: `${PACKAGE_NAME}/airbnbBaseRecords/replacement`,
     rules: {
       ...airbnbBaseReplacement.rules.eslint,

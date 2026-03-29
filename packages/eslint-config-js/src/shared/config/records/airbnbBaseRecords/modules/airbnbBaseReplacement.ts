@@ -128,6 +128,11 @@ const importRulesFromAirbnbBase = {
 } as const satisfies EslintRules
 
 export const airbnbBaseReplacement = {
+  languageOptions: {
+    globals: {
+      console: "readonly",
+    },
+  },
   rules: {
     eslint: eslintRulesFromAirbnbBase,
     import: importRulesFromAirbnbBase,
