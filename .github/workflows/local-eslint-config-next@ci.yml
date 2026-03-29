@@ -33,7 +33,7 @@ jobs:
         uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
-        run: pnpm prepare
+        run: pnpm prepare:copy-shared
 
       - name: Run lint
         run: pnpm lint
