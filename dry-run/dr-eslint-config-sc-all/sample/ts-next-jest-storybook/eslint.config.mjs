@@ -9,11 +9,6 @@ export default [
       },
     },
     files: ["**/*.ts{,x}"],
-    settings: {
-      react: {
-        version: "19.1",
-      },
-    },
     rules: {
       "@next/next/no-html-link-for-pages": 0,
     },
