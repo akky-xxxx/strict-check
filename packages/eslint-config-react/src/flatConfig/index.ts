@@ -1,6 +1,5 @@
 import { airbnbRecords } from "../shared/config/records/airbnbRecords"
 import { customRecord } from "../shared/config/records/customRecord"
-import { customRecordWithTypescript } from "../shared/config/records/customRecordWithTypescript"
 import { eslintRecommendedRecord } from "../shared/config/records/eslintRecommendedRecord"
 import { initialRecord } from "../shared/config/records/initialRecord"
 import { reactRecords } from "../shared/config/records/reactRecords"
@@ -20,6 +19,5 @@ export const flatConfig = [
   airbnbRecords,
   scJsCustomRecord,
   customRecord,
-  customRecordWithTypescript,
   resetRecordForStylistic,
 ].flat() satisfies EslintFlatConfig[]
