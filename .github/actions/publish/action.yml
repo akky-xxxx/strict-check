@@ -7,12 +7,12 @@ inputs:
 runs:
   using: composite
   steps:
+    - run: corepack enable
+      shell: bash
+
     - name: Run prepare
       run: pnpm prepare
       working-directory: ${{ inputs.working-directory }}
-      shell: bash
-
-    - run: corepack enable
       shell: bash
 
     - name: Build
