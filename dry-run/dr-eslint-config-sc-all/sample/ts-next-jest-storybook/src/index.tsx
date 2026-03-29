@@ -1,4 +1,4 @@
-/* eslint-disable no-console, import/no-extraneous-dependencies */
+/* eslint-disable no-console */
 /* eslint-disable max-lines, @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-return */
 // @ts-ignore
 import React, { Fragment } from "react"
@@ -47,7 +47,7 @@ export const ReactTest1: FC<ReactTest1Props> = (props) => {
       <div>{Boolean(count) && title}</div>
       <div>{count ? title : null}</div>
       <div>{count ? title : empty}</div>
-      {Boolean(bool) && "1"}
+      {bool ? "1" : null}
     </>
   )
 }
