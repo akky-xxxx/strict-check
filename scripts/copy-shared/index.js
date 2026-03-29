@@ -13,25 +13,19 @@ const SHARED_DIRECTORY =
 const PACKAGE_DIRECTORY =
   path.join(ROOT, DIRECTORIES.WS_PACKAGES)
 
-const isEslintConfigDirectory = (directory) =>
-  directory.includes(DIRECTORIES.ESLINT_CONFIG)
-const isEslintPluginDirectory = (directory) =>
-  directory.includes(DIRECTORIES.ESLINT_PLUGIN)
-const isSharedDirectory = (directory) =>
-  directory.startsWith(DIRECTORIES.SHARED_PREFIX)
+const isEslintConfigDirectory = (directory) => directory.includes(DIRECTORIES.ESLINT_CONFIG)
+const isEslintPluginDirectory = (directory) => directory.includes(DIRECTORIES.ESLINT_PLUGIN)
+const isSharedDirectory = (directory) => directory.startsWith(DIRECTORIES.SHARED_PREFIX)
 
-const convertToLibsPath = (destName) =>
-  (directory) =>
-    path.join(
-      PACKAGE_DIRECTORY,
-      directory,
-      DIRECTORIES.SRC,
-      DIRECTORIES.LIBS,
-      destName,
-    )
+const convertToLibsPath = (destName) => (directory) => path.join(
+  PACKAGE_DIRECTORY,
+  directory,
+  DIRECTORIES.SRC,
+  DIRECTORIES.LIBS,
+  destName,
+)
 const convertToSrcPath =
-  (directory) =>
-    path.join(SHARED_DIRECTORY, directory, DIRECTORIES.SRC)
+  (directory) => path.join(SHARED_DIRECTORY, directory, DIRECTORIES.SRC)
 
 // ディレクトリ配下のファイル・フォルダを削除する関数（再帰的）
 const clearDirectory = (dirPath) => {
