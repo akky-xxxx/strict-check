@@ -46,7 +46,6 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.30.0",
-    "@stylistic/eslint-plugin": "^5.1.0",
     "@tsconfig/strictest": "^2.0.5",
     "@types/node": "^22.15.30",
     "@types/react": "19.1.8",
