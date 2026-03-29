@@ -51,6 +51,7 @@
     "chokidar-cli": "^3.0.0",
     "cspell": "^9.1.2",
     "eslint": "^9.30.0",
+    "eslint-config-sc-react": "workspace:^",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2",
@@ -60,7 +61,7 @@
   },
   "peerDependencies": {
     "@next/eslint-plugin-next": ">=15.3.4",
-    "eslint-config-sc-react": ">=0.1.2"
+    "eslint-config-sc-react": ">=0.1.2 <1"
   },
   "packageManager": "pnpm@10.11.0"
 }
