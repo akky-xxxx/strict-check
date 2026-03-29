@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import { SEVERITY } from "../../../../../libs/shared-for-config/constants/SEVERITY"
 
 import type { EslintRules } from "../../../../../libs/shared-for-config/types/EslintRules"
@@ -69,8 +70,8 @@ const importRulesFromAirbnbBase = {
   "import/no-cycle": [SEVERITY.ERROR, { maxDepth: "∞" }],
   "import/no-default-export": SEVERITY.OFF,
   "import/no-deprecated": SEVERITY.OFF,
-  "import/no-dynamic-require": SEVERITY.ERROR,
   "import/no-duplicates": SEVERITY.ERROR,
+  "import/no-dynamic-require": SEVERITY.ERROR,
   "import/no-extraneous-dependencies": [
     SEVERITY.ERROR,
     {
@@ -116,12 +117,12 @@ const importRulesFromAirbnbBase = {
   "import/no-self-import": SEVERITY.ERROR,
   "import/no-unassigned-import": SEVERITY.OFF,
   "import/no-unresolved": [SEVERITY.ERROR, { caseSensitive: true, commonjs: true }],
-  "import/no-useless-path-segments": [SEVERITY.ERROR, { commonjs: true }],
-  "import/no-webpack-loader-syntax": SEVERITY.ERROR,
   "import/no-unused-modules": [
     SEVERITY.OFF,
     { ignoreExports: [], missingExports: true, unusedExports: true },
   ],
+  "import/no-useless-path-segments": [SEVERITY.ERROR, { commonjs: true }],
+  "import/no-webpack-loader-syntax": SEVERITY.ERROR,
   "import/order": [SEVERITY.ERROR, { groups: [["builtin", "external", "internal"]] }],
   "import/prefer-default-export": SEVERITY.ERROR,
   "import/unambiguous": SEVERITY.OFF,
