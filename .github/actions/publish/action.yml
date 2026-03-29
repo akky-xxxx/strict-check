@@ -25,4 +25,5 @@ runs:
       working-directory: ${{ inputs.working-directory }}
       env:
         NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
+        NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
       shell: bash
