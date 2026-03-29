@@ -1,4 +1,5 @@
 /* eslint-disable max-lines */
+// cspell:ignore chunkname gulpfile
 import { SEVERITY } from "../../../../../libs/shared-for-config/constants/SEVERITY"
 
 import type { EslintRules } from "../../../../../libs/shared-for-config/types/EslintRules"
