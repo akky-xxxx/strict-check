@@ -21,7 +21,7 @@ tester.run<MessageId, Option[]>(
   {
     valid: [
       {
-        code: "export const Button: FC<> = () => {};",
+        code: "type Props = Record<string, never>; export const Button: FC<Props> = () => {};",
         options,
       },
     ],

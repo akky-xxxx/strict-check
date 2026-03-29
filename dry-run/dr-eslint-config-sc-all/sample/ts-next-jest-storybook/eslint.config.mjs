@@ -5,7 +5,7 @@ export default [
   {
     languageOptions: {
       parserOptions: {
-        project: "sample/ts-next-jest-storybook/tsconfig.json",
+        project: "./tsconfig.json",
       },
     },
     files: ["**/*.ts{,x}"],

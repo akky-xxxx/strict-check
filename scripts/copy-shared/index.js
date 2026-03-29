@@ -5,7 +5,6 @@ const { DIRECTORIES } = require("../shared/constants/DIRECTORIES")
 const { copyFile } = require("../shared/utilities/copyFile")
 const { getFilePath } = require("../shared/utilities/getFilePath")
 const { getFilePaths } = require("../shared/utilities/getFilePaths")
-const { getFsMethod } = require("../shared/utilities/getFsMethod")
 
 const ROOT = path.resolve(__dirname, "../../")
 
@@ -34,6 +33,31 @@ const convertToSrcPath =
   (directory) =>
     path.join(SHARED_DIRECTORY, directory, DIRECTORIES.SRC)
 
+// ディレクトリ配下のファイル・フォルダを削除する関数（再帰的）
+const clearDirectory = (dirPath) => {
+  if (!fs.existsSync(dirPath)) {
+    return
+  }
+
+  try {
+    const entries = fs.readdirSync(dirPath, { withFileTypes: true })
+    entries.forEach((entry) => {
+      const fullPath = path.join(dirPath, entry.name)
+      try {
+        if (entry.isDirectory()) {
+          clearDirectory(fullPath)
+        }
+        const remove = entry.isDirectory() ? fs.rmdirSync : fs.unlinkSync
+        remove(fullPath)
+      } catch {
+        // 削除失敗時は無視
+      }
+    })
+  } catch {
+    // ディレクトリ読み込み失敗時は無視
+  }
+}
+
 const eslintConfigPaths = fs.readdirSync(PACKAGE_DIRECTORY)
   .filter(isEslintConfigDirectory)
   .map(convertToLibsPath(DIRECTORIES.DEST_CONFIG))
@@ -47,9 +71,11 @@ const sharedPaths = fs.readdirSync(SHARED_DIRECTORY)
 sharedPaths.forEach((sharedPath) => {
   if (sharedPath.includes(DIRECTORIES.ESLINT_CONFIG)) {
     eslintConfigPaths.forEach((configPath) => {
-      const existsTarget = fs.existsSync(configPath)
-      const fsMethod = getFsMethod(existsTarget)
-      fs[fsMethod](configPath, { recursive: true })
+      if (fs.existsSync(configPath)) {
+        clearDirectory(configPath)
+      } else {
+        fs.mkdirSync(configPath, { recursive: true })
+      }
 
       getFilePaths(sharedPath)
         .map(getFilePath(DIRECTORIES.SRC))
@@ -58,9 +84,11 @@ sharedPaths.forEach((sharedPath) => {
   }
   if (sharedPath.includes(DIRECTORIES.ESLINT_PLUGIN)) {
     eslintPluginPaths.forEach((pluginPath) => {
-      const existsTarget = fs.existsSync(pluginPath)
-      const fsMethod = getFsMethod(existsTarget)
-      fs[fsMethod](pluginPath, { recursive: true })
+      if (fs.existsSync(pluginPath)) {
+        clearDirectory(pluginPath)
+      } else {
+        fs.mkdirSync(pluginPath, { recursive: true })
+      }
 
       getFilePaths(sharedPath)
         .map(getFilePath(DIRECTORIES.SRC))

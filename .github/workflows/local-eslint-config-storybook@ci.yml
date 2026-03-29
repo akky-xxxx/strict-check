@@ -14,7 +14,7 @@ on:
       - 'modules/shared-for-eslint-config/**'
       - 'packages/eslint-config-storybook/**'
       - 'prettier.config.js'
-      - 'yarn.lock'
+      - 'pnpm-lock.yaml'
 
 env:
   WORKING_DIRECTORY: ./packages/eslint-config-storybook
@@ -33,18 +33,18 @@ jobs:
         uses: ./.github/actions/setup-single-node-version
 
       - name: Run prepare
-        run: yarn prepare
+        run: pnpm prepare
 
       - name: Run lint
-        run: yarn lint
+        run: pnpm lint
 
 
       - name: Run spell-check
-        run: yarn spell-check
+        run: pnpm spell-check
 
       - name: Run type-check
-        run: yarn type-check
+        run: pnpm type-check
 
 
       - name: Run dry run
-        run: yarn dry-run
+        run: pnpm dry-run

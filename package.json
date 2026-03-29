@@ -30,16 +30,16 @@
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" !\"./dry-run/**/*\" !\"./modules/**/*\" !\"./packages/**/*\" -c -u",
     "postinstall": "run-s \"postinstall:*\"",
     "postinstall:copy-shared": "node ./scripts/copy-shared/index.js",
-    "postinstall:dependence-build": "yarn workspaces foreach -A -ipt run build",
-    "postinstall:husky": "yarn husky",
+    "postinstall:dependence-build": "pnpm -r run build",
+    "postinstall:husky": "pnpm husky",
     "spell-check": "cspell lint --no-progress \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
-    "ws-check-code": "yarn workspaces foreach -A -vi run check-code",
-    "ws-dev": "yarn workspaces foreach -A -vi run dev",
-    "ws-fix": "yarn workspaces foreach -A -vi run fix",
-    "ws-lint": "yarn workspaces foreach -A -vi run lint",
-    "ws-spell-check": "yarn workspaces foreach -A -vi run spell-check",
-    "ws-test": "yarn workspaces foreach -A -vi run test",
-    "ws-type-check": "yarn workspaces foreach -A -vi run type-check"
+    "ws-check-code": "pnpm -r run check-code",
+    "ws-dev": "pnpm -r run dev",
+    "ws-fix": "pnpm -r run fix",
+    "ws-lint": "pnpm -r run lint",
+    "ws-spell-check": "pnpm -r run spell-check",
+    "ws-test": "pnpm -r run test",
+    "ws-type-check": "pnpm -r run type-check"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
@@ -47,20 +47,29 @@
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.30.0",
     "@stylistic/eslint-plugin": "^5.1.0",
+    "@tsconfig/strictest": "^2.0.5",
+    "@types/node": "^22.15.30",
     "@types/react": "19.1.8",
     "cspell": "^9.1.2",
     "eslint": "^9.30.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "fixpack": "^4.0.0",
     "husky": "^9.1.7",
     "npm-run-all2": "^8.0.4",
-    "prettier": "^3.6.2"
+    "prettier": "^3.6.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "typescript-eslint": "^8.35.1"
   },
   "workspaces": [
     "dry-run/*",
     "modules/*",
     "packages/*"
   ],
-  "packageManager": "yarn@4.9.2"
+  "packageManager": "pnpm@10.11.0"
 }
