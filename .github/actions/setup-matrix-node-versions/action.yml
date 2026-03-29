@@ -10,5 +10,5 @@ runs:
       shell: bash
 
     - name: Install dependencies
-      run: yarn --frozen-lockfile
+      run: pnpm install --frozen-lockfile
       shell: bash

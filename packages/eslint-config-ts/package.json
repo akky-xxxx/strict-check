@@ -24,10 +24,10 @@
     "build:1": "rm -rf ./dist",
     "build:2": "tsc -p tsconfig.build.json",
     "check-code": "npm-run-all -c -s prepare -p lint spell-check type-check -s dry-run",
-    "dev": "chokidar \"./{src,dry-run}/**\" -c \"yarn type-check && yarn dry-run\"",
+    "dev": "chokidar \"./{src,dry-run}/**\" -c \"pnpm type-check && pnpm dry-run\"",
     "dry-run": "run-s dry-run:prepare dry-run:exec",
-    "dry-run:exec": "yarn workspace dr-eslint-config-sc-ts dry-run",
-    "dry-run:prepare": "yarn workspace dr-eslint-config-sc-ts prepare",
+    "dry-run:exec": "pnpm --filter dr-eslint-config-sc-ts run dry-run",
+    "dry-run:prepare": "pnpm --filter dr-eslint-config-sc-ts run prepare",
     "fix": "run-p \"fix:*\" -c",
     "fix:eslint": "eslint \"./\" --fix --max-warnings 0",
     "fix:pack": "fixpack",
@@ -38,7 +38,7 @@
     "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -c -u",
     "prepare": "run-p \"prepare:*\"",
     "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
-    "prepare:dependence-build": "yarn workspaces foreach -R -ipt run build",
+    "prepare:dependence-build": "pnpm -r run build",
     "publish:dry-run": "npm pack --dry-run",
     "spell-check": "cspell lint --no-progress \"./{spec,src}/**/*.ts\" \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
     "tagging": "node ../../scripts/tagging/index.mjs",
@@ -64,5 +64,5 @@
     "eslint-import-resolver-typescript": ">=4.4.4",
     "typescript-eslint": ">=8.35.1"
   },
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "pnpm@10.11.0"
 }

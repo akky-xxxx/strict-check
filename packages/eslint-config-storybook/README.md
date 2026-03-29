@@ -6,7 +6,7 @@
 ### Installation
 
 ```shell
-$ yarn add -D eslint-config-sc-storybook
+$ pnpm add -D eslint-config-sc-storybook
 ```
 
 ### Use for `eslint.config.mjs`
