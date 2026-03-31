@@ -1,0 +1,20 @@
+{
+  "name": "strict-check",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22.19.0"
+    },
+    "ghcr.io/devcontainers/features/pnpm:1": {
+      "version": "10.11.0"
+    }
+  },
+  "postCreateCommand": "pnpm install --frozen-lockfile",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true
+      }
+    }
+  }
+}
