@@ -1,3 +1,4 @@
+import { maxLength } from "./options/maxLength"
 import { maxLinesPerFunction } from "./options/maxLinesPerFunction"
 import { noImplicitCoercion } from "./options/noImplicitCoercion"
 import { SEVERITY } from "../../../../../../libs/shared-for-config/constants/SEVERITY"
@@ -7,15 +8,19 @@ import type { EslintRules } from "../../../../../../libs/shared-for-config/types
 export const eslintRules = {
   /* eslint-disable @typescript-eslint/no-magic-numbers */
   "complexity": [SEVERITY.ERROR, 5],
+  "arrow-parens": [SEVERITY.ERROR, "always"],
+  "brace-style": [SEVERITY.ERROR, "1tbs"],
   "curly": [SEVERITY.WARN, "multi-or-nest"],
   "indent": SEVERITY.OFF,
   "max-depth": [SEVERITY.ERROR, 3],
+  "max-len": maxLength,
   "max-lines": [SEVERITY.ERROR, { max: 100 }],
   "max-lines-per-function": maxLinesPerFunction,
   "max-nested-callbacks": [SEVERITY.ERROR, 3],
   "max-params": [SEVERITY.WARN, 3],
   "max-statements": [SEVERITY.ERROR, 10],
   "multiline-comment-style": SEVERITY.OFF,
+  "quotes": [SEVERITY.ERROR, "double", { avoidEscape: true }],
   "no-implicit-coercion": noImplicitCoercion,
   "no-magic-numbers": SEVERITY.WARN,
   "no-use-before-define": SEVERITY.ERROR,

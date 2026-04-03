@@ -273,9 +273,6 @@ importers:
       '@eslint/js':
         specifier: ^9.30.0
         version: 9.39.4
-      '@stylistic/eslint-plugin':
-        specifier: ^5.1.0
-        version: 5.10.0(eslint@9.39.4(jiti@2.6.1))
       '@tsconfig/strictest':
         specifier: ^2.0.5
         version: 2.0.8
@@ -325,9 +322,6 @@ importers:
       '@eslint/js':
         specifier: ^9.30.0
         version: 9.39.4
-      '@stylistic/eslint-plugin':
-        specifier: ^5.1.0
-        version: 5.10.0(eslint@9.39.4(jiti@2.6.1))
       '@tsconfig/strictest':
         specifier: ^2.0.5
         version: 2.0.8
@@ -500,9 +494,6 @@ importers:
       '@eslint/js':
         specifier: '>=9.30.0'
         version: 9.39.4
-      '@stylistic/eslint-plugin':
-        specifier: '>=5.1.0'
-        version: 5.10.0(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-unicorn:
         specifier: '>=59.0.1'
         version: 59.0.1(eslint@9.39.4(jiti@2.6.1))
@@ -599,9 +590,6 @@ importers:
         specifier: ^16.3.0
         version: 16.5.0
     devDependencies:
-      '@stylistic/eslint-plugin':
-        specifier: ^5.1.0
-        version: 5.10.0(eslint@9.39.4(jiti@2.6.1))
       '@tsconfig/strictest':
         specifier: ^2.0.5
         version: 2.0.8
@@ -706,9 +694,6 @@ importers:
         specifier: '>=4.4.4'
         version: 4.4.4(eslint-plugin-import@2.32.0)(eslint@9.39.4(jiti@2.6.1))
     devDependencies:
-      '@stylistic/eslint-plugin':
-        specifier: ^5.1.0
-        version: 5.10.0(eslint@9.39.4(jiti@2.6.1))
       '@tsconfig/strictest':
         specifier: ^2.0.5
         version: 2.0.8
@@ -749,9 +734,6 @@ importers:
       '@eslint/js':
         specifier: ^9.30.0
         version: 9.39.4
-      '@stylistic/eslint-plugin':
-        specifier: ^5.1.0
-        version: 5.10.0(eslint@9.39.4(jiti@2.6.1))
       '@tsconfig/strictest':
         specifier: ^2.0.5
         version: 2.0.8
@@ -1787,12 +1769,6 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=9.0.0'
-
-  '@stylistic/eslint-plugin@5.10.0':
-    resolution: {integrity: sha512-nPK52ZHvot8Ju/0A4ucSX1dcPV2/1clx0kLcH5wDmrE4naKso7TUC/voUyU1O9OTKTrR6MYip6LP0ogEMQ9jPQ==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-    peerDependencies:
-      eslint: ^9.0.0 || ^10.0.0
 
   '@tsconfig/strictest@2.0.8':
     resolution: {integrity: sha512-XnQ7vNz5HRN0r88GYf1J9JJjqtZPiHt2woGJOo2dYqyHGGcd6OLGqSlBB6p1j9mpzja6Oe5BoPqWmeDx6X9rLw==}
@@ -5603,16 +5579,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
-
-  '@stylistic/eslint-plugin@5.10.0(eslint@9.39.4(jiti@2.6.1))':
-    dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4(jiti@2.6.1))
-      '@typescript-eslint/types': 8.57.2
-      eslint: 9.39.4(jiti@2.6.1)
-      eslint-visitor-keys: 4.2.1
-      espree: 10.4.0
-      estraverse: 5.3.0
-      picomatch: 4.0.4
 
   '@tsconfig/strictest@2.0.8': {}
 

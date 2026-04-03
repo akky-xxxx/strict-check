@@ -60,7 +60,6 @@
   "peerDependencies": {
     "@eslint/eslintrc": ">=3.3.1",
     "@eslint/js": ">=9.30.0",
-    "@stylistic/eslint-plugin": ">=5.1.0",
     "eslint-plugin-import": ">=2.32.0",
     "eslint-plugin-unicorn": ">=59.0.1"
   },

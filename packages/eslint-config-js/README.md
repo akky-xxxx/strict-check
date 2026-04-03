@@ -22,7 +22,6 @@ export default [
 // Below is equal
 export default [
   eslintConfigSCJs.configs.initialRecord,
-  eslintConfigSCJs.configs.stylisticRecord,
   eslintConfigSCJs.configs.eslintRecommendedRecord,
   eslintConfigSCJs.configs.unicornRecommendedRecords,
 
@@ -33,7 +32,7 @@ export default [
   // This is the custom config of eslint-config-sc-js
   eslintConfigSCJs.configs.customRecord,
 
-  // This is the reset config for @stylistic
+  // This is the reset config for style-related rules
   eslintConfigSCJs.configs.resetRecordForStylistic,
 ].flat()
 ```
@@ -43,7 +42,6 @@ export default [
 - [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)
 
 ### plugin
-- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin)
 - [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn)
 
 ## Recommended, but not includes
