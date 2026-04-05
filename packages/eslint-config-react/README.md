@@ -32,7 +32,6 @@ export default [
   eslintConfigSCReact.configs.scJsCustomRecord,
   eslintConfigSCReact.configs.customRecord,
 
-  // This is the reset config for style rules
 ].flat()
 ```
 
@@ -54,7 +53,6 @@ export default [
   eslintConfigSCReact.configs.customRecord,
   eslintConfigSCReact.configs.customRecordWithTypescript,
 
-  // This is the reset config for style rules
 ].flat()
 ```
 

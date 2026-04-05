@@ -32,7 +32,6 @@ export default [
   // This is the custom config of eslint-config-sc-js
   eslintConfigSCJs.configs.customRecord,
 
-  // This is the reset config for style-related rules
 ].flat()
 ```
 

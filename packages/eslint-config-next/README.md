@@ -33,7 +33,6 @@ export default [
   eslintConfigSCNext.configs.scJsCustomRecord,
   eslintConfigSCNext.configs.scRectCustomRecord,
 
-  // This is the reset config for style rules
 ].flat()
 ```
 
@@ -56,7 +55,6 @@ export default [
   eslintConfigSCNext.configs.customRecord,
   eslintConfigSCNext.configs.customRecordWithTypescript,
 
-  // This is the reset config for style rules
 ].flat()
 ```
 

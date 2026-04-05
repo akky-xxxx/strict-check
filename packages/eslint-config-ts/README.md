@@ -42,7 +42,6 @@ export default [
   eslintConfigSCTs.configs.scJsCustomRecord,
   eslintConfigSCTs.configs.customRecord,
 
-  // This is the reset config for style rules
   {
     languageOptions: {
       parserOptions: {
