@@ -1,68 +1,86 @@
 import { getConfigName } from "./modules/getConfigName"
 import { getConfigsBase } from "../../../../../src/getConfigs/modules/getConfigsBase"
 
-const getConfigNames = (result: unknown[]) => result.map((config) => getConfigName(config))
-
 describe("getConfigsBase", () => {
-  it("javascript", () => {
+  describe("javascript", () => {
     const result = getConfigsBase("javascript")
-    expect(getConfigNames(result)).toEqual([
-      "eslint-config-sc-js/initialRecord",
-      "eslint-config-sc-js/importRecommendedRecord",
-      "eslint-config-sc-js/eslintRecommendedRecord",
-      "eslint-config-sc-js/unicornRecommendedRecords",
-      "eslint-config-sc-js/airbnbBaseRecords",
-      "eslint-config-sc-js/customRecord",
-    ])
+    it("getConfigsBase の戻り値は配列長6", () => {
+      expect(result).toHaveLength(6)
+    })
+    it.each([
+      [0, "eslint-config-sc-js/initialRecord"],
+      [1, "eslint-config-sc-js/importRecommendedRecord"],
+      [2, "eslint-config-sc-js/eslintRecommendedRecord"],
+      [3, "eslint-config-sc-js/unicornRecommendedRecords"],
+      [4, "eslint-config-sc-js/airbnbBaseRecords"],
+      [5, "eslint-config-sc-js/customRecord"],
+    ] as const)("%i番目の config の name は「%s」", (index, name) => {
+      expect(getConfigName(result[index])).toBe(name)
+    })
   })
 
-  it("javascript with jest, storybook", () => {
+  describe("javascript with jest, storybook", () => {
     const result = getConfigsBase("javascript", ["jest", "storybook"])
-    expect(getConfigNames(result)).toEqual([
-      "eslint-config-sc-js/initialRecord",
-      "eslint-config-sc-js/importRecommendedRecord",
-      "eslint-config-sc-js/eslintRecommendedRecord",
-      "eslint-config-sc-js/unicornRecommendedRecords",
-      "eslint-config-sc-js/airbnbBaseRecords",
-      "eslint-config-sc-js/customRecord",
-      "eslint-config-sc-storybook/storybookConfigRecords",
-      "eslint-config-sc-storybook/overrideJavascriptRecord",
-      "eslint-config-sc-jest/jestPluginRecords",
-      "eslint-config-sc-jest/customRecord",
-      "eslint-config-sc-jest/overrideJavascriptRecord",
-    ])
+    it("getConfigsBase の戻り値は配列長11", () => {
+      expect(result).toHaveLength(11)
+    })
+    it.each([
+      [0, "eslint-config-sc-js/initialRecord"],
+      [1, "eslint-config-sc-js/importRecommendedRecord"],
+      [2, "eslint-config-sc-js/eslintRecommendedRecord"],
+      [3, "eslint-config-sc-js/unicornRecommendedRecords"],
+      [4, "eslint-config-sc-js/airbnbBaseRecords"],
+      [5, "eslint-config-sc-js/customRecord"],
+      [6, "eslint-config-sc-storybook/storybookConfigRecords"],
+      [7, "eslint-config-sc-storybook/overrideJavascriptRecord"],
+      [8, "eslint-config-sc-jest/jestPluginRecords"],
+      [9, "eslint-config-sc-jest/customRecord"],
+      [10, "eslint-config-sc-jest/overrideJavascriptRecord"],
+    ] as const)("%i番目の config の name は「%s」", (index, name) => {
+      expect(getConfigName(result[index])).toBe(name)
+    })
   })
 
-  it("typescript", () => {
+  describe("typescript", () => {
     const result = getConfigsBase("typescript")
-    expect(getConfigNames(result)).toEqual([
-      "eslint-config-sc-ts/initialRecord",
-      "eslint-config-sc-ts/importRecommendedRecord",
-      "eslint-config-sc-ts/eslintRecommendedRecord",
-      "eslint-config-sc-ts/unicornRecommendedRecords",
-      "eslint-config-sc-ts/typescriptEslintStrictTypeCheckedRecords",
-      "eslint-config-sc-ts/airbnbBaseRecords",
-      "eslint-config-sc-ts/scJsCustomRecord",
-      "eslint-config-sc-ts/customRecord",
-    ])
+    it("getConfigsBase の戻り値は配列長8", () => {
+      expect(result).toHaveLength(8)
+    })
+    it.each([
+      [0, "eslint-config-sc-ts/initialRecord"],
+      [1, "eslint-config-sc-ts/importRecommendedRecord"],
+      [2, "eslint-config-sc-ts/eslintRecommendedRecord"],
+      [3, "eslint-config-sc-ts/unicornRecommendedRecords"],
+      [4, "eslint-config-sc-ts/typescriptEslintStrictTypeCheckedRecords"],
+      [5, "eslint-config-sc-ts/airbnbBaseRecords"],
+      [6, "eslint-config-sc-ts/scJsCustomRecord"],
+      [7, "eslint-config-sc-ts/customRecord"],
+    ] as const)("%i番目の config の name は「%s」", (index, name) => {
+      expect(getConfigName(result[index])).toBe(name)
+    })
   })
 
-  it("typescript with jest, storybook", () => {
+  describe("typescript with jest, storybook", () => {
     const result = getConfigsBase("typescript", ["jest", "storybook"])
-    expect(getConfigNames(result)).toEqual([
-      "eslint-config-sc-ts/initialRecord",
-      "eslint-config-sc-ts/importRecommendedRecord",
-      "eslint-config-sc-ts/eslintRecommendedRecord",
-      "eslint-config-sc-ts/unicornRecommendedRecords",
-      "eslint-config-sc-ts/typescriptEslintStrictTypeCheckedRecords",
-      "eslint-config-sc-ts/airbnbBaseRecords",
-      "eslint-config-sc-ts/scJsCustomRecord",
-      "eslint-config-sc-ts/customRecord",
-      "eslint-config-sc-storybook/storybookConfigRecords",
-      "eslint-config-sc-storybook/overrideTypescriptRecord",
-      "eslint-config-sc-jest/jestPluginRecords",
-      "eslint-config-sc-jest/customRecord",
-      "eslint-config-sc-jest/overrideTypescriptRecord",
-    ])
+    it("getConfigsBase の戻り値は配列長13", () => {
+      expect(result).toHaveLength(13)
+    })
+    it.each([
+      [0, "eslint-config-sc-ts/initialRecord"],
+      [1, "eslint-config-sc-ts/importRecommendedRecord"],
+      [2, "eslint-config-sc-ts/eslintRecommendedRecord"],
+      [3, "eslint-config-sc-ts/unicornRecommendedRecords"],
+      [4, "eslint-config-sc-ts/typescriptEslintStrictTypeCheckedRecords"],
+      [5, "eslint-config-sc-ts/airbnbBaseRecords"],
+      [6, "eslint-config-sc-ts/scJsCustomRecord"],
+      [7, "eslint-config-sc-ts/customRecord"],
+      [8, "eslint-config-sc-storybook/storybookConfigRecords"],
+      [9, "eslint-config-sc-storybook/overrideTypescriptRecord"],
+      [10, "eslint-config-sc-jest/jestPluginRecords"],
+      [11, "eslint-config-sc-jest/customRecord"],
+      [12, "eslint-config-sc-jest/overrideTypescriptRecord"],
+    ] as const)("%i番目の config の name は「%s」", (index, name) => {
+      expect(getConfigName(result[index])).toBe(name)
+    })
   })
 })
