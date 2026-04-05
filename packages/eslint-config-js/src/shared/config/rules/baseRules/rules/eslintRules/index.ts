@@ -7,9 +7,9 @@ import type { EslintRules } from "../../../../../../libs/shared-for-config/types
 
 export const eslintRules = {
   /* eslint-disable @typescript-eslint/no-magic-numbers */
-  "complexity": [SEVERITY.ERROR, 5],
   "arrow-parens": [SEVERITY.ERROR, "always"],
   "brace-style": [SEVERITY.ERROR, "1tbs"],
+  "complexity": [SEVERITY.ERROR, 5],
   "curly": [SEVERITY.WARN, "multi-or-nest"],
   "indent": SEVERITY.OFF,
   "max-depth": [SEVERITY.ERROR, 3],
@@ -20,11 +20,11 @@ export const eslintRules = {
   "max-params": [SEVERITY.WARN, 3],
   "max-statements": [SEVERITY.ERROR, 10],
   "multiline-comment-style": SEVERITY.OFF,
-  "quotes": [SEVERITY.ERROR, "double", { avoidEscape: true }],
   "no-implicit-coercion": noImplicitCoercion,
   "no-magic-numbers": SEVERITY.WARN,
   "no-use-before-define": SEVERITY.ERROR,
   "prefer-named-capture-group": SEVERITY.WARN,
+  "quotes": [SEVERITY.ERROR, "double", { avoidEscape: true }],
   "sort-keys": [SEVERITY.WARN, "asc", { allowLineSeparatedGroups: true }],
   /* eslint-enable @typescript-eslint/no-magic-numbers */
 } as const satisfies EslintRules
