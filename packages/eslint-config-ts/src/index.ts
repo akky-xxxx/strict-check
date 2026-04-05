@@ -4,15 +4,11 @@ import { customRecord } from "./shared/config/records/customRecord"
 import { eslintRecommendedRecord } from "./shared/config/records/eslintRecommendedRecord"
 import { importRecommendedRecord } from "./shared/config/records/importRecommendedRecord"
 import { initialRecord } from "./shared/config/records/initialRecord"
-import { resetRecordForStylistic } from "./shared/config/records/resetRecordForStylistic"
+import { resetRecordForStyle } from "./shared/config/records/resetRecordForStyle"
 import { scJsCustomRecord } from "./shared/config/records/scJsCustomRecord"
-import { stylisticRecord } from "./shared/config/records/stylisticRecord"
 import {
   typescriptEslintStrictTypeCheckedRecords,
 } from "./shared/config/records/typescriptEslintStrictTypeCheckedRecords"
-import {
-  typescriptEslintStylisticTypeCheckedRecords,
-} from "./shared/config/records/typescriptEslintStylisticTypeCheckedRecords"
 import { unicornRecommendedRecords } from "./shared/config/records/unicornRecommendedRecords"
 import { PACKAGE_NAME } from "./shared/constants/PACKAGE_NAME"
 
@@ -30,11 +26,9 @@ const plugin = {
     eslintRecommendedRecord,
     importRecommendedRecord,
     initialRecord,
-    resetRecordForStylistic,
+    resetRecordForStyle,
     scJsCustomRecord,
-    stylisticRecord,
     typescriptEslintStrictTypeCheckedRecords,
-    typescriptEslintStylisticTypeCheckedRecords,
     unicornRecommendedRecords,
 
     customRecord,

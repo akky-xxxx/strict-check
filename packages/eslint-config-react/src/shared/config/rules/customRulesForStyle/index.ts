@@ -2,7 +2,14 @@ import { SEVERITY } from "../../../../libs/shared-for-config/constants/SEVERITY"
 
 import type { EslintRules } from "../../../../libs/shared-for-config/types/EslintRules"
 
-export const resetRulesForStylistic = {
-  "react/jsx-curly-newline": SEVERITY.OFF,
-  "react/jsx-one-expression-per-line": SEVERITY.OFF,
+const INDENT_SIZE = 2
+
+export const customRulesForStyle = {
+  "indent": [
+    SEVERITY.ERROR,
+    INDENT_SIZE,
+    {
+      ignoredNodes: ["JSXElement", "JSXElement *"],
+    },
+  ],
 } as const satisfies EslintRules

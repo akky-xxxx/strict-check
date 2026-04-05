@@ -13,7 +13,6 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
   configBase.push(
     jsConfig.configs.initialRecord,
     jsConfig.configs.importRecommendedRecord,
-    jsConfig.configs.stylisticRecord,
     jsConfig.configs.eslintRecommendedRecord,
     jsConfig.configs.unicornRecommendedRecords,
   )
@@ -56,6 +55,6 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
     )
   }
 
-  configBase.push(jsConfig.configs.resetRecordForStylistic)
+  configBase.push(jsConfig.configs.resetRecordForStyle)
   return configBase
 }

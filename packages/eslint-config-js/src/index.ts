@@ -4,7 +4,7 @@ import { customRecord } from "./shared/config/records/customRecord"
 import { eslintRecommendedRecord } from "./shared/config/records/eslintRecommendedRecord"
 import { importRecommendedRecord } from "./shared/config/records/importRecommendedRecord"
 import { initialRecord } from "./shared/config/records/initialRecord"
-import { resetRecordForStylistic } from "./shared/config/records/resetRecordForStylistic"
+import { resetRecordForStyle } from "./shared/config/records/resetRecordForStyle"
 import { unicornRecommendedRecords } from "./shared/config/records/unicornRecommendedRecords"
 import { PACKAGE_NAME } from "./shared/constants/PACKAGE_NAME"
 
@@ -25,7 +25,7 @@ const plugin = {
     unicornRecommendedRecords,
 
     customRecord,
-    resetRecordForStylistic,
+    resetRecordForStyle,
   },
 } as const satisfies Plugin
 

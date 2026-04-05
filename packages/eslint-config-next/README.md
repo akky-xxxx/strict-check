@@ -23,7 +23,6 @@ export default [
 // Below is equal
 export default [
   eslintConfigSCNext.configs.initialRecord,
-  eslintConfigSCNext.configs.stylisticRecord,
   eslintConfigSCNext.configs.eslintRecommendedRecord,
   eslintConfigSCNext.configs.unicornRecommendedRecords,
   eslintConfigSCNext.configs.reactRecords,
@@ -34,8 +33,8 @@ export default [
   eslintConfigSCNext.configs.scJsCustomRecord,
   eslintConfigSCNext.configs.scRectCustomRecord,
 
-  // This is the reset config for stylistic
-  eslintConfigSCNext.configs.resetRecordForStylistic,
+  // This is the reset config for style rules
+  eslintConfigSCNext.configs.resetRecordForStyle,
 ].flat()
 ```
 
@@ -46,10 +45,8 @@ import eslintConfigSCNext from "eslint-config-sc-next"
 
 export default [
   eslintConfigSCNext.configs.initialRecord,
-  eslintConfigSCNext.configs.stylisticRecord,
   eslintConfigSCNext.configs.eslintRecommendedRecord,
   eslintConfigSCTs.configs.typescriptEslintStrictTypeCheckedRecords,
-  eslintConfigSCTs.configs.typescriptEslintStylisticTypeCheckedRecords,
   eslintConfigSCNext.configs.unicornRecommendedRecords,
   eslintConfigSCNext.configs.reactRecords,
   eslintConfigSCNext.configs.nextRecords,
@@ -60,8 +57,8 @@ export default [
   eslintConfigSCNext.configs.customRecord,
   eslintConfigSCNext.configs.customRecordWithTypescript,
 
-  // This is the reset config for stylistic
-  eslintConfigSCNext.configs.resetRecordForStylistic,
+  // This is the reset config for style rules
+  eslintConfigSCNext.configs.resetRecordForStyle,
 ].flat()
 ```
 
