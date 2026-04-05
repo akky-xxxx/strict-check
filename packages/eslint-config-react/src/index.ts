@@ -5,7 +5,6 @@ import { customRecordWithTypescript } from "./shared/config/records/customRecord
 import { eslintRecommendedRecord } from "./shared/config/records/eslintRecommendedRecord"
 import { initialRecord } from "./shared/config/records/initialRecord"
 import { reactRecords } from "./shared/config/records/reactRecords"
-import { resetRecordForStyle } from "./shared/config/records/resetRecordForStyle"
 import { scJsCustomRecord } from "./shared/config/records/scJsCustomRecord"
 import { unicornRecommendedRecords } from "./shared/config/records/unicornRecommendedRecords"
 import { PACKAGE_NAME } from "./shared/constants/PACKAGE_NAME"
@@ -29,7 +28,6 @@ const plugin = {
 
     customRecord,
     customRecordWithTypescript,
-    resetRecordForStyle,
     scJsCustomRecord,
   },
 } as const satisfies Plugin

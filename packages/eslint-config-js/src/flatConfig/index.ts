@@ -3,7 +3,6 @@ import { customRecord } from "../shared/config/records/customRecord"
 import { eslintRecommendedRecord } from "../shared/config/records/eslintRecommendedRecord"
 import { importRecommendedRecord } from "../shared/config/records/importRecommendedRecord"
 import { initialRecord } from "../shared/config/records/initialRecord"
-import { resetRecordForStyle } from "../shared/config/records/resetRecordForStyle"
 import { unicornRecommendedRecords } from "../shared/config/records/unicornRecommendedRecords"
 
 import type { EslintFlatConfig } from "../libs/shared-for-config/types/EslintFlatConfig"
@@ -15,5 +14,4 @@ export const flatConfig = [
   unicornRecommendedRecords,
   airbnbBaseRecords,
   customRecord,
-  resetRecordForStyle,
 ].flat() satisfies EslintFlatConfig[]

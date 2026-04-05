@@ -4,7 +4,6 @@ import { eslintRecommendedRecord } from "./shared/config/records/eslintRecommend
 import { initialRecord } from "./shared/config/records/initialRecord"
 import { nextRecord } from "./shared/config/records/nextRecord"
 import { reactRecords } from "./shared/config/records/reactRecords"
-import { resetRecordForStyle } from "./shared/config/records/resetRecordForStyle"
 import { scJsCustomRecord } from "./shared/config/records/scJsCustomRecord"
 import { scRectCustomRecord } from "./shared/config/records/scRectCustomRecord"
 import { scRectCustomRecordWithTypescript } from "./shared/config/records/scRectCustomRecordWithTypescript"
@@ -29,7 +28,6 @@ const plugin = {
     reactRecords,
     unicornRecommendedRecords,
 
-    resetRecordForStyle,
     scJsCustomRecord,
     scRectCustomRecord,
     scRectCustomRecordWithTypescript,

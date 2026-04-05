@@ -33,7 +33,6 @@ export default [
   eslintConfigSCJs.configs.customRecord,
 
   // This is the reset config for style-related rules
-  eslintConfigSCJs.configs.resetRecordForStyle,
 ].flat()
 ```
 

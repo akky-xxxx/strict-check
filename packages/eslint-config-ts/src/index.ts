@@ -4,7 +4,6 @@ import { customRecord } from "./shared/config/records/customRecord"
 import { eslintRecommendedRecord } from "./shared/config/records/eslintRecommendedRecord"
 import { importRecommendedRecord } from "./shared/config/records/importRecommendedRecord"
 import { initialRecord } from "./shared/config/records/initialRecord"
-import { resetRecordForStyle } from "./shared/config/records/resetRecordForStyle"
 import { scJsCustomRecord } from "./shared/config/records/scJsCustomRecord"
 import {
   typescriptEslintStrictTypeCheckedRecords,
@@ -26,7 +25,6 @@ const plugin = {
     eslintRecommendedRecord,
     importRecommendedRecord,
     initialRecord,
-    resetRecordForStyle,
     scJsCustomRecord,
     typescriptEslintStrictTypeCheckedRecords,
     unicornRecommendedRecords,

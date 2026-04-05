@@ -55,6 +55,5 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
     )
   }
 
-  configBase.push(jsConfig.configs.resetRecordForStyle)
   return configBase
 }

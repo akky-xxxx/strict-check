@@ -61,6 +61,5 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
     )
   }
 
-  configBase.push(tsConfig.configs.resetRecordForStyle)
   return configBase
 }

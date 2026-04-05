@@ -43,7 +43,6 @@ export default [
   eslintConfigSCTs.configs.customRecord,
 
   // This is the reset config for style rules
-  eslintConfigSCTs.configs.resetRecordForStyle,
   {
     languageOptions: {
       parserOptions: {
