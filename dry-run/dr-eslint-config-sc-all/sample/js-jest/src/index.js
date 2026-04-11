@@ -219,18 +219,7 @@ const variable4_2 = Boolean("a")
 const variable5 = /(aaa)/
 const variable5_2 = /(?<id>aaa)/
 
-const object2 = {
-  // eslint-disable-next-line key-spacing
-  b : 1,
-
-  // eslint-disable-next-line comma-dangle
-  a: 1
-}
-
-// eslint-disable-next-line keyword-spacing, space-before-blocks
 if(Math.random()){
-  console.log("")
-  console.log("")
 // eslint-disable-next-line brace-style
 }
 else console.log("")
