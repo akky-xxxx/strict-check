@@ -221,4 +221,5 @@ const variable5_2 = /(?<id>aaa)/
 
 if (Math.random()) {
   // eslint-disable-next-line brace-style
-}else console.log("")
+}
+else console.log("")

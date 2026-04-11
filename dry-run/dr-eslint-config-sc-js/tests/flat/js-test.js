@@ -138,7 +138,9 @@ array1.map((value) => {
 })
 
 // eslint-disable-next-line curly
-if (Math.random() < 0.5) console.log("a")
+if (Math.random() < 0.5) {
+  console.log("a")
+}
 
 if (Math.random() < 0.5) {
   console.log("a")
@@ -221,7 +223,8 @@ if (Math.random()) {
   console.log("")
   console.log("")
   // eslint-disable-next-line brace-style
-}else console.log("")
+}
+else console.log("")
 
 const object2 = {
   a: 1,

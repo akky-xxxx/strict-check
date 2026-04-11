@@ -108,7 +108,7 @@ console.log(object1.a)
 // increment line
 
 // eslint-disable-next-line quotes
-const variable3 = "double quotes"
+const variable3 = 'double quotes'
 
 try {
   const random = Math.random()
