@@ -1,5 +1,6 @@
 import eslintConfigSCStorybook from "eslint-config-sc-storybook"
 import typescriptEslintParser from "@typescript-eslint/parser"
+import eslintConfigPrettier from "eslint-config-prettier/flat"
 
 export default [
   eslintConfigSCStorybook.configs.recommended,
@@ -12,4 +13,5 @@ export default [
     },
     files: ["**/*.tsx"],
   },
+  eslintConfigPrettier,
 ].flat()

@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "eslint": "^9.30.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-sc-js": "workspace:^",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^8.0.4",

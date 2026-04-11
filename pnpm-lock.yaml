@@ -82,6 +82,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-config-sc-all:
         specifier: workspace:^
         version: link:../../packages/eslint-config-all
@@ -103,6 +106,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-config-sc-jest:
         specifier: workspace:^
         version: link:../../packages/eslint-config-jest
@@ -130,6 +136,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-config-sc-js:
         specifier: workspace:^
         version: link:../../packages/eslint-config-js
@@ -151,6 +160,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-config-sc-next:
         specifier: workspace:^
         version: link:../../packages/eslint-config-next
@@ -175,6 +187,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-config-sc-react:
         specifier: workspace:^
         version: link:../../packages/eslint-config-react
@@ -208,6 +223,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-config-sc-js:
         specifier: workspace:^
         version: link:../../packages/eslint-config-js
@@ -235,6 +253,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-config-sc-ts:
         specifier: workspace:^
         version: link:../../packages/eslint-config-ts
@@ -253,6 +274,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-sc-js:
         specifier: workspace:^
         version: link:../../packages/eslint-plugin-js
@@ -293,6 +317,9 @@ importers:
       eslint-config-airbnb-base:
         specifier: ^15.0.0
         version: 15.0.0(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1)))(eslint@9.39.4(jiti@2.6.1))
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-import:
         specifier: ^2.32.0
         version: 2.32.0(@typescript-eslint/parser@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.4(jiti@2.6.1))
@@ -345,6 +372,9 @@ importers:
       eslint-config-airbnb-base:
         specifier: ^15.0.0
         version: 15.0.0(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1)))(eslint@9.39.4(jiti@2.6.1))
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-import:
         specifier: ^2.32.0
         version: 2.32.0(@typescript-eslint/parser@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.4(jiti@2.6.1))
@@ -390,6 +420,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-config-sc-jest:
         specifier: workspace:^
         version: link:../eslint-config-jest
@@ -469,6 +502,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       fixpack:
         specifier: ^4.0.0
         version: 4.0.0
@@ -512,6 +548,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-import:
         specifier: ^2.32.0
         version: 2.32.0(@typescript-eslint/parser@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.4(jiti@2.6.1))
@@ -558,6 +597,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-config-sc-js:
         specifier: workspace:^
         version: link:../eslint-config-js
@@ -610,6 +652,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-config-sc-js:
         specifier: workspace:^
         version: link:../eslint-config-js
@@ -668,6 +713,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       fixpack:
         specifier: ^4.0.0
         version: 4.0.0
@@ -711,6 +759,9 @@ importers:
       eslint:
         specifier: ^9.30.0
         version: 9.39.4(jiti@2.6.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-config-sc-js:
         specifier: workspace:^
         version: link:../eslint-config-js
@@ -766,6 +817,9 @@ importers:
       eslint-config-airbnb-base:
         specifier: ^15.0.0
         version: 15.0.0(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1)))(eslint@9.39.4(jiti@2.6.1))
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.39.4(jiti@2.6.1))
       eslint-plugin-import:
         specifier: ^2.32.0
         version: 2.32.0(@typescript-eslint/parser@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.4(jiti@2.6.1))

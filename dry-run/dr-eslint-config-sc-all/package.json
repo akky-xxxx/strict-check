@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "eslint": "^9.30.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-config-sc-all": "workspace:^",
     "fixpack": "^4.0.0",
     "jest": "^30.0.3",
