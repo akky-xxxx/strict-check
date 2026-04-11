@@ -1,5 +1,4 @@
 import eslintPluginSCJs from "eslint-plugin-sc-js"
-import eslintConfigPrettier from "eslint-config-prettier/flat"
 
 export default [
   {
@@ -32,5 +31,4 @@ export default [
   {
     files: ["**/*.js"],
   },
-  eslintConfigPrettier,
 ]

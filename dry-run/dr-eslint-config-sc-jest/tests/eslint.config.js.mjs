@@ -1,6 +1,5 @@
 import eslintConfigSCJest from "eslint-config-sc-jest"
 import eslintConfigSCJs from "eslint-config-sc-js"
-import eslintConfigPrettier from "eslint-config-prettier/flat"
 
 export default [
   eslintConfigSCJs.configs.recommended,
@@ -8,5 +7,4 @@ export default [
   {
     files: ["**/*.js{,x}"],
   },
-  eslintConfigPrettier,
 ].flat()

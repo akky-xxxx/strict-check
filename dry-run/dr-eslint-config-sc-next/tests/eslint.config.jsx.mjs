@@ -1,5 +1,4 @@
 import eslintConfigSCNext from "eslint-config-sc-next"
-import eslintConfigPrettier from "eslint-config-prettier/flat"
 
 export default [
   ...eslintConfigSCNext.configs.recommended,
@@ -9,5 +8,4 @@ export default [
       "@next/next/no-html-link-for-pages": 0,
     },
   },
-  eslintConfigPrettier,
 ]

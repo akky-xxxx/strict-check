@@ -1,5 +1,4 @@
 import eslintConfigSCTs from "eslint-config-sc-ts"
-import eslintConfigPrettier from "eslint-config-prettier/flat"
 
 export default [
   eslintConfigSCTs.configs.recommended,
@@ -11,5 +10,4 @@ export default [
     },
     files: ["**/*.ts"],
   },
-  eslintConfigPrettier,
 ].flat()
