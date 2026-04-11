@@ -15,5 +15,8 @@ export default [
       parser: typescriptEslintParser,
     },
     files: ["**/*.tsx"],
+    rules: {
+      "react/jsx-one-expression-per-line": ["error", { allow: "single-child" }],
+    },
   },
 ].flat()

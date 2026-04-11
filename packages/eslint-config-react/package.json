@@ -47,13 +47,14 @@
     "globals": "^16.3.0"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^5.1.0",
     "@tsconfig/strictest": "^2.0.5",
     "@types/react": "^19.1.8",
     "@typescript-eslint/parser": "^8.35.1",
     "chokidar-cli": "^3.0.0",
     "cspell": "^9.1.2",
     "eslint": "^9.30.0",
+    "eslint-config-sc-js": "workspace:^",
+    "eslint-config-sc-ts": "workspace:^",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^8.0.4",

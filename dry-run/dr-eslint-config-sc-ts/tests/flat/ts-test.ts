@@ -107,7 +107,7 @@ console.log(object1.a)
 // increment line
 // increment line
 
-// eslint-disable-next-line @stylistic/quotes
+// eslint-disable-next-line quotes
 const variable3 = 'double quotes'
 
 try {

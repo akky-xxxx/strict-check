@@ -99,7 +99,7 @@ console.log(object1.a)
 // increment line
 // increment line
 
-// eslint-disable-next-line @stylistic/quotes
+// eslint-disable-next-line quotes
 const variable3 = 'double quotes'
 
 try {
@@ -219,18 +219,7 @@ const variable4_2 = Boolean("a")
 const variable5 = /(aaa)/
 const variable5_2 = /(?<id>aaa)/
 
-const object2 = {
-  // eslint-disable-next-line @stylistic/key-spacing
-  b : 1,
-
-  // eslint-disable-next-line @stylistic/comma-dangle
-  a: 1
-}
-
-// eslint-disable-next-line @stylistic/keyword-spacing, @stylistic/space-before-blocks
 if(Math.random()){
-  console.log("")
-  console.log("")
-// eslint-disable-next-line @stylistic/brace-style
+// eslint-disable-next-line brace-style
 }
 else console.log("")

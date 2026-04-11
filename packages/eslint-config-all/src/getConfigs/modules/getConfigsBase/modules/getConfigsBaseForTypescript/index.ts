@@ -13,11 +13,9 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
   configBase.push(
     tsConfig.configs.initialRecord,
     tsConfig.configs.importRecommendedRecord,
-    tsConfig.configs.stylisticRecord,
     tsConfig.configs.eslintRecommendedRecord,
     tsConfig.configs.unicornRecommendedRecords,
     tsConfig.configs.typescriptEslintStrictTypeCheckedRecords,
-    tsConfig.configs.typescriptEslintStylisticTypeCheckedRecords,
   )
   const tsCommonRecords = [
     tsConfig.configs.scJsCustomRecord,
@@ -63,6 +61,5 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
     )
   }
 
-  configBase.push(tsConfig.configs.resetRecordForStylistic)
   return configBase
 }

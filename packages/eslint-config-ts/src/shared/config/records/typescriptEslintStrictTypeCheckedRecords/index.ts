@@ -16,5 +16,5 @@ export const typescriptEslintStrictTypeCheckedRecords = [
     },
   },
   // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
-  ...(typescriptEslint.configs.stylisticTypeChecked as EslintFlatConfig[]),
+  ...(typescriptEslint.configs.strictTypeChecked as EslintFlatConfig[]),
 ] as const satisfies EslintFlatConfig[]
