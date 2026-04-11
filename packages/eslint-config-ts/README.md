@@ -30,11 +30,9 @@ export default [
 // Below is equal
 export default [
   eslintConfigSCTs.configs.initialRecord,
-  eslintConfigSCTs.configs.stylisticRecord,
   eslintConfigSCTs.configs.eslintRecommendedRecord,
   eslintConfigSCTs.configs.unicornRecommendedRecords,
   eslintConfigSCTs.configs.typescriptEslintStrictTypeCheckedRecords,
-  eslintConfigSCTs.configs.typescriptEslintStylisticTypeCheckedRecords,
 
   // This use eslint-config-airbnb-base
   // For react project, this replace to eslint-config-airbnb
@@ -44,8 +42,6 @@ export default [
   eslintConfigSCTs.configs.scJsCustomRecord,
   eslintConfigSCTs.configs.customRecord,
 
-  // This is the reset config for stylistic
-  eslintConfigSCTs.configs.resetRecordForStylistic,
   {
     languageOptions: {
       parserOptions: {

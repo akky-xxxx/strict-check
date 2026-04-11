@@ -45,11 +45,11 @@
     "type-check": "tsc"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^5.1.0",
     "@tsconfig/strictest": "^2.0.5",
     "chokidar-cli": "^3.0.0",
     "cspell": "^9.1.2",
     "eslint": "^9.30.0",
+    "eslint-config-sc-js": "workspace:^",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2",
