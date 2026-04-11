@@ -10,16 +10,16 @@ on:
       - feature/**
       - main
     paths:
-      - '.github/actions/**'
-      - '.github/workflows/eslint-config-all@ci.yml'
-      - '.node-version'
-      - 'config/eslint/**'
-      - 'config/tsconfig/**'
-      - 'dry-run/dr-eslint-config-sc-all/**'
-      - 'modules/shared-for-eslint-config/**'
-      - 'packages/eslint-config-all/**'
-      - 'prettier.config.js'
-      - 'pnpm-lock.yaml'
+      - ".github/actions/**"
+      - ".github/workflows/eslint-config-all@ci.yml"
+      - ".node-version"
+      - "config/eslint/**"
+      - "config/tsconfig/**"
+      - "dry-run/dr-eslint-config-sc-all/**"
+      - "modules/shared-for-eslint-config/**"
+      - "packages/eslint-config-all/**"
+      - "prettier.config.js"
+      - "pnpm-lock.yaml"
 
 env:
   WORKING_DIRECTORY: ./packages/eslint-config-all
@@ -100,7 +100,7 @@ jobs:
         working-directory: ${{ env.WORKING_DIRECTORY }}
     strategy:
       matrix:
-        node-version: [ 20.x, 22.x, 24.x ]
+        node-version: [20.x, 22.x, 24.x]
     steps:
       - uses: actions/checkout@v4
 

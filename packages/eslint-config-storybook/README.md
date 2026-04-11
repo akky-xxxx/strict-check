@@ -1,8 +1,10 @@
 # [eslint-config-sc-storybook](https://strict-check-series.pages.dev/packages/eslint-config-sc-storybook)
+
 - Strict Check config for eslint.
 - For Storybook.
 
 ## How to use
+
 ### Installation
 
 ```shell
@@ -30,8 +32,11 @@ export default [
 ```
 
 ## Used config, plugin ( alphabetical )
+
 ### plugin
+
 - [eslint-plugin-storybook](https://www.npmjs.com/package/eslint-plugin-storybook)
 
 ## License
+
 - [MIT](LICENSE)

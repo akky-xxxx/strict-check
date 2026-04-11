@@ -3,10 +3,7 @@ import { exportNamedDeclaration } from "./modules/exportNamedDeclaration"
 import type { MessageId, Option } from "./types"
 import type { TSESLint } from "@typescript-eslint/utils"
 
-export const matchNamesOfFileAndExport: TSESLint.RuleModule<
-  MessageId,
-  Option[]
-> = {
+export const matchNamesOfFileAndExport: TSESLint.RuleModule<MessageId, Option[]> = {
   create: (context) => {
     const exportNamedDeclarationMain = exportNamedDeclaration(context)
 
@@ -18,8 +15,7 @@ export const matchNamesOfFileAndExport: TSESLint.RuleModule<
   meta: {
     messages: {
       FileAndExportAreDifferent:
-
-        "Not matched names of file and export. File name is {{ capturedString }}, variable name is \"{{ variableName }}\".",
+        'Not matched names of file and export. File name is {{ capturedString }}, variable name is "{{ variableName }}".',
     },
     schema: {
       type: "array",

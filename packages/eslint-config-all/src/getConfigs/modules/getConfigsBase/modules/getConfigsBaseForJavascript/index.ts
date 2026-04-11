@@ -3,8 +3,9 @@ import type { EslintFlatConfig } from "../../../../../libs/shared-for-config/typ
 import type { Library } from "../../../../../shared/types/Library"
 
 type Libraries = Library[]
-type GetConfigsBaseForJavascript = (libraries?: Libraries) =>
-  EslintFlatConfig[] | EslintFlatConfig[][]
+type GetConfigsBaseForJavascript = (
+  libraries?: Libraries,
+) => EslintFlatConfig[] | EslintFlatConfig[][]
 
 // eslint-disable-next-line complexity, max-statements
 export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (libraries) => {
@@ -32,10 +33,7 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
       reactConfig.configs.customRecord,
     )
   } else {
-    configBase.push(
-      jsConfig.configs.airbnbBaseRecords,
-      jsConfig.configs.customRecord,
-    )
+    configBase.push(jsConfig.configs.airbnbBaseRecords, jsConfig.configs.customRecord)
   }
 
   if (libraries?.includes("storybook")) {

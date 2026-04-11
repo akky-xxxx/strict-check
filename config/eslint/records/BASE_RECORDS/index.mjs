@@ -13,11 +13,7 @@ export const BASE_RECORDS = [
   eslint.configs.recommended,
   ...compat.extends("eslint-config-airbnb-base"),
   {
-    ignores: [
-      "{modules,packages}/*",
-      ".pnpm-store",
-      "node_modules/**",
-    ],
+    ignores: ["{modules,packages}/*", ".pnpm-store", "node_modules/**"],
   },
   {
     languageOptions: {

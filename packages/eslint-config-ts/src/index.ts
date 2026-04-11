@@ -5,9 +5,7 @@ import { eslintRecommendedRecord } from "./shared/config/records/eslintRecommend
 import { importRecommendedRecord } from "./shared/config/records/importRecommendedRecord"
 import { initialRecord } from "./shared/config/records/initialRecord"
 import { scJsCustomRecord } from "./shared/config/records/scJsCustomRecord"
-import {
-  typescriptEslintStrictTypeCheckedRecords,
-} from "./shared/config/records/typescriptEslintStrictTypeCheckedRecords"
+import { typescriptEslintStrictTypeCheckedRecords } from "./shared/config/records/typescriptEslintStrictTypeCheckedRecords"
 import { unicornRecommendedRecords } from "./shared/config/records/unicornRecommendedRecords"
 import { PACKAGE_NAME } from "./shared/constants/PACKAGE_NAME"
 

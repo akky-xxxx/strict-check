@@ -8,24 +8,16 @@ const { getFilePaths } = require("../shared/utilities/getFilePaths")
 
 const ROOT = path.resolve(__dirname, "../../")
 
-const SHARED_DIRECTORY =
-  path.join(ROOT, DIRECTORIES.WS_MODULES)
-const PACKAGE_DIRECTORY =
-  path.join(ROOT, DIRECTORIES.WS_PACKAGES)
+const SHARED_DIRECTORY = path.join(ROOT, DIRECTORIES.WS_MODULES)
+const PACKAGE_DIRECTORY = path.join(ROOT, DIRECTORIES.WS_PACKAGES)
 
 const isEslintConfigDirectory = (directory) => directory.includes(DIRECTORIES.ESLINT_CONFIG)
 const isEslintPluginDirectory = (directory) => directory.includes(DIRECTORIES.ESLINT_PLUGIN)
 const isSharedDirectory = (directory) => directory.startsWith(DIRECTORIES.SHARED_PREFIX)
 
-const convertToLibsPath = (destName) => (directory) => path.join(
-  PACKAGE_DIRECTORY,
-  directory,
-  DIRECTORIES.SRC,
-  DIRECTORIES.LIBS,
-  destName,
-)
-const convertToSrcPath =
-  (directory) => path.join(SHARED_DIRECTORY, directory, DIRECTORIES.SRC)
+const convertToLibsPath = (destName) => (directory) =>
+  path.join(PACKAGE_DIRECTORY, directory, DIRECTORIES.SRC, DIRECTORIES.LIBS, destName)
+const convertToSrcPath = (directory) => path.join(SHARED_DIRECTORY, directory, DIRECTORIES.SRC)
 
 // ディレクトリ配下のファイル・フォルダを削除する関数（再帰的）
 const clearDirectory = (dirPath) => {
@@ -52,15 +44,15 @@ const clearDirectory = (dirPath) => {
   }
 }
 
-const eslintConfigPaths = fs.readdirSync(PACKAGE_DIRECTORY)
+const eslintConfigPaths = fs
+  .readdirSync(PACKAGE_DIRECTORY)
   .filter(isEslintConfigDirectory)
   .map(convertToLibsPath(DIRECTORIES.DEST_CONFIG))
-const eslintPluginPaths = fs.readdirSync(PACKAGE_DIRECTORY)
+const eslintPluginPaths = fs
+  .readdirSync(PACKAGE_DIRECTORY)
   .filter(isEslintPluginDirectory)
   .map(convertToLibsPath(DIRECTORIES.DEST_PLUGIN))
-const sharedPaths = fs.readdirSync(SHARED_DIRECTORY)
-  .filter(isSharedDirectory)
-  .map(convertToSrcPath)
+const sharedPaths = fs.readdirSync(SHARED_DIRECTORY).filter(isSharedDirectory).map(convertToSrcPath)
 
 sharedPaths.forEach((sharedPath) => {
   if (sharedPath.includes(DIRECTORIES.ESLINT_CONFIG)) {

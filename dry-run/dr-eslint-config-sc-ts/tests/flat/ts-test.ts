@@ -108,7 +108,7 @@ console.log(object1.a)
 // increment line
 
 // eslint-disable-next-line quotes
-const variable3 = 'double quotes'
+const variable3 = "double quotes"
 
 try {
   const random = Math.random()
@@ -227,6 +227,6 @@ type Array5 = Array<{
 }>
 
 // eslint-disable-next-line no-confusing-arrow
-const function9 = (input: string) => input.length < 3 ? 42 : "oops"
+const function9 = (input: string) => (input.length < 3 ? 42 : "oops")
 // eslint-disable-next-line @typescript-eslint/consistent-type-assertions, @typescript-eslint/no-unsafe-type-assertion
 const returnOfFunction9 = function9("") as number

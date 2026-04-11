@@ -100,7 +100,7 @@ console.log(object1.a)
 // increment line
 
 // eslint-disable-next-line quotes
-const variable3 = 'double quotes'
+const variable3 = "double quotes"
 
 try {
   const random = Math.random()
@@ -219,20 +219,19 @@ const variable4_2 = Boolean("a")
 const variable5 = /(aaa)/
 const variable5_2 = /(?<id>aaa)/
 
-if(Math.random()){
+if (Math.random()) {
   console.log("")
   console.log("")
-// eslint-disable-next-line brace-style
-}
-else console.log("")
+  // eslint-disable-next-line brace-style
+} else console.log("")
 
 const object2 = {
-  "a": 1,
+  a: 1,
   "a-a": 1,
 }
 
 // eslint-disable-next-line arrow-parens
-const arrowFunction1 = a => a
+const arrowFunction1 = (a) => a
 
 // eslint-disable-next-line import/no-empty-named-blocks, import/no-useless-path-segments, import/first
 import {} from "../flat/js-test-sub1"

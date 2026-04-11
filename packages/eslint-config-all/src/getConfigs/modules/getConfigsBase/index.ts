@@ -7,8 +7,10 @@ import type { Library } from "../../../shared/types/Library"
 type Language = "javascript" | "typescript"
 
 type Libraries = Library[]
-type GetConfigsBase = (language: Language, libraries?: Libraries) =>
-  EslintFlatConfig[] | EslintFlatConfig[][]
+type GetConfigsBase = (
+  language: Language,
+  libraries?: Libraries,
+) => EslintFlatConfig[] | EslintFlatConfig[][]
 
 export const getConfigsBase: GetConfigsBase = (language, libraries) => {
   switch (language) {

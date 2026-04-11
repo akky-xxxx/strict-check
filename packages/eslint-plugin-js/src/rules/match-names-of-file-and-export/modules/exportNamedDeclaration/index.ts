@@ -4,9 +4,7 @@ import { optionsSchema } from "../../schema/optionSchema"
 import type { MessageId, Option } from "../../types"
 import type { TSESLint, TSESTree } from "@typescript-eslint/utils"
 
-export type Context = Readonly<
-  TSESLint.RuleContext<MessageId, readonly Option[]>
->
+export type Context = Readonly<TSESLint.RuleContext<MessageId, readonly Option[]>>
 type ExportNamedDeclaration = (
   context: Context,
 ) => TSESLint.RuleFunction<TSESTree.ExportNamedDeclaration>

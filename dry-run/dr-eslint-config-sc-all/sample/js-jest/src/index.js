@@ -100,7 +100,7 @@ console.log(object1.a)
 // increment line
 
 // eslint-disable-next-line quotes
-const variable3 = 'double quotes'
+const variable3 = "double quotes"
 
 try {
   const random = Math.random()
@@ -219,7 +219,6 @@ const variable4_2 = Boolean("a")
 const variable5 = /(aaa)/
 const variable5_2 = /(?<id>aaa)/
 
-if(Math.random()){
-// eslint-disable-next-line brace-style
-}
-else console.log("")
+if (Math.random()) {
+  // eslint-disable-next-line brace-style
+} else console.log("")

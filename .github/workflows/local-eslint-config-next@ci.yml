@@ -8,17 +8,16 @@ on:
     branches:
       - local/**
     paths:
-      - '.node-version'
-      - 'config/**'
-      - 'dry-run/dr-eslint-config-sc-next/**'
-      - 'modules/shared-for-eslint-config/**'
-      - 'packages/eslint-config-next/**'
-      - 'prettier.config.js'
-      - 'pnpm-lock.yaml'
+      - ".node-version"
+      - "config/**"
+      - "dry-run/dr-eslint-config-sc-next/**"
+      - "modules/shared-for-eslint-config/**"
+      - "packages/eslint-config-next/**"
+      - "prettier.config.js"
+      - "pnpm-lock.yaml"
 
 env:
   WORKING_DIRECTORY: ./packages/eslint-config-next
-
 
 jobs:
   local-dry-run:
@@ -38,13 +37,11 @@ jobs:
       - name: Run lint
         run: pnpm lint
 
-
       - name: Run spell-check
         run: pnpm spell-check
 
       - name: Run type-check
         run: pnpm type-check
-
 
       - name: Run dry run
         run: pnpm dry-run

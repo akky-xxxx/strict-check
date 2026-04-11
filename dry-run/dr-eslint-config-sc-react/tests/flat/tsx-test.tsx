@@ -111,5 +111,8 @@ const text1ForReactTest5 = "jsx-one-expression-per-line"
 const text2ForReactTest5 = "jsx-one-expression-per-line"
 export const ReactTest5 = () => (
   // eslint-disable-next-line react/jsx-one-expression-per-line
-  <div>{text1ForReactTest5}{text2ForReactTest5}</div>
+  <div>
+    {text1ForReactTest5}
+    {text2ForReactTest5}
+  </div>
 )

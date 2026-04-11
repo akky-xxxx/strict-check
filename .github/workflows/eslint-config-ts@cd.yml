@@ -6,9 +6,9 @@ permissions:
 on:
   push:
     branches-ignore:
-      - '**'
+      - "**"
     tags:
-      - 'eslint-config-sc-ts/v*'
+      - "eslint-config-sc-ts/v*"
 
 env:
   WORKING_DIRECTORY: ./packages/eslint-config-ts
@@ -89,7 +89,7 @@ jobs:
         working-directory: ${{ env.WORKING_DIRECTORY }}
     strategy:
       matrix:
-        node-version: [ 20.x, 22.x, 24.x ]
+        node-version: [20.x, 22.x, 24.x]
     steps:
       - uses: actions/checkout@v4
 
@@ -103,7 +103,14 @@ jobs:
         run: pnpm dry-run
 
   publish:
-    needs: [check-publish, pre-check-lint, pre-check-spell-check, pre-check-type-check, pre-check-dry-run]
+    needs:
+      [
+        check-publish,
+        pre-check-lint,
+        pre-check-spell-check,
+        pre-check-type-check,
+        pre-check-dry-run,
+      ]
     runs-on: ubuntu-latest
     defaults:
       run:

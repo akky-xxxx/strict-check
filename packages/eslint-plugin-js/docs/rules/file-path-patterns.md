@@ -1,4 +1,5 @@
 # file-path-patterns
+
 - Check if file path follows regular expression
 
 ## Rule options
@@ -13,6 +14,7 @@
 ```
 
 ### `allowPatterns`
+
 - Specify the regular expression array for allows path
 - Deprecated: array of regular expression
 - Next standard: array of string that be able to hands overt to RegExp
@@ -20,9 +22,9 @@
 #### value: `[/index(?:\.(?:stories|test))?\.tsx?/]`
 
 Example of **invalid** :x: code when option values
+
 - `[/index(?:\.(?:stories|test))?\.tsx?/]`:
 - `["index(?:.(?:stories|test))?.tsx?/"]`:
-
 
 ```tsx
 // "sc-js/file-path-patterns": ["error", { "allowPatterns": [/index(?:\.(?:stories|test))?\.tsx?/] }]
@@ -32,6 +34,7 @@ import { useState } from "react"
 ```
 
 Example of **valid** :o: code when option values
+
 - `[/index(?:\.(?:stories|test))?\.tsx?/]`:
 - `["index(?:.(?:stories|test))?.tsx?"]`:
 

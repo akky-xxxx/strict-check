@@ -1,4 +1,4 @@
 packages:
-  - 'dry-run/*'
-  - 'modules/*'
-  - 'packages/*'
+  - "dry-run/*"
+  - "modules/*"
+  - "packages/*"

@@ -5,12 +5,8 @@ import { hasTarget } from "../hasTarget"
 import type { MessageId, Option } from "../../types"
 import type { TSESLint, TSESTree } from "@typescript-eslint/utils"
 
-export type Context = Readonly<
-  TSESLint.RuleContext<MessageId, readonly Option[]>
->
-type Identifier = (
-  context: Context,
-) => TSESLint.RuleFunction<TSESTree.Identifier>
+export type Context = Readonly<TSESLint.RuleContext<MessageId, readonly Option[]>>
+type Identifier = (context: Context) => TSESLint.RuleFunction<TSESTree.Identifier>
 
 export const identifier: Identifier = (context) => {
   const { options, report } = context
