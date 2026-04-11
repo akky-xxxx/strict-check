@@ -100,7 +100,7 @@ console.log(object1.a)
 // increment line
 
 // eslint-disable-next-line quotes
-const variable3 = "double quotes"
+const variable3 = 'double quotes'
 
 try {
   const random = Math.random()
@@ -138,9 +138,7 @@ array1.map((value) => {
 })
 
 // eslint-disable-next-line curly
-if (Math.random() < 0.5) {
-  console.log("a")
-}
+if (Math.random() < 0.5) console.log("a")
 
 if (Math.random() < 0.5) {
   console.log("a")
@@ -223,7 +221,7 @@ if (Math.random()) {
   console.log("")
   console.log("")
   // eslint-disable-next-line brace-style
-} else console.log("")
+}else console.log("")
 
 const object2 = {
   a: 1,
@@ -231,7 +229,7 @@ const object2 = {
 }
 
 // eslint-disable-next-line arrow-parens
-const arrowFunction1 = (a) => a
+const arrowFunction1 = a => a
 
 // eslint-disable-next-line import/no-empty-named-blocks, import/no-useless-path-segments, import/first
 import {} from "../flat/js-test-sub1"
