@@ -16,6 +16,6 @@ export const reactRules = {
   ],
   "react/jsx-fragments": [SEVERITY.ERROR, "element"],
   "react/jsx-no-leaked-render": jsxNoLeakedRender,
-  "react/jsx-one-expression-per-line": SEVERITY.ERROR,
+  "react/jsx-one-expression-per-line": [SEVERITY.ERROR, { allow: "single-child" }],
   "react/jsx-sort-props": jsxSortProps,
 } as const satisfies EslintRules

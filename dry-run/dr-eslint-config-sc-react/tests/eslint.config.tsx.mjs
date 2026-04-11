@@ -16,7 +16,7 @@ export default [
     },
     files: ["**/*.tsx"],
     rules: {
-      "react/jsx-one-expression-per-line": "error",
+      "react/jsx-one-expression-per-line": ["error", { allow: "single-child" }],
     },
   },
 ].flat()
