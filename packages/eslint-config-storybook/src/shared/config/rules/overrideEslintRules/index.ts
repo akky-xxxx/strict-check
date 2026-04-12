@@ -4,7 +4,7 @@ import type { EslintRules } from "../../../../libs/shared-for-config/types/Eslin
 
 export const overrideEslintRules = {
   /* eslint-disable @typescript-eslint/no-magic-numbers */
-  "complexity": SEVERITY.OFF,
+  complexity: SEVERITY.OFF,
   "max-lines": [SEVERITY.WARN, 200],
   "max-nested-callbacks": [SEVERITY.ERROR, 5],
   "max-statements": [SEVERITY.ERROR, 30],

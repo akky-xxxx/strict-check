@@ -5,12 +5,8 @@ import { hasTarget } from "../hasTarget"
 import type { MessageId, Option } from "../../types"
 import type { TSESLint, TSESTree } from "@typescript-eslint/utils"
 
-export type Context = Readonly<
-  TSESLint.RuleContext<MessageId, readonly Option[]>
->
-type JSXOpeningElement = (
-  context: Context,
-) => TSESLint.RuleFunction<TSESTree.JSXOpeningElement>
+export type Context = Readonly<TSESLint.RuleContext<MessageId, readonly Option[]>>
+type JSXOpeningElement = (context: Context) => TSESLint.RuleFunction<TSESTree.JSXOpeningElement>
 
 export const jsxOpeningElement: JSXOpeningElement = (context) => {
   const { options, report } = context
@@ -19,10 +15,7 @@ export const jsxOpeningElement: JSXOpeningElement = (context) => {
   const targets = parsedOptions.at(ARRAY_FIRST_INDEX)?.targets || []
 
   return (node) => {
-    if (
-      node.name.type !== "JSXMemberExpression" ||
-      node.name.object.type !== "JSXIdentifier"
-    ) {
+    if (node.name.type !== "JSXMemberExpression" || node.name.object.type !== "JSXIdentifier") {
       return
     }
 

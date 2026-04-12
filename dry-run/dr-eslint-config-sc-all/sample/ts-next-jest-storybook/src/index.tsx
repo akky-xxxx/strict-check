@@ -110,11 +110,9 @@ export const ReactTest4 = () => <ReactTest3 {...reactTest3Props} />
 export const ReactTest5 = () => (
   <div>
     {/* eslint-disable-next-line @typescript-eslint/no-magic-numbers */}
-    {(Math.random() * 10) % 2
-      ? (
-          // eslint-disable-next-line react/jsx-indent
-          <div>1</div>
-      )
-      : null}
+    {(Math.random() * 10) % 2 ? (
+      // eslint-disable-next-line react/jsx-indent
+        <div>1</div>
+    ) : null}
   </div>
 )

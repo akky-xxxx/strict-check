@@ -4,7 +4,7 @@ import fs from "fs"
 /* eslint-disable no-magic-numbers */
 const tagging = () => {
   const currentBranch = childProcess
-    .execSync("git branch -l | sed -e \"/^[^*] /d\"")
+    .execSync('git branch -l | sed -e "/^[^*] /d"')
     .toString()
     .replace("*", "")
     .trim()

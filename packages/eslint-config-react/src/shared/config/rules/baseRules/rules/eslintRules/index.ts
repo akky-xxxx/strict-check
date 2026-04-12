@@ -5,7 +5,7 @@ import type { EslintRules } from "../../../../../../libs/shared-for-config/types
 const INDENT_SIZE = 2
 
 export const eslintRules = {
-  "indent": [
+  indent: [
     SEVERITY.ERROR,
     INDENT_SIZE,
     {

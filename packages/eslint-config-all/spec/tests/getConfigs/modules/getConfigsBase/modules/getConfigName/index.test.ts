@@ -3,17 +3,8 @@ import { getConfigName } from "."
 describe("getConfigName", () => {
   describe("成功パターン", () => {
     it.each([
-      [
-        [
-          { name: "name-value1" },
-          { name: "name-value2" },
-        ],
-        "name-value1",
-      ],
-      [
-        { name: "name-value" },
-        "name-value",
-      ],
+      [[{ name: "name-value1" }, { name: "name-value2" }], "name-value1"],
+      [{ name: "name-value" }, "name-value"],
     ] as const)("input が %o の時、%s を返す", (input, output) => {
       expect(getConfigName(input)).toBe(output)
     })

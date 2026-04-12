@@ -1,4 +1,5 @@
 # individual-import
+
 - Import them individual
 
 ## Rule options
@@ -12,6 +13,7 @@
 ```
 
 ### `targets`
+
 - Specify check target modules
 
 #### value: `["react"]`

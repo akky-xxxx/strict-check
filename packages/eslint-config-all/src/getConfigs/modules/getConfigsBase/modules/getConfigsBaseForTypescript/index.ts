@@ -3,8 +3,9 @@ import type { EslintFlatConfig } from "../../../../../libs/shared-for-config/typ
 import type { Library } from "../../../../../shared/types/Library"
 
 type Libraries = Library[]
-type GetConfigsBaseForTypescript = (libraries?: Libraries) =>
-  EslintFlatConfig[] | EslintFlatConfig[][]
+type GetConfigsBaseForTypescript = (
+  libraries?: Libraries,
+) => EslintFlatConfig[] | EslintFlatConfig[][]
 
 // eslint-disable-next-line complexity, max-statements
 export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (libraries) => {
@@ -17,10 +18,7 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
     tsConfig.configs.unicornRecommendedRecords,
     tsConfig.configs.typescriptEslintStrictTypeCheckedRecords,
   )
-  const tsCommonRecords = [
-    tsConfig.configs.scJsCustomRecord,
-    tsConfig.configs.customRecord,
-  ]
+  const tsCommonRecords = [tsConfig.configs.scJsCustomRecord, tsConfig.configs.customRecord]
   if (libraries?.includes("next") || libraries?.includes("react")) {
     if (libraries?.includes("next")) {
       const nextConfig = require("eslint-config-sc-next")
@@ -38,10 +36,7 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
       reactConfig.configs.customRecordWithTypescript,
     )
   } else {
-    configBase.push(
-      tsConfig.configs.airbnbBaseRecords,
-      ...tsCommonRecords,
-    )
+    configBase.push(tsConfig.configs.airbnbBaseRecords, ...tsCommonRecords)
   }
 
   if (libraries?.includes("storybook")) {

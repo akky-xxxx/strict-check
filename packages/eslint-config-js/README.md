@@ -1,8 +1,10 @@
 # [eslint-config-sc-js](https://strict-check-series.pages.dev/packages/eslint-config-sc-js)
+
 - Strict Check config for eslint.
 - For Javascript.
 
 ## How to use
+
 ### Installation
 
 ```shell
@@ -36,17 +38,23 @@ export default [
 ```
 
 ## Used config, plugin ( alphabetical )
+
 ### config
+
 - [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)
 
 ### plugin
+
 - [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn)
 
 ## Recommended, but not includes
+
 ### plugin
+
 - [eslint-plugin-sonarjs](https://www.npmjs.com/package/eslint-plugin-sonarjs)
 - [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
 
 ## License
+
 - [MIT](LICENSE)
 - This includes the work that is distributed in the Apache License 2.0.

@@ -9,9 +9,9 @@ export const eslintRules = {
   /* eslint-disable @typescript-eslint/no-magic-numbers */
   "arrow-parens": [SEVERITY.ERROR, "always"],
   "brace-style": [SEVERITY.ERROR, "1tbs"],
-  "complexity": [SEVERITY.ERROR, 5],
-  "curly": [SEVERITY.WARN, "multi-or-nest"],
-  "indent": SEVERITY.OFF,
+  complexity: [SEVERITY.ERROR, 5],
+  curly: [SEVERITY.WARN, "multi-or-nest"],
+  indent: SEVERITY.OFF,
   "max-depth": [SEVERITY.ERROR, 3],
   "max-len": maxLength,
   "max-lines": [SEVERITY.ERROR, { max: 100 }],
@@ -24,7 +24,7 @@ export const eslintRules = {
   "no-magic-numbers": SEVERITY.WARN,
   "no-use-before-define": SEVERITY.ERROR,
   "prefer-named-capture-group": SEVERITY.WARN,
-  "quotes": [SEVERITY.ERROR, "double", { avoidEscape: true }],
+  quotes: [SEVERITY.ERROR, "double", { avoidEscape: true }],
   "sort-keys": [SEVERITY.WARN, "asc", { allowLineSeparatedGroups: true }],
   /* eslint-enable @typescript-eslint/no-magic-numbers */
 } as const satisfies EslintRules

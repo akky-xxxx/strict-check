@@ -1,9 +1,10 @@
-
 # [eslint-config-sc-ts](https://strict-check-series.pages.dev/packages/eslint-config-sc-ts)
+
 - Strict Check config for eslint.
 - For Typescript.
 
 ## How to use
+
 ### Installation
 
 ```shell
@@ -53,17 +54,23 @@ export default [
 ```
 
 ## Used config, plugin ( alphabetical )
+
 ### config
+
 - [eslint-config-sc-js](https://www.npmjs.com/package/eslint-config-sc-js)
 
 ### plugin
+
 - [typescript-eslint](https://www.npmjs.com/package/typescript-eslint)
 
 ## Recommended, but not includes
+
 ### plugin
+
 - [eslint-plugin-sonarjs](https://www.npmjs.com/package/eslint-plugin-sonarjs)
 - [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
 
 ## License
+
 - [MIT](LICENSE)
 - This includes the work that is distributed in the Apache License 2.0.

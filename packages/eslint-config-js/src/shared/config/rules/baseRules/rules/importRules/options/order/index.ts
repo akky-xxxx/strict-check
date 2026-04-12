@@ -7,14 +7,8 @@ export const order = [
   {
     "newlines-between": "always",
 
-    "alphabetize": { order: "asc" },
+    alphabetize: { order: "asc" },
 
-    "groups": [
-      ["builtin", "external"],
-      "internal",
-      ["parent", "sibling", "index"],
-      "object",
-      "type",
-    ],
+    groups: [["builtin", "external"], "internal", ["parent", "sibling", "index"], "object", "type"],
   },
 ] as const satisfies EslintRuleLevelAndOptions

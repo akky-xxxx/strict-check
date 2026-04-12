@@ -1,8 +1,10 @@
 # [eslint-config-sc-jest](https://strict-check-series.pages.dev/packages/eslint-config-sc-jest)
+
 - Strict Check config for eslint.
 - For Jest.
 
 ## How to use
+
 ### Installation
 
 ```shell
@@ -31,8 +33,11 @@ export default [
 ```
 
 ## Used config, plugin ( alphabetical )
+
 ### plugin
+
 - [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest)
 
 ## License
+
 - [MIT](LICENSE)

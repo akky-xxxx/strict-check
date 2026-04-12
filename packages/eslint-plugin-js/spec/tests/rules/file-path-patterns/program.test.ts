@@ -7,7 +7,8 @@ describe("file-path-patterns.program", () => {
       // @ts-ignore
       program({
         options: [],
-      })).toThrow("Invalid options, please check it.")
+      }),
+    ).toThrow("Invalid options, please check it.")
   })
 
   it("Not defined option.allowPatterns", () => {
@@ -16,6 +17,7 @@ describe("file-path-patterns.program", () => {
       // @ts-ignore
       program({
         options: [{}],
-      })).toThrow("Invalid options, please check it.")
+      }),
+    ).toThrow("Invalid options, please check it.")
   })
 })

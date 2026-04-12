@@ -6,9 +6,9 @@ permissions:
 on:
   push:
     branches-ignore:
-      - '**'
+      - "**"
     tags:
-      - 'eslint-plugin-sc-js/v*'
+      - "eslint-plugin-sc-js/v*"
 
 env:
   WORKING_DIRECTORY: ./packages/eslint-plugin-js
@@ -89,7 +89,7 @@ jobs:
         working-directory: ${{ env.WORKING_DIRECTORY }}
     strategy:
       matrix:
-        node-version: [ 20.x, 22.x, 24.x ]
+        node-version: [20.x, 22.x, 24.x]
     steps:
       - uses: actions/checkout@v4
 
@@ -110,7 +110,7 @@ jobs:
         working-directory: ${{ env.WORKING_DIRECTORY }}
     strategy:
       matrix:
-        node-version: [ 20.x, 22.x, 24.x ]
+        node-version: [20.x, 22.x, 24.x]
     steps:
       - uses: actions/checkout@v4
 
@@ -124,7 +124,15 @@ jobs:
         run: pnpm test
 
   publish:
-    needs: [check-publish, pre-check-lint, pre-check-spell-check, pre-check-type-check, pre-check-dry-run, pre-check-test]
+    needs:
+      [
+        check-publish,
+        pre-check-lint,
+        pre-check-spell-check,
+        pre-check-type-check,
+        pre-check-dry-run,
+        pre-check-test,
+      ]
     runs-on: ubuntu-latest
     defaults:
       run:

@@ -6,10 +6,10 @@
     "dry-run:flat": "eslint -c tests/eslint.config.mjs tests/flat --max-warnings 0",
     "fix": "run-p \"fix:*\" -c",
     "fix:pack": "fixpack",
-    "fix:prettier": "prettier \"tests/*\" !\"./tests/flat/*\" -w -u",
+    "fix:prettier": "prettier \".\" --ignore-path ../../.prettierignore -w -u",
     "lint": "run-p \"lint:*\" -c",
     "lint:pack": "fixpack --dryRun",
-    "lint:prettier": "prettier \"tests/*\" !\"./tests/flat/*\" -c -u",
+    "lint:prettier": "prettier \".\" --ignore-path ../../.prettierignore -c -u",
     "prepare": "run-p \"prepare:*\"",
     "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
     "prepare:dependence-build": "pnpm -r run build"

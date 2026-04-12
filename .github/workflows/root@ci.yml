@@ -10,14 +10,14 @@ on:
       - feature/**
       - main
     paths:
-      - '.node-version'
-      - 'config/**'
-      - 'cspell.config.js'
-      - 'eslint.config.mjs'
-      - 'packages/eslint-plugin-js/**'
-      - 'prettier.config.js'
-      - 'scripts/**'
-      - 'pnpm-lock.yaml'
+      - ".node-version"
+      - "config/**"
+      - "cspell.config.js"
+      - "eslint.config.mjs"
+      - "packages/eslint-plugin-js/**"
+      - "prettier.config.js"
+      - "scripts/**"
+      - "pnpm-lock.yaml"
 
 jobs:
   lint:

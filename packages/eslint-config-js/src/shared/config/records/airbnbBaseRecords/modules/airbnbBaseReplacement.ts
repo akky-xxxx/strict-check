@@ -7,9 +7,9 @@ import type { EslintRules } from "../../../../../libs/shared-for-config/types/Es
 const eslintRulesFromAirbnbBase = {
   /* eslint-disable @typescript-eslint/no-magic-numbers */
   "array-callback-return": [SEVERITY.ERROR, { allowImplicit: true }],
-  "camelcase": [SEVERITY.ERROR, { ignoreDestructuring: false, properties: "never" }],
-  "complexity": [SEVERITY.OFF, 20],
-  "curly": [SEVERITY.ERROR, "multi-line"],
+  camelcase: [SEVERITY.ERROR, { ignoreDestructuring: false, properties: "never" }],
+  complexity: [SEVERITY.OFF, 20],
+  curly: [SEVERITY.ERROR, "multi-line"],
   "max-depth": [SEVERITY.OFF, 4],
   "max-lines": [SEVERITY.OFF, { max: 300, skipBlankLines: true, skipComments: true }],
   "max-lines-per-function": [
@@ -21,10 +21,7 @@ const eslintRulesFromAirbnbBase = {
   "max-statements": [SEVERITY.OFF, 10],
   "no-confusing-arrow": [SEVERITY.ERROR, { allowParens: true }],
   "no-console": SEVERITY.WARN,
-  "no-implicit-coercion": [
-    SEVERITY.OFF,
-    { allow: [], boolean: false, number: true, string: true },
-  ],
+  "no-implicit-coercion": [SEVERITY.OFF, { allow: [], boolean: false, number: true, string: true }],
   "no-magic-numbers": [
     SEVERITY.OFF,
     { detectObjects: false, enforceConst: true, ignore: [], ignoreArrayIndexes: true },

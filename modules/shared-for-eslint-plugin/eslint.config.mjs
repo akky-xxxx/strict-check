@@ -1,3 +1,4 @@
+import eslintConfigPrettier from "eslint-config-prettier/flat"
 import { BASE_RECORDS } from "strict-check/config/eslint/records/BASE_RECORDS/index.mjs"
 import { CONFIGS_RECORD } from "strict-check/config/eslint/records/CONFIGS_RECORD/index.mjs"
 import { ESLINT_CONFIG_RECORD } from "strict-check/config/eslint/records/ESLINT_CONFIG_RECORD/index.mjs"
@@ -23,6 +24,7 @@ const CONFIG = [
       },
     },
   },
+  eslintConfigPrettier,
 ]
 
 export default CONFIG

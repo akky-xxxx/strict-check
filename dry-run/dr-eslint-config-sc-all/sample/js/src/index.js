@@ -219,7 +219,7 @@ const variable4_2 = Boolean("a")
 const variable5 = /(aaa)/
 const variable5_2 = /(?<id>aaa)/
 
-if(Math.random()){
-// eslint-disable-next-line brace-style
+if (Math.random()) {
+  // eslint-disable-next-line brace-style
 }
 else console.log("")
