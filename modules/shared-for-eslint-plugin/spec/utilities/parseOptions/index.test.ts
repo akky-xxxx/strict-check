@@ -12,8 +12,6 @@ describe("parseOptions", () => {
 
   it("when option is invalid, and error is ZodError, throw error message", () => {
     const option = [0]
-    expect(() => parseOptions(option, schema)).toThrow(
-      "Invalid options, please check it.",
-    )
+    expect(() => parseOptions(option, schema)).toThrow("Invalid options, please check it.")
   })
 })

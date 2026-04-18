@@ -47,6 +47,7 @@ export const ReactTest1: FC<ReactTest1Props> = (props) => {
       <div>{Boolean(count) && title}</div>
       <div>{count ? title : null}</div>
       <div>{count ? title : empty}</div>
+      {/* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-conversion */}
       {Boolean(bool) && "1"}
     </>
   )
@@ -109,6 +110,6 @@ export const ReactTest4 = () => <ReactTest3 {...reactTest3Props} />
 const text1ForReactTest5 = "jsx-one-expression-per-line"
 const text2ForReactTest5 = "jsx-one-expression-per-line"
 export const ReactTest5 = () => (
-  // eslint-disable-next-line @stylistic/jsx-one-expression-per-line
+  // eslint-disable-next-line react/jsx-one-expression-per-line
   <div>{text1ForReactTest5}{text2ForReactTest5}</div>
 )

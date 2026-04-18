@@ -8,14 +8,14 @@ on:
     branches:
       - local/**
     paths:
-      - '.node-version'
-      - 'config/**'
-      - 'cspell.config.js'
-      - 'eslint.config.mjs'
-      - 'packages/eslint-plugin-js/**'
-      - 'prettier.config.js'
-      - 'scripts/**'
-      - 'yarn.lock'
+      - ".node-version"
+      - "config/**"
+      - "cspell.config.js"
+      - "eslint.config.mjs"
+      - "packages/eslint-plugin-js/**"
+      - "prettier.config.js"
+      - "scripts/**"
+      - "pnpm-lock.yaml"
 
 jobs:
   lint:
@@ -27,10 +27,10 @@ jobs:
         uses: ./.github/actions/setup-single-node-version
 
       - name: Run post-install
-        run: yarn postinstall
+        run: pnpm postinstall
 
       - name: Run lint
-        run: yarn lint
+        run: pnpm lint
 
       - name: Run spell-check
-        run: yarn spell-check
+        run: pnpm spell-check

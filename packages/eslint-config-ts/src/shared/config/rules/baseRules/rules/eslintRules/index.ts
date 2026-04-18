@@ -6,6 +6,7 @@ export const eslintRules = {
   "default-case": SEVERITY.OFF, // check by @typescript-eslint/switch-exhaustiveness-check
   "dot-notation": SEVERITY.OFF,
   "max-params": SEVERITY.OFF,
+  "no-confusing-arrow": [SEVERITY.ERROR, { allowParens: true }],
   "no-magic-numbers": SEVERITY.OFF,
   "no-multiple-empty-lines": SEVERITY.OFF,
   "no-shadow": SEVERITY.OFF,

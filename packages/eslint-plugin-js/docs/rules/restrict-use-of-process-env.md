@@ -1,4 +1,5 @@
 # restrict-use-of-process-env
+
 - For the centralized manage the env
 
 ## Rule options
@@ -25,8 +26,8 @@ Example of **valid** :o: code
 // const file
 /* eslint-disable sc-js/restrict-use-of-process-env */
 export const Environment = {
-  NODE_ENV: process.env.NODE_ENV || "development",
-  PORT: process.env.PORT || 3000,
+    NODE_ENV: process.env.NODE_ENV || "development",
+    PORT: process.env.PORT || 3000,
 }
 
 // side to use

@@ -47,6 +47,7 @@ export const ReactTest1: FC<ReactTest1Props> = (props) => {
       <div>{Boolean(count) && title}</div>
       <div>{count ? title : null}</div>
       <div>{count ? title : empty}</div>
+      {/* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-conversion */}
       {Boolean(bool) && "1"}
     </>
   )

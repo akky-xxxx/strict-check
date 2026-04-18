@@ -1,10 +1,11 @@
-/* eslint-disable global-require, import/no-extraneous-dependencies, @typescript-eslint/no-require-imports */
+/* eslint-disable global-require, @typescript-eslint/no-require-imports */
 import type { EslintFlatConfig } from "../../../../../libs/shared-for-config/types/EslintFlatConfig"
 import type { Library } from "../../../../../shared/types/Library"
 
 type Libraries = Library[]
-type GetConfigsBaseForJavascript = (libraries?: Libraries) =>
-  EslintFlatConfig[] | EslintFlatConfig[][]
+type GetConfigsBaseForJavascript = (
+  libraries?: Libraries,
+) => EslintFlatConfig[] | EslintFlatConfig[][]
 
 // eslint-disable-next-line complexity, max-statements
 export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (libraries) => {
@@ -12,7 +13,7 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
   const jsConfig = require("eslint-config-sc-js")
   configBase.push(
     jsConfig.configs.initialRecord,
-    jsConfig.configs.stylisticRecord,
+    jsConfig.configs.importRecommendedRecord,
     jsConfig.configs.eslintRecommendedRecord,
     jsConfig.configs.unicornRecommendedRecords,
   )
@@ -32,10 +33,7 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
       reactConfig.configs.customRecord,
     )
   } else {
-    configBase.push(
-      jsConfig.configs.airbnbBaseRecords,
-      jsConfig.configs.customRecord,
-    )
+    configBase.push(jsConfig.configs.airbnbBaseRecords, jsConfig.configs.customRecord)
   }
 
   if (libraries?.includes("storybook")) {
@@ -55,6 +53,5 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
     )
   }
 
-  configBase.push(jsConfig.configs.resetRecordForStylistic)
   return configBase
 }

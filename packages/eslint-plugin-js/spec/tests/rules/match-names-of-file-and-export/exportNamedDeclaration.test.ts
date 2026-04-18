@@ -7,7 +7,8 @@ describe("match-names-of-file-and-export.exportNamedDeclaration", () => {
       // @ts-ignore
       exportNamedDeclaration({
         options: [],
-      })).toThrow("Invalid options, please check it.")
+      }),
+    ).toThrow("Invalid options, please check it.")
   })
 
   it("Not defined option.captures", () => {
@@ -16,6 +17,7 @@ describe("match-names-of-file-and-export.exportNamedDeclaration", () => {
       // @ts-ignore
       exportNamedDeclaration({
         options: [{}],
-      })).toThrow("Invalid options, please check it.")
+      }),
+    ).toThrow("Invalid options, please check it.")
   })
 })

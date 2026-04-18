@@ -1,12 +1,8 @@
 import type { MessageId, Option } from "../../types"
 import type { TSESLint, TSESTree } from "@typescript-eslint/utils"
 
-export type Context = Readonly<
-  TSESLint.RuleContext<MessageId, readonly Option[]>
->
-type CheckObjectPatten = (
-  context: Context,
-) => TSESLint.RuleFunction<TSESTree.ObjectPattern>
+export type Context = Readonly<TSESLint.RuleContext<MessageId, readonly Option[]>>
+type CheckObjectPatten = (context: Context) => TSESLint.RuleFunction<TSESTree.ObjectPattern>
 
 export const checkObjectPatten: CheckObjectPatten = (context) => (node) => {
   if (
@@ -17,7 +13,7 @@ export const checkObjectPatten: CheckObjectPatten = (context) => (node) => {
     return
   }
 
-  const hasEnv = node.properties.some((property) => {
+  const hasEnv = node.properties.some((property: TSESTree.ObjectPattern["properties"][number]) => {
     if (property.type !== "Property" || property.key.type !== "Identifier") {
       return false
     }

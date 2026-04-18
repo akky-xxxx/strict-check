@@ -4,6 +4,7 @@ import eslint from "@eslint/js"
 // import { CONFIGS_RECORD } from "strict-check/config/eslint/records/CONFIGS_RECORD/index.mjs"
 // import { ESLINT_CONFIG_RECORD } from "strict-check/config/eslint/records/ESLINT_CONFIG_RECORD/index.mjs"
 import { IGNORE_RECORD } from "strict-check/config/eslint/records/IGNORE_RECORD/index.mjs"
+import eslintConfigPrettier from "eslint-config-prettier/flat"
 // import { SCRIPTS_RECORD } from "strict-check/config/eslint/records/SCRIPTS_RECORD/index.mjs"
 // import { TEST_RECORD } from "strict-check/config/eslint/records/TEST_RECORD/index.mjs"
 // import { TYPESCRIPT_RECORDS } from "strict-check/config/eslint/records/TYPESCRIPT_RECORDS/index.mjs"
@@ -36,6 +37,7 @@ const CONFIG = [
       "no-undef": 0,
     },
   },
+  eslintConfigPrettier,
 ]
 
 export default CONFIG

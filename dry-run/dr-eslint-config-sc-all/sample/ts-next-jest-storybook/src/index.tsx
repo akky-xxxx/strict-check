@@ -47,6 +47,7 @@ export const ReactTest1: FC<ReactTest1Props> = (props) => {
       <div>{Boolean(count) && title}</div>
       <div>{count ? title : null}</div>
       <div>{count ? title : empty}</div>
+      {/* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-conversion */}
       {Boolean(bool) && "1"}
     </>
   )
@@ -109,11 +110,9 @@ export const ReactTest4 = () => <ReactTest3 {...reactTest3Props} />
 export const ReactTest5 = () => (
   <div>
     {/* eslint-disable-next-line @typescript-eslint/no-magic-numbers */}
-    {(Math.random() * 10) % 2
-      ? (
-          // eslint-disable-next-line react/jsx-indent
-          <div>1</div>
-      )
-      : null}
+    {(Math.random() * 10) % 2 ? (
+      // eslint-disable-next-line react/jsx-indent
+        <div>1</div>
+    ) : null}
   </div>
 )

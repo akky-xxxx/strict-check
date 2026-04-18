@@ -1,3 +1,0 @@
-{
-  "Exclude": [".husky", "dry-run", "out", "packages", "modules"]
-}

@@ -11,21 +11,21 @@
     "dry-run:ts-next-jest-storybook": "eslint -c sample/ts-next-jest-storybook/eslint.config.mjs \"sample/ts-next-jest-storybook/src/\" --max-warnings 0",
     "fix": "run-p \"fix:*\" -c",
     "fix:pack": "fixpack",
-    "fix:prettier": "prettier \"**/tsconfig.json\" -w -u",
+    "fix:prettier": "prettier \".\" --ignore-path ../../.prettierignore -w -u",
     "lint": "run-p \"lint:*\" -c",
     "lint:pack": "fixpack --dryRun",
-    "lint:prettier": "prettier \"**/tsconfig.json\"  -c -u",
+    "lint:prettier": "prettier \".\" --ignore-path ../../.prettierignore -c -u",
     "prepare": "run-p \"prepare:*\"",
     "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
-    "prepare:dependence-build": "yarn workspaces foreach -R -ipt run build"
+    "prepare:dependence-build": "pnpm -r run build"
   },
   "devDependencies": {
-    "eslint": "^9.24.0",
+    "eslint": "^9.30.0",
     "eslint-config-sc-all": "workspace:^",
     "fixpack": "^4.0.0",
-    "jest": "^29.7.0",
-    "npm-run-all2": "^7.0.2",
-    "prettier": "^3.5.3"
+    "jest": "^30.0.3",
+    "npm-run-all2": "^8.0.4",
+    "prettier": "^3.6.2"
   },
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "pnpm@10.11.0"
 }

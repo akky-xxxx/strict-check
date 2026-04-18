@@ -1,6 +1,5 @@
 import { FlatCompat } from "@eslint/eslintrc"
 import eslint from "@eslint/js"
-import stylistic from "@stylistic/eslint-plugin"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 
@@ -13,13 +12,8 @@ const compat = new FlatCompat({
 export const BASE_RECORDS = [
   eslint.configs.recommended,
   ...compat.extends("eslint-config-airbnb-base"),
-  stylistic.configs["recommended-flat"],
   {
-    ignores: [
-      "{modules,packages}/*",
-      ".yarn",
-      "node_modules/**",
-    ],
+    ignores: ["{modules,packages}/*", ".pnpm-store", "node_modules/**"],
   },
   {
     languageOptions: {

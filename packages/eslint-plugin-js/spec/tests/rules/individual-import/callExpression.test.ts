@@ -7,7 +7,8 @@ describe("individual-import.callExpression", () => {
       // @ts-ignore
       callExpression({
         options: [],
-      })).toThrow("Invalid options, please check it.")
+      }),
+    ).toThrow("Invalid options, please check it.")
   })
 
   it("Not defined option.targets", () => {
@@ -16,6 +17,7 @@ describe("individual-import.callExpression", () => {
       // @ts-ignore
       callExpression({
         options: [{}],
-      })).toThrow("Invalid options, please check it.")
+      }),
+    ).toThrow("Invalid options, please check it.")
   })
 })

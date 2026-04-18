@@ -1,10 +1,11 @@
-/* eslint-disable global-require, import/no-extraneous-dependencies, @typescript-eslint/no-require-imports */
+/* eslint-disable global-require, @typescript-eslint/no-require-imports */
 import type { EslintFlatConfig } from "../../../../../libs/shared-for-config/types/EslintFlatConfig"
 import type { Library } from "../../../../../shared/types/Library"
 
 type Libraries = Library[]
-type GetConfigsBaseForTypescript = (libraries?: Libraries) =>
-  EslintFlatConfig[] | EslintFlatConfig[][]
+type GetConfigsBaseForTypescript = (
+  libraries?: Libraries,
+) => EslintFlatConfig[] | EslintFlatConfig[][]
 
 // eslint-disable-next-line complexity, max-statements
 export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (libraries) => {
@@ -12,16 +13,12 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
   const tsConfig = require("eslint-config-sc-ts")
   configBase.push(
     tsConfig.configs.initialRecord,
-    tsConfig.configs.stylisticRecord,
+    tsConfig.configs.importRecommendedRecord,
     tsConfig.configs.eslintRecommendedRecord,
     tsConfig.configs.unicornRecommendedRecords,
     tsConfig.configs.typescriptEslintStrictTypeCheckedRecords,
-    tsConfig.configs.typescriptEslintStylisticTypeCheckedRecords,
   )
-  const tsCommonRecords = [
-    tsConfig.configs.scJsCustomRecord,
-    tsConfig.configs.customRecord,
-  ]
+  const tsCommonRecords = [tsConfig.configs.scJsCustomRecord, tsConfig.configs.customRecord]
   if (libraries?.includes("next") || libraries?.includes("react")) {
     if (libraries?.includes("next")) {
       const nextConfig = require("eslint-config-sc-next")
@@ -39,10 +36,7 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
       reactConfig.configs.customRecordWithTypescript,
     )
   } else {
-    configBase.push(
-      tsConfig.configs.airbnbBaseRecords,
-      ...tsCommonRecords,
-    )
+    configBase.push(tsConfig.configs.airbnbBaseRecords, ...tsCommonRecords)
   }
 
   if (libraries?.includes("storybook")) {
@@ -62,6 +56,5 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
     )
   }
 
-  configBase.push(tsConfig.configs.resetRecordForStylistic)
   return configBase
 }

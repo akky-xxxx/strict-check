@@ -1,10 +1,7 @@
 import { individualImport } from "../../../../src/rules/individual-import"
 import { tester } from "../utils/tester"
 
-import type {
-  MessageId,
-  Option,
-} from "../../../../src/rules/individual-import/types"
+import type { MessageId, Option } from "../../../../src/rules/individual-import/types"
 
 const targets = ["react"]
 

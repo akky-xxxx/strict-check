@@ -3,45 +3,43 @@
   "version": "0.0.1",
   "scripts": {
     "check-code": "run-p lint spell-check type-check test",
-    "dev": "chokidar \"src/**\" -c \"yarn type-check && yarn exports\"",
+    "dev": "chokidar \"src/**\" -c \"pnpm type-check && pnpm exports\"",
     "exports": "run-p \"exports:*\"",
     "exports:copy-shared": "node ../../scripts/copy-shared/index.js",
     "fix": "run-p \"fix:*\" -c",
     "fix:eslint": "eslint \"./\" --fix --max-warnings 0",
     "fix:pack": "fixpack",
-    "fix:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -w -u",
+    "fix:prettier": "prettier \".\" --ignore-path ../../.prettierignore -w -u",
     "lint": "run-p \"lint:*\" -c",
-    "lint:editorconfig-checker": "ec",
     "lint:eslint": "eslint \"./\" --max-warnings 0",
     "lint:pack": "fixpack --dryRun",
-    "lint:prettier": "prettier \"./*.json\" \"./**/*.json\" --ignore-path ../../.gitignore -c -u",
-    "pre-check-code": "yarn workspaces foreach -R -ipt run build",
+    "lint:prettier": "prettier \".\" --ignore-path ../../.prettierignore -c -u",
+    "pre-check-code": "pnpm -r run build",
     "spell-check": "cspell lint --no-progress \"./{spec,src}/**/*.ts\" \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
     "test": "vitest run --coverage",
     "type-check": "tsc"
   },
   "dependencies": {
-    "zod": "^3.24.2"
+    "zod": "^3.25.67"
   },
   "devDependencies": {
-    "@eslint/js": "^9.24.0",
-    "@stylistic/eslint-plugin": "^4.2.0",
+    "@eslint/js": "^9.30.0",
     "@tsconfig/strictest": "^2.0.5",
-    "@typescript-eslint/utils": "^8.29.0",
-    "@vitest/coverage-v8": "^3.1.1",
+    "@typescript-eslint/utils": "^8.35.1",
+    "@vitest/coverage-v8": "^3.2.4",
     "chokidar-cli": "^3.0.0",
-    "cspell": "^8.18.1",
-    "editorconfig-checker": "^6.0.1",
-    "eslint": "^9.24.0",
+    "cspell": "^9.1.2",
+    "eslint": "^9.30.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.31.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
     "fixpack": "^4.0.0",
-    "npm-run-all2": "^7.0.2",
-    "prettier": "^3.5.3",
-    "strict-check": ":*",
+    "npm-run-all2": "^8.0.4",
+    "prettier": "^3.6.2",
+    "strict-check": "workspace:^",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.29.0",
-    "vitest": "^3.1.1"
+    "typescript-eslint": "^8.35.1",
+    "vitest": "^3.2.4"
   },
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "pnpm@10.11.0"
 }
