@@ -10,6 +10,12 @@ runs:
     - run: corepack enable
       shell: bash
 
+    - name: Set up .npmrc
+      run: echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc
+      env:
+        NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
+      shell: bash
+
     - name: Run prepare
       run: pnpm prepare
       working-directory: ${{ inputs.working-directory }}
