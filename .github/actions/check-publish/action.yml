@@ -14,7 +14,11 @@ runs:
       shell: bash
 
     - name: Set up .npmrc
-      run: echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc
+      run: |
+        cat > ~/.npmrc <<EOF
+        registry=https://registry.npmjs.org/
+        //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}
+        EOF
       env:
         NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
       shell: bash
