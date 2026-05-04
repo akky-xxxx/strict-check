@@ -15,6 +15,10 @@ runs:
     - run: corepack enable
       shell: bash
 
+    - name: Debug .npmrc
+      run: cat ~/.npmrc || echo ".npmrc not found"
+      shell: bash
+
     - name: Run prepare
       run: pnpm prepare
       working-directory: ${{ inputs.working-directory }}
@@ -26,7 +30,7 @@ runs:
       shell: bash
 
     - name: Publish
-      run: pnpm publish --no-git-checks
+      run: pnpm publish --no-git-checks --verbose
       working-directory: ${{ inputs.working-directory }}
       env:
         NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
