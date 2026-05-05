@@ -16,6 +16,4 @@ runs:
 
     - name: Can publish
       run: pnpm dlx can-npm-publish --verbose
-      env:
-        NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
       shell: bash

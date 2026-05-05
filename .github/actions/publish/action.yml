@@ -28,6 +28,4 @@ runs:
     - name: Publish
       run: pnpm publish --provenance --no-git-checks
       working-directory: ${{ inputs.working-directory }}
-      env:
-        NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
       shell: bash
