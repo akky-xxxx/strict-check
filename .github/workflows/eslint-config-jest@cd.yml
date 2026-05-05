@@ -2,6 +2,7 @@ name: eslint-config-jest@CD
 
 permissions:
   contents: read
+  id-token: write
 
 on:
   push:

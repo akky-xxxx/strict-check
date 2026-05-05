@@ -72,5 +72,8 @@
   "peerDependencies": {
     "eslint": "^9.0.0"
   },
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.11.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }

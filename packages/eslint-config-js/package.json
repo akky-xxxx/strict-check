@@ -64,5 +64,8 @@
     "eslint-plugin-import": ">=2.32.0",
     "eslint-plugin-unicorn": ">=59.0.1"
   },
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.11.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
