@@ -12,6 +12,14 @@ runs:
         node-version-file: ./.node-version
         registry-url: https://registry.npmjs.org/
 
+    - name: Configure npm auth
+      run: |
+        echo "registry=https://registry.npmjs.org/" > ~/.npmrc
+        echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
+      env:
+        NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
+      shell: bash
+
     - run: corepack enable
       shell: bash
 
@@ -26,6 +34,6 @@ runs:
       shell: bash
 
     - name: Publish
-      run: pnpm publish --provenance --no-git-checks
+      run: pnpm publish --no-git-checks
       working-directory: ${{ inputs.working-directory }}
       shell: bash
