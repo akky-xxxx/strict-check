@@ -96,5 +96,8 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.11.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
