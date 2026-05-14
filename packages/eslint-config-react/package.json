@@ -69,8 +69,5 @@
     "eslint-config-sc-ts": ">=0.1.2 <1",
     "eslint-plugin-jsx-a11y": ">=6.10.2"
   },
-  "packageManager": "pnpm@10.11.0",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  }
+  "packageManager": "pnpm@10.11.0"
 }

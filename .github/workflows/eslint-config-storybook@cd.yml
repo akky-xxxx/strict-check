@@ -2,7 +2,6 @@ name: eslint-config-storybook@CD
 
 permissions:
   contents: read
-  id-token: write
 
 on:
   push:
