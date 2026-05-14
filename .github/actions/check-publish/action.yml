@@ -9,13 +9,23 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version-file: ./.node-version
-        registry-url: https://registry.npmjs.org/
 
     - run: corepack enable
+      shell: bash
+
+    - name: Set up .npmrc
+      run: |
+        cat > ~/.npmrc <<EOF
+        registry=https://registry.npmjs.org/
+        //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}
+        EOF
+      env:
+        NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
       shell: bash
 
     - name: Can publish
       run: pnpm dlx can-npm-publish --verbose
       env:
+        NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
         NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
       shell: bash
