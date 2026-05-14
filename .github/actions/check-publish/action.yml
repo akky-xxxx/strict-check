@@ -13,8 +13,15 @@ runs:
     - run: corepack enable
       shell: bash
 
-    - name: Can publish
-      run: npx can-npm-publish --verbose
+    - name: Set up .npmrc
+      run: echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc
       env:
         NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
+      shell: bash
+
+    - name: Can publish
+      run: pnpm dlx can-npm-publish --verbose
+      env:
+        NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
+        NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
       shell: bash
