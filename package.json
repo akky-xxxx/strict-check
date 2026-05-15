@@ -18,10 +18,6 @@
   "bugs": "https://github.com/akky-xxxx/strict-check/issues",
   "homepage": "https://github.com/akky-xxxx/strict-check",
   "license": "MIT",
-  "engines": {
-    "node": ">=22.14.0",
-    "npm": ">=11.5.1"
-  },
   "scripts": {
     "check-code": "run-p lint spell-check",
     "fix": "run-p \"fix:*\" -c",

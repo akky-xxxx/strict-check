@@ -65,9 +65,5 @@
     "eslint-import-resolver-typescript": ">=4.4.4",
     "typescript-eslint": ">=8.35.1"
   },
-  "packageManager": "pnpm@10.11.0",
-  "engines": {
-    "node": ">=22.14.0",
-    "npm": ">=11.5.1"
-  }
+  "packageManager": "pnpm@10.11.0"
 }

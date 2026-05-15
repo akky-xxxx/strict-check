@@ -4,9 +4,13 @@ runs:
     - name: Use Node.js
       uses: actions/setup-node@v4
       with:
-        node-version-file: ./.node-version
+        node-version: 22.14.0
 
     - run: corepack enable
+      shell: bash
+
+    - name: Install npm for publishing
+      run: npm install -g npm@^11.5.1
       shell: bash
 
     - name: Can publish
