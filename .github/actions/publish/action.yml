@@ -1,19 +1,17 @@
 inputs:
-  npm-token:
-    required: true
   working-directory:
     required: true
 
 runs:
   using: composite
   steps:
-    - run: corepack enable
-      shell: bash
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: ./.node-version
+        registry-url: https://registry.npmjs.org
 
-    - name: Set up .npmrc
-      run: echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc
-      env:
-        NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
+    - run: corepack enable
       shell: bash
 
     - name: Run prepare
@@ -27,9 +25,6 @@ runs:
       shell: bash
 
     - name: Publish
-      run: pnpm publish --no-git-checks
+      run: pnpm publish --no-git-checks --provenance --access public
       working-directory: ${{ inputs.working-directory }}
-      env:
-        NPM_AUTH_TOKEN: ${{ inputs.npm-token }}
-        NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
       shell: bash
