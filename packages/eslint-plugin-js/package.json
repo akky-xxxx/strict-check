@@ -72,5 +72,9 @@
   "peerDependencies": {
     "eslint": "^9.0.0"
   },
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=22.14.0",
+    "npm": ">=11.5.1"
+  }
 }
