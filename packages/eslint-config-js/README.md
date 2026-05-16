@@ -1,60 +1,15 @@
-# [eslint-config-sc-js](https://strict-check-series.pages.dev/packages/eslint-config-sc-js)
+<p>
+  SC ( Strict Check ) Series is the packages for static analysis that keep maintainability on operation and development for the frontend developer.
+</p>
 
-- Strict Check config for eslint.
-- For Javascript.
+<p>
+  These packages maybe able to <strong>reduce</strong> the <strong>difference notation</strong> and <strong>Confusing implementation</strong> from multiple developers.
+</p>
 
-## How to use
+<p>
+  These packages recommended to the products that need to be robust, but not recommended the teams that includes beginner, because these includes so strict and niche rule. Recommended adjust rule, when if introduce these package into the teams that includes beginner.
+</p>
 
-### Installation
-
-```shell
-$ pnpm add -D eslint-config-sc-js
-```
-
-### Use for `eslint.config.mjs`
-
-```javascript
-// eslint.config.mjs
-import eslintConfigSCJs from "eslint-config-sc-js"
-
-export default [
-  eslintConfigSCJs.configs.recommended,
-].flat()
-
-// Below is equal
-export default [
-  eslintConfigSCJs.configs.initialRecord,
-  eslintConfigSCJs.configs.eslintRecommendedRecord,
-  eslintConfigSCJs.configs.unicornRecommendedRecords,
-
-  // This use eslint-config-airbnb-base
-  // For react project, this replace to eslint-config-airbnb
-  eslintConfigSCJs.configs.airbnbBaseRecords,
-
-  // This is the custom config of eslint-config-sc-js
-  eslintConfigSCJs.configs.customRecord,
-
-].flat()
-```
-
-## Used config, plugin ( alphabetical )
-
-### config
-
-- [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)
-
-### plugin
-
-- [eslint-plugin-unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn)
-
-## Recommended, but not includes
-
-### plugin
-
-- [eslint-plugin-sonarjs](https://www.npmjs.com/package/eslint-plugin-sonarjs)
-- [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
-
-## License
-
-- [MIT](LICENSE)
-- This includes the work that is distributed in the Apache License 2.0.
+<p style="text-align: center">
+  <a href="https://strict-check-series.pages.dev/">Documentation</a>
+</p>

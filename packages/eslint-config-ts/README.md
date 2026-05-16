@@ -1,76 +1,15 @@
-# [eslint-config-sc-ts](https://strict-check-series.pages.dev/packages/eslint-config-sc-ts)
+<p>
+  SC ( Strict Check ) Series is the packages for static analysis that keep maintainability on operation and development for the frontend developer.
+</p>
 
-- Strict Check config for eslint.
-- For Typescript.
+<p>
+  These packages maybe able to <strong>reduce</strong> the <strong>difference notation</strong> and <strong>Confusing implementation</strong> from multiple developers.
+</p>
 
-## How to use
+<p>
+  These packages recommended to the products that need to be robust, but not recommended the teams that includes beginner, because these includes so strict and niche rule. Recommended adjust rule, when if introduce these package into the teams that includes beginner.
+</p>
 
-### Installation
-
-```shell
-$ pnpm add -D eslint-config-sc-ts
-```
-
-### Use for `eslint.config.mjs`
-
-```javascript
-// eslint.config.mjs
-import eslintConfigSCTs from "eslint-config-sc-ts"
-
-export default [
-  eslintConfigSCTs.configs.recommended,
-  {
-    languageOptions: {
-      parserOptions: {
-        project: "/path/to/tsconfig.json", // default, refer <root>/tsoncifg.json
-      },
-    },
-  },
-].flat()
-
-// Below is equal
-export default [
-  eslintConfigSCTs.configs.initialRecord,
-  eslintConfigSCTs.configs.eslintRecommendedRecord,
-  eslintConfigSCTs.configs.unicornRecommendedRecords,
-  eslintConfigSCTs.configs.typescriptEslintStrictTypeCheckedRecords,
-
-  // This use eslint-config-airbnb-base
-  // For react project, this replace to eslint-config-airbnb
-  eslintConfigSCTs.configs.airbnbBaseRecords,
-
-  // This is the custom config of eslint-config-sc-js / eslint-config-sc-ts
-  eslintConfigSCTs.configs.scJsCustomRecord,
-  eslintConfigSCTs.configs.customRecord,
-
-  {
-    languageOptions: {
-      parserOptions: {
-        project: "/path/to/tsconfig.json", // default, refer <root>/tsoncifg.json
-      },
-    },
-  },
-].flat()
-```
-
-## Used config, plugin ( alphabetical )
-
-### config
-
-- [eslint-config-sc-js](https://www.npmjs.com/package/eslint-config-sc-js)
-
-### plugin
-
-- [typescript-eslint](https://www.npmjs.com/package/typescript-eslint)
-
-## Recommended, but not includes
-
-### plugin
-
-- [eslint-plugin-sonarjs](https://www.npmjs.com/package/eslint-plugin-sonarjs)
-- [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
-
-## License
-
-- [MIT](LICENSE)
-- This includes the work that is distributed in the Apache License 2.0.
+<p style="text-align: center">
+  <a href="https://strict-check-series.pages.dev/">Documentation</a>
+</p>

@@ -1,49 +1,15 @@
-# [eslint-plugin-sc-js](https://strict-check-series.pages.dev/packages/eslint-plugin-sc-js)
+<p>
+  SC ( Strict Check ) Series is the packages for static analysis that keep maintainability on operation and development for the frontend developer.
+</p>
 
-- Strict Check rules for eslint.
--   - For Javascript / Typescript.
+<p>
+  These packages maybe able to <strong>reduce</strong> the <strong>difference notation</strong> and <strong>Confusing implementation</strong> from multiple developers.
+</p>
 
-**Supports eslint v9.**
+<p>
+  These packages recommended to the products that need to be robust, but not recommended the teams that includes beginner, because these includes so strict and niche rule. Recommended adjust rule, when if introduce these package into the teams that includes beginner.
+</p>
 
-## Installation
-
-```shell
-# by pnpm
-$ pnpm add -D eslint-plugin-sc-js
-
-# by npm
-$ npm i --save-dev eslint-plugin-sc-js
-```
-
-## Usage
-
-### for `eslint.config.mjs`
-
-```js
-import eslintPluginSCJs from "eslint-plugin-sc-js"
-
-export default [
-    {
-        plugins: {
-            js: eslintPluginSCJs, // It is not necessary when use the recommended config
-        },
-    },
-    eslintPluginSCJs.configs.recommended,
-]
-```
-
-## Rules
-
-✅: Set in the recommended configuration.
-
-| Name                                                                               | Description                                      | 💼  |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------ | --- |
-| [file-path-patterns](docs/rules/file-path-patterns.md)                             | Check if file path follows regular expression    |     |
-| [forbidden-multiple-named-exports](docs/rules/forbidden-multiple-named-exports.md) | Forbidden the multiple named exports at one file |     |
-| [individual-import](docs/rules/individual-import.md)                               | Import them individual                           |     |
-| [match-names-of-file-and-export](docs/rules/match-names-of-file-and-export.md)     | Match name of filename and export target         |     |
-| [restrict-use-of-process-env](docs/rules/restrict-use-of-process-env.md)           | Restrict environment usage                       | ✅  |
-
-## License
-
-- [MIT](LICENSE)
+<p style="text-align: center">
+  <a href="https://strict-check-series.pages.dev/">Documentation</a>
+</p>

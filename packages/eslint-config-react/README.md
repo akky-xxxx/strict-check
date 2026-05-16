@@ -1,79 +1,15 @@
-# [eslint-config-sc-react](https://strict-check-series.pages.dev/packages/eslint-config-sc-react)
+<p>
+  SC ( Strict Check ) Series is the packages for static analysis that keep maintainability on operation and development for the frontend developer.
+</p>
 
-- Strict Check config for eslint.
-- For ReactJS.
+<p>
+  These packages maybe able to <strong>reduce</strong> the <strong>difference notation</strong> and <strong>Confusing implementation</strong> from multiple developers.
+</p>
 
-## How to use
+<p>
+  These packages recommended to the products that need to be robust, but not recommended the teams that includes beginner, because these includes so strict and niche rule. Recommended adjust rule, when if introduce these package into the teams that includes beginner.
+</p>
 
-### Installation
-
-```shell
-$ pnpm add -D eslint-config-sc-react
-```
-
-### Use for `eslint.config.mjs`
-
-#### For Javascript
-
-```javascript
-// eslint.config.mjs
-import eslintConfigSCReact from "eslint-config-sc-react"
-
-export default [
-  ...eslintConfigSCReact.configs.recommended,
-]
-
-// Below is equal
-export default [
-  eslintConfigSCReact.configs.initialRecord,
-  eslintConfigSCReact.configs.eslintRecommendedRecord,
-  eslintConfigSCReact.configs.unicornRecommendedRecords,
-  eslintConfigSCReact.configs.reactRecords,
-  eslintConfigSCReact.configs.airbnbRecords,
-
-  // This is the custom config of eslint-config-sc-js / eslint-config-sc-react
-  eslintConfigSCReact.configs.scJsCustomRecord,
-  eslintConfigSCReact.configs.customRecord,
-
-].flat()
-```
-
-#### For Typescript
-
-```javascript
-import eslintConfigSCTs from "eslint-config-sc-ts"
-import eslintConfigSCReact from "eslint-config-sc-react"
-
-export default [
-    eslintConfigSCReact.configs.initialRecord,
-    eslintConfigSCReact.configs.eslintRecommendedRecord,
-    eslintConfigSCReact.configs.unicornRecommendedRecords,
-    eslintConfigSCTs.configs.typescriptEslintStrictTypeCheckedRecords,
-    eslintConfigSCReact.configs.reactRecords,
-    eslintConfigSCReact.configs.airbnbRecords,
-
-    // This is the custom config of eslint-config-sc-js / eslint-config-sc-react
-    eslintConfigSCReact.configs.scJsCustomRecord,
-    eslintConfigSCReact.configs.customRecord,
-    eslintConfigSCReact.configs.customRecordWithTypescript,
-].flat()
-```
-
-## Used config, plugin ( alphabetical )
-
-### config
-
-- [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
-- [eslint-config-sc-js](https://www.npmjs.com/package/eslint-config-sc-js)
-
-## Recommended, but not includes
-
-### plugin
-
-- [eslint-plugin-sonarjs](https://www.npmjs.com/package/eslint-plugin-sonarjs)
-- [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
-
-## License
-
-- [MIT](LICENSE)
-- This includes the work that is distributed in the Apache License 2.0.
+<p style="text-align: center">
+  <a href="https://strict-check-series.pages.dev/">Documentation</a>
+</p>
