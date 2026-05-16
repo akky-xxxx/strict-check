@@ -1,43 +1,15 @@
-# [eslint-config-sc-jest](https://strict-check-series.pages.dev/packages/eslint-config-sc-jest)
+<p>
+  SC ( Strict Check ) Series is the packages for static analysis that keep maintainability on operation and development for the frontend developer.
+</p>
 
-- Strict Check config for eslint.
-- For Jest.
+<p>
+  These packages maybe able to <strong>reduce</strong> the <strong>difference notation</strong> and <strong>Confusing implementation</strong> from multiple developers.
+</p>
 
-## How to use
+<p>
+  These packages recommended to the products that need to be robust, but not recommended the teams that includes beginner, because these includes so strict and niche rule. Recommended adjust rule, when if introduce these package into the teams that includes beginner.
+</p>
 
-### Installation
-
-```shell
-$ pnpm add -D eslint-config-sc-jest
-```
-
-### Use for `eslint.config.mjs`
-
-```javascript
-// eslint.config.mjs
-import eslintConfigSCJest from "eslint-config-sc-jest"
-
-export default [
-  [/* other rules for product code */],
-  eslintConfigSCJest.configs.recommended,
-].flat()
-
-// Below is equal
-export default [
-  [/* other rules for product code */],
-  eslintConfigSCJest.configs.jestPluginRecords,
-  eslintConfigSCJest.configs.customRecord,
-  eslintConfigSCJest.configs.overrideJavascriptRecord, // for javascript project
-  eslintConfigSCJest.configs.overrideTypescriptRecord, // for typecript project
-].flat()
-```
-
-## Used config, plugin ( alphabetical )
-
-### plugin
-
-- [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest)
-
-## License
-
-- [MIT](LICENSE)
+<p style="text-align: center">
+  <a href="https://strict-check-series.pages.dev/">Documentation</a>
+</p>

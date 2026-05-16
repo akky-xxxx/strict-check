@@ -1,42 +1,15 @@
-# [eslint-config-sc-storybook](https://strict-check-series.pages.dev/packages/eslint-config-sc-storybook)
+<p>
+  SC ( Strict Check ) Series is the packages for static analysis that keep maintainability on operation and development for the frontend developer.
+</p>
 
-- Strict Check config for eslint.
-- For Storybook.
+<p>
+  These packages maybe able to <strong>reduce</strong> the <strong>difference notation</strong> and <strong>Confusing implementation</strong> from multiple developers.
+</p>
 
-## How to use
+<p>
+  These packages recommended to the products that need to be robust, but not recommended the teams that includes beginner, because these includes so strict and niche rule. Recommended adjust rule, when if introduce these package into the teams that includes beginner.
+</p>
 
-### Installation
-
-```shell
-$ pnpm add -D eslint-config-sc-storybook
-```
-
-### Use for `eslint.config.mjs`
-
-```javascript
-// eslint.config.mjs
-import eslintConfigSCStorybook from "eslint-config-sc-storybook"
-
-export default [
-  [/* other rules for product code */],
-  eslintConfigSCStorybook.configs.recommended,
-].flat()
-
-// Below is equal
-export default [
-  [/* other rules for product code */],
-  eslintConfigSCStorybook.configs.storybookConfigRecords,
-  eslintConfigSCStorybook.configs.overrideJavascriptRecord, // for javascript project
-  eslintConfigSCStorybook.configs.overrideTypescriptRecord, // for typecript project
-].flat()
-```
-
-## Used config, plugin ( alphabetical )
-
-### plugin
-
-- [eslint-plugin-storybook](https://www.npmjs.com/package/eslint-plugin-storybook)
-
-## License
-
-- [MIT](LICENSE)
+<p style="text-align: center">
+  <a href="https://strict-check-series.pages.dev/">Documentation</a>
+</p>

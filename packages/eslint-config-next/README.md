@@ -1,80 +1,15 @@
-# [eslint-config-sc-next](https://strict-check-series.pages.dev/packages/eslint-config-sc-next)
+<p>
+  SC ( Strict Check ) Series is the packages for static analysis that keep maintainability on operation and development for the frontend developer.
+</p>
 
-- Strict Check config for eslint.
-- For NextJS.
+<p>
+  These packages maybe able to <strong>reduce</strong> the <strong>difference notation</strong> and <strong>Confusing implementation</strong> from multiple developers.
+</p>
 
-## How to use
+<p>
+  These packages recommended to the products that need to be robust, but not recommended the teams that includes beginner, because these includes so strict and niche rule. Recommended adjust rule, when if introduce these package into the teams that includes beginner.
+</p>
 
-### Installation
-
-```shell
-$ pnpm add -D eslint-config-sc-next
-```
-
-### Use for `eslint.config.mjs`
-
-#### For Javascript
-
-```javascript
-// eslint.config.mjs
-import eslintConfigSCNext from "eslint-config-sc-next"
-
-export default [
-  eslintConfigSCNext.configs.recommended,
-].flat()
-
-// Below is equal
-export default [
-  eslintConfigSCNext.configs.initialRecord,
-  eslintConfigSCNext.configs.eslintRecommendedRecord,
-  eslintConfigSCNext.configs.unicornRecommendedRecords,
-  eslintConfigSCNext.configs.reactRecords,
-  eslintConfigSCNext.configs.nextRecords,
-  eslintConfigSCNext.configs.airbnbRecords,
-
-  // This is the custom config of eslint-config-sc-js / eslint-config-sc-next
-  eslintConfigSCNext.configs.scJsCustomRecord,
-  eslintConfigSCNext.configs.scRectCustomRecord,
-
-].flat()
-```
-
-#### For Typescript
-
-```javascript
-import eslintConfigSCTs from "eslint-config-sc-ts"
-import eslintConfigSCNext from "eslint-config-sc-next"
-
-export default [
-    eslintConfigSCNext.configs.initialRecord,
-    eslintConfigSCNext.configs.eslintRecommendedRecord,
-    eslintConfigSCTs.configs.typescriptEslintStrictTypeCheckedRecords,
-    eslintConfigSCNext.configs.unicornRecommendedRecords,
-    eslintConfigSCNext.configs.reactRecords,
-    eslintConfigSCNext.configs.nextRecords,
-    eslintConfigSCNext.configs.airbnbRecords,
-
-    eslintConfigSCNext.configs.scJsCustomRecord,
-    eslintConfigSCTs.configs.customRecords,
-    eslintConfigSCNext.configs.customRecord,
-    eslintConfigSCNext.configs.customRecordWithTypescript,
-].flat()
-```
-
-## Used config, plugin ( alphabetical )
-
-### config
-
-- [eslint-config-sc-react](https://www.npmjs.com/package/eslint-config-sc-react)
-
-## Recommended, but not includes
-
-### plugin
-
-- [eslint-plugin-sonarjs](https://www.npmjs.com/package/eslint-plugin-sonarjs)
-- [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc)
-
-## License
-
-- [MIT](LICENSE)
-- This includes the work that is distributed in the Apache License 2.0.
+<p style="text-align: center">
+  <a href="https://strict-check-series.pages.dev/">Documentation</a>
+</p>
