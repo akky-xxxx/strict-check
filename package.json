@@ -42,8 +42,8 @@
     "ws-type-check": "pnpm -r run type-check"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.1",
-    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/cli": "^21.0.1",
+    "@commitlint/config-conventional": "^21.0.1",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.30.0",
     "@tsconfig/strictest": "^2.0.5",
