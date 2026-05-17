@@ -44,7 +44,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "globals": "^16.3.0"
+    "globals": "^17.6.0"
   },
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.5",
