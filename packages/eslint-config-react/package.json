@@ -35,10 +35,10 @@
     "lint:eslint": "eslint \"./\" --max-warnings 0",
     "lint:pack": "fixpack --dryRun",
     "lint:prettier": "prettier \".\" --ignore-path ../../.prettierignore -c -u",
+    "publish:dry-run": "npm pack --dry-run",
     "setup": "run-p \"setup:*\"",
     "setup:copy-shared": "node ../../scripts/copy-shared/index.js",
     "setup:dependence-build": "pnpm -r run build",
-    "publish:dry-run": "npm pack --dry-run",
     "spell-check": "cspell lint --no-progress \"./{spec,src}/**/*.ts\" \"./{config,scripts}/**/*.{js,mjs}\" \"./*.{js,mjs}\"",
     "tagging": "node ../../scripts/tagging/index.mjs",
     "type-check": "tsc"
