@@ -16,7 +16,7 @@
     "setup:dependence-build": "pnpm -r run build"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.35.1",
+    "@typescript-eslint/parser": "^8.59.3",
     "eslint": "^9.30.0",
     "eslint-config-sc-react": "workspace:^",
     "eslint-config-sc-ts": "workspace:^",

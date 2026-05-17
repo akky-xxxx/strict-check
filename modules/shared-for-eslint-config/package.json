@@ -36,7 +36,7 @@
     "prettier": "^3.6.2",
     "strict-check": "workspace:^",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.35.1"
+    "typescript-eslint": "^8.59.3"
   },
   "packageManager": "pnpm@10.11.0"
 }

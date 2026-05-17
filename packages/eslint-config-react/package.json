@@ -48,8 +48,8 @@
   },
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.5",
-    "@types/react": "^19.1.8",
-    "@typescript-eslint/parser": "^8.35.1",
+    "@types/react": "^19.2.14",
+    "@typescript-eslint/parser": "^8.59.3",
     "chokidar-cli": "^3.0.0",
     "cspell": "^10.0.0",
     "eslint": "^9.30.0",
