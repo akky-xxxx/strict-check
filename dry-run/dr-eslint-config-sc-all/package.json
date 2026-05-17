@@ -1,6 +1,9 @@
 {
   "name": "dr-eslint-config-sc-all",
   "scripts": {
+    "bootstrap": "run-p \"bootstrap:*\"",
+    "bootstrap:copy-shared": "node ../../scripts/copy-shared/index.js",
+    "bootstrap:dependence-build": "pnpm -r run build",
     "check-code": "run-p lint dry-run",
     "dry-run": "run-p \"dry-run:*\" -c",
     "dry-run:js": "eslint -c sample/js/eslint.config.mjs \"sample/js/src/\" --max-warnings 0",
@@ -14,10 +17,7 @@
     "fix:prettier": "prettier \".\" --ignore-path ../../.prettierignore -w -u",
     "lint": "run-p \"lint:*\" -c",
     "lint:pack": "fixpack --dryRun",
-    "lint:prettier": "prettier \".\" --ignore-path ../../.prettierignore -c -u",
-    "setup": "run-p \"setup:*\"",
-    "setup:copy-shared": "node ../../scripts/copy-shared/index.js",
-    "setup:dependence-build": "pnpm -r run build"
+    "lint:prettier": "prettier \".\" --ignore-path ../../.prettierignore -c -u"
   },
   "devDependencies": {
     "eslint": "^9.30.0",
