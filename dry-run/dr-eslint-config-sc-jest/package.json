@@ -11,9 +11,9 @@
     "lint": "run-p \"lint:*\" -c",
     "lint:pack": "fixpack --dryRun",
     "lint:prettier": "prettier \".\" --ignore-path ../../.prettierignore -c -u",
-    "prepare": "run-p \"prepare:*\"",
-    "prepare:copy-shared": "node ../../scripts/copy-shared/index.js",
-    "prepare:dependence-build": "pnpm -r run build"
+    "setup": "run-p \"setup:*\"",
+    "setup:copy-shared": "node ../../scripts/copy-shared/index.js",
+    "setup:dependence-build": "pnpm -r run build"
   },
   "devDependencies": {
     "eslint": "^9.30.0",
