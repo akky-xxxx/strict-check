@@ -65,7 +65,7 @@
     "eslint-config-sc-storybook": "workspace:^",
     "eslint-config-sc-ts": "workspace:^",
     "eslint-plugin-jest": "^29.15.2",
-    "eslint-plugin-storybook": "9.1.0",
+    "eslint-plugin-storybook": "10.4.0",
     "eslint-plugin-unicorn": "^64.0.0",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^8.0.4",
@@ -73,7 +73,8 @@
     "strict-check": "workspace:^",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.59.3",
-    "vitest": "^4.1.6"
+    "vitest": "^4.1.6",
+    "storybook": "10.4.0"
   },
   "peerDependencies": {
     "eslint-config-sc-jest": ">=0.1.2 <1",
