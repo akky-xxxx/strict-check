@@ -18,8 +18,8 @@ runs:
       run: npm install -g npm@^11.5.1
       shell: bash
 
-    - name: Run prepare
-      run: pnpm prepare
+    - name: Run bootstrap
+      run: pnpm bootstrap
       working-directory: ${{ inputs.working-directory }}
       shell: bash
 

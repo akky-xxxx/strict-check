@@ -36,8 +36,8 @@ jobs:
       - name: setup
         uses: ./.github/actions/setup-single-node-version
 
-      - name: Run prepare
-        run: pnpm prepare
+      - name: Run bootstrap
+        run: pnpm bootstrap
 
       - name: Run lint
         run: pnpm lint
@@ -53,8 +53,8 @@ jobs:
       - name: setup
         uses: ./.github/actions/setup-single-node-version
 
-      - name: Run prepare
-        run: pnpm prepare
+      - name: Run bootstrap
+        run: pnpm bootstrap
 
       - name: Run spell-check
         run: pnpm spell-check
@@ -70,8 +70,8 @@ jobs:
       - name: setup
         uses: ./.github/actions/setup-single-node-version
 
-      - name: Run prepare
-        run: pnpm prepare
+      - name: Run bootstrap
+        run: pnpm bootstrap
 
       - name: Run type-check
         run: pnpm type-check
@@ -87,8 +87,8 @@ jobs:
       - name: setup
         uses: ./.github/actions/setup-single-node-version
 
-      - name: Run prepare
-        run: pnpm prepare
+      - name: Run bootstrap
+        run: pnpm bootstrap
 
       - name: Run test
         run: pnpm test
@@ -107,8 +107,8 @@ jobs:
       - name: setup
         uses: ./.github/actions/setup-matrix-node-versions
 
-      - name: Run prepare
-        run: pnpm prepare
+      - name: Run bootstrap
+        run: pnpm bootstrap
 
       - name: Run dry run
         run: pnpm dry-run
