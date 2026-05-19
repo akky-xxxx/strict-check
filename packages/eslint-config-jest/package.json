@@ -63,6 +63,5 @@
   },
   "peerDependencies": {
     "eslint-plugin-jest": ">=29.0.1"
-  },
-  "packageManager": "pnpm@10.11.0"
+  }
 }

@@ -96,6 +96,5 @@
     "eslint-config-sc-storybook": {
       "optional": true
     }
-  },
-  "packageManager": "pnpm@10.11.0"
+  }
 }
