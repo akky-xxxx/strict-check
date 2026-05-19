@@ -31,8 +31,8 @@ jobs:
       - name: setup
         uses: ./.github/actions/setup-single-node-version
 
-      - name: Run prepare
-        run: pnpm prepare
+      - name: Run bootstrap
+        run: pnpm bootstrap
 
       - name: Run lint
         run: pnpm lint
