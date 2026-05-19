@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.30.0",
+    "@eslint/js": "^10.0.1",
     "@tsconfig/strictest": "^2.0.5",
     "@typescript-eslint/eslint-plugin": "^8.59.3",
     "@typescript-eslint/parser": "^8.59.3",
@@ -56,13 +56,12 @@
     "eslint-config-prettier": "^10.1.8",
     "fixpack": "^4.0.0",
     "npm-run-all2": "^8.0.4",
-    "prettier": "^3.6.2",
+    "prettier": "^3.8.3",
     "strict-check": "workspace:^",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.59.3"
   },
   "peerDependencies": {
     "eslint-plugin-jest": ">=29.0.1"
-  },
-  "packageManager": "pnpm@10.11.0"
+  }
 }
