@@ -1,4 +1,4 @@
-name: eslint-config-js@CI
+name: eslint-config-all@CI
 
 permissions:
   contents: read
@@ -11,18 +11,18 @@ on:
       - main
     paths:
       - ".github/actions/**"
-      - ".github/workflows/eslint-config-js@ci.yml"
+      - ".github/workflows/eslint-config-all-ci.yml"
       - ".node-version"
       - "config/eslint/**"
       - "config/tsconfig/**"
-      - "dry-run/dr-eslint-config-sc-js/**"
+      - "dry-run/dr-eslint-config-sc-all/**"
       - "modules/shared-for-eslint-config/**"
-      - "packages/eslint-config-js/**"
+      - "packages/eslint-config-all/**"
       - "prettier.config.js"
       - "pnpm-lock.yaml"
 
 env:
-  WORKING_DIRECTORY: ./packages/eslint-config-js
+  WORKING_DIRECTORY: ./packages/eslint-config-all
 
 jobs:
   lint:
@@ -75,6 +75,23 @@ jobs:
 
       - name: Run type-check
         run: pnpm type-check
+
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/actions/setup-single-node-version
+
+      - name: Run bootstrap
+        run: pnpm bootstrap
+
+      - name: Run test
+        run: pnpm test
 
   dry-run:
     runs-on: ubuntu-latest

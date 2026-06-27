@@ -11,7 +11,7 @@ on:
       - main
     paths:
       - ".github/actions/**"
-      - ".github/workflows/eslint-config-ts@ci.yml"
+      - ".github/workflows/eslint-config-ts-ci.yml"
       - ".node-version"
       - "config/eslint/**"
       - "config/tsconfig/**"

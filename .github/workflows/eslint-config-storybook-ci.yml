@@ -1,4 +1,4 @@
-name: eslint-plugin-js@CI
+name: eslint-config-storybook@CI
 
 permissions:
   contents: read
@@ -11,18 +11,18 @@ on:
       - main
     paths:
       - ".github/actions/**"
-      - ".github/workflows/eslint-plugin-js@ci.yml"
+      - ".github/workflows/eslint-config-storybook-ci.yml"
       - ".node-version"
       - "config/eslint/**"
       - "config/tsconfig/**"
-      - "dry-run/dr-eslint-plugin-sc-js/**"
-      - "modules/shared-for-eslint-plugin/**"
-      - "packages/eslint-plugin-js/**"
+      - "dry-run/dr-eslint-config-sc-storybook/**"
+      - "modules/shared-for-eslint-config/**"
+      - "packages/eslint-config-storybook/**"
       - "prettier.config.js"
       - "pnpm-lock.yaml"
 
 env:
-  WORKING_DIRECTORY: ./packages/eslint-plugin-js
+  WORKING_DIRECTORY: ./packages/eslint-config-storybook
 
 jobs:
   lint:
@@ -75,26 +75,6 @@ jobs:
 
       - name: Run type-check
         run: pnpm type-check
-
-  test:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ${{ env.WORKING_DIRECTORY }}
-    strategy:
-      matrix:
-        node-version: [22.x, 24.x, 26.x]
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: setup
-        uses: ./.github/actions/setup-matrix-node-versions
-
-      - name: Run bootstrap
-        run: pnpm bootstrap
-
-      - name: Run test
-        run: pnpm test
 
   dry-run:
     runs-on: ubuntu-latest

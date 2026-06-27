@@ -1,4 +1,4 @@
-name: eslint-config-storybook@CI
+name: eslint-config-next@CI
 
 permissions:
   contents: read
@@ -11,18 +11,18 @@ on:
       - main
     paths:
       - ".github/actions/**"
-      - ".github/workflows/eslint-config-storybook@ci.yml"
+      - ".github/workflows/eslint-config-next-ci.yml"
       - ".node-version"
       - "config/eslint/**"
       - "config/tsconfig/**"
-      - "dry-run/dr-eslint-config-sc-storybook/**"
+      - "dry-run/dr-eslint-config-sc-next/**"
       - "modules/shared-for-eslint-config/**"
-      - "packages/eslint-config-storybook/**"
+      - "packages/eslint-config-next/**"
       - "prettier.config.js"
       - "pnpm-lock.yaml"
 
 env:
-  WORKING_DIRECTORY: ./packages/eslint-config-storybook
+  WORKING_DIRECTORY: ./packages/eslint-config-next
 
 jobs:
   lint:
