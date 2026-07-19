@@ -1,0 +1,22 @@
+// eslint-config-airbnb-base@15.0.0 の compat.extends() 出力から機械生成。手編集しない。詳細は README.md を参照。
+export const ES6_GLOBALS = {
+  ArrayBuffer: false,
+  DataView: false,
+  Float32Array: false,
+  Float64Array: false,
+  Int8Array: false,
+  Int16Array: false,
+  Int32Array: false,
+  Map: false,
+  Promise: false,
+  Proxy: false,
+  Reflect: false,
+  Set: false,
+  Symbol: false,
+  Uint8Array: false,
+  Uint8ClampedArray: false,
+  Uint16Array: false,
+  Uint32Array: false,
+  WeakMap: false,
+  WeakSet: false,
+}
