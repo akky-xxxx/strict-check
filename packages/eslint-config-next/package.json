@@ -45,22 +45,22 @@
     "type-check": "tsc"
   },
   "devDependencies": {
-    "@tsconfig/strictest": "^2.0.5",
-    "@types/react": "^19.2.14",
+    "@tsconfig/strictest": "^2.0.8",
+    "@types/react": "^19.2.17",
     "@typescript-eslint/parser": "^8.64.0",
     "chokidar-cli": "^3.0.0",
-    "cspell": "^10.0.0",
-    "eslint": "^9.30.0",
+    "cspell": "^10.0.1",
+    "eslint": "^9.39.5",
     "eslint-config-prettier": "^10.1.8",
     "eslint-config-sc-js": "workspace:^",
     "eslint-config-sc-react": "workspace:^",
     "eslint-config-sc-ts": "workspace:^",
     "fixpack": "^4.0.0",
-    "npm-run-all2": "^8.0.4",
-    "prettier": "^3.8.3",
-    "react": "^19.2.6",
+    "npm-run-all2": "^9.0.2",
+    "prettier": "^3.9.5",
+    "react": "^19.2.7",
     "strict-check": "workspace:^",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "@next/eslint-plugin-next": ">=15.3.4",

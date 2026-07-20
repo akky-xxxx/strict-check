@@ -54,6 +54,7 @@ const function4 = () => {
 
 // eslint-disable-next-line no-use-before-define
 const variable1 = variable2
+// eslint-disable-next-line no-useless-assignment
 const variable2 = "no-use-before-define"
 
 const object1 = {
@@ -234,7 +235,7 @@ const object2 = {
 // eslint-disable-next-line arrow-parens
 const arrowFunction1 = a => a
 
-// eslint-disable-next-line import/no-empty-named-blocks, import/no-useless-path-segments, import/first
+// eslint-disable-next-line import/no-empty-named-blocks, import/no-useless-path-segments, import/first, unicorn/require-module-specifiers
 import {} from "../flat/js-test-sub1"
 
 // eslint-disable-next-line import/no-mutable-exports, prefer-const

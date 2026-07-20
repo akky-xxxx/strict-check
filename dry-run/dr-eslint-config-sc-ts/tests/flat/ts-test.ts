@@ -62,6 +62,7 @@ const function4 = () => {
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 const variable1 = variable2
+// eslint-disable-next-line no-useless-assignment
 const variable2 = "no-use-before-define"
 
 const object1 = {

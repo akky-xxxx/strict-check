@@ -16,13 +16,13 @@
     "lint:prettier": "prettier \".\" --ignore-path ../../.prettierignore -c -u"
   },
   "devDependencies": {
-    "eslint": "^9.30.0",
+    "eslint": "^9.39.5",
     "eslint-config-sc-jest": "workspace:^",
     "eslint-config-sc-js": "workspace:^",
     "eslint-config-sc-ts": "workspace:^",
     "fixpack": "^4.0.0",
     "jest": "^30.4.2",
-    "npm-run-all2": "^8.0.4",
-    "prettier": "^3.8.3"
+    "npm-run-all2": "^9.0.2",
+    "prettier": "^3.9.5"
   }
 }
