@@ -54,7 +54,7 @@
     "@tsconfig/strictest": "^2.0.5",
     "@typescript-eslint/rule-tester": "^8.65.0",
     "@typescript-eslint/utils": "^8.65.0",
-    "@vitest/coverage-v8": "^4.1.6",
+    "@vitest/coverage-v8": "^4.1.10",
     "chokidar-cli": "^3.0.0",
     "cspell": "^10.0.0",
     "eslint": "^9.30.0",
@@ -66,7 +66,7 @@
     "strict-check": "workspace:^",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.65.0",
-    "vitest": "^4.1.6"
+    "vitest": "^4.1.10"
   },
   "peerDependencies": {
     "eslint": "^9.0.0"
