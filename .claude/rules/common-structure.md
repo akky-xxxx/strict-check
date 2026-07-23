@@ -37,7 +37,7 @@ packages/eslint-plugin-js/spec/tests/rules/{rule-name}
   └ *.test.ts              # 共有テスター (spec/tests/rules/utils/tester) を使用
 ```
 
-## eslint-config-sc-* の config
+## eslint-config-sc-\* の config
 
 ```
 packages/eslint-config-sc-{name}/src

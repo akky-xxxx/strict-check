@@ -15,11 +15,11 @@ description: ESLint ルール追加・config 追加等の機能追加を行う�
 4. **設計統合**: `design-integrator` を実行し、統合設計仕様とタスク一覧を得る
 5. **統合設計承認**: 統合設計仕様とタスク一覧をユーザーに提示し、明示的な承認を得る（`.claude/rules/implementation-rules.md` に従う）
 6. **タスクごとの実装〜レビュー**: タスク一覧の各タスクについて、依存関係の順序で以下を繰り返す
-   1. `implementer` で該当タスクのみ実装する（`modules/*` を変更した場合は `pnpm bootstrap` を含む）
-   2. `review-eslint-rule` / `review-eslint-config` / `review-test` を並列実行する
-   3. `review-integrator` で集約する
-   4. must fix が残る場合は 6-1 に戻る
-   5. `.claude/rules/commit-rules.md` に従い、staged diff とコミットメッセージをユーザーに提示し、承認を得てから commit する
+    1. `implementer` で該当タスクのみ実装する（`modules/*` を変更した場合は `pnpm bootstrap` を含む）
+    2. `review-eslint-rule` / `review-eslint-config` / `review-test` を並列実行する
+    3. `review-integrator` で集約する
+    4. must fix が残る場合は 6-1 に戻る
+    5. `.claude/rules/commit-rules.md` に従い、staged diff とコミットメッセージをユーザーに提示し、承認を得てから commit する
 7. 全タスクが完了するまで 6. を繰り返す
 
 ## 注意点

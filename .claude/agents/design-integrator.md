@@ -21,8 +21,8 @@ design-eslint-rule / design-eslint-config / design-test の3つの設計提案�
 ## 進め方
 
 1. 3つの提案を突き合わせ、矛盾や重複がないか確認する
-   - 例: eslint-rule 側のモジュール分割と test 側が要求するテストケースが一致しているか
-   - 例: eslint-config 側の合成順序の変更が他パッケージ（`eslint-config-all` 等）に影響しないか
+    - 例: eslint-rule 側のモジュール分割と test 側が要求するテストケースが一致しているか
+    - 例: eslint-config 側の合成順序の変更が他パッケージ（`eslint-config-all` 等）に影響しないか
 2. 矛盾がある場合は、どちらを採用するかをプロジェクトルール（`.claude/rules/common.md`, `.claude/rules/common-structure.md`, CLAUDE.md のアーキテクチャ節）に照らして判断する。ルールで判断できない場合は無理に決めず、未解決のトレードオフとして明示する
 3. 3提案を1つの設計仕様にまとめた上で、`.claude/rules/commit-rules.md` の粒度基準（cherry-pick しやすい単位 = 実装における1機能以下）に沿って実装単位のタスクに分割する。`modules/shared-for-eslint-{plugin,config}` を変更するタスクが含まれる場合は、後続タスクの前提として `pnpm bootstrap` の実行をタスク一覧に明記する
 
