@@ -10,6 +10,7 @@ on:
       - feature/**
       - main
     paths:
+      - ".claude/**"
       - ".node-version"
       - "config/**"
       - "cspell.config.js"
