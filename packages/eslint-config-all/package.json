@@ -50,7 +50,7 @@
     "type-check": "tsc"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^16.2.10",
+    "@next/eslint-plugin-next": "^16.2.11",
     "@tsconfig/strictest": "^2.0.5",
     "@types/node": "^25.8.0",
     "@vitest/coverage-v8": "4.1.6",
@@ -64,7 +64,7 @@
     "eslint-config-sc-react": "workspace:^",
     "eslint-config-sc-storybook": "workspace:^",
     "eslint-config-sc-ts": "workspace:^",
-    "eslint-plugin-jest": "^29.15.4",
+    "eslint-plugin-jest": "^29.15.5",
     "eslint-plugin-storybook": "9.1.0",
     "eslint-plugin-unicorn": "^64.0.0",
     "fixpack": "^4.0.0",
