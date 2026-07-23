@@ -52,8 +52,8 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@tsconfig/strictest": "^2.0.5",
-    "@typescript-eslint/rule-tester": "^8.64.0",
-    "@typescript-eslint/utils": "^8.64.0",
+    "@typescript-eslint/rule-tester": "^8.65.0",
+    "@typescript-eslint/utils": "^8.65.0",
     "@vitest/coverage-v8": "^4.1.6",
     "chokidar-cli": "^3.0.0",
     "cspell": "^10.0.0",
@@ -65,7 +65,7 @@
     "prettier": "^3.8.3",
     "strict-check": "workspace:^",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.64.0",
+    "typescript-eslint": "^8.65.0",
     "vitest": "^4.1.6"
   },
   "peerDependencies": {

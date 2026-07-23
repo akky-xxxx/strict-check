@@ -16,7 +16,7 @@
     "lint:prettier": "prettier \".\" --ignore-path ../../.prettierignore -c -u"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.64.0",
+    "@typescript-eslint/parser": "^8.65.0",
     "eslint": "^9.30.0",
     "eslint-config-sc-react": "workspace:^",
     "eslint-config-sc-ts": "workspace:^",
