@@ -41,6 +41,7 @@
     ],
     "deny": [
       "Bash(curl:*)",
+      "Bash(gh pr merge:*)",
       "Bash(git push:*)",
       "Bash(node -e:*)",
       "Bash(node -p:*)",
