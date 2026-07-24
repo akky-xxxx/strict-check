@@ -9,7 +9,7 @@ description: 依存関係をカテゴリ単位で棚卸し・更新し、`pnpm c
 
 ## 手順
 
-1. **棚卸し**: `pnpm outdated -r` 等で root / `modules/*` / `packages/*` / `dry-run/*` 全体の更新可能な依存を洗い出す
+1. **棚卸し**: `pnpm outdated -r`, `pnpm upgrade -i -L -r` 等で root / `modules/*` / `packages/*` / `dry-run/*` 全体の更新可能な依存を洗い出す
 2. **カテゴリ分類と方針提示（承認必須）**: 過去の実績パターン（eslint 関連, typescript 関連, react 関連, test 関連, commitlint 関連, prettier, cspell, その他個別ツール）を踏襲してカテゴリ分けし、各カテゴリの対象パッケージ・バージョン帯（patch/minor/major）をユーザーに提示する。特に major バージョンアップは breaking changes の有無を確認し、他カテゴリと分離して提示する。着手前に承認を得る
 3. **カテゴリ単位での更新実行**: 承認されたカテゴリを1つずつ、対象範囲（root / `modules/*` / `packages/*` / `dry-run/*`）すべての `package.json` を更新する。`modules/*` を更新した場合は `pnpm bootstrap` を実行して各パッケージへ反映する
 4. **カテゴリ単位での検証**: 更新のたびに `pnpm check-code`（ルート）と `pnpm ws-check-code`（全ワークスペース、lint/spell-check/type-check + dry-run + test を含む）を実行する。config パッケージに影響する場合は `pnpm dry-run` の実行結果も確認する
