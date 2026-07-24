@@ -56,7 +56,7 @@
     "eslint-config-sc-react": "workspace:^",
     "eslint-config-sc-ts": "workspace:^",
     "fixpack": "^4.0.0",
-    "npm-run-all2": "^8.0.4",
+    "npm-run-all2": "^9.0.2",
     "prettier": "^3.9.6",
     "react": "^19.2.8",
     "strict-check": "workspace:^",

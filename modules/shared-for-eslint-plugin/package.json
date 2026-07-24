@@ -33,7 +33,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "fixpack": "^4.0.0",
-    "npm-run-all2": "^8.0.4",
+    "npm-run-all2": "^9.0.2",
     "prettier": "^3.9.6",
     "strict-check": "workspace:^",
     "typescript": "^5.8.3",
