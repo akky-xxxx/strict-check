@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git status:*)",
+      "Bash(pnpm install)",
+      "Bash(pnpm check-code)",
+      "Bash(pnpm lint)",
+      "Bash(pnpm fix)",
+      "Bash(pnpm spell-check)",
+      "Bash(pnpm ws-check-code)",
+      "Bash(pnpm ws-lint)",
+      "Bash(pnpm ws-fix)",
+      "Bash(pnpm ws-test)",
+      "Bash(pnpm ws-type-check)",
+      "Bash(pnpm ws-spell-check)",
+      "Bash(pnpm ws-dev)",
+      "Bash(pnpm --filter eslint-config-sc-all *)",
+      "Bash(pnpm --filter eslint-config-sc-jest *)",
+      "Bash(pnpm --filter eslint-config-sc-js *)",
+      "Bash(pnpm --filter eslint-config-sc-next *)",
+      "Bash(pnpm --filter eslint-config-sc-react *)",
+      "Bash(pnpm --filter eslint-config-sc-storybook *)",
+      "Bash(pnpm --filter eslint-config-sc-ts *)",
+      "Bash(pnpm --filter eslint-plugin-sc-js *)",
+      "Bash(pnpm --filter shared-for-eslint-config *)",
+      "Bash(pnpm --filter shared-for-eslint-plugin *)"
+    ],
+    "ask": [
+      "Bash(pnpm add:*)",
+      "Bash(pnpm dlx:*)",
+      "Bash(pnpm exec:*)",
+      "Bash(pnpm link:*)",
+      "Bash(pnpm remove:*)",
+      "Bash(pnpm unlink:*)",
+      "Bash(pnpm update:*)"
+    ],
+    "deny": [
+      "Bash(curl:*)",
+      "Bash(gh pr merge:*)",
+      "Bash(git push:*)",
+      "Bash(node -e:*)",
+      "Bash(node -p:*)",
+      "Bash(npx:*)",
+      "Bash(pnpm publish:*)",
+      "Bash(python3:*)",
+      "Bash(python:*)",
+      "Bash(wget:*)",
+      "Edit(.claude/settings.local.json)",
+      "Write(.claude/settings.local.json)"
+    ]
+  }
+}

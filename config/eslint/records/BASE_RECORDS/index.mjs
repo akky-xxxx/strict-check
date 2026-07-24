@@ -1,17 +1,11 @@
-import { FlatCompat } from "@eslint/eslintrc"
 import eslint from "@eslint/js"
-import path from "node:path"
-import { fileURLToPath } from "node:url"
 
 import { BASE_RULES } from "../../rules/BASE_RULES/index.mjs"
-
-const compat = new FlatCompat({
-  baseDirectory: path.dirname(fileURLToPath(import.meta.url)),
-})
+import { AIRBNB_BASE_RECORDS } from "../AIRBNB_BASE_RECORDS/index.mjs"
 
 export const BASE_RECORDS = [
   eslint.configs.recommended,
-  ...compat.extends("eslint-config-airbnb-base"),
+  ...AIRBNB_BASE_RECORDS,
   {
     ignores: ["{modules,packages}/*", ".pnpm-store", "node_modules/**"],
   },

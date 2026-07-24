@@ -1,4 +1,5 @@
 **/coverage/**
 **/dist/**
 dry-run/*/sample/**
+dry-run/*/tests/**
 pnpm-lock.yaml

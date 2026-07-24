@@ -9,6 +9,6 @@ export const parseOptions = <T>(option: unknown, schema: ZodType<T>): T => {
     if (!(error instanceof ZodError)) {
       throw error
     }
-    throw new Error("Invalid options, please check it.")
+    throw new Error("Invalid options, please check it.", { cause: error })
   }
 }
