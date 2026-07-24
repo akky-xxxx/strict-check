@@ -22,9 +22,9 @@ description: 依存関係をカテゴリ単位で棚卸し・更新し、`pnpm c
 ### develop への PR 作成
 
 1. **PR 規約の適用（固定）**: `develop` への PR 作成にあたり、以下を固定値として用いる（PR #170 の実績に基づく）
-   - base ブランチ: `develop`
-   - タイトル: `green keeping<YYYYMMDD>`（`<YYYYMMDD>` は作業ブランチ名に含まれる日付。抽出できない場合は当日日付を使う）
-   - ラベル: `01.greenkeeping`（`gh label list` で存在を確認する。存在しない場合はユーザーに確認する）
+    - base ブランチ: `develop`
+    - タイトル: `green keeping<YYYYMMDD>`（`<YYYYMMDD>` は作業ブランチ名に含まれる日付。抽出できない場合は当日日付を使う）
+    - ラベル: `01.greenkeeping`（`gh label list` で存在を確認する。存在しない場合はユーザーに確認する）
 2. **PR 本文の作成**: CLAUDE.md の PR テンプレート（変更概要/背景・目的/変更内容/影響範囲/動作確認/補足）に従い、`git log develop..HEAD --oneline` のコミット内容から作成する
 3. **PR 提示と承認（必須）**: push 先、タイトル、ラベル、base ブランチ、本文をまとめてユーザーに提示し、明示的な承認を得る。承認前に push・PR 作成のいずれも実行しない
 4. **push**: 対象ブランチが未 push、または upstream 未追跡の場合は `git push -u origin <branch>` を、追跡済みの場合は `git push` を実行する
