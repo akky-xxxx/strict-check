@@ -16,12 +16,12 @@
     "lint:prettier": "prettier \".\" --ignore-path ../../.prettierignore -c -u"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.64.0",
+    "@typescript-eslint/parser": "^8.65.0",
     "eslint": "^9.30.0",
     "eslint-config-sc-next": "workspace:^",
     "eslint-config-sc-ts": "workspace:^",
     "fixpack": "^4.0.0",
-    "npm-run-all2": "^8.0.4",
-    "prettier": "^3.8.3"
+    "npm-run-all2": "^9.0.2",
+    "prettier": "^3.9.6"
   }
 }
