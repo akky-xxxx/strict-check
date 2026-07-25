@@ -4,6 +4,7 @@ import { customRecord } from "./shared/config/records/customRecord"
 import { eslintRecommendedRecord } from "./shared/config/records/eslintRecommendedRecord"
 import { importRecommendedRecord } from "./shared/config/records/importRecommendedRecord"
 import { initialRecord } from "./shared/config/records/initialRecord"
+import { promiseRecommendedRecord } from "./shared/config/records/promiseRecommendedRecord"
 import { unicornRecommendedRecords } from "./shared/config/records/unicornRecommendedRecords"
 import { PACKAGE_NAME } from "./shared/constants/PACKAGE_NAME"
 
@@ -21,6 +22,7 @@ const plugin = {
     eslintRecommendedRecord,
     importRecommendedRecord,
     initialRecord,
+    promiseRecommendedRecord,
     unicornRecommendedRecords,
 
     customRecord,
