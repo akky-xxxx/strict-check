@@ -14,6 +14,7 @@ export const getConfigsBaseForJavascript: GetConfigsBaseForJavascript = (librari
   configBase.push(
     jsConfig.configs.initialRecord,
     jsConfig.configs.importRecommendedRecord,
+    jsConfig.configs.promiseRecommendedRecord,
     jsConfig.configs.eslintRecommendedRecord,
     jsConfig.configs.unicornRecommendedRecords,
   )

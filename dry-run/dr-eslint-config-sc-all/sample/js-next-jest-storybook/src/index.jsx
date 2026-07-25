@@ -85,7 +85,7 @@ export const ReactTest4 = () => (
 
 export const ReactTest5 = () => (
   <div>
-    {/* eslint-disable-next-line no-magic-numbers */}
+    {/* eslint-disable-next-line no-magic-numbers, react-hooks/purity */}
     {(Math.random() * 10) % 2 ? (
       // eslint-disable-next-line react/jsx-indent
         <div>1</div>
