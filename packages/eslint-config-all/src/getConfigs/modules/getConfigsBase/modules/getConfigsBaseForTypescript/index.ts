@@ -14,6 +14,7 @@ export const getConfigsBaseForTypescript: GetConfigsBaseForTypescript = (librari
   configBase.push(
     tsConfig.configs.initialRecord,
     tsConfig.configs.importRecommendedRecord,
+    tsConfig.configs.promiseRecommendedRecord,
     tsConfig.configs.eslintRecommendedRecord,
     tsConfig.configs.unicornRecommendedRecords,
     tsConfig.configs.typescriptEslintStrictTypeCheckedRecords,
