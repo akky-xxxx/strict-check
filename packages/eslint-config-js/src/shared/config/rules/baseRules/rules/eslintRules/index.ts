@@ -25,6 +25,10 @@ export const eslintRules = {
   "no-use-before-define": SEVERITY.ERROR,
   "prefer-named-capture-group": SEVERITY.WARN,
   quotes: [SEVERITY.ERROR, "double", { avoidEscape: true }],
-  "sort-keys": [SEVERITY.WARN, "asc", { allowLineSeparatedGroups: true }],
+  "sort-keys": [
+    SEVERITY.ERROR,
+    "asc",
+    { allowLineSeparatedGroups: true, caseSensitive: true, natural: true },
+  ],
   /* eslint-enable @typescript-eslint/no-magic-numbers */
 } as const satisfies EslintRules
