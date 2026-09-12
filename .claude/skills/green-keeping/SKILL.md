@@ -27,9 +27,9 @@ description: 依存関係をカテゴリ単位で棚卸し・更新し、`pnpm c
     - ラベル: `01.greenkeeping`（`gh label list` で存在を確認する。存在しない場合はユーザーに確認する）
 2. **PR 本文の作成**: CLAUDE.md の PR テンプレート（変更概要/背景・目的/変更内容/影響範囲/動作確認/補足）に従い、`git log develop..HEAD --oneline` のコミット内容から作成する
 3. **PR 提示と承認（必須）**: push 先、タイトル、ラベル、base ブランチ、本文をまとめてユーザーに提示し、明示的な承認を得る。承認前に push・PR 作成のいずれも実行しない
-4. **push**: 対象ブランチが未 push、または upstream 未追跡の場合は `git push -u origin <branch>` を、追跡済みの場合は `git push` を実行する
-5. **PR 作成**: `gh pr create --base develop --head <branch> --title "green keeping<YYYYMMDD>" --label "01.greenkeeping" --body <body>` を実行する
-6. **完了報告**: 更新したカテゴリ・主要パッケージ・発生した修正内容・作成した PR の URL をユーザーに報告する
+4. **push**: push はユーザーが実行する。対象ブランチが未 push、または upstream 未追跡の場合は `git push -u origin <branch>`、追跡済みの場合は `git push` を提示し、実行はユーザーに委ねる
+5. **PR 作成**: PR 作成もユーザーが実行する。`gh pr create --base develop --head <branch> --title "green keeping<YYYYMMDD>" --label "01.greenkeeping" --body <body>` を提示し、実行はユーザーに委ねる
+6. **完了報告**: 更新したカテゴリ・主要パッケージ・発生した修正内容を報告する。PR の URL はユーザーが作成後に共有する
 
 ## 注意点
 
@@ -38,4 +38,4 @@ description: 依存関係をカテゴリ単位で棚卸し・更新し、`pnpm c
 - `modules/*` を編集した後は `pnpm bootstrap` を忘れず実行する（コピー方式のため反映されないと検証が無意味になる）
 - major バージョンアップは他カテゴリと分離し、breaking changes を個別に確認してから提案する
 - タイトル・ラベル・base は PR #170 の実績に基づく固定規約であり、毎回参考 PR を探索する必要はない。規約が変わった場合はこのスキル自体を更新する
-- 「develop への PR 作成」の手順3（PR 提示と承認）は省略しない。push は origin への共有操作、PR 作成は GitHub 上に公開される操作であり、いずれも取り消しにくい／他者に見える変更のため
+- 「develop への PR 作成」の手順3（PR 提示と承認）は省略しない。push は origin への共有操作、PR 作成は GitHub 上に公開される操作であり、いずれも取り消しにくい／他者に見える変更のため。実行そのものはユーザーが行う（`.claude/rules/pr.md`。`.claude/settings.json` の deny にも `Bash(git push:*)` がある）

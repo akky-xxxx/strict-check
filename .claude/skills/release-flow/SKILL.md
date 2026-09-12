@@ -43,7 +43,7 @@ description: 「1. バージョニングをインクリメント（作業ブラ�
 1. **PR 作成**: CLAUDE.md の PR テンプレート（日本語6セクション: 変更概要/背景・目的/変更内容/影響範囲/動作確認/補足）に従い、作業ブランチ→develop の通常 PR を組み立てる
     - タイトル: コミットメッセージに準じる（例: `chore: bump versions for release@<YYYYMMDD>`）
     - base: `develop` / head: 作業ブランチ
-    - push・PR 作成前に、タイトル/base/head/本文をすべて提示しユーザーの明示的な承認を得る。承認前に実行しない（`git push -u origin <作業ブランチ>` の後、`gh pr create --base develop --head <作業ブランチ> --title ... --body ...`）
+    - push・PR 作成はユーザーが実行する。タイトル/base/head/本文と、実行するコマンド（`git push -u origin <作業ブランチ>` の後、`gh pr create --base develop --head <作業ブランチ> --title ... --body ...`）をすべて提示し、実行はユーザーに委ねる
 2. **ユーザーによるマージ確認**: このPRのマージはユーザー自身が行う。エージェントはマージ操作（`gh pr merge` 等）を絶対に実行しない（承認や依頼があっても実行しない）。マージ完了は `gh pr view --json state` 等の読み取り専用コマンドで確認し、`develop` にマージ済みであることを確認できてからステージ3に進む
 3. **develop 同期**: マージ確認後、ローカルの `develop` を最新化する（`git checkout develop && git pull`）
 
@@ -54,7 +54,7 @@ description: 「1. バージョニングをインクリメント（作業ブラ�
     - base: `main` / head: `develop`
     - ラベル: `01.release` + 対象パッケージごとの `00.<dir-name>`（`gh label list` で存在確認。無い場合はユーザーに確認する）
     - 本文: パッケージごとに `## <npm公開名>@<version>` 見出し＋ステージ1手順2で作成した変更点箇条書き
-    - PR 作成前に、タイトル/ラベル/base/head/本文をすべて提示しユーザーの明示的な承認を得る。承認前に実行しない（`develop` は既に origin に反映済みのため push は不要。`gh pr create --base main --head develop --title ... --label ... --body ...`）
+    - PR 作成はユーザーが実行する。タイトル/ラベル/base/head/本文と、実行するコマンド（`develop` は既に origin に反映済みのため push は不要。`gh pr create --base main --head develop --title ... --label ... --body ...`）をすべて提示し、実行はユーザーに委ねる
     - **この PR のマージもユーザー自身が行う**（GitHub 上、または手元の `gh pr merge` 等）。エージェントはマージ操作を絶対に実行しない（承認や依頼があっても実行しない）。マージ完了は `gh pr view --json state` 等の読み取り専用コマンドで確認し、`main` にマージ済みであることを確認できてからステージ4に進む
 
 ### 4. タグ付け
