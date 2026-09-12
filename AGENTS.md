@@ -97,7 +97,7 @@ pnpm workspaces による TypeScript モノレポ。`eslint-config-sc-*` / `esli
 - カバレッジ 75% 以上が維持されているか
 - ESLint ルールのテストが `spec/tests/rules/utils/tester` の共有テスターを使い、valid / invalid の両方を網羅しているか
 - ブラックボックス(公開 interface 経由)とホワイトボックス(内部ロジック)の使い分けが適切か
-- `describe`/`it` のメッセージは既存のテストに合わせて英語で書かれているか
+- 新規追加・変更した `describe`/`it` のメッセージが `.claude/rules/test.md` の通り日本語で書かれているか。既存テストには英語表記のものが多く残っているが、その一括書き換えは求めない
 
 ### コミット/PR
 
