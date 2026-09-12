@@ -21,9 +21,11 @@ description: ESLint ルール追加・config 追加等の機能追加を行う�
     4. must fix が残る場合は 6-1 に戻る
     5. `.claude/rules/commit-rules.md` に従い、staged diff とコミットメッセージをユーザーに提示し、承認を得てから commit する
 7. 全タスクが完了するまで 6. を繰り返す
+8. 全タスクの完了後、`CLAUDE.md` の「AI 間のファイルベース連携(ai-communication)」に従い `ai-communication/result_{timestamp}.md` を作成し、codex の外部レビューへ渡す。6-2 の内部レビューはタスク単位の実装品質を見るもので、codex の外部レビューを代替しない
 
 ## 注意点
 
 - 各ステップの承認（3, 5, 6-5）は省略しない。auto mode 等の既定動作よりも `.claude/rules/implementation-rules.md` / `.claude/rules/commit-rules.md` を優先する
 - `investigate-existing-code` は必ず design agent 群より先に実行する。並列実行してはならない
 - タスク分割は独立 agent ではなく `design-integrator` の出力の一部として得る
+- 6-2 の内部レビューが通ったことは、codex の外部レビュー(手順8)を省略してよい理由にならない。両者は別の目的を持つ
