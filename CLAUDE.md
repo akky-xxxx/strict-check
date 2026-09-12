@@ -61,7 +61,9 @@ strict-check は pnpm workspaces によるモノレポで、`eslint-config-sc-*`
 
 ### CI/CD
 
-各パッケージは独立した `<package>-ci.yml` / `<package>-cd.yml` の GitHub Actions ワークフロー(加えて `local-*-ci.yml` 系、ルートの `root-ci.yml`)を持つ。これは各パッケージが独立してバージョニング・公開されることを反映している。`scripts/tagging` は `main` ブランチから `<package-name>/v<version>` の git タグを作成・push し、CD ワークフローの npm 公開トリガーとして使われる。
+各パッケージは独立した `<package>-ci.yml` / `<package>-cd.yml` の GitHub Actions ワークフロー(加えて `local-*-ci.yml` 系、ルートの `root-ci.yml`)を持つ。これは各パッケージが独立してバージョニング・公開されることを反映している。`scripts/tagging` は `main` ブランチから `<package-name>/v<version>` の git タグを作成・push し、CD ワークフローの npm 公開トリガーとして使われる。npm への公開は GitHub OIDC の Trusted Publishing(`id-token: write` + `--provenance`)で行っており、npm トークンを secrets に保持していない。
+
+`root-ci.yml` は `.claude/**` を変更検知の対象に含む。`.claude/` 配下を変更した pull request では、ルートの `pnpm lint`(prettier を含む)と `pnpm spell-check` が走る。`CLAUDE.md` / `AGENTS.md` は対象に含まれない。
 
 ### ルートの ESLint 設定
 
