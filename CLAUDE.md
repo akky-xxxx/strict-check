@@ -67,7 +67,7 @@ strict-check は pnpm workspaces によるモノレポで、`eslint-config-sc-*`
 
 ルートの `eslint.config.mjs` は `dry-run/`、`modules/`、`packages/`(それぞれ独自の eslint 設定を持つ)を ignore し、`config/eslint/records/*` と `config/eslint/rules/*` から組み立てたレコードでルート直下のスクリプト・設定のみを lint する。
 
-## 作業ルール(AGENTS.md より)
+## 作業ルール
 
 1. パッケージマネージャーは **pnpm のみ**。
 2. コードに変更を加えた場合、`pnpm check-code` が成功していることを作業完了の条件とする。
@@ -76,6 +76,18 @@ strict-check は pnpm workspaces によるモノレポで、`eslint-config-sc-*`
 5. オブジェクトのプロパティにアクセスする場合は、合理的な場合を除き、繰り返しのドットアクセスより分割代入(例: `const { foo, bar } = obj`)を優先すること。
 6. 作業ブランチは `develop` から切ること。
 7. 以下に該当する場合は、作業を進める前に方針を提示し確認を取ること: 大規模なリファクタリング、依存関係の追加・変更、テスト構成や設定ファイル(lint / tsconfig / テストランナー等)の変更。
+
+詳細なルールは `.claude/rules/` に置いている。
+
+- `.claude/rules/commit-rules.md` — コミットの型・粒度・承認
+- `.claude/rules/common.md` — 設計・実装全般で意識すること
+- `.claude/rules/common-structure.md` — co-location、ネームケース、ディレクトリ構成
+- `.claude/rules/implementation-rules.md` — 実装着手前にユーザーの承認を得る手順
+- `.claude/rules/pr.md` — PR の base branch、差分の確認方法
+- `.claude/rules/secrets.md` — 機密情報の取り扱い
+- `.claude/rules/test.md` — テストの書き方・配置・カバレッジ
+
+作業の型が決まっているものは `.claude/skills/` の skill に手順としてまとめている。機能追加は `feature-flow`、依存関係の一括更新は `green-keeping`、リリースは `release-flow`。
 
 ### PR テンプレート
 
