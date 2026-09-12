@@ -40,6 +40,8 @@ codex はこのリポジトリにおいて**レビュワー専任**として動�
 このファイルはレビュー観点の要約であり、詳細な規約は以下を一次情報として参照する。内容が矛盾する場合はこちらを優先する。
 
 - `CLAUDE.md`: リポジトリ構成、コマンド、アーキテクチャ、作業ルールの正式な定義
+- `.claude/rules/common.md`、`.claude/rules/common-structure.md`: 設計・実装の共通ルール(yagni / dry / alphabetical order、co-location、ネームケース、ディレクトリ構成)
+- `.claude/rules/commit-rules.md`、`.claude/rules/test.md`: コミット粒度とテストの規約
 - `config/commitlint/dirs/index.js`: 有効な commit scope の一覧
 - `packages/*/README.md`、`packages/*/docs/`: 公開パッケージの利用者向け仕様
 
