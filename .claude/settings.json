@@ -31,6 +31,9 @@
       "Bash(pnpm --filter shared-for-eslint-plugin *)"
     ],
     "ask": [
+      "Bash(gh pr create:*)",
+      "Bash(pnpm --filter * run tagging)",
+      "Bash(pnpm --filter * run tagging:*)",
       "Bash(pnpm add:*)",
       "Bash(pnpm dlx:*)",
       "Bash(pnpm exec:*)",
