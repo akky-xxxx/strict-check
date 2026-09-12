@@ -17,3 +17,6 @@ pnpm-error.log*
 
 # build 関連
 **/dist
+
+# ai 連携関連
+ai-communication/
