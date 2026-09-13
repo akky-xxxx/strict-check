@@ -57,7 +57,7 @@
     "prettier": "^3.9.6",
     "strict-check": "workspace:^",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.65.0"
+    "typescript-eslint": "^8.70.0"
   },
   "peerDependencies": {
     "@eslint/eslintrc": ">=3.3.1",

@@ -19,7 +19,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@eslint/eslintrc": "^3.3.6"
+    "@eslint/eslintrc": "^3.3.7"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -35,6 +35,6 @@
     "prettier": "^3.9.6",
     "strict-check": "workspace:^",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.65.0"
+    "typescript-eslint": "^8.70.0"
   }
 }
