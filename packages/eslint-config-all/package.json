@@ -53,7 +53,7 @@
     "@next/eslint-plugin-next": "^16.3.5",
     "@tsconfig/strictest": "^2.0.5",
     "@types/node": "^26.1.1",
-    "@vitest/coverage-v8": "4.1.10",
+    "@vitest/coverage-v8": "5.0.0",
     "chokidar-cli": "^3.0.0",
     "cspell": "^10.3.0",
     "eslint": "^9.30.0",
@@ -73,7 +73,7 @@
     "strict-check": "workspace:^",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.70.0",
-    "vitest": "^4.1.10"
+    "vitest": "^5.0.0"
   },
   "peerDependencies": {
     "eslint-config-sc-jest": ">=0.1.2 <1",
