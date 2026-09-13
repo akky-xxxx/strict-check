@@ -47,7 +47,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "zod": "^4.4.3"
+    "zod": "^4.6.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -61,7 +61,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "fixpack": "^4.0.0",
-    "npm-run-all2": "^9.0.2",
+    "npm-run-all2": "^9.0.3",
     "prettier": "^3.9.6",
     "strict-check": "workspace:^",
     "typescript": "^5.8.3",
