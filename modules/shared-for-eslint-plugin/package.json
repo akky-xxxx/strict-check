@@ -20,24 +20,24 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "zod": "^4.4.3"
+    "zod": "^4.6.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@tsconfig/strictest": "^2.0.5",
-    "@typescript-eslint/utils": "^8.65.0",
-    "@vitest/coverage-v8": "^4.1.10",
+    "@typescript-eslint/utils": "^8.70.0",
+    "@vitest/coverage-v8": "^5.0.0",
     "chokidar-cli": "^3.0.0",
-    "cspell": "^10.0.1",
+    "cspell": "^10.3.0",
     "eslint": "^9.30.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "fixpack": "^4.0.0",
-    "npm-run-all2": "^9.0.2",
+    "npm-run-all2": "^9.0.3",
     "prettier": "^3.9.6",
     "strict-check": "workspace:^",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.65.0",
-    "vitest": "^4.1.10"
+    "typescript-eslint": "^8.70.0",
+    "vitest": "^5.0.0"
   }
 }
